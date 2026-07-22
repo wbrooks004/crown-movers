@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "coral": "#F04836",
+    "amber": "#F89C3E",
+    "gradient": "linear-gradient(90deg, #F04836 0%, #F89C3E 100%)"
+  },
+  "neutral": {
+    "ink": "#151515",
+    "charcoal": "#25272A",
+    "body": "#555B61",
+    "muted": "#777D83",
+    "border": "#D9D5CF",
+    "surface": "#FFFFFF",
+    "base": "#F7F5F1",
+    "warmTint": "#FFF4EE"
+  },
+  "functional": {
+    "success": "#247A52",
+    "successTint": "#EAF6EF",
+    "warning": "#9A6200",
+    "warningTint": "#FFF4D6",
+    "danger": "#B42318",
+    "dangerTint": "#FDECEA",
+    "focus": "#1F5FAF"
+  },
+  "semantic": {
+    "primary": "{neutral.ink}",
+    "action": "{brand.coral}",
+    "secondary": "{brand.amber}",
+    "base": "{neutral.base}",
+    "surface": "{neutral.surface}",
+    "headingText": "{neutral.ink}",
+    "bodyText": "{neutral.body}",
+    "textOnDark": "#FFFFFF",
+    "textOnAction": "{neutral.ink}"
+  },
+  "accessibility": {
+    "approvedActionText": "#151515",
+    "note": "Use dark text on Crown Coral and Crown Amber. White text does not consistently meet WCAG AA contrast for normal text on the official brand colours."
+  }
+}

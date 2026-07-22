@@ -1,0 +1,47 @@
+:root {
+  /* Official brand colours sampled from the supplied Crown Movers logo */
+  --crown-coral: #F04836;
+  --crown-amber: #F89C3E;
+  --crown-gradient: linear-gradient(90deg, #F04836 0%, #F89C3E 100%);
+
+  /* Core neutrals */
+  --crown-ink: #151515;
+  --crown-charcoal: #25272A;
+  --crown-body: #555B61;
+  --crown-muted: #777D83;
+  --crown-border: #D9D5CF;
+  --crown-surface: #FFFFFF;
+  --crown-base: #F7F5F1;
+  --crown-warm-tint: #FFF4EE;
+
+  /* Functional colours */
+  --crown-success: #247A52;
+  --crown-success-tint: #EAF6EF;
+  --crown-warning: #9A6200;
+  --crown-warning-tint: #FFF4D6;
+  --crown-danger: #B42318;
+  --crown-danger-tint: #FDECEA;
+  --crown-focus: #1F5FAF;
+
+  /* Semantic mappings for Bricks / Automatic CSS */
+  --primary: var(--crown-ink);
+  --primary-hover: var(--crown-charcoal);
+  --action: var(--crown-coral);
+  --action-hover: #D93E2E;
+  --secondary: var(--crown-amber);
+  --base: var(--crown-base);
+  --shade: var(--crown-body);
+
+  /* Text mappings */
+  --text-heading: var(--crown-ink);
+  --text-body: var(--crown-body);
+  --text-muted: var(--crown-muted);
+  --text-on-dark: #FFFFFF;
+  --text-on-action: var(--crown-ink);
+}
+
+/* Accessibility notes:
+   #151515 on #F04836: approximately 4.94:1
+   #151515 on #F89C3E: approximately 8.54:1
+   White on the brand oranges is not approved for normal-sized text.
+*/
