@@ -1,0 +1,78 @@
+:root {
+  /* Brand colours verified live on crownmovers.ca/montreal-movers/ and /free-quote/
+     — see 08-crown-movers-live-brand-audit.md for sourcing. Supersedes 04-...css. */
+  --crown-orange: #FE4B03;        /* primary / brand action */
+  --crown-orange-soft: #FF7530;   /* gradient + hover-glow partner */
+  --crown-ink: #111111;           /* secondary / dark panels / heading text */
+  --crown-gold: #F5A400;          /* accent — ratings / small highlights */
+  --crown-warm-tint: #FFF4EE;     /* base — alternate section background */
+  --crown-gradient: linear-gradient(135deg, #FE4B03 0%, #FF7530 100%);
+
+  /* Neutrals actually used in production (consolidated from the 4 near-duplicate
+     grays found across sections — see the "Inconsistencies" section of 08) */
+  --crown-text: #111111;
+  --crown-body: #444444;
+  --crown-muted: #777777;
+  --crown-border: #E2DFDA;
+  --crown-border-brand: rgba(254, 75, 3, 0.18);  /* the ubiquitous orange-tinted border */
+  --crown-surface: #FFFFFF;
+  --crown-base: #FFFFFF;
+
+  /* Functional colours — success/danger verified live in the quote form;
+     warning/info have no live precedent (flagged defaults, see 08) */
+  --crown-success: #16713B;
+  --crown-success-tint: #EAF6EF;
+  --crown-danger: #B42318;
+  --crown-danger-tint: #FDECEA;
+  --crown-warning: #B7791F;   /* no live precedent */
+  --crown-info: #2E6FD1;      /* no live precedent */
+
+  /* Semantic mappings for Bricks / Automatic CSS */
+  --primary: var(--crown-orange);
+  --primary-hover: #CD3A00;   /* generated ramp hover step, see crown-movers-acss-settings.json */
+  --secondary: var(--crown-ink);
+  --tertiary: var(--crown-orange-soft);
+  --accent: var(--crown-gold);
+  --base: var(--crown-warm-tint);
+
+  /* Text mappings */
+  --text-heading: var(--crown-ink);
+  --text-body: var(--crown-body);
+  --text-muted: var(--crown-muted);
+  --text-on-dark: #FFFFFF;
+  --text-on-action: #FFFFFF;  /* live buttons use white text on the orange (verify contrast
+                                  before final sign-off — see accessibility note below) */
+
+  /* Typography — live Montserrat (headings) + Roboto (body), not Archivo/Inter */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Roboto", sans-serif;
+
+  /* Radius scale — live sections use a bold two-tier system */
+  --radius-input: 7px;    /* form fields, small buttons */
+  --radius-button: 14px;  /* hero CTA pairs */
+  --radius-pill: 999px;   /* badges, tags, some primary CTAs */
+  --radius-card: 22px;    /* standard cards */
+  --radius-panel: 30px;   /* section panels, large photo frames */
+
+  /* Shadows — soft, large-blur, frequently brand-tinted */
+  --shadow-soft: 0 8px 22px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 18px 45px rgba(0, 0, 0, 0.12);
+  --shadow-brand-glow: 0 16px 35px rgba(254, 75, 3, 0.35);
+}
+
+/* Accessibility notes (WCAG contrast ratios computed directly, not estimated):
+   White text on #FE4B03: 3.38:1 — passes AA for LARGE text only (≥24px, or
+   ≥19px bold; large-text AA needs 3:1). FAILS AA for normal-size text (needs
+   4.5:1). The live site currently ships white-on-orange for its bold,
+   uppercase CTA button labels, which mostly qualifies as "large text" — but
+   any smaller orange-on-white/white-on-orange use (badges, small links,
+   inline highlights) would not pass.
+   #111111 (crown-ink) text on #FE4B03: 5.59:1 — passes AA for normal text
+   comfortably (needs 4.5:1), same logic 04-...css already used for the
+   *proposed* brief.
+   White on #111111 (secondary dark buttons/panels): 18.88:1 — passes
+   everything with room to spare.
+   Recommendation carried into 11-crown-movers-redesign-plan.md: keep white
+   text on orange for large/bold CTA buttons only (matches live, passes AA);
+   use crown-ink text anywhere orange backs smaller text. Not resolved
+   silently — flagged as an open decision for sign-off. */

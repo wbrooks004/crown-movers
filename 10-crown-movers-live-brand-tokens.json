@@ -1,0 +1,73 @@
+{
+  "notice": "Live-verified brand tokens for crownmovers.ca, derived from /montreal-movers/ and /free-quote/. Supersedes 05-crown-movers-colour-tokens.json — see 08-crown-movers-live-brand-audit.md for full sourcing and confidence notes.",
+  "brand": {
+    "orange": "#FE4B03",
+    "orangeSoft": "#FF7530",
+    "gradient": "linear-gradient(135deg, #FE4B03 0%, #FF7530 100%)"
+  },
+  "neutral": {
+    "ink": "#111111",
+    "body": "#444444",
+    "muted": "#777777",
+    "border": "#E2DFDA",
+    "borderBrand": "rgba(254, 75, 3, 0.18)",
+    "surface": "#FFFFFF",
+    "warmTint": "#FFF4EE"
+  },
+  "functional": {
+    "success": "#16713B",
+    "successTint": "#EAF6EF",
+    "danger": "#B42318",
+    "dangerTint": "#FDECEA",
+    "warning": "#B7791F",
+    "info": "#2E6FD1",
+    "_note": "success/danger verified live in the quote form's own validation states; warning/info have no live precedent and are flagged defaults"
+  },
+  "semantic": {
+    "primary": "{brand.orange}",
+    "primaryHover": "#CD3A00",
+    "secondary": "{neutral.ink}",
+    "tertiary": "{brand.orangeSoft}",
+    "accent": "#F5A400",
+    "base": "{neutral.warmTint}",
+    "surface": "{neutral.surface}",
+    "headingText": "{neutral.ink}",
+    "bodyText": "{neutral.body}",
+    "textOnDark": "#FFFFFF",
+    "textOnActionLarge": "#FFFFFF",
+    "textOnActionSmall": "{neutral.ink}"
+  },
+  "typography": {
+    "heading": "Montserrat",
+    "body": "Roboto",
+    "headingWeight": "800-950 depending on size (live uses variable-font-style heavy weights)",
+    "headingLetterSpacing": "-0.035em to -0.06em on display sizes",
+    "_note": "supersedes the Archivo/Inter recommendation in 02-crown-movers-design-brief.md"
+  },
+  "radius": {
+    "input": "7px",
+    "button": "14px",
+    "pill": "999px",
+    "card": "22px",
+    "panel": "30px",
+    "_note": "supersedes the 4px/8px/12px scale in 05-crown-movers-colour-tokens.json"
+  },
+  "shadow": {
+    "soft": "0 8px 22px rgba(0,0,0,0.06)",
+    "elevated": "0 18px 45px rgba(0,0,0,0.12)",
+    "brandGlow": "0 16px 35px rgba(254,75,3,0.35)"
+  },
+  "accessibility": {
+    "whiteOnOrangeContrast": "3.38:1 - AA large-text only",
+    "inkOnOrangeContrast": "5.59:1 - AA normal-text pass",
+    "whiteOnInkContrast": "18.88:1 - passes everything",
+    "recommendation": "white button text on orange only for large/bold CTA labels (matches live); crown-ink text on orange for anything smaller",
+    "note": "figures computed directly (WCAG relative-luminance formula), not estimated"
+  },
+  "productionDrift": {
+    "orangeVariantsFound": ["#fe4b03 (canonical, dominant)", "#ff4b00", "#ff5a1f"],
+    "bodyGrayVariantsFound": ["#3f3f3f", "#444444", "#4a4a4a", "#555555"],
+    "buttonRadiusVariantsFound": ["7px", "14px", "999px"],
+    "note": "these are real inconsistencies across the already-built live sections; the token set above consolidates them to one value each - see 11-crown-movers-redesign-plan.md"
+  }
+}
