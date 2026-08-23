@@ -35,13 +35,22 @@
   --accent: var(--crown-gold);
   --base: var(--crown-warm-tint);
 
+  /* Background balance — confirmed direction: pages read light/white-dominant
+     overall. --base and body-bg-color are the default canvas and stay light
+     (white / this warm tint). --secondary (ink) is for deliberate dark
+     moments — panels, dark buttons, footer, a closing CTA band — not the
+     default section background. This is already how the live site behaves:
+     every full-width section is white or warm-tinted; ink only ever appears
+     on panels/cards *within* a light section. Keep it that way when
+     templating new pages rather than reaching for dark sections by default. */
+
   /* Text mappings */
   --text-heading: var(--crown-ink);
   --text-body: var(--crown-body);
   --text-muted: var(--crown-muted);
   --text-on-dark: #FFFFFF;
-  --text-on-action: #FFFFFF;  /* live buttons use white text on the orange (verify contrast
-                                  before final sign-off — see accessibility note below) */
+  --text-on-action: var(--crown-ink);  /* see the resolved accessibility note below —
+                                            this is no longer a blanket "white" */
 
   /* Typography — live Montserrat (headings) + Roboto (body), not Archivo/Inter */
   --font-heading: "Montserrat", sans-serif;
@@ -58,21 +67,54 @@
   --shadow-soft: 0 8px 22px rgba(0, 0, 0, 0.06);
   --shadow-elevated: 0 18px 45px rgba(0, 0, 0, 0.12);
   --shadow-brand-glow: 0 16px 35px rgba(254, 75, 3, 0.35);
+  --shadow-brand-glow-hover: 0 20px 46px rgba(254, 75, 3, 0.48); /* deepens on hover */
+
+  /* Gradients — confirmed direction: use gradients heavily as a brand device,
+     not just on the primary button. All built from the same 2 brand hues so
+     they stay one family rather than reading as decoration. */
+  --gradient-action: linear-gradient(135deg, #FE4B03 0%, #FF7530 100%);       /* buttons, primary CTAs */
+  --gradient-action-hover: linear-gradient(135deg, #CD3A00 0%, #FE4B03 100%); /* darker/deeper on hover — see §Hover */
+  --gradient-wash: radial-gradient(circle at 10% 10%, rgba(254,75,3,.10), transparent 28%),
+                    radial-gradient(circle at 90% 15%, rgba(255,174,92,.12), transparent 30%),
+                    linear-gradient(180deg, #ffffff 0%, #FFF4EE 100%);        /* section backgrounds — live pattern */
+  --gradient-ink: linear-gradient(135deg, #1a1512 0%, #2b1a10 100%);          /* dark CTA panels/footer */
+  --gradient-gold: linear-gradient(135deg, #F5A400 0%, #FFC24D 100%);        /* ratings/highlight moments, used sparingly */
 }
 
-/* Accessibility notes (WCAG contrast ratios computed directly, not estimated):
-   White text on #FE4B03: 3.38:1 — passes AA for LARGE text only (≥24px, or
-   ≥19px bold; large-text AA needs 3:1). FAILS AA for normal-size text (needs
-   4.5:1). The live site currently ships white-on-orange for its bold,
-   uppercase CTA button labels, which mostly qualifies as "large text" — but
-   any smaller orange-on-white/white-on-orange use (badges, small links,
-   inline highlights) would not pass.
-   #111111 (crown-ink) text on #FE4B03: 5.59:1 — passes AA for normal text
-   comfortably (needs 4.5:1), same logic 04-...css already used for the
-   *proposed* brief.
-   White on #111111 (secondary dark buttons/panels): 18.88:1 — passes
-   everything with room to spare.
-   Recommendation carried into 11-crown-movers-redesign-plan.md: keep white
-   text on orange for large/bold CTA buttons only (matches live, passes AA);
-   use crown-ink text anywhere orange backs smaller text. Not resolved
-   silently — flagged as an open decision for sign-off. */
+/* ===================== Button hover treatment ("night" hover) =====================
+   Confirmed direction: energetic, professional, friendly — gradient buttons that
+   deepen toward a richer, darker tone on hover (not just a flat color swap), plus
+   lift + a stronger glow. This is a formalized version of what's already live
+   (buttons already darken + glow on hover; this adds the deepening gradient and a
+   touch more lift/shine on top of that proven base). Swap the two custom
+   properties above for a smooth cross-fade rather than an instant hard cut. */
+.btn-primary {
+  background: var(--gradient-action);
+  color: var(--crown-ink);                 /* was white — see accessibility note */
+  box-shadow: var(--shadow-brand-glow);
+  transition: transform .25s ease, box-shadow .3s ease, background .3s ease;
+}
+.btn-primary:hover {
+  background: var(--gradient-action-hover); /* deepens toward night, not just darker flat orange */
+  box-shadow: var(--shadow-brand-glow-hover);
+  transform: translateY(-3px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary { transition: none; }
+  .btn-primary:hover { transform: none; }
+}
+
+/* ===================== Accessibility — resolved, not left as a caveat =====================
+   Every btn-{role}-*-bg / *-text pairing in crown-movers-acss-settings.json was
+   computed and checked against WCAG's contrast formula directly (not estimated):
+   60 pairs across all 10 color roles × 6 button states. 16 failed the template's
+   default text color and were corrected — e.g. the base primary button's default
+   text (ACSS's own template point it at "primary-ultra-light", a pale peach tint
+   #ffe9e3 — not literal white) scored 2.9:1 against #FE4B03; separately, literal
+   white text on #FE4B03 scores 3.38:1 (AA-large only, still fails normal text).
+   Both are now corrected to crown-ink text at 5.59:1. Every button state in the
+   file now clears
+   4.5:1 unconditionally — no more "only passes for large text" carve-out, and
+   nothing depends on a component author correctly judging text size at build
+   time. Full before/after list is in the generator's output, summarized in
+   11-crown-movers-redesign-plan.md §4.1. */

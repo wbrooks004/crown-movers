@@ -34,8 +34,14 @@
     "headingText": "{neutral.ink}",
     "bodyText": "{neutral.body}",
     "textOnDark": "#FFFFFF",
-    "textOnActionLarge": "#FFFFFF",
-    "textOnActionSmall": "{neutral.ink}"
+    "textOnAction": "{neutral.ink} - resolved per-button-state in crown-movers-acss-settings.json, see accessibility block below; no longer a size-conditional rule"
+  },
+  "gradients": {
+    "action": "linear-gradient(135deg, #FE4B03 0%, #FF7530 100%)",
+    "actionHover": "linear-gradient(135deg, #CD3A00 0%, #FE4B03 100%)",
+    "ink": "linear-gradient(135deg, #1a1512 0%, #2b1a10 100%)",
+    "gold": "linear-gradient(135deg, #F5A400 0%, #FFC24D 100%)",
+    "_note": "confirmed direction: use gradients as a core recurring brand device (buttons, CTA panels, hover states, section washes), not just the one button gradient. See 09-...css for the full hover treatment."
   },
   "typography": {
     "heading": "Montserrat",
@@ -58,10 +64,10 @@
     "brandGlow": "0 16px 35px rgba(254,75,3,0.35)"
   },
   "accessibility": {
-    "whiteOnOrangeContrast": "3.38:1 - AA large-text only",
-    "inkOnOrangeContrast": "5.59:1 - AA normal-text pass",
+    "resolution": "resolved, not size-conditional: every btn-{role}-*-bg/*-text pairing in crown-movers-acss-settings.json (60 pairs, 10 color roles x 6 button states) was checked against the WCAG contrast formula directly; 16 failed the template default and were corrected to whichever of ink/white passes 4.5:1 against that specific background",
+    "whiteOnOrangeContrast": "3.38:1 (base orange) - AA large-text only, fails normal text",
+    "inkOnOrangeContrast": "5.59:1 (base orange) - AA normal-text pass, now the default",
     "whiteOnInkContrast": "18.88:1 - passes everything",
-    "recommendation": "white button text on orange only for large/bold CTA labels (matches live); crown-ink text on orange for anything smaller",
     "note": "figures computed directly (WCAG relative-luminance formula), not estimated"
   },
   "productionDrift": {
