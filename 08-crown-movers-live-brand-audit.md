@@ -39,8 +39,8 @@ canonicalizes it.
 | **Neutral** (grayscale ramp) | `#111111` → white | Live. Same ink anchor as Secondary, zero chroma. |
 | **Success** | `#16713B` | Live. Real value from the quote form's validation states. |
 | **Danger** | `#B42318` | Live. Real value from the quote form's validation states (also happens to be an exact match to `05-...json`'s guess). |
-| **Warning** | `#B7791F` | **Not found live** — no warning/caution UI exists on either page today. Brand-adjacent amber, safe default. Revisit if/when a real warning state is designed. |
-| **Info** | `#2E6FD1` | **Not found live** — the only blue on either page is a Google "G" review-badge icon, not a UI color. Conventional default. |
+| **Warning** | `#FFC10A` | **Not found live** — no warning/caution UI exists on either page today. Resolved: kept as ACSS's own stock default rather than inventing a brand-adjacent one, since there's no live precedent either way. |
+| **Info** | `#18A2B8` | **Not found live** — the only blue on either page is a Google "G" review-badge icon, not a UI color. Resolved the same way — ACSS's own stock default. |
 
 **Typography:** Montserrat (headings — very heavy weights, 800–950, tight negative tracking
 down to `-0.06em`, aggressive `clamp()` fluid sizing) + Roboto (body/UI/forms). Not

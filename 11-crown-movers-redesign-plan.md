@@ -80,6 +80,12 @@ them for visual variety — reach for the warm tint first.
 4. **Orange/gray consolidation — resolved: proceed.** Standardized on `#FE4B03` and `#444444`
    as documented in §6 of `08-crown-movers-live-brand-audit.md`; already applied throughout
    `crown-movers-acss-settings.json`.
+5. **Warning/info colors — resolved: use ACSS's own stock defaults.** No live precedent
+   exists for either (see audit), so rather than inventing a brand-adjacent color, both are
+   kept at whatever ACSS ships with by default — `#FFC10A` (warning) and `#18A2B8` (info),
+   which is what your original settings file already had for these two roles, unedited. Every
+   button pairing using them was re-checked against WCAG after the change (see §4.1's process
+   — 2 more corrections came out of this, `crown-movers-acss-settings.json` already has them).
 
 **Button hover ("night hover") spec** — read literally as a darkening/deepening treatment
 rather than a flat color swap: on hover, the button's gradient shifts to a darker, richer pair
@@ -92,9 +98,7 @@ if that's not what you meant.**
 
 ### 4.2 Still open
 
-1. **Warning/info colors.** No live precedent exists for either (see audit). Flagged defaults
-   are in place; fine to leave until a real use case (e.g., "limited availability" badge)
-   comes up.
+Nothing — all decisions from the first pass are resolved as of this update.
 
 ## 5. Rollout phases
 

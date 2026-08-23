@@ -19,13 +19,14 @@
   --crown-base: #FFFFFF;
 
   /* Functional colours — success/danger verified live in the quote form;
-     warning/info have no live precedent (flagged defaults, see 08) */
+     warning/info have no live precedent, so they're kept as ACSS's own
+     stock defaults rather than an invented brand-adjacent color (see 08) */
   --crown-success: #16713B;
   --crown-success-tint: #EAF6EF;
   --crown-danger: #B42318;
   --crown-danger-tint: #FDECEA;
-  --crown-warning: #B7791F;   /* no live precedent */
-  --crown-info: #2E6FD1;      /* no live precedent */
+  --crown-warning: #FFC10A;   /* ACSS stock default, no live precedent */
+  --crown-info: #18A2B8;      /* ACSS stock default, no live precedent */
 
   /* Semantic mappings for Bricks / Automatic CSS */
   --primary: var(--crown-orange);

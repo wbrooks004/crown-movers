@@ -19,9 +19,9 @@
     "successTint": "#EAF6EF",
     "danger": "#B42318",
     "dangerTint": "#FDECEA",
-    "warning": "#B7791F",
-    "info": "#2E6FD1",
-    "_note": "success/danger verified live in the quote form's own validation states; warning/info have no live precedent and are flagged defaults"
+    "warning": "#FFC10A",
+    "info": "#18A2B8",
+    "_note": "success/danger verified live in the quote form's own validation states; warning/info have no live precedent, resolved as ACSS's own stock defaults rather than an invented color"
   },
   "semantic": {
     "primary": "{brand.orange}",
