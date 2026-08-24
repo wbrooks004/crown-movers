@@ -1,0 +1,54 @@
+{
+    "key": "group_crown_faq_items",
+    "title": "Page FAQ",
+    "fields": [
+        {
+            "key": "field_crown_faq_items",
+            "label": "FAQ Items",
+            "name": "faq_items",
+            "type": "repeater",
+            "instructions": "FAQ content is page-specific by design - the Montreal Movers page and the homepage have different real questions, so this lives on the page itself rather than a shared global list.",
+            "required": 0,
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add FAQ",
+            "sub_fields": [
+                {
+                    "key": "field_crown_faq_question",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_crown_faq_answer",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "textarea",
+                    "required": 1,
+                    "rows": 3,
+                    "new_lines": "wpautop"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Add this field group to any page that needs an FAQ section. Empty by default - the FAQ section on a page should hide itself when this repeater has 0 rows (see the query_results_count == 0 pattern in the homepage JSON notes).",
+    "show_in_rest": 0
+}

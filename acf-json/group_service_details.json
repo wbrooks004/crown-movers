@@ -1,0 +1,44 @@
+{
+    "key": "group_crown_service_details",
+    "title": "Service Details",
+    "fields": [
+        {
+            "key": "field_crown_service_short_description",
+            "label": "Short Description",
+            "name": "short_description",
+            "type": "textarea",
+            "instructions": "1-2 sentences shown on the service card in grids across the site.",
+            "required": 1,
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_crown_service_link",
+            "label": "Learn More Link (optional)",
+            "name": "link_override",
+            "type": "page_link",
+            "instructions": "Leave empty to link the card to this service's own page (default). Set only if this card should point somewhere else instead.",
+            "required": 0,
+            "post_type": ["page"],
+            "allow_null": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

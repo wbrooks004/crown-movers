@@ -1,0 +1,2499 @@
+{
+  "content": [
+    {
+      "id": "4l3jge",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "uj7s9h"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssId": "hero",
+        "_padding": {
+          "top": "clamp(4rem, 9vw, 7rem)",
+          "bottom": "clamp(4rem, 9vw, 7rem)"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--neutral-ultra-light)"
+          }
+        }
+      },
+      "label": "Hero"
+    },
+    {
+      "id": "uj7s9h",
+      "name": "container",
+      "parent": "4l3jge",
+      "children": [
+        "02az56"
+      ],
+      "settings": {
+        "_widthMax": "1280px"
+      }
+    },
+    {
+      "id": "02az56",
+      "name": "block",
+      "parent": "uj7s9h",
+      "children": [
+        "mq5m9u",
+        "d5ii6m"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "64px",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "40px"
+      },
+      "label": "Hero Row"
+    },
+    {
+      "id": "mq5m9u",
+      "name": "block",
+      "parent": "02az56",
+      "children": [
+        "wx2172",
+        "5alfjj",
+        "ese134",
+        "z2er61"
+      ],
+      "settings": {
+        "_rowGap": "22px",
+        "_width": "50%",
+        "_width:tablet_portrait": "100%"
+      },
+      "label": "Content"
+    },
+    {
+      "id": "wx2172",
+      "name": "text-basic",
+      "parent": "mq5m9u",
+      "children": [],
+      "settings": {
+        "text": "MONTREAL'S TRUSTED MOVERS",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "800",
+          "letter-spacing": "0.12em",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "5alfjj",
+      "name": "heading",
+      "parent": "mq5m9u",
+      "children": [],
+      "settings": {
+        "text": "Reliable Moving Services in Montreal",
+        "tag": "h1",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(2.5rem, 5vw, 3.75rem)",
+          "font-weight": "800",
+          "line-height": "1.04",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "ese134",
+      "name": "text-basic",
+      "parent": "mq5m9u",
+      "children": [],
+      "settings": {
+        "text": "We truly care about your moving experience \u2014 from the first call to the last box unpacked.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.1875rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        },
+        "_widthMax": "480px"
+      }
+    },
+    {
+      "id": "z2er61",
+      "name": "block",
+      "parent": "mq5m9u",
+      "children": [
+        "zlm54j",
+        "awt27b"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "16px",
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "12px",
+        "_width:mobile_portrait": "100%"
+      },
+      "label": "Buttons"
+    },
+    {
+      "id": "zlm54j",
+      "name": "button",
+      "parent": "z2er61",
+      "children": [],
+      "settings": {
+        "text": "Free Quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/free-quote/"
+        },
+        "size": "lg",
+        "_typography": {
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "font-weight": "800",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.06em",
+          "font-size": "0.875rem"
+        },
+        "_padding": {
+          "top": "16px",
+          "right": "30px",
+          "bottom": "16px",
+          "left": "30px"
+        },
+        "_border": {
+          "radius": {
+            "top": "14px",
+            "right": "14px",
+            "bottom": "14px",
+            "left": "14px"
+          }
+        },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--primary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "var(--tertiary)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "35",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.35)"
+          }
+        },
+        "_cssTransition": "transform 0.25s ease, box-shadow 0.3s ease",
+        "_transform:hover": {
+          "translateY": "-3px"
+        }
+      }
+    },
+    {
+      "id": "awt27b",
+      "name": "button",
+      "parent": "z2er61",
+      "children": [],
+      "settings": {
+        "text": "Call Us \u2014 (514) 606-4030",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+15146064030"
+        },
+        "size": "lg",
+        "_typography": {
+          "color": {
+            "hex": "#ffffff"
+          },
+          "font-weight": "800",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.06em",
+          "font-size": "0.875rem"
+        },
+        "_padding": {
+          "top": "16px",
+          "right": "30px",
+          "bottom": "16px",
+          "left": "30px"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "14px",
+            "right": "14px",
+            "bottom": "14px",
+            "left": "14px"
+          }
+        }
+      }
+    },
+    {
+      "id": "d5ii6m",
+      "name": "block",
+      "parent": "02az56",
+      "children": [
+        "7yn7xg"
+      ],
+      "settings": {
+        "_width": "50%",
+        "_width:tablet_portrait": "100%"
+      },
+      "label": "Media"
+    },
+    {
+      "id": "7yn7xg",
+      "name": "image",
+      "parent": "d5ii6m",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2026/06/montreal-residential-movers-crown-moving-truck-home.webp"
+        },
+        "altText": "Crown Movers branded truck outside a Montreal home",
+        "loading": "eager",
+        "_width": "100%",
+        "_aspectRatio": "4/3",
+        "_objectFit": "cover",
+        "_border": {
+          "radius": {
+            "top": "30px",
+            "right": "30px",
+            "bottom": "30px",
+            "left": "30px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "24",
+            "blur": "60",
+            "spread": "-10"
+          },
+          "color": {
+            "rgb": "rgba(17, 17, 17, 0.22)"
+          }
+        }
+      }
+    },
+    {
+      "id": "6ia7kj",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "2viurc"
+      ],
+      "settings": {
+        "tag": "section",
+        "_padding": {
+          "top": "clamp(3rem, 6vw, 4.5rem)",
+          "bottom": "clamp(3rem, 6vw, 4.5rem)"
+        },
+        "_cssCustom": "%root% { background: var(--gradient-wash); }"
+      },
+      "label": "Stats"
+    },
+    {
+      "id": "2viurc",
+      "name": "container",
+      "parent": "6ia7kj",
+      "children": [
+        "n3sjf1"
+      ],
+      "settings": {
+        "_widthMax": "1200px"
+      }
+    },
+    {
+      "id": "n3sjf1",
+      "name": "div",
+      "parent": "2viurc",
+      "children": [
+        "4xcp50",
+        "azskzc"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+        "_gridGap": "24px",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      },
+      "label": "Stats Grid"
+    },
+    {
+      "id": "4xcp50",
+      "name": "block",
+      "parent": "n3sjf1",
+      "children": [
+        "31dy1n",
+        "wm0s8e",
+        "tgoh3c"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "30px",
+          "right": "30px",
+          "bottom": "30px",
+          "left": "30px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "26px",
+            "right": "26px",
+            "bottom": "26px",
+            "left": "26px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.16)"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "18",
+            "blur": "42",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.055)"
+          }
+        }
+      },
+      "label": "Stat \u2014 one"
+    },
+    {
+      "id": "31dy1n",
+      "name": "block",
+      "parent": "4xcp50",
+      "children": [
+        "4f06p4"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-end",
+        "_columnGap": "4px",
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "4f06p4",
+      "name": "counter",
+      "parent": "31dy1n",
+      "children": [],
+      "settings": {
+        "countFrom": "0",
+        "countTo": "1000",
+        "duration": "1800",
+        "suffix": "{acf_stat_one_suffix}",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(2.6rem, 5vw, 4rem)",
+          "font-weight": "900",
+          "line-height": "0.9",
+          "letter-spacing": "-0.03em",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      },
+      "label": "Note: countTo is a literal \u2014 see build notes on why this isn't ACF-bound"
+    },
+    {
+      "id": "wm0s8e",
+      "name": "heading",
+      "parent": "4xcp50",
+      "children": [],
+      "settings": {
+        "text": "{acf_stat_one_label}",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "tgoh3c",
+      "name": "text-basic",
+      "parent": "4xcp50",
+      "children": [],
+      "settings": {
+        "text": "{acf_stat_one_description}",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "azskzc",
+      "name": "block",
+      "parent": "n3sjf1",
+      "children": [
+        "iyoach",
+        "d7f7ri",
+        "6tcw8h"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "30px",
+          "right": "30px",
+          "bottom": "30px",
+          "left": "30px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "26px",
+            "right": "26px",
+            "bottom": "26px",
+            "left": "26px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.16)"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "18",
+            "blur": "42",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.055)"
+          }
+        }
+      },
+      "label": "Stat \u2014 two"
+    },
+    {
+      "id": "iyoach",
+      "name": "block",
+      "parent": "azskzc",
+      "children": [
+        "75u2kj"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-end",
+        "_columnGap": "4px",
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "75u2kj",
+      "name": "counter",
+      "parent": "iyoach",
+      "children": [],
+      "settings": {
+        "countFrom": "0",
+        "countTo": "29",
+        "duration": "1800",
+        "suffix": "{acf_stat_two_suffix}",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(2.6rem, 5vw, 4rem)",
+          "font-weight": "900",
+          "line-height": "0.9",
+          "letter-spacing": "-0.03em",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      },
+      "label": "Note: countTo is a literal \u2014 see build notes on why this isn't ACF-bound"
+    },
+    {
+      "id": "d7f7ri",
+      "name": "heading",
+      "parent": "azskzc",
+      "children": [],
+      "settings": {
+        "text": "{acf_stat_two_label}",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "6tcw8h",
+      "name": "text-basic",
+      "parent": "azskzc",
+      "children": [],
+      "settings": {
+        "text": "{acf_stat_two_description}",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "7r0c6j",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "jmn9ue"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 6rem)",
+          "bottom": "clamp(4rem, 8vw, 6rem)"
+        }
+      },
+      "label": "Quick Links"
+    },
+    {
+      "id": "jmn9ue",
+      "name": "container",
+      "parent": "7r0c6j",
+      "children": [
+        "apu49h",
+        "fhs2cu"
+      ],
+      "settings": {
+        "_rowGap": "40px",
+        "_widthMax": "1200px"
+      }
+    },
+    {
+      "id": "apu49h",
+      "name": "block",
+      "parent": "jmn9ue",
+      "children": [
+        "prbnko",
+        "lgzgfs"
+      ],
+      "settings": {
+        "_widthMax": "760px",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "prbnko",
+      "name": "heading",
+      "parent": "apu49h",
+      "children": [],
+      "settings": {
+        "text": "Professional Canadian Moving Services",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(1.9rem, 3.4vw, 2.6rem)",
+          "font-weight": "800",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "14px"
+        }
+      }
+    },
+    {
+      "id": "lgzgfs",
+      "name": "text-basic",
+      "parent": "apu49h",
+      "children": [],
+      "settings": {
+        "text": "We've brought joy and excitement back to your moving day. Whether you're looking for local Montreal moving services or across-Canada moving services, our experienced and carefully trained moving team focuses on handling all your moving, packing and storage needs.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "line-height": "1.65",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "fhs2cu",
+      "name": "div",
+      "parent": "jmn9ue",
+      "children": [
+        "2btl54",
+        "thnmbr",
+        "8ya344"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "18px",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      },
+      "label": "Quick Link Cards"
+    },
+    {
+      "id": "2btl54",
+      "name": "block",
+      "parent": "fhs2cu",
+      "children": [
+        "i7r0bf",
+        "n96m6j"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_padding": {
+          "top": "22px",
+          "right": "24px",
+          "bottom": "22px",
+          "left": "24px"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "18px",
+            "right": "18px",
+            "bottom": "18px",
+            "left": "18px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.16)"
+          }
+        },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-2px"
+        }
+      },
+      "label": "Quick link \u2014 Moving in Montreal"
+    },
+    {
+      "id": "i7r0bf",
+      "name": "text-basic",
+      "parent": "2btl54",
+      "children": [],
+      "settings": {
+        "text": "Moving in Montreal",
+        "tag": "span",
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "1.0625rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "n96m6j",
+      "name": "icon",
+      "parent": "2btl54",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "iconSize": "1.1em",
+        "iconColor": {
+          "raw": "var(--primary)"
+        }
+      }
+    },
+    {
+      "id": "thnmbr",
+      "name": "block",
+      "parent": "fhs2cu",
+      "children": [
+        "ye99dp",
+        "edmy4f"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/long-distance-moving/"
+        },
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_padding": {
+          "top": "22px",
+          "right": "24px",
+          "bottom": "22px",
+          "left": "24px"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "18px",
+            "right": "18px",
+            "bottom": "18px",
+            "left": "18px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.16)"
+          }
+        },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-2px"
+        }
+      },
+      "label": "Quick link \u2014 Long Distance Moving"
+    },
+    {
+      "id": "ye99dp",
+      "name": "text-basic",
+      "parent": "thnmbr",
+      "children": [],
+      "settings": {
+        "text": "Long Distance Moving",
+        "tag": "span",
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "1.0625rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "edmy4f",
+      "name": "icon",
+      "parent": "thnmbr",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "iconSize": "1.1em",
+        "iconColor": {
+          "raw": "var(--primary)"
+        }
+      }
+    },
+    {
+      "id": "8ya344",
+      "name": "block",
+      "parent": "fhs2cu",
+      "children": [
+        "m4iukd",
+        "qkur05"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/commercial-moving/"
+        },
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_padding": {
+          "top": "22px",
+          "right": "24px",
+          "bottom": "22px",
+          "left": "24px"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "18px",
+            "right": "18px",
+            "bottom": "18px",
+            "left": "18px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.16)"
+          }
+        },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-2px"
+        }
+      },
+      "label": "Quick link \u2014 Commercial Moving (verify this slug \u2014 nav shows 'Commercial' but exact URL wasn't confirmed)"
+    },
+    {
+      "id": "m4iukd",
+      "name": "text-basic",
+      "parent": "8ya344",
+      "children": [],
+      "settings": {
+        "text": "Commercial Moving",
+        "tag": "span",
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "1.0625rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "qkur05",
+      "name": "icon",
+      "parent": "8ya344",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "iconSize": "1.1em",
+        "iconColor": {
+          "raw": "var(--primary)"
+        }
+      }
+    },
+    {
+      "id": "urya2q",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "s7nffu"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 6rem)",
+          "bottom": "clamp(4rem, 8vw, 6rem)"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      },
+      "label": "Keys To A Perfect Day"
+    },
+    {
+      "id": "s7nffu",
+      "name": "container",
+      "parent": "urya2q",
+      "children": [
+        "5bsci6",
+        "l7wnon"
+      ],
+      "settings": {
+        "_rowGap": "40px",
+        "_widthMax": "1200px"
+      }
+    },
+    {
+      "id": "5bsci6",
+      "name": "block",
+      "parent": "s7nffu",
+      "children": [
+        "gkcjeu",
+        "kk61lo"
+      ],
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "gkcjeu",
+      "name": "heading",
+      "parent": "5bsci6",
+      "children": [],
+      "settings": {
+        "text": "Hassle-Free Moving Services Montreal",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(1.9rem, 3.4vw, 2.6rem)",
+          "font-weight": "800",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "14px"
+        }
+      }
+    },
+    {
+      "id": "kk61lo",
+      "name": "text-basic",
+      "parent": "5bsci6",
+      "children": [],
+      "settings": {
+        "text": "At Crown Movers, our friendly and reliable movers aim to give you that 5-star moving service you've been reading about! Listed below are the keys to a perfect moving day.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "l7wnon",
+      "name": "div",
+      "parent": "s7nffu",
+      "children": [
+        "esu6jp",
+        "vnk8qn",
+        "3odyul"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "22px",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      },
+      "label": "Key Cards"
+    },
+    {
+      "id": "esu6jp",
+      "name": "block",
+      "parent": "l7wnon",
+      "children": [
+        "jsjk51",
+        "7nmrov",
+        "r0jkpe"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "28px",
+          "right": "26px",
+          "bottom": "28px",
+          "left": "26px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "22px",
+            "right": "22px",
+            "bottom": "22px",
+            "left": "22px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "14",
+            "blur": "34",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.06)"
+          }
+        }
+      },
+      "label": "Key \u2014 You Are Our Priority"
+    },
+    {
+      "id": "jsjk51",
+      "name": "block",
+      "parent": "esu6jp",
+      "children": [
+        "ow0lyq"
+      ],
+      "settings": {
+        "_width": "44px",
+        "_height": "44px",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_background": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_margin": {
+          "bottom": "16px"
+        }
+      }
+    },
+    {
+      "id": "ow0lyq",
+      "name": "icon",
+      "parent": "jsjk51",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-heart"
+        },
+        "iconSize": "20px",
+        "iconColor": {
+          "hex": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "7nmrov",
+      "name": "heading",
+      "parent": "esu6jp",
+      "children": [],
+      "settings": {
+        "text": "You Are Our Priority",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.1875rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "r0jkpe",
+      "name": "text-basic",
+      "parent": "esu6jp",
+      "children": [],
+      "settings": {
+        "text": "From your first phone call to the last box we unpack, you are our priority. Our aim is to make your move memorable for all the right reasons.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "vnk8qn",
+      "name": "block",
+      "parent": "l7wnon",
+      "children": [
+        "1mqd0m",
+        "l2tvp6",
+        "59yd6x"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "28px",
+          "right": "26px",
+          "bottom": "28px",
+          "left": "26px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "22px",
+            "right": "22px",
+            "bottom": "22px",
+            "left": "22px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "14",
+            "blur": "34",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.06)"
+          }
+        }
+      },
+      "label": "Key \u2014 Experienced Movers"
+    },
+    {
+      "id": "1mqd0m",
+      "name": "block",
+      "parent": "vnk8qn",
+      "children": [
+        "809qo5"
+      ],
+      "settings": {
+        "_width": "44px",
+        "_height": "44px",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_background": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_margin": {
+          "bottom": "16px"
+        }
+      }
+    },
+    {
+      "id": "809qo5",
+      "name": "icon",
+      "parent": "1mqd0m",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-people"
+        },
+        "iconSize": "20px",
+        "iconColor": {
+          "hex": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "l2tvp6",
+      "name": "heading",
+      "parent": "vnk8qn",
+      "children": [],
+      "settings": {
+        "text": "Experienced Movers",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.1875rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "59yd6x",
+      "name": "text-basic",
+      "parent": "vnk8qn",
+      "children": [],
+      "settings": {
+        "text": "The Rule of the 3 E's. Experience Equals Efficiency. Every moving service is planned and organized in advance \u2014 we come ready for action.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "3odyul",
+      "name": "block",
+      "parent": "l7wnon",
+      "children": [
+        "x900hj",
+        "cx9cgk",
+        "hf4ogx"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "28px",
+          "right": "26px",
+          "bottom": "28px",
+          "left": "26px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "22px",
+            "right": "22px",
+            "bottom": "22px",
+            "left": "22px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "14",
+            "blur": "34",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.06)"
+          }
+        }
+      },
+      "label": "Key \u2014 No Hidden Fees"
+    },
+    {
+      "id": "x900hj",
+      "name": "block",
+      "parent": "3odyul",
+      "children": [
+        "9lqtvc"
+      ],
+      "settings": {
+        "_width": "44px",
+        "_height": "44px",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_background": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_margin": {
+          "bottom": "16px"
+        }
+      }
+    },
+    {
+      "id": "9lqtvc",
+      "name": "icon",
+      "parent": "x900hj",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pricetag"
+        },
+        "iconSize": "20px",
+        "iconColor": {
+          "hex": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "cx9cgk",
+      "name": "heading",
+      "parent": "3odyul",
+      "children": [],
+      "settings": {
+        "text": "No Hidden Fees",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.1875rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "hf4ogx",
+      "name": "text-basic",
+      "parent": "3odyul",
+      "children": [],
+      "settings": {
+        "text": "We go through as many details as needed to assure an accurate quotation, with hourly rates so there are no hidden fees.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "n4ijoo",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "j84adn"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 6rem)",
+          "bottom": "clamp(4rem, 8vw, 6rem)"
+        }
+      },
+      "label": "Service Grid"
+    },
+    {
+      "id": "j84adn",
+      "name": "container",
+      "parent": "n4ijoo",
+      "children": [
+        "yvhb44",
+        "wisryd"
+      ],
+      "settings": {
+        "_rowGap": "40px",
+        "_widthMax": "1280px"
+      }
+    },
+    {
+      "id": "yvhb44",
+      "name": "block",
+      "parent": "j84adn",
+      "children": [
+        "y3f1kg",
+        "mszglq",
+        "znwyv5"
+      ],
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "y3f1kg",
+      "name": "text-basic",
+      "parent": "yvhb44",
+      "children": [],
+      "settings": {
+        "text": "PACKING, MOVING, STORAGE & CLEANING",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "800",
+          "letter-spacing": "0.12em",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_margin": {
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "mszglq",
+      "name": "heading",
+      "parent": "yvhb44",
+      "children": [],
+      "settings": {
+        "text": "We Do It All",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(1.9rem, 3.4vw, 2.6rem)",
+          "font-weight": "800",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "14px"
+        }
+      }
+    },
+    {
+      "id": "znwyv5",
+      "name": "text-basic",
+      "parent": "yvhb44",
+      "children": [],
+      "settings": {
+        "text": "Crown Movers takes pride in offering a complete service to all our customers \u2014 packing, unpacking, disassembly, assembly, storage solutions, and deep cleaning included.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "wisryd",
+      "name": "div",
+      "parent": "j84adn",
+      "children": [
+        "gv08dc"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "22px",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      },
+      "label": "Service Cards (loops post_type=service)"
+    },
+    {
+      "id": "gv08dc",
+      "name": "block",
+      "parent": "wisryd",
+      "children": [
+        "vba4w8",
+        "rqxo0y"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "service"
+          ],
+          "posts_per_page": "12",
+          "orderby": "menu_order",
+          "order": "ASC"
+        },
+        "_border": {
+          "radius": {
+            "top": "24px",
+            "right": "24px",
+            "bottom": "24px",
+            "left": "24px"
+          }
+        },
+        "_overflow": "hidden",
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "38",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(0, 0, 0, 0.06)"
+          }
+        }
+      },
+      "label": "Service Card (loop template \u2014 post_type: service)"
+    },
+    {
+      "id": "vba4w8",
+      "name": "block",
+      "parent": "gv08dc",
+      "children": [
+        "4x6jrs"
+      ],
+      "settings": {
+        "_aspectRatio": "4/3",
+        "_position": "relative"
+      }
+    },
+    {
+      "id": "4x6jrs",
+      "name": "image",
+      "parent": "vba4w8",
+      "children": [],
+      "settings": {
+        "image": {
+          "useDynamicData": "{featured_image @fallback-image:'https://www.crownmovers.ca/wp-content/uploads/2022/07/Packing-And-Organizing.webp'}",
+          "size": "medium_large"
+        },
+        "altText": "{post_title}",
+        "_width": "100%",
+        "_height": "100%",
+        "_objectFit": "cover"
+      }
+    },
+    {
+      "id": "rqxo0y",
+      "name": "block",
+      "parent": "gv08dc",
+      "children": [
+        "4836cj",
+        "945q32"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "22px",
+          "right": "22px",
+          "bottom": "24px",
+          "left": "22px"
+        },
+        "_rowGap": "8px"
+      }
+    },
+    {
+      "id": "4836cj",
+      "name": "heading",
+      "parent": "rqxo0y",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.1875rem",
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "945q32",
+      "name": "text-basic",
+      "parent": "rqxo0y",
+      "children": [],
+      "settings": {
+        "text": "{acf_short_description}",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.55",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "futlxr",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "vusgj8"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 6rem)",
+          "bottom": "clamp(4rem, 8vw, 6rem)"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      },
+      "label": "Testimonials"
+    },
+    {
+      "id": "vusgj8",
+      "name": "container",
+      "parent": "futlxr",
+      "children": [
+        "c0w5s0",
+        "eyi61s"
+      ],
+      "settings": {
+        "_rowGap": "40px",
+        "_widthMax": "1100px"
+      }
+    },
+    {
+      "id": "c0w5s0",
+      "name": "block",
+      "parent": "vusgj8",
+      "children": [
+        "b72tu2",
+        "w1ujpl"
+      ],
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "b72tu2",
+      "name": "heading",
+      "parent": "c0w5s0",
+      "children": [],
+      "settings": {
+        "text": "What Our Clients Have To Say",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(1.9rem, 3.4vw, 2.6rem)",
+          "font-weight": "800",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_margin": {
+          "bottom": "12px"
+        }
+      }
+    },
+    {
+      "id": "w1ujpl",
+      "name": "text-basic",
+      "parent": "c0w5s0",
+      "children": [],
+      "settings": {
+        "text": "Crown Movers is proud of how we treat every move we make.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "eyi61s",
+      "name": "div",
+      "parent": "vusgj8",
+      "children": [
+        "8ofjlh"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "22px",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      },
+      "label": "Testimonial Cards (loops post_type=testimonial)"
+    },
+    {
+      "id": "8ofjlh",
+      "name": "block",
+      "parent": "eyi61s",
+      "children": [
+        "ue4c64",
+        "mdgsko",
+        "v8ltbj"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "testimonial"
+          ],
+          "posts_per_page": "3",
+          "orderby": "date",
+          "order": "DESC"
+        },
+        "_padding": {
+          "top": "28px",
+          "right": "28px",
+          "bottom": "28px",
+          "left": "28px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "24px",
+            "right": "24px",
+            "bottom": "24px",
+            "left": "24px"
+          },
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.14)"
+          }
+        },
+        "_rowGap": "16px"
+      },
+      "label": "Testimonial Card (loop template \u2014 post_type: testimonial)"
+    },
+    {
+      "id": "ue4c64",
+      "name": "text-basic",
+      "parent": "8ofjlh",
+      "children": [],
+      "settings": {
+        "text": "\u201c{acf_pull_quote}\u201d",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "font-weight": "800",
+          "font-style": "italic",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "mdgsko",
+      "name": "text",
+      "parent": "8ofjlh",
+      "children": [],
+      "settings": {
+        "text": "<p>{post_excerpt}</p>",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "v8ltbj",
+      "name": "block",
+      "parent": "8ofjlh",
+      "children": [
+        "ykpzim",
+        "wb79ew"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "12px",
+        "_margin": {
+          "top": "6px"
+        }
+      }
+    },
+    {
+      "id": "ykpzim",
+      "name": "image",
+      "parent": "v8ltbj",
+      "children": [],
+      "settings": {
+        "image": {
+          "useDynamicData": "{featured_image @fallback-image:'https://www.crownmovers.ca/wp-content/uploads/2022/07/brucerickerd-movers-review-crown-movers-Montreal-1.webp'}",
+          "size": "thumbnail"
+        },
+        "altText": "{post_title}",
+        "_width": "44px",
+        "_height": "44px",
+        "_objectFit": "cover",
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        }
+      }
+    },
+    {
+      "id": "wb79ew",
+      "name": "block",
+      "parent": "v8ltbj",
+      "children": [
+        "ygs3xt",
+        "r28nuy"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "ygs3xt",
+      "name": "text-basic",
+      "parent": "wb79ew",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "span",
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "r28nuy",
+      "name": "text-basic",
+      "parent": "wb79ew",
+      "children": [],
+      "settings": {
+        "text": "{acf_role}",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "3aeee7",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "rep27w"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "56px",
+          "bottom": "56px"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "bottom": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(17, 17, 17, 0.08)"
+          }
+        }
+      },
+      "label": "Trusted Partners"
+    },
+    {
+      "id": "rep27w",
+      "name": "container",
+      "parent": "3aeee7",
+      "children": [
+        "efk26s",
+        "kftjw3"
+      ],
+      "settings": {
+        "_rowGap": "26px",
+        "_widthMax": "1200px"
+      }
+    },
+    {
+      "id": "efk26s",
+      "name": "text-basic",
+      "parent": "rep27w",
+      "children": [],
+      "settings": {
+        "text": "OUR NETWORK OF TRUSTED PARTNERS",
+        "tag": "p",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "700",
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          },
+          "text-align": "center",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.1em"
+        }
+      }
+    },
+    {
+      "id": "kftjw3",
+      "name": "div",
+      "parent": "rep27w",
+      "children": [
+        "z3ypfg"
+      ],
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(auto-fit, minmax(140px, 1fr))",
+        "_gridGap": "32px",
+        "_alignItemsGrid": "center",
+        "_justifyItemsGrid": "center"
+      },
+      "label": "Partner Logos (loops post_type=partner)"
+    },
+    {
+      "id": "z3ypfg",
+      "name": "image",
+      "parent": "kftjw3",
+      "children": [],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "partner"
+          ],
+          "posts_per_page": "24",
+          "orderby": "menu_order",
+          "order": "ASC"
+        },
+        "image": {
+          "useDynamicData": "{featured_image}",
+          "size": "medium"
+        },
+        "altText": "{post_title}",
+        "_height": "36px",
+        "_objectFit": "contain",
+        "_cssFilters": {
+          "grayscale": "100",
+          "opacity": "65"
+        },
+        "_cssTransition": "filter 0.2s ease, opacity 0.2s ease",
+        "_cssFilters:hover": {
+          "grayscale": "0",
+          "opacity": "100"
+        }
+      },
+      "label": "Partner Logo (loop template \u2014 post_type: partner)"
+    },
+    {
+      "id": "nad9ek",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "9p96ry"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(4rem, 8vw, 6rem)",
+          "bottom": "clamp(4rem, 8vw, 6rem)"
+        }
+      },
+      "label": "FAQ"
+    },
+    {
+      "id": "9p96ry",
+      "name": "container",
+      "parent": "nad9ek",
+      "children": [
+        "5mrm25",
+        "2fvke6"
+      ],
+      "settings": {
+        "_rowGap": "40px",
+        "_widthMax": "820px"
+      }
+    },
+    {
+      "id": "5mrm25",
+      "name": "heading",
+      "parent": "9p96ry",
+      "children": [],
+      "settings": {
+        "text": "Moving FAQ",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(1.9rem, 3.4vw, 2.6rem)",
+          "font-weight": "800",
+          "text-align": "center",
+          "letter-spacing": "-0.02em",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "2fvke6",
+      "name": "accordion-nested",
+      "parent": "9p96ry",
+      "children": [
+        "5u0xh3"
+      ],
+      "settings": {
+        "faqSchema": true,
+        "expandFirstItem": true,
+        "titlePadding": {
+          "top": "20px",
+          "right": "24px",
+          "bottom": "20px",
+          "left": "24px"
+        },
+        "contentPadding": {
+          "top": "0",
+          "right": "24px",
+          "bottom": "24px",
+          "left": "24px"
+        }
+      },
+      "label": "FAQ Accordion"
+    },
+    {
+      "id": "5u0xh3",
+      "name": "block",
+      "parent": "2fvke6",
+      "children": [
+        "f2mc29",
+        "h85pen"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "acf_faq_items"
+        },
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.15)"
+          },
+          "radius": {
+            "top": "18px",
+            "right": "18px",
+            "bottom": "18px",
+            "left": "18px"
+          }
+        },
+        "_margin": {
+          "bottom": "12px"
+        },
+        "_overflow": "hidden"
+      },
+      "label": "Item (loop template \u2014 objectType: acf_faq_items \u2014 see acf-json/README.md)"
+    },
+    {
+      "id": "f2mc29",
+      "name": "block",
+      "parent": "5u0xh3",
+      "children": [
+        "ia6zx8",
+        "y8nwes"
+      ],
+      "settings": {
+        "_alignItems": "center",
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_cursor": "pointer",
+        "_hidden": {
+          "_cssClasses": "accordion-title-wrapper"
+        }
+      },
+      "label": "Title"
+    },
+    {
+      "id": "ia6zx8",
+      "name": "heading",
+      "parent": "f2mc29",
+      "children": [],
+      "settings": {
+        "text": "{acf_faq_items_question}",
+        "tag": "h3",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "font-weight": "700",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "y8nwes",
+      "name": "icon",
+      "parent": "f2mc29",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "iconSize": "1em",
+        "isAccordionIcon": true,
+        "iconColor": {
+          "raw": "var(--primary)"
+        }
+      }
+    },
+    {
+      "id": "h85pen",
+      "name": "block",
+      "parent": "5u0xh3",
+      "children": [
+        "iqqnjq"
+      ],
+      "settings": {
+        "_hidden": {
+          "_cssClasses": "accordion-content-wrapper"
+        }
+      },
+      "label": "Content"
+    },
+    {
+      "id": "iqqnjq",
+      "name": "text-basic",
+      "parent": "h85pen",
+      "children": [],
+      "settings": {
+        "text": "{acf_faq_items_answer}",
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-semi-dark)"
+          },
+          "line-height": "1.65"
+        }
+      }
+    },
+    {
+      "id": "9kefkf",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "783rzl"
+      ],
+      "settings": {
+        "_padding": {
+          "top": "clamp(3.5rem, 7vw, 5.5rem)",
+          "bottom": "clamp(3.5rem, 7vw, 5.5rem)"
+        },
+        "_cssCustom": "%root% { background: var(--gradient-ink); }"
+      },
+      "label": "Final CTA"
+    },
+    {
+      "id": "783rzl",
+      "name": "container",
+      "parent": "9kefkf",
+      "children": [
+        "5i2mnf",
+        "0dlh5i",
+        "itzjuk",
+        "dts2su"
+      ],
+      "settings": {
+        "_widthMax": "900px",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "5i2mnf",
+      "name": "text-basic",
+      "parent": "783rzl",
+      "children": [],
+      "settings": {
+        "text": "FREE QUOTE FOR MOVING SERVICES",
+        "tag": "span",
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "800",
+          "letter-spacing": "0.12em",
+          "color": {
+            "raw": "var(--tertiary)"
+          },
+          "text-align": "center"
+        },
+        "_margin": {
+          "bottom": "14px"
+        }
+      }
+    },
+    {
+      "id": "0dlh5i",
+      "name": "heading",
+      "parent": "783rzl",
+      "children": [],
+      "settings": {
+        "text": "Ready to plan your move?",
+        "tag": "h2",
+        "_typography": {
+          "font-family": "Montserrat",
+          "font-size": "clamp(2rem, 4vw, 3rem)",
+          "font-weight": "800",
+          "text-align": "center",
+          "letter-spacing": "-0.025em",
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_margin": {
+          "bottom": "16px"
+        }
+      }
+    },
+    {
+      "id": "itzjuk",
+      "name": "text-basic",
+      "parent": "783rzl",
+      "children": [],
+      "settings": {
+        "text": "Send us your moving date, addresses, and access details \u2014 the more we know, the better your estimate will be.",
+        "tag": "p",
+        "_typography": {
+          "font-size": "1.0625rem",
+          "line-height": "1.6",
+          "color": {
+            "rgb": "rgba(255,255,255,0.78)"
+          },
+          "text-align": "center"
+        },
+        "_widthMax": "560px",
+        "_margin": {
+          "bottom": "28px"
+        }
+      }
+    },
+    {
+      "id": "dts2su",
+      "name": "block",
+      "parent": "783rzl",
+      "children": [
+        "8fc6uc",
+        "l8igu6"
+      ],
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "16px",
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "12px",
+        "_width:mobile_portrait": "100%"
+      }
+    },
+    {
+      "id": "8fc6uc",
+      "name": "button",
+      "parent": "dts2su",
+      "children": [],
+      "settings": {
+        "text": "Get a Free Quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/free-quote/"
+        },
+        "size": "lg",
+        "_typography": {
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "font-weight": "800",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.06em",
+          "font-size": "0.875rem"
+        },
+        "_padding": {
+          "top": "18px",
+          "right": "34px",
+          "bottom": "18px",
+          "left": "34px"
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--primary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "var(--tertiary)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "34",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(254, 75, 3, 0.34)"
+          }
+        }
+      }
+    },
+    {
+      "id": "l8igu6",
+      "name": "button",
+      "parent": "dts2su",
+      "children": [],
+      "settings": {
+        "text": "Call (514) 606-4030",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+15146064030"
+        },
+        "size": "lg",
+        "outline": true,
+        "_typography": {
+          "color": {
+            "hex": "#ffffff"
+          },
+          "font-weight": "800",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.06em",
+          "font-size": "0.875rem"
+        },
+        "_padding": {
+          "top": "18px",
+          "right": "34px",
+          "bottom": "18px",
+          "left": "34px"
+        },
+        "_border": {
+          "width": {
+            "top": "2px",
+            "right": "2px",
+            "bottom": "2px",
+            "left": "2px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(255,255,255,0.35)"
+          },
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://staging.crownmovers.ca",
+  "version": "2.3.11",
+  "globalClasses": [],
+  "globalElements": []
+}

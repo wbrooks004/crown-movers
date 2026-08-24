@@ -1,0 +1,92 @@
+{
+    "key": "group_crown_homepage_stats",
+    "title": "Homepage Stats",
+    "fields": [
+        {
+            "key": "field_crown_stat_one_value",
+            "label": "Stat 1 - Value",
+            "name": "stat_one_value",
+            "type": "number",
+            "instructions": "Real value, e.g. 1000 for the animated \"1,000+ Moving Services Per Year\" counter (currently live at data-end=\"1000\").",
+            "required": 1,
+            "default_value": 1000
+        },
+        {
+            "key": "field_crown_stat_one_suffix",
+            "label": "Stat 1 - Suffix",
+            "name": "stat_one_suffix",
+            "type": "text",
+            "required": 0,
+            "default_value": "+"
+        },
+        {
+            "key": "field_crown_stat_one_label",
+            "label": "Stat 1 - Label",
+            "name": "stat_one_label",
+            "type": "text",
+            "required": 1,
+            "default_value": "Moving Services Per Year"
+        },
+        {
+            "key": "field_crown_stat_one_description",
+            "label": "Stat 1 - Supporting Line",
+            "name": "stat_one_description",
+            "type": "textarea",
+            "required": 0,
+            "rows": 2,
+            "default_value": "Our experience is unmatched! Our professional Montreal moving services guarantees a successful move every time."
+        },
+        {
+            "key": "field_crown_stat_two_value",
+            "label": "Stat 2 - Value",
+            "name": "stat_two_value",
+            "type": "number",
+            "instructions": "Real value, e.g. 29 for \"SAVE 29%\" (currently live at data-end=\"29\").",
+            "required": 1,
+            "default_value": 29
+        },
+        {
+            "key": "field_crown_stat_two_suffix",
+            "label": "Stat 2 - Suffix",
+            "name": "stat_two_suffix",
+            "type": "text",
+            "required": 0,
+            "default_value": "%"
+        },
+        {
+            "key": "field_crown_stat_two_label",
+            "label": "Stat 2 - Label",
+            "name": "stat_two_label",
+            "type": "text",
+            "required": 1,
+            "default_value": "Affordable Moving Service"
+        },
+        {
+            "key": "field_crown_stat_two_description",
+            "label": "Stat 2 - Supporting Line",
+            "name": "stat_two_description",
+            "type": "textarea",
+            "required": 0,
+            "rows": 2,
+            "default_value": "Crown's affordable moving services save you time and money! Crown Movers is 29% less expensive than our competitors."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Pre-filled with the real numbers currently live on crownmovers.ca so the homepage isn't blank on first import - update if these have changed since the last audit.",
+    "show_in_rest": 0
+}

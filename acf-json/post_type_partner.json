@@ -1,0 +1,38 @@
+{
+    "key": "post_type_crown_partner",
+    "title": "Trusted Partners",
+    "menu_order": 0,
+    "active": true,
+    "post_type": "partner",
+    "advanced_configuration": true,
+    "labels": {
+        "name": "Trusted Partners",
+        "singular_name": "Partner",
+        "add_new_item": "Add New Partner",
+        "edit_item": "Edit Partner",
+        "all_items": "All Partners"
+    },
+    "description": "Business partner logos for the 'Trusted Partners' strip. Title = company name; Featured Image = logo (transparent PNG/SVG).",
+    "public": true,
+    "hierarchical": false,
+    "show_in_menu": true,
+    "show_in_admin_bar": true,
+    "show_in_nav_menus": false,
+    "exclude_from_search": true,
+    "capability_type": "post",
+    "map_meta_cap": true,
+    "has_archive": false,
+    "rewrite": {
+        "permalink_rewrite": "post_type_key",
+        "with_front": "0"
+    },
+    "query_var": "post_type_key",
+    "menu_position": 23,
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-groups"
+    },
+    "supports": ["title", "thumbnail"],
+    "taxonomies": "",
+    "show_in_rest": 1
+}

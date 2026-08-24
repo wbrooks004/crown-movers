@@ -1,0 +1,54 @@
+{
+    "key": "group_crown_testimonial_details",
+    "title": "Testimonial Details",
+    "fields": [
+        {
+            "key": "field_crown_testimonial_role",
+            "label": "Role / Context",
+            "name": "role",
+            "type": "text",
+            "instructions": "e.g. \"Musician - Cirque du Soleil\". How the customer is credited under their name.",
+            "required": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_crown_testimonial_pull_quote",
+            "label": "Pull Quote",
+            "name": "pull_quote",
+            "type": "text",
+            "instructions": "Short highlight shown above the name, e.g. \"They Worked Their Butt Off!\". Leave blank to hide.",
+            "required": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_crown_testimonial_rating",
+            "label": "Rating",
+            "name": "rating",
+            "type": "number",
+            "instructions": "1-5 stars.",
+            "required": 0,
+            "default_value": 5,
+            "min": 1,
+            "max": 5,
+            "step": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "testimonial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "The review quote itself goes in the post Excerpt box; the customer name is the post Title.",
+    "show_in_rest": 0
+}

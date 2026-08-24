@@ -1,0 +1,33 @@
+{
+    "key": "group_crown_partner_details",
+    "title": "Partner Details",
+    "fields": [
+        {
+            "key": "field_crown_partner_website_url",
+            "label": "Website URL",
+            "name": "website_url",
+            "type": "url",
+            "instructions": "Optional. If set, the logo links out to the partner's site.",
+            "required": 0,
+            "placeholder": "https://"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "partner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}

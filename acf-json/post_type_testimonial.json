@@ -1,0 +1,38 @@
+{
+    "key": "post_type_crown_testimonial",
+    "title": "Testimonials",
+    "menu_order": 0,
+    "active": true,
+    "post_type": "testimonial",
+    "advanced_configuration": true,
+    "labels": {
+        "name": "Testimonials",
+        "singular_name": "Testimonial",
+        "add_new_item": "Add New Testimonial",
+        "edit_item": "Edit Testimonial",
+        "all_items": "All Testimonials"
+    },
+    "description": "Real customer reviews. Title = customer name; Excerpt = the review quote; Featured Image = customer photo (optional).",
+    "public": true,
+    "hierarchical": false,
+    "show_in_menu": true,
+    "show_in_admin_bar": true,
+    "show_in_nav_menus": false,
+    "exclude_from_search": true,
+    "capability_type": "post",
+    "map_meta_cap": true,
+    "has_archive": false,
+    "rewrite": {
+        "permalink_rewrite": "post_type_key",
+        "with_front": "0"
+    },
+    "query_var": "post_type_key",
+    "menu_position": 21,
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-format-quote"
+    },
+    "supports": ["title", "excerpt", "thumbnail"],
+    "taxonomies": "",
+    "show_in_rest": 1
+}
