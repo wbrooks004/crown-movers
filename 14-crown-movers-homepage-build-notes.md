@@ -1,62 +1,74 @@
-# Crown Movers Homepage — Build Notes (v2, rebuilt on ACSS)
+# Crown Movers Homepage — Build Notes (v3, pure BEM + ACSS variables)
 
-The first pass of `bricks-json/home.json` hand-rolled Bricks-native inline styling —
-per-element pixel padding/radius/shadow, manually specified grid breakpoints — instead of
-using the ACSS design system already built this session. That was wrong; this version fixes
-it. Same real content, completely different construction.
+Third pass. v1 hand-rolled inline pixel styling; v2 moved to ACSS's own utility classes
+(`.section`/`.container`/`.btn.primary`) but that meant guessing ACSS's exact compiled class
+names. This version follows your instruction directly: every element carries exactly one (or
+base + modifier) purpose-built BEM global class, and every value inside those classes is an
+ACSS variable — nothing else.
 
-## What changed
+## What's actually on each element now
 
-- **No magic-number pixels for structure.** Spacing, radius, and shadows come from ACSS's own
-  generated variables — confirmed live in `crown-movers-acss-settings.json`
-  (`option-space-variables`, `option-radius-variables`, `option-auto-grid-variables` are all
-  `"on"`; `section-padding-block` already maps to `var(--section-space-m)`) — not a parallel
-  hand-rolled scale. `var(--space-s/m/l/xl)`, `var(--radius)`/`var(--radius-s)`/`var(--radius-l)`,
-  `var(--box-shadow-1/2/3)` throughout instead of `"22px"`, `"18px"` etc.
-- **No bespoke per-element CSS for structure.** `section`, `container`, `grid`/`grid--2`/
-  `grid--3` are applied as plain ACSS utility classes (`_cssClasses: "grid grid--3"`) — ACSS's
-  own compiled stylesheet defines these once the settings are imported; Bricks doesn't
-  redefine them. Same for the auto-grid responsive collapse (mobile/tablet column counts) —
-  that's what `option-auto-grid-variables` is for, so there's no hand-written
-  `_gridTemplateColumns:tablet_portrait` override anywhere in this version.
-- **Buttons use ACSS's own button classes** (`_cssClasses: "btn primary"`,
-  `"btn outline primary"`) instead of hand-rolled gradient/shadow/padding per button. This
-  means the 18-fix accessibility pass from earlier — every `btn-{role}-*-text` color checked
-  against WCAG and corrected — now actually applies to every button on the page automatically,
-  which it didn't in the first version.
-- **A small, disciplined set of custom global classes** for the few things ACSS doesn't
-  natively provide (`option-cards` is `"off"` in your settings, so there's no native `.card`) —
-  `card`, `eyebrow`, `stack`, `cluster`, `icon-circle`, `logo-item`, plus background variants
-  `section--warm`/`section--dark`. 11 classes total, defined once in the JSON's
-  `globalClasses` array, reused everywhere via `_cssGlobalClasses` — not invented per-section.
-  Names match the project's own `class-map.csv` (from `crown-movers-frontend-reference.zip`)
-  where that taxonomy applies.
-- Result: 44.9KB vs. the first version's 56.9KB, despite doing more (reusable classes vs.
-  duplicated inline settings on every element).
+Every one of the 107 nodes in `bricks-json/home.json` holds **only** content — `text`, `tag`,
+`link`, `image`, `icon`, `hasLoop`/`query` — plus `_cssGlobalClasses` pointing at 1-2 BEM
+classes. No inline `_padding`, `_typography`, `_background`, `_border`, anything. A validation
+pass in the generator script asserts this for every node (checked: 0 elements have styling
+settings outside a class reference) and asserts no element carries a plain `_cssClasses`
+string at all — this fixes the earlier version's dependency on guessing ACSS's own compiled
+selector names, since I'm no longer attaching ACSS's utility classes directly; I'm authoring
+the BEM classes myself and pulling in ACSS's **variables** as values, which I have much higher
+confidence in (they're literally the keys I set in `crown-movers-acss-settings.json`).
 
-## One thing genuinely worth a 30-second check
+## Contextual spacing/sizing, not the raw scale
 
-The exact class strings ACSS compiles to (`.btn.primary` vs. some other convention,
-`.grid--3`, `--radius-l`) are my best-confidence read of ACSS's own settings-key naming
-(`btn-primary-*` implies `.btn` + a bare `primary` class; the `s/m/l/xl` suffix convention is
-directly confirmed elsewhere in your settings — `text-s-max`, `contextual-content-gap: var(
---space-m)`, etc.) and the project's own `class-map.csv` for the grid/section names — not
-something I've inspected in ACSS's actual compiled output from this environment, since I don't
-have a working connection to the Bricks builder itself. After import: open one button in the
-builder and confirm `.btn.primary` picks up the orange. If a string is slightly off, it's a
-find-and-replace on that one class name in the JSON, not a rebuild.
+Per your note, spacing/sizing pulls from ACSS's *contextual* tokens rather than picking a
+specific rung on the raw scale by hand:
 
-## Everything from the first version's notes still applies
+- `var(--content-gap)` — gap between stacked content (paragraph-to-button, card padding).
+  Confirmed real: `contextual-content-gap: var(--space-m)` in your settings.
+- `var(--container-gap)` — horizontal gutter on the hero row. Confirmed:
+  `contextual-container-gap: var(--space-xl)`.
+- `var(--grid-gap)` — every card-grid gap. Confirmed: `contextual-grid-gap: var(--space-m)`.
+- `var(--section-space-m)` — every section's vertical padding. Confirmed 1:1, it was already
+  wired to `section-padding-block` in your settings.
+- `var(--col-width-s/m/l)` (13/25/38rem, confirmed real settings) for content-width
+  constraints — hero lead paragraph, section headers, FAQ/CTA column widths — instead of
+  picking arbitrary rem numbers.
+- `var(--h1)`/`var(--h2)`/`var(--h3)` and `var(--text-s)`/`var(--text-m)`/`var(--text-l)` for
+  every font-size. These are the one part of this pass I haven't hand-verified against
+  compiled output (no live connection to your builder from here) — but they're strongly
+  implied by settings that are directly confirmed present and active: `heading-scale: 1.333`,
+  `text-scale: 1.333`, `base-heading-desk/mob: 20/18`, `base-text-desk/mob: 18/16`. Font
+  *family*/*weight*/*letter-spacing* stay explicit brand choices (Montserrat 800 etc.) — only
+  the size value comes from the scale.
 
-- rem base confirmed at 16px from your own `root-font-size: 100` setting.
-- Nothing renders until the CPT posts exist — see `13-crown-movers-content-seed.md` and
+## Buttons carry the accessibility fix directly, not through an assumed selector
+
+`btn--primary` sets `color: var(--secondary)` (ink) on the orange gradient — the exact
+resolved pairing from the earlier WCAG pass (5.59:1), written directly into the class I
+authored rather than trusted to an ACSS-generated `.btn.primary` selector whose exact string I
+was never fully certain of. `btn--secondary` (ink bg, white text, 18.88:1) and
+`btn--outline-primary` (transparent bg, white text, orange border — for the CTA section's dark
+background, mirroring the live site's own `crown-simple-hero-button--dark` pattern) follow the
+same logic. One minor tradeoff worth naming: this means the button colors now live in two
+places (the ACSS settings file and these BEM classes) rather than one — if you ever change the
+brand orange, both need updating. Everything else (spacing, sizing, other colors) still flows
+from the ACSS variables live, so this is the one deliberate exception.
+
+## 9 blocks, 77 BEM classes total
+
+`hero`, `stats`/`stat`, `quicklinks`/`quicklink`, `keys`/`key`, `services`/`service`,
+`testimonials`/`testimonial`, `partners`/`partner`, `faq`, `cta` — each section is its own BEM
+block with `__element` children; `btn` and `card` are shared component blocks reused across
+sections (e.g. `card` backs the stat/quicklink/key/service/testimonial/faq-item surfaces, so a
+future change to card styling changes all of them at once).
+
+## Still true from earlier passes
+
+- rem base confirmed at 16px (`root-font-size: 100` in your ACSS settings).
+- Nothing renders until the CPT posts exist — `13-crown-movers-content-seed.md` +
   `acf-json/README.md`.
 - `/commercial-moving/` is a guessed slug — verify or send me the real one.
-- The FAQ loop's `objectType: "acf_faq_items"` binding is the one query worth a spot-check in
-  the builder (vs. the 3 CPT loops, which use the more robust `post_type` form).
-- Stat counter numbers (1,000 / 29) are hardcoded literals, not ACF-bound — Bricks' `counter`
-  element needs a real number to animate from/to, and I didn't want to bet that on an unverified
-  dynamic-tag binding for a purely decorative animation.
-- Image URLs point at the live site as placeholders — swap for your new media-library URLs
-  before production, don't hotlink. See `12-crown-movers-asset-checklist.md`.
-- Header/footer aren't in this JSON — separate Bricks templates, not page content.
+- The FAQ loop's `objectType: "acf_faq_items"` binding is worth a spot-check in the builder.
+- Stat counter numbers (1,000 / 29) are literals, not ACF-bound — see earlier notes for why.
+- Image URLs point at the live site as placeholders — swap before production.
+- Header/footer are separate Bricks templates, not part of this page JSON.
