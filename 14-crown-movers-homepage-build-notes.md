@@ -6,6 +6,38 @@ top of the old structure — it's a from-scratch rebuild to that reference, usin
 ACSS-variable discipline v3/v4 established, now extended to the header and footer (previously
 deferred as separate, not-yet-started work).
 
+## v5.1 — fixes from your real render (the first actual empirical test in this project)
+
+You pasted `home.json` into the real builder and sent a screenshot — the first time anything
+in this project has been checked against an actual render instead of just JSON review. It
+surfaced real bugs, root-caused and fixed rather than guessed at:
+
+- **Dark sections (stats bar, quote-CTA) rendered blank/white with invisible white-on-white
+  text; button text/gradient didn't apply.** All traced to one cause: I'd used `_cssCustom`
+  (raw CSS injection) for backgrounds/gradients/shadows in several places, and it wasn't
+  reliably beating Bricks' own compiled class rules. Converted all 7 such usages to Bricks'
+  native structured settings instead — `_gradient` for backgrounds (confirmed exact shape from
+  the bricks skill's own reference docs), `_boxShadow` for shadows (decomposed into
+  offsetX/offsetY/blur/spread using the literal numbers from your own
+  `crown-movers-acss-settings.json` box-shadow tokens, not re-guessed), plain `_typography.color`
+  for button text. The gradient-hover-sweep effect on primary buttons now uses a native
+  `_gradient:hover` (swapped color-stop order) instead of a hand-rolled CSS transition — this
+  one's a slightly newer technique for this project, worth a quick look once you re-test.
+- **The "Why Crown" and closing-CTA photos rendered as a broken oval blob; the hero's "3,000+"
+  badge escaped to the very bottom of the page instead of sitting on the hero photo.** Same root
+  cause for both: I'd combined `_height:"100%"` with `_aspectRatio` on the image, which the
+  skill's own docs describe as alternatives, not a pair — the conflict was almost certainly
+  collapsing the image's container, which cascades into the hero badge's positioning context
+  too. Fixed by dropping the redundant `_height` and keeping only `_aspectRatio` + `_width:100%`.
+- **Services-band icons looked oversized and boxy against a pink tint**, not the clean minimal
+  line-icon style in your reference. Dropped the padded/tinted chip wrapper — bare icon now,
+  matching the reference.
+
+I can't render Bricks myself from here, so this loop — you test in the real builder, send what's
+actually wrong, I root-cause against your evidence rather than re-guessing — is the real
+verification path for this project from here on. Worth another look and another screenshot
+after this push.
+
 ## Three files now, two different delivery mechanisms
 
 | File | Format | How you use it |
