@@ -566,7 +566,41 @@
       "id": "c00015",
       "name": "btn--primary",
       "settings": {
-        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%); background-size: 160% 160%; background-position: 0% 0%; color: var(--secondary); box-shadow: var(--box-shadow-3); }%root%:hover { background-position: 100% 100%; }"
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--primary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "var(--tertiary)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "35",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "color-mix(in srgb, var(--primary) 35%, transparent)"
+          }
+        }
       }
     }
   ],

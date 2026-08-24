@@ -622,9 +622,9 @@
       "parent": "e00037",
       "children": [
         "e00043",
-        "e00048",
-        "e00053",
-        "e00058"
+        "e00047",
+        "e00051",
+        "e00055"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -639,8 +639,8 @@
       "parent": "e00042",
       "children": [
         "e00044",
-        "e00046",
-        "e00047"
+        "e00045",
+        "e00046"
       ],
       "settings": {
         "tag": "a",
@@ -657,34 +657,23 @@
     },
     {
       "id": "e00044",
-      "name": "block",
-      "parent": "e00043",
-      "children": [
-        "e00045"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "c00042"
-        ]
-      },
-      "label": "icon wrap"
-    },
-    {
-      "id": "e00045",
       "name": "icon",
-      "parent": "e00044",
+      "parent": "e00043",
       "children": [],
       "settings": {
         "icon": {
           "library": "ionicons",
           "icon": "ion-ios-home"
         },
-        "iconSize": "1.6rem"
+        "iconSize": "1.75rem",
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
       },
       "label": "icon (best-guess ionicons name 'ion-ios-home' \u2014 verify it renders)"
     },
     {
-      "id": "e00046",
+      "id": "e00045",
       "name": "text-basic",
       "parent": "e00043",
       "children": [],
@@ -698,7 +687,7 @@
       "label": "title"
     },
     {
-      "id": "e00047",
+      "id": "e00046",
       "name": "text-basic",
       "parent": "e00043",
       "children": [],
@@ -712,13 +701,13 @@
       "label": "text"
     },
     {
-      "id": "e00048",
+      "id": "e00047",
       "name": "block",
       "parent": "e00042",
       "children": [
+        "e00048",
         "e00049",
-        "e00051",
-        "e00052"
+        "e00050"
       ],
       "settings": {
         "tag": "a",
@@ -733,37 +722,26 @@
       "label": "Long-Distance (links to /services/ base (confirmed CPT slug), exact post slug unverified)"
     },
     {
-      "id": "e00049",
-      "name": "block",
-      "parent": "e00048",
-      "children": [
-        "e00050"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "c00042"
-        ]
-      },
-      "label": "icon wrap"
-    },
-    {
-      "id": "e00050",
+      "id": "e00048",
       "name": "icon",
-      "parent": "e00049",
+      "parent": "e00047",
       "children": [],
       "settings": {
         "icon": {
           "library": "ionicons",
           "icon": "ion-ios-car"
         },
-        "iconSize": "1.6rem"
+        "iconSize": "1.75rem",
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
       },
       "label": "icon (best-guess ionicons name 'ion-ios-car' \u2014 verify it renders)"
     },
     {
-      "id": "e00051",
+      "id": "e00049",
       "name": "text-basic",
-      "parent": "e00048",
+      "parent": "e00047",
       "children": [],
       "settings": {
         "text": "Long-Distance",
@@ -775,9 +753,9 @@
       "label": "title"
     },
     {
-      "id": "e00052",
+      "id": "e00050",
       "name": "text-basic",
-      "parent": "e00048",
+      "parent": "e00047",
       "children": [],
       "settings": {
         "text": "Across Quebec and Canada",
@@ -789,13 +767,13 @@
       "label": "text"
     },
     {
-      "id": "e00053",
+      "id": "e00051",
       "name": "block",
       "parent": "e00042",
       "children": [
-        "e00054",
-        "e00056",
-        "e00057"
+        "e00052",
+        "e00053",
+        "e00054"
       ],
       "settings": {
         "tag": "a",
@@ -810,37 +788,26 @@
       "label": "Commercial Moving (links to /services/ base (confirmed CPT slug), exact post slug unverified)"
     },
     {
-      "id": "e00054",
-      "name": "block",
-      "parent": "e00053",
-      "children": [
-        "e00055"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "c00042"
-        ]
-      },
-      "label": "icon wrap"
-    },
-    {
-      "id": "e00055",
+      "id": "e00052",
       "name": "icon",
-      "parent": "e00054",
+      "parent": "e00051",
       "children": [],
       "settings": {
         "icon": {
           "library": "ionicons",
           "icon": "ion-ios-briefcase"
         },
-        "iconSize": "1.6rem"
+        "iconSize": "1.75rem",
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
       },
       "label": "icon (best-guess ionicons name 'ion-ios-briefcase' \u2014 verify it renders)"
     },
     {
-      "id": "e00056",
+      "id": "e00053",
       "name": "text-basic",
-      "parent": "e00053",
+      "parent": "e00051",
       "children": [],
       "settings": {
         "text": "Commercial Moving",
@@ -852,9 +819,9 @@
       "label": "title"
     },
     {
-      "id": "e00057",
+      "id": "e00054",
       "name": "text-basic",
-      "parent": "e00053",
+      "parent": "e00051",
       "children": [],
       "settings": {
         "text": "Offices, retail and workspaces",
@@ -866,13 +833,13 @@
       "label": "text"
     },
     {
-      "id": "e00058",
+      "id": "e00055",
       "name": "block",
       "parent": "e00042",
       "children": [
-        "e00059",
-        "e00061",
-        "e00062"
+        "e00056",
+        "e00057",
+        "e00058"
       ],
       "settings": {
         "tag": "a",
@@ -887,37 +854,26 @@
       "label": "Packing & Storage (links to a confirmed real destination)"
     },
     {
-      "id": "e00059",
-      "name": "block",
-      "parent": "e00058",
-      "children": [
-        "e00060"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "c00042"
-        ]
-      },
-      "label": "icon wrap"
-    },
-    {
-      "id": "e00060",
+      "id": "e00056",
       "name": "icon",
-      "parent": "e00059",
+      "parent": "e00055",
       "children": [],
       "settings": {
         "icon": {
           "library": "ionicons",
           "icon": "ion-ios-cube"
         },
-        "iconSize": "1.6rem"
+        "iconSize": "1.75rem",
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
       },
       "label": "icon (best-guess ionicons name 'ion-ios-cube' \u2014 verify it renders)"
     },
     {
-      "id": "e00061",
+      "id": "e00057",
       "name": "text-basic",
-      "parent": "e00058",
+      "parent": "e00055",
       "children": [],
       "settings": {
         "text": "Packing & Storage",
@@ -929,9 +885,9 @@
       "label": "title"
     },
     {
-      "id": "e00062",
+      "id": "e00058",
       "name": "text-basic",
-      "parent": "e00058",
+      "parent": "e00055",
       "children": [],
       "settings": {
         "text": "Professional packing and secure storage",
@@ -943,11 +899,11 @@
       "label": "text"
     },
     {
-      "id": "e00063",
+      "id": "e00059",
       "name": "section",
       "parent": 0,
       "children": [
-        "e00064"
+        "e00060"
       ],
       "settings": {
         "tag": "section",
@@ -958,12 +914,12 @@
       "label": "Why Crown (split)"
     },
     {
-      "id": "e00064",
+      "id": "e00060",
       "name": "container",
-      "parent": "e00063",
+      "parent": "e00059",
       "children": [
-        "e00065",
-        "e00067"
+        "e00061",
+        "e00063"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -973,19 +929,19 @@
       "label": "container--split"
     },
     {
-      "id": "e00065",
+      "id": "e00061",
       "name": "block",
-      "parent": "e00064",
+      "parent": "e00060",
       "children": [
-        "e00066"
+        "e00062"
       ],
       "settings": {},
       "label": "why__media"
     },
     {
-      "id": "e00066",
+      "id": "e00062",
       "name": "image",
-      "parent": "e00065",
+      "parent": "e00061",
       "children": [],
       "settings": {
         "image": {
@@ -999,15 +955,15 @@
       "label": "why image (real asset, placeholder crop)"
     },
     {
-      "id": "e00067",
+      "id": "e00063",
       "name": "block",
-      "parent": "e00064",
+      "parent": "e00060",
       "children": [
-        "e00068",
-        "e00069",
-        "e00070",
-        "e00071",
-        "e00084"
+        "e00064",
+        "e00065",
+        "e00066",
+        "e00067",
+        "e00080"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1017,9 +973,9 @@
       "label": "why__content"
     },
     {
-      "id": "e00068",
+      "id": "e00064",
       "name": "text-basic",
-      "parent": "e00067",
+      "parent": "e00063",
       "children": [],
       "settings": {
         "text": "Why Crown",
@@ -1031,9 +987,9 @@
       "label": "eyebrow"
     },
     {
-      "id": "e00069",
+      "id": "e00065",
       "name": "heading",
-      "parent": "e00067",
+      "parent": "e00063",
       "children": [],
       "settings": {
         "text": "Clear plan. Careful hands. A smoother move.",
@@ -1045,9 +1001,9 @@
       "label": "title"
     },
     {
-      "id": "e00070",
+      "id": "e00066",
       "name": "text-basic",
-      "parent": "e00067",
+      "parent": "e00063",
       "children": [],
       "settings": {
         "text": "We plan every detail so your move is efficient, protected and stress-free from start to finish.",
@@ -1059,14 +1015,14 @@
       "label": "text"
     },
     {
-      "id": "e00071",
+      "id": "e00067",
       "name": "block",
-      "parent": "e00067",
+      "parent": "e00063",
       "children": [
-        "e00072",
-        "e00075",
-        "e00078",
-        "e00081"
+        "e00068",
+        "e00071",
+        "e00074",
+        "e00077"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1076,12 +1032,12 @@
       "label": "why__list"
     },
     {
-      "id": "e00072",
+      "id": "e00068",
       "name": "block",
-      "parent": "e00071",
+      "parent": "e00067",
       "children": [
-        "e00073",
-        "e00074"
+        "e00069",
+        "e00070"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1091,9 +1047,9 @@
       "label": "checklist item"
     },
     {
-      "id": "e00073",
+      "id": "e00069",
       "name": "icon",
-      "parent": "e00072",
+      "parent": "e00068",
       "children": [],
       "settings": {
         "icon": {
@@ -1108,9 +1064,9 @@
       "label": "check icon (confirmed real ionicons name)"
     },
     {
-      "id": "e00074",
+      "id": "e00070",
       "name": "text-basic",
-      "parent": "e00072",
+      "parent": "e00068",
       "children": [],
       "settings": {
         "text": "Accurate estimates",
@@ -1122,12 +1078,12 @@
       "label": "text"
     },
     {
-      "id": "e00075",
+      "id": "e00071",
       "name": "block",
-      "parent": "e00071",
+      "parent": "e00067",
       "children": [
-        "e00076",
-        "e00077"
+        "e00072",
+        "e00073"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1137,9 +1093,9 @@
       "label": "checklist item"
     },
     {
-      "id": "e00076",
+      "id": "e00072",
       "name": "icon",
-      "parent": "e00075",
+      "parent": "e00071",
       "children": [],
       "settings": {
         "icon": {
@@ -1154,9 +1110,9 @@
       "label": "check icon (confirmed real ionicons name)"
     },
     {
-      "id": "e00077",
+      "id": "e00073",
       "name": "text-basic",
-      "parent": "e00075",
+      "parent": "e00071",
       "children": [],
       "settings": {
         "text": "Furniture protection included",
@@ -1168,12 +1124,12 @@
       "label": "text"
     },
     {
-      "id": "e00078",
+      "id": "e00074",
       "name": "block",
-      "parent": "e00071",
+      "parent": "e00067",
       "children": [
-        "e00079",
-        "e00080"
+        "e00075",
+        "e00076"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1183,9 +1139,9 @@
       "label": "checklist item"
     },
     {
-      "id": "e00079",
+      "id": "e00075",
       "name": "icon",
-      "parent": "e00078",
+      "parent": "e00074",
       "children": [],
       "settings": {
         "icon": {
@@ -1200,9 +1156,9 @@
       "label": "check icon (confirmed real ionicons name)"
     },
     {
-      "id": "e00080",
+      "id": "e00076",
       "name": "text-basic",
-      "parent": "e00078",
+      "parent": "e00074",
       "children": [],
       "settings": {
         "text": "Experienced, trained crews",
@@ -1214,12 +1170,12 @@
       "label": "text"
     },
     {
-      "id": "e00081",
+      "id": "e00077",
       "name": "block",
-      "parent": "e00071",
+      "parent": "e00067",
       "children": [
-        "e00082",
-        "e00083"
+        "e00078",
+        "e00079"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1229,9 +1185,9 @@
       "label": "checklist item"
     },
     {
-      "id": "e00082",
+      "id": "e00078",
       "name": "icon",
-      "parent": "e00081",
+      "parent": "e00077",
       "children": [],
       "settings": {
         "icon": {
@@ -1246,9 +1202,9 @@
       "label": "check icon (confirmed real ionicons name)"
     },
     {
-      "id": "e00083",
+      "id": "e00079",
       "name": "text-basic",
-      "parent": "e00081",
+      "parent": "e00077",
       "children": [],
       "settings": {
         "text": "Assembly & disassembly",
@@ -1260,9 +1216,9 @@
       "label": "text"
     },
     {
-      "id": "e00084",
+      "id": "e00080",
       "name": "text-link",
-      "parent": "e00067",
+      "parent": "e00063",
       "children": [],
       "settings": {
         "text": "Why Montreal Trusts Crown \u2192",
@@ -1277,11 +1233,11 @@
       "label": "link (confirmed real page)"
     },
     {
-      "id": "e00085",
+      "id": "e00081",
       "name": "section",
       "parent": 0,
       "children": [
-        "e00086"
+        "e00082"
       ],
       "settings": {
         "tag": "section",
@@ -1292,12 +1248,12 @@
       "label": "Get a Quote (dark, embedded WS Form)"
     },
     {
-      "id": "e00086",
+      "id": "e00082",
       "name": "container",
-      "parent": "e00085",
+      "parent": "e00081",
       "children": [
-        "e00087",
-        "e00100"
+        "e00083",
+        "e00096"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1307,13 +1263,13 @@
       "label": "quote-cta__inner"
     },
     {
-      "id": "e00087",
+      "id": "e00083",
       "name": "block",
-      "parent": "e00086",
+      "parent": "e00082",
       "children": [
-        "e00088",
-        "e00089",
-        "e00090"
+        "e00084",
+        "e00085",
+        "e00086"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1323,9 +1279,9 @@
       "label": "quote-cta__content"
     },
     {
-      "id": "e00088",
+      "id": "e00084",
       "name": "heading",
-      "parent": "e00087",
+      "parent": "e00083",
       "children": [],
       "settings": {
         "text": "Get a clear starting estimate.",
@@ -1337,9 +1293,9 @@
       "label": "title"
     },
     {
-      "id": "e00089",
+      "id": "e00085",
       "name": "text-basic",
-      "parent": "e00087",
+      "parent": "e00083",
       "children": [],
       "settings": {
         "text": "Tell us a few details and we'll provide a personalized estimate for your move.",
@@ -1351,13 +1307,13 @@
       "label": "text"
     },
     {
-      "id": "e00090",
+      "id": "e00086",
       "name": "block",
-      "parent": "e00087",
+      "parent": "e00083",
       "children": [
-        "e00091",
-        "e00094",
-        "e00097"
+        "e00087",
+        "e00090",
+        "e00093"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1367,12 +1323,12 @@
       "label": "quote-cta__trust"
     },
     {
-      "id": "e00091",
+      "id": "e00087",
       "name": "block",
-      "parent": "e00090",
+      "parent": "e00086",
       "children": [
-        "e00092",
-        "e00093"
+        "e00088",
+        "e00089"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1382,9 +1338,9 @@
       "label": "trust item"
     },
     {
-      "id": "e00092",
+      "id": "e00088",
       "name": "icon",
-      "parent": "e00091",
+      "parent": "e00087",
       "children": [],
       "settings": {
         "icon": {
@@ -1399,9 +1355,9 @@
       "label": "icon (best-guess ionicons name 'ion-ios-pricetag' \u2014 verify it renders)"
     },
     {
-      "id": "e00093",
+      "id": "e00089",
       "name": "text-basic",
-      "parent": "e00091",
+      "parent": "e00087",
       "children": [],
       "settings": {
         "text": "Free, no obligation",
@@ -1413,12 +1369,12 @@
       "label": "label"
     },
     {
-      "id": "e00094",
+      "id": "e00090",
       "name": "block",
-      "parent": "e00090",
+      "parent": "e00086",
       "children": [
-        "e00095",
-        "e00096"
+        "e00091",
+        "e00092"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1428,9 +1384,9 @@
       "label": "trust item"
     },
     {
-      "id": "e00095",
+      "id": "e00091",
       "name": "icon",
-      "parent": "e00094",
+      "parent": "e00090",
       "children": [],
       "settings": {
         "icon": {
@@ -1445,9 +1401,9 @@
       "label": "icon (best-guess ionicons name 'ion-ios-person' \u2014 verify it renders)"
     },
     {
-      "id": "e00096",
+      "id": "e00092",
       "name": "text-basic",
-      "parent": "e00094",
+      "parent": "e00090",
       "children": [],
       "settings": {
         "text": "Reviewed by our team",
@@ -1459,12 +1415,12 @@
       "label": "label"
     },
     {
-      "id": "e00097",
+      "id": "e00093",
       "name": "block",
-      "parent": "e00090",
+      "parent": "e00086",
       "children": [
-        "e00098",
-        "e00099"
+        "e00094",
+        "e00095"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1474,9 +1430,9 @@
       "label": "trust item"
     },
     {
-      "id": "e00098",
+      "id": "e00094",
       "name": "icon",
-      "parent": "e00097",
+      "parent": "e00093",
       "children": [],
       "settings": {
         "icon": {
@@ -1491,9 +1447,9 @@
       "label": "icon (best-guess ionicons name 'ion-ios-time' \u2014 verify it renders)"
     },
     {
-      "id": "e00099",
+      "id": "e00095",
       "name": "text-basic",
-      "parent": "e00097",
+      "parent": "e00093",
       "children": [],
       "settings": {
         "text": "Takes about 2 minutes",
@@ -1505,11 +1461,11 @@
       "label": "label"
     },
     {
-      "id": "e00100",
+      "id": "e00096",
       "name": "block",
-      "parent": "e00086",
+      "parent": "e00082",
       "children": [
-        "e00101"
+        "e00097"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1519,9 +1475,9 @@
       "label": "quote-cta__form-card"
     },
     {
-      "id": "e00101",
+      "id": "e00097",
       "name": "shortcode",
-      "parent": "e00100",
+      "parent": "e00096",
       "children": [],
       "settings": {
         "shortcode": "[ws_form id=\"20\"]"
@@ -1529,11 +1485,11 @@
       "label": "REAL embedded quote form (WS Form, id 20 \u2014 confirmed live backend at /free-quote/; field styling controlled by WS Form's own Style settings in wp-admin, not this JSON)"
     },
     {
-      "id": "e00102",
+      "id": "e00098",
       "name": "section",
       "parent": 0,
       "children": [
-        "e00103"
+        "e00099"
       ],
       "settings": {
         "tag": "section",
@@ -1544,12 +1500,12 @@
       "label": "Process (3 steps)"
     },
     {
-      "id": "e00103",
+      "id": "e00099",
       "name": "container",
-      "parent": "e00102",
+      "parent": "e00098",
       "children": [
-        "e00104",
-        "e00105"
+        "e00100",
+        "e00101"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1559,9 +1515,9 @@
       "label": "process__inner"
     },
     {
-      "id": "e00104",
+      "id": "e00100",
       "name": "heading",
-      "parent": "e00103",
+      "parent": "e00099",
       "children": [],
       "settings": {
         "text": "From quote to move day.",
@@ -1573,15 +1529,15 @@
       "label": "title"
     },
     {
-      "id": "e00105",
+      "id": "e00101",
       "name": "block",
-      "parent": "e00103",
+      "parent": "e00099",
       "children": [
+        "e00102",
         "e00106",
-        "e00110",
+        "e00107",
         "e00111",
-        "e00115",
-        "e00116"
+        "e00112"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1591,13 +1547,13 @@
       "label": "process__steps"
     },
     {
-      "id": "e00106",
+      "id": "e00102",
       "name": "block",
-      "parent": "e00105",
+      "parent": "e00101",
       "children": [
-        "e00107",
-        "e00108",
-        "e00109"
+        "e00103",
+        "e00104",
+        "e00105"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1607,9 +1563,9 @@
       "label": "step 01"
     },
     {
-      "id": "e00107",
+      "id": "e00103",
       "name": "text-basic",
-      "parent": "e00106",
+      "parent": "e00102",
       "children": [],
       "settings": {
         "text": "01",
@@ -1621,9 +1577,9 @@
       "label": "number"
     },
     {
-      "id": "e00108",
+      "id": "e00104",
       "name": "text-basic",
-      "parent": "e00106",
+      "parent": "e00102",
       "children": [],
       "settings": {
         "text": "Tell us about your move",
@@ -1635,9 +1591,9 @@
       "label": "step title"
     },
     {
-      "id": "e00109",
+      "id": "e00105",
       "name": "text-basic",
-      "parent": "e00106",
+      "parent": "e00102",
       "children": [],
       "settings": {
         "text": "Share the details so we can understand your needs.",
@@ -1649,9 +1605,9 @@
       "label": "step text"
     },
     {
-      "id": "e00110",
+      "id": "e00106",
       "name": "icon",
-      "parent": "e00105",
+      "parent": "e00101",
       "children": [],
       "settings": {
         "icon": {
@@ -1665,13 +1621,13 @@
       "label": "arrow (confirmed real ionicons name)"
     },
     {
-      "id": "e00111",
+      "id": "e00107",
       "name": "block",
-      "parent": "e00105",
+      "parent": "e00101",
       "children": [
-        "e00112",
-        "e00113",
-        "e00114"
+        "e00108",
+        "e00109",
+        "e00110"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1681,9 +1637,9 @@
       "label": "step 02"
     },
     {
-      "id": "e00112",
+      "id": "e00108",
       "name": "text-basic",
-      "parent": "e00111",
+      "parent": "e00107",
       "children": [],
       "settings": {
         "text": "02",
@@ -1695,9 +1651,9 @@
       "label": "number"
     },
     {
-      "id": "e00113",
+      "id": "e00109",
       "name": "text-basic",
-      "parent": "e00111",
+      "parent": "e00107",
       "children": [],
       "settings": {
         "text": "We build the right plan",
@@ -1709,9 +1665,9 @@
       "label": "step title"
     },
     {
-      "id": "e00114",
+      "id": "e00110",
       "name": "text-basic",
-      "parent": "e00111",
+      "parent": "e00107",
       "children": [],
       "settings": {
         "text": "We create a custom plan and confirm all the details.",
@@ -1723,9 +1679,9 @@
       "label": "step text"
     },
     {
-      "id": "e00115",
+      "id": "e00111",
       "name": "icon",
-      "parent": "e00105",
+      "parent": "e00101",
       "children": [],
       "settings": {
         "icon": {
@@ -1739,13 +1695,13 @@
       "label": "arrow (confirmed real ionicons name)"
     },
     {
-      "id": "e00116",
+      "id": "e00112",
       "name": "block",
-      "parent": "e00105",
+      "parent": "e00101",
       "children": [
-        "e00117",
-        "e00118",
-        "e00119"
+        "e00113",
+        "e00114",
+        "e00115"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1755,9 +1711,9 @@
       "label": "step 03"
     },
     {
-      "id": "e00117",
+      "id": "e00113",
       "name": "text-basic",
-      "parent": "e00116",
+      "parent": "e00112",
       "children": [],
       "settings": {
         "text": "03",
@@ -1769,9 +1725,9 @@
       "label": "number"
     },
     {
-      "id": "e00118",
+      "id": "e00114",
       "name": "text-basic",
-      "parent": "e00116",
+      "parent": "e00112",
       "children": [],
       "settings": {
         "text": "Move with confidence",
@@ -1783,9 +1739,9 @@
       "label": "step title"
     },
     {
-      "id": "e00119",
+      "id": "e00115",
       "name": "text-basic",
-      "parent": "e00116",
+      "parent": "e00112",
       "children": [],
       "settings": {
         "text": "Our team arrives on time and handles everything with care.",
@@ -1797,12 +1753,12 @@
       "label": "step text"
     },
     {
-      "id": "e00120",
+      "id": "e00116",
       "name": "section",
       "parent": 0,
       "children": [
-        "e00121",
-        "e00127"
+        "e00117",
+        "e00123"
       ],
       "settings": {
         "tag": "section",
@@ -1813,12 +1769,12 @@
       "label": "Testimonial + Service Area (decorative map)"
     },
     {
-      "id": "e00121",
+      "id": "e00117",
       "name": "block",
-      "parent": "e00120",
+      "parent": "e00116",
       "children": [
-        "e00122",
-        "e00123"
+        "e00118",
+        "e00119"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1828,9 +1784,9 @@
       "label": "tm__quote"
     },
     {
-      "id": "e00122",
+      "id": "e00118",
       "name": "icon",
-      "parent": "e00121",
+      "parent": "e00117",
       "children": [],
       "settings": {
         "icon": {
@@ -1845,13 +1801,13 @@
       "label": "quote mark (best-guess ionicons name \u2014 verify it renders)"
     },
     {
-      "id": "e00123",
+      "id": "e00119",
       "name": "block",
-      "parent": "e00121",
+      "parent": "e00117",
       "children": [
-        "e00124",
-        "e00125",
-        "e00126"
+        "e00120",
+        "e00121",
+        "e00122"
       ],
       "settings": {
         "hasLoop": true,
@@ -1868,9 +1824,9 @@
       "label": "testimonial loop, 1 post (per client confirmation: Karen L. \u2014 set as first via menu_order once created)"
     },
     {
-      "id": "e00124",
+      "id": "e00120",
       "name": "text-basic",
-      "parent": "e00123",
+      "parent": "e00119",
       "children": [],
       "settings": {
         "text": "\u201c{acf_pull_quote}\u201d",
@@ -1882,9 +1838,9 @@
       "label": "pull quote"
     },
     {
-      "id": "e00125",
+      "id": "e00121",
       "name": "text-basic",
-      "parent": "e00123",
+      "parent": "e00119",
       "children": [],
       "settings": {
         "text": "{post_title} \u00b7 {acf_role}",
@@ -1896,9 +1852,9 @@
       "label": "author + route"
     },
     {
-      "id": "e00126",
+      "id": "e00122",
       "name": "rating",
-      "parent": "e00123",
+      "parent": "e00119",
       "children": [],
       "settings": {
         "rating": "{acf_rating}",
@@ -1911,16 +1867,16 @@
       "label": "star rating (dynamic, acf_rating is a number field 1-5)"
     },
     {
-      "id": "e00127",
+      "id": "e00123",
       "name": "block",
-      "parent": "e00120",
+      "parent": "e00116",
       "children": [
-        "e00128",
-        "e00131",
-        "e00134",
-        "e00137",
-        "e00140",
-        "e00143"
+        "e00124",
+        "e00127",
+        "e00130",
+        "e00133",
+        "e00136",
+        "e00139"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -1930,12 +1886,12 @@
       "label": "tm__map (decorative service-area illustration, not an interactive map)"
     },
     {
-      "id": "e00128",
+      "id": "e00124",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00129",
-        "e00130"
+        "e00125",
+        "e00126"
       ],
       "settings": {
         "_left": "22%",
@@ -1947,9 +1903,9 @@
       "label": "pin: Laval"
     },
     {
-      "id": "e00129",
+      "id": "e00125",
       "name": "icon",
-      "parent": "e00128",
+      "parent": "e00124",
       "children": [],
       "settings": {
         "icon": {
@@ -1964,9 +1920,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00130",
+      "id": "e00126",
       "name": "text-basic",
-      "parent": "e00128",
+      "parent": "e00124",
       "children": [],
       "settings": {
         "text": "Laval",
@@ -1978,12 +1934,12 @@
       "label": "label"
     },
     {
-      "id": "e00131",
+      "id": "e00127",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00132",
-        "e00133"
+        "e00128",
+        "e00129"
       ],
       "settings": {
         "_left": "42%",
@@ -1995,9 +1951,9 @@
       "label": "pin: Montreal"
     },
     {
-      "id": "e00132",
+      "id": "e00128",
       "name": "icon",
-      "parent": "e00131",
+      "parent": "e00127",
       "children": [],
       "settings": {
         "icon": {
@@ -2012,9 +1968,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00133",
+      "id": "e00129",
       "name": "text-basic",
-      "parent": "e00131",
+      "parent": "e00127",
       "children": [],
       "settings": {
         "text": "Montreal",
@@ -2026,12 +1982,12 @@
       "label": "label"
     },
     {
-      "id": "e00134",
+      "id": "e00130",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00135",
-        "e00136"
+        "e00131",
+        "e00132"
       ],
       "settings": {
         "_left": "12%",
@@ -2043,9 +1999,9 @@
       "label": "pin: West Island"
     },
     {
-      "id": "e00135",
+      "id": "e00131",
       "name": "icon",
-      "parent": "e00134",
+      "parent": "e00130",
       "children": [],
       "settings": {
         "icon": {
@@ -2060,9 +2016,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00136",
+      "id": "e00132",
       "name": "text-basic",
-      "parent": "e00134",
+      "parent": "e00130",
       "children": [],
       "settings": {
         "text": "West Island",
@@ -2074,12 +2030,12 @@
       "label": "label"
     },
     {
-      "id": "e00137",
+      "id": "e00133",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00138",
-        "e00139"
+        "e00134",
+        "e00135"
       ],
       "settings": {
         "_left": "38%",
@@ -2091,9 +2047,9 @@
       "label": "pin: South Shore"
     },
     {
-      "id": "e00138",
+      "id": "e00134",
       "name": "icon",
-      "parent": "e00137",
+      "parent": "e00133",
       "children": [],
       "settings": {
         "icon": {
@@ -2108,9 +2064,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00139",
+      "id": "e00135",
       "name": "text-basic",
-      "parent": "e00137",
+      "parent": "e00133",
       "children": [],
       "settings": {
         "text": "South Shore",
@@ -2122,12 +2078,12 @@
       "label": "label"
     },
     {
-      "id": "e00140",
+      "id": "e00136",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00141",
-        "e00142"
+        "e00137",
+        "e00138"
       ],
       "settings": {
         "_left": "72%",
@@ -2139,9 +2095,9 @@
       "label": "pin: Quebec City"
     },
     {
-      "id": "e00141",
+      "id": "e00137",
       "name": "icon",
-      "parent": "e00140",
+      "parent": "e00136",
       "children": [],
       "settings": {
         "icon": {
@@ -2156,9 +2112,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00142",
+      "id": "e00138",
       "name": "text-basic",
-      "parent": "e00140",
+      "parent": "e00136",
       "children": [],
       "settings": {
         "text": "Quebec City",
@@ -2170,12 +2126,12 @@
       "label": "label"
     },
     {
-      "id": "e00143",
+      "id": "e00139",
       "name": "block",
-      "parent": "e00127",
+      "parent": "e00123",
       "children": [
-        "e00144",
-        "e00145"
+        "e00140",
+        "e00141"
       ],
       "settings": {
         "_left": "78%",
@@ -2187,9 +2143,9 @@
       "label": "pin: Toronto"
     },
     {
-      "id": "e00144",
+      "id": "e00140",
       "name": "icon",
-      "parent": "e00143",
+      "parent": "e00139",
       "children": [],
       "settings": {
         "icon": {
@@ -2204,9 +2160,9 @@
       "label": "pin icon"
     },
     {
-      "id": "e00145",
+      "id": "e00141",
       "name": "text-basic",
-      "parent": "e00143",
+      "parent": "e00139",
       "children": [],
       "settings": {
         "text": "Toronto",
@@ -2218,11 +2174,11 @@
       "label": "label"
     },
     {
-      "id": "e00146",
+      "id": "e00142",
       "name": "section",
       "parent": 0,
       "children": [
-        "e00147"
+        "e00143"
       ],
       "settings": {
         "tag": "section",
@@ -2233,12 +2189,12 @@
       "label": "Closing CTA"
     },
     {
-      "id": "e00147",
+      "id": "e00143",
       "name": "container",
-      "parent": "e00146",
+      "parent": "e00142",
       "children": [
-        "e00148",
-        "e00153"
+        "e00144",
+        "e00149"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -2248,12 +2204,12 @@
       "label": "container--split"
     },
     {
-      "id": "e00148",
+      "id": "e00144",
       "name": "block",
-      "parent": "e00147",
+      "parent": "e00143",
       "children": [
-        "e00149",
-        "e00150"
+        "e00145",
+        "e00146"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -2263,9 +2219,9 @@
       "label": "cta__content"
     },
     {
-      "id": "e00149",
+      "id": "e00145",
       "name": "heading",
-      "parent": "e00148",
+      "parent": "e00144",
       "children": [],
       "settings": {
         "text": "Ready for a move that feels organized?",
@@ -2277,12 +2233,12 @@
       "label": "title"
     },
     {
-      "id": "e00150",
+      "id": "e00146",
       "name": "block",
-      "parent": "e00148",
+      "parent": "e00144",
       "children": [
-        "e00151",
-        "e00152"
+        "e00147",
+        "e00148"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -2292,9 +2248,9 @@
       "label": "cta__actions"
     },
     {
-      "id": "e00151",
+      "id": "e00147",
       "name": "button",
-      "parent": "e00150",
+      "parent": "e00146",
       "children": [],
       "settings": {
         "text": "{acf_primary_cta @fallback:'Get a Free Quote'}",
@@ -2311,9 +2267,9 @@
       "label": "btn btn--primary (dynamic: primary_cta)"
     },
     {
-      "id": "e00152",
+      "id": "e00148",
       "name": "button",
-      "parent": "e00150",
+      "parent": "e00146",
       "children": [],
       "settings": {
         "text": "Call {acf_primary_phone @fallback:'514-606-4030'}",
@@ -2329,19 +2285,19 @@
       "label": "btn--text (dynamic: primary_phone)"
     },
     {
-      "id": "e00153",
+      "id": "e00149",
       "name": "block",
-      "parent": "e00147",
+      "parent": "e00143",
       "children": [
-        "e00154"
+        "e00150"
       ],
       "settings": {},
       "label": "cta__media"
     },
     {
-      "id": "e00154",
+      "id": "e00150",
       "name": "image",
-      "parent": "e00153",
+      "parent": "e00149",
       "children": [],
       "settings": {
         "image": {
@@ -2393,7 +2349,60 @@
       "id": "c00002",
       "name": "btn--primary",
       "settings": {
-        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%); background-size: 160% 160%; background-position: 0% 0%; color: var(--secondary); box-shadow: var(--box-shadow-3); }%root%:hover { background-position: 100% 100%; }"
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--primary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "var(--tertiary)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "35",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "color-mix(in srgb, var(--primary) 35%, transparent)"
+          }
+        },
+        "_gradient:hover": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--tertiary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "var(--primary)"
+              },
+              "stop": "100"
+            }
+          ]
+        }
       }
     },
     {
@@ -2415,7 +2424,17 @@
             "raw": "var(--primary-hover)"
           }
         },
-        "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }"
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "18",
+            "blur": "45",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "color-mix(in srgb, black 12%, transparent)"
+          }
+        }
       }
     },
     {
@@ -2722,7 +2741,6 @@
       "name": "hero__image",
       "settings": {
         "_width": "100%",
-        "_height": "100%",
         "_objectFit": "cover",
         "_border": {
           "radius": {
@@ -2764,7 +2782,17 @@
             "left": "var(--radius)"
           }
         },
-        "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }",
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "18",
+            "blur": "45",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "color-mix(in srgb, black 12%, transparent)"
+          }
+        },
         "_left:mobile_portrait": "12px",
         "_bottom:mobile_portrait": "12px"
       }
@@ -2827,7 +2855,25 @@
       "id": "c00029",
       "name": "stats-bar",
       "settings": {
-        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--secondary) 0%, color-mix(in srgb, var(--secondary) 85%, black) 100%); }",
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--secondary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "color-mix(in srgb, var(--secondary) 85%, black)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
         "_padding": {
           "top": "var(--content-gap)",
           "bottom": "var(--content-gap)"
@@ -3000,25 +3046,6 @@
       "id": "c00042",
       "name": "services-band__icon",
       "settings": {
-        "_background": {
-          "color": {
-            "raw": "color-mix(in srgb, var(--primary) 10%, transparent)"
-          }
-        },
-        "_padding": {
-          "top": "14px",
-          "right": "14px",
-          "bottom": "14px",
-          "left": "14px"
-        },
-        "_border": {
-          "radius": {
-            "top": "var(--radius)",
-            "right": "var(--radius)",
-            "bottom": "var(--radius)",
-            "left": "var(--radius)"
-          }
-        },
         "iconColor": {
           "raw": "var(--primary)"
         }
@@ -3070,7 +3097,6 @@
       "name": "why__image",
       "settings": {
         "_width": "100%",
-        "_height": "100%",
         "_objectFit": "cover",
         "_aspectRatio": "4/3",
         "_border": {
@@ -3164,7 +3190,25 @@
       "id": "c00054",
       "name": "quote-cta",
       "settings": {
-        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--secondary) 0%, color-mix(in srgb, var(--secondary) 85%, black) 100%); }",
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "135",
+          "colors": [
+            {
+              "color": {
+                "raw": "var(--secondary)"
+              },
+              "stop": "0"
+            },
+            {
+              "color": {
+                "raw": "color-mix(in srgb, var(--secondary) 85%, black)"
+              },
+              "stop": "100"
+            }
+          ]
+        },
         "_padding": {
           "top": "var(--section-space-m)",
           "bottom": "var(--section-space-m)"
@@ -3281,7 +3325,17 @@
             "left": "var(--radius)"
           }
         },
-        "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }"
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "18",
+            "blur": "45",
+            "spread": "0"
+          },
+          "color": {
+            "raw": "color-mix(in srgb, black 12%, transparent)"
+          }
+        }
       }
     },
     {
@@ -3580,7 +3634,6 @@
       "name": "cta__image",
       "settings": {
         "_width": "100%",
-        "_height": "100%",
         "_objectFit": "cover",
         "_aspectRatio": "4/3",
         "_border": {
