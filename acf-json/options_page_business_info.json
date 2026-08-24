@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_crown_business_info",
+    "title": "Business Info",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Business Info",
+    "menu_slug": "business-info",
+    "parent_slug": "",
+    "advanced_configuration": true,
+    "icon_url": "",
+    "menu_title": "Business Info",
+    "position": null,
+    "redirect": false,
+    "description": "Global Crown Movers business information and sitewide calls to action.",
+    "menu_icon": [],
+    "update_button": "Update Business Info",
+    "updated_message": "Business Info Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "options",
+    "autoload": false
+}

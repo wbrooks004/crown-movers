@@ -21,9 +21,14 @@ this is the only one you have).
 
 Source: crownmovers.ca homepage.
 
-## Services (→ `service` post type, 6 items — the homepage's "Complete Moving Service" grid)
+## Services (→ `services` post type, 6 items — the homepage's "Complete Moving Service" grid)
 
-| Title | Short description | Photo (re-upload, don't hotlink) |
+The `services` CPT has no separate "short description" field — the homepage card loop reads
+the native WordPress **Excerpt** box, so enter the description text there (not in a custom
+field). `related_services` and `service_faqs` (both on this CPT) aren't sourced from the live
+site — leave them empty until there's real cross-sell/FAQ content to put in them.
+
+| Title | Excerpt | Photo (re-upload, don't hotlink) |
 |---|---|---|
 | Crown Movers and Packers | Our packing and organizing experts will have you ready to move in no time. Keeping you organized throughout the entire moving experience. | `.../2022/07/Packing-And-Organizing.webp` |
 | Furniture Assembly | Let us handle the disassembly and assembly of your furniture. We handle it, so that you don't have to worry about any missing screws! | `.../2022/07/Furniture-Disassembly-Assembly.webp` |
@@ -35,6 +40,13 @@ Source: crownmovers.ca homepage.
 (All URLs share the host `https://www.crownmovers.ca/wp-content/uploads/`.)
 
 Source: crownmovers.ca homepage, "Complete Moving Service" section.
+
+Note: these 6 are the general services shown on the homepage. "Long Distance Moving" and
+"Commercial Moving" are referenced elsewhere (the homepage quicklinks strip) as if they're
+their own service pages too — if they are, add them here as additional `services` posts at
+slugs `long-distance-moving` and `commercial-moving` so the quicklink URLs
+(`/services/long-distance-moving/`, `/services/commercial-moving/`) resolve; if not, those two
+quicklinks need re-pointing once you confirm what they should actually link to.
 
 ## Trusted Partners (→ `partner` post type, 18 items)
 
@@ -99,11 +111,27 @@ on the homepage and keep it page-specific.
 - **No Hidden Fees** — From the moment you call Crown Movers, we go through as many details as
   needed to assure an accurate quotation. We offer hourly rates so there are no hidden fees.
 
-## Contact details (real, for footer / CTA sections)
+## Business Info (→ Options Page `business-info`, single source of truth sitewide)
 
-- Phone: **(514) 606-4030**
-- Email: info@crownmovers.ca
-- Address: 4030 Blvd. Cote-Vertu Ouest, Suite 111, Montreal, QC H4R 1V4
+The homepage's primary/secondary CTA buttons (hero + closing CTA section) now pull from
+`primary_cta`/`secondary_cta` here — **fill these in before launch**, the buttons render
+fallback text but a dead link until you do.
+
+| Field | Value | Source |
+|---|---|---|
+| `business_name` | Crown Movers | — |
+| `legal_business_name` | *(leave blank unless the registered legal entity name differs from "Crown Movers")* | — |
+| `primary_phone` | (514) 606-4030 | live site |
+| `primary_email` | info@crownmovers.ca | live site |
+| `office_address` | 4030 Blvd. Cote-Vertu Ouest, Suite 111, Montreal, QC H4R 1V4 | live site |
+| `business_hours` | Monday–Sunday: 9:00 AM–5:00 PM | live site's own schema.org markup (`openingHours`) |
+| `facebook_url` | `https://facebook.com/www.crownmovers.ca` | live site — this exact URL is what's currently published (the `www.crownmovers.ca` segment in a Facebook path looks like a live-site mistake, not something I introduced; worth a sanity check/fix on Facebook's end before reusing it) |
+| `instagram_url` | `https://www.instagram.com/CrownMovers.ca` | live site |
+| `linkedin_url` | `https://www.linkedin.com/company/crown-movers/` | live site |
+| `youtube_url` | `https://www.youtube.com/channel/UCTWHXW2iyL45LgdYyN7Zpfg` | live site |
+| `google_business_profile_url` | `https://g.page/Crown-Movers?share` | live site |
+| `primary_cta` (link) | Text: "Get a Free Quote" → URL: `/free-quote/` | recommended — matches the live site's existing free-quote page and the homepage's own fallback copy |
+| `secondary_cta` (link) | Text: "Call Crown Movers" (or "Call Us — (514) 606-4030") → URL: `tel:+15146064030` | recommended — the field's own instructions name "Call Crown Movers" as the expected default |
 
 ## What I did *not* pull in
 
@@ -114,4 +142,8 @@ on the homepage and keep it page-specific.
   claim of this kind.
 - The 40-city service-area list (Anjou, Beloeil, Blainville... down to Westmount) is real and
   live but is footer/SEO-link content, not homepage hero material — I condensed it in the
-  homepage JSON rather than reproducing the full list; see the homepage build notes.
+  homepage JSON rather than reproducing the full list; see the homepage build notes. This list
+  is now the real content source for the new `service-areas` CPT (`acf-json/`) — each city
+  becomes its own post at `/locations/{slug}/` once that phase starts, rather than living only
+  as flat footer links. I haven't pulled the per-city page content (if any exists beyond the
+  name) — that's a future fetch, not done here.

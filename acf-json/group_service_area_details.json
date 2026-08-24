@@ -1,14 +1,66 @@
 {
-    "key": "group_crown_service_details",
-    "title": "Service Details",
+    "key": "group_crown_service_area_details",
+    "title": "Service Area Details",
     "fields": [
         {
-            "key": "field_crown_related_services",
-            "label": "Related Services",
-            "name": "related_services",
+            "key": "field_crown_area_province",
+            "label": "Province",
+            "name": "province",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select the province for this service area.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "QC": "Quebec",
+                "ON": "Ontario"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_crown_area_region",
+            "label": "Service Region",
+            "name": "service_region",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "Assign the geographic region used for directories and related-location queries.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "service-region",
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "field_type": "select",
+            "allow_null": 0,
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_crown_services_available",
+            "label": "Service Availability Override",
+            "name": "services_available",
             "aria-label": "",
             "type": "relationship",
-            "instructions": "Choose up to four genuinely related services. Leave empty if no manual recommendations are needed.",
+            "instructions": "Leave empty when all normal Crown Movers services are available here. Select services only when this location needs a restricted service list.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -28,18 +80,18 @@
             ],
             "return_format": "id",
             "min": 0,
-            "max": 4,
+            "max": 0,
             "elements": [],
             "bidirectional": 0,
             "bidirectional_target": []
         },
         {
-            "key": "field_crown_service_faqs",
-            "label": "Service FAQs",
-            "name": "service_faqs",
+            "key": "field_crown_area_faqs",
+            "label": "Local FAQs",
+            "name": "area_faqs",
             "aria-label": "",
             "type": "repeater",
-            "instructions": "Add only FAQs specific to this service. Avoid generic questions that do not add useful information.",
+            "instructions": "Use only genuinely local questions or answers. Do not repeat generic moving FAQs across every city.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -51,12 +103,12 @@
             "pagination": 0,
             "min": 0,
             "max": 8,
-            "collapsed": "field_crown_service_faq_question",
-            "button_label": "Add FAQ",
+            "collapsed": "field_crown_area_faq_question",
+            "button_label": "Add Local FAQ",
             "rows_per_page": 8,
             "sub_fields": [
                 {
-                    "key": "field_crown_service_faq_question",
+                    "key": "field_crown_area_faq_question",
                     "label": "Question",
                     "name": "question",
                     "aria-label": "",
@@ -74,10 +126,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_crown_service_faqs"
+                    "parent_repeater": "field_crown_area_faqs"
                 },
                 {
-                    "key": "field_crown_service_faq_answer",
+                    "key": "field_crown_area_faq_answer",
                     "label": "Answer",
                     "name": "answer",
                     "aria-label": "",
@@ -95,7 +147,7 @@
                     "rows": 4,
                     "placeholder": "",
                     "new_lines": "wpautop",
-                    "parent_repeater": "field_crown_service_faqs"
+                    "parent_repeater": "field_crown_area_faqs"
                 }
             ]
         }
@@ -105,7 +157,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "services"
+                "value": "service-areas"
             }
         ]
     ],
@@ -116,7 +168,7 @@
     "instruction_placement": "label",
     "hide_on_screen": [],
     "active": true,
-    "description": "Structured fields used by the Crown Movers service template.",
+    "description": "Structured fields used by the Crown Movers service-area template.",
     "show_in_rest": 0,
     "display_title": "",
     "allow_ai_access": false,

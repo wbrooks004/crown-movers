@@ -1,0 +1,69 @@
+{
+    "key": "taxonomy_crown_service_region",
+    "title": "Service Regions",
+    "menu_order": 0,
+    "active": true,
+    "taxonomy": "service-region",
+    "object_type": [
+        "service-areas"
+    ],
+    "advanced_configuration": true,
+    "import_source": "",
+    "import_date": "",
+    "labels": {
+        "singular_name": "Service Region",
+        "name": "Service Regions",
+        "menu_name": "Service Regions",
+        "search_items": "Search Service Regions",
+        "all_items": "All Service Regions",
+        "parent_item": "Parent Service Region",
+        "parent_item_colon": "Parent Service Region:",
+        "edit_item": "Edit Service Region",
+        "view_item": "View Service Region",
+        "update_item": "Update Service Region",
+        "add_new_item": "Add New Service Region",
+        "new_item_name": "New Service Region Name",
+        "not_found": "No service regions found",
+        "no_terms": "No service regions"
+    },
+    "description": "Internal geographic grouping for Crown Movers service areas.",
+    "capabilities": {
+        "manage_terms": "manage_categories",
+        "edit_terms": "manage_categories",
+        "delete_terms": "manage_categories",
+        "assign_terms": "edit_posts"
+    },
+    "public": false,
+    "publicly_queryable": false,
+    "hierarchical": true,
+    "show_ui": true,
+    "show_in_menu": true,
+    "show_in_nav_menus": false,
+    "show_in_rest": true,
+    "rest_base": "",
+    "rest_namespace": "wp/v2",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": false,
+    "show_in_quick_edit": true,
+    "show_admin_column": true,
+    "rewrite": {
+        "permalink_rewrite": "no_permalink",
+        "slug": "",
+        "with_front": false,
+        "rewrite_hierarchical": false
+    },
+    "query_var": "none",
+    "query_var_name": "",
+    "default_term": {
+        "default_term_enabled": false,
+        "default_term_name": "",
+        "default_term_slug": "",
+        "default_term_description": ""
+    },
+    "sort": null,
+    "meta_box": "disabled",
+    "meta_box_cb": "",
+    "meta_box_sanitize_cb": "",
+    "allow_ai_access": false,
+    "ai_description": ""
+}

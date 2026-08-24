@@ -135,6 +135,12 @@ Build ACF field groups for services/locations/reviews/FAQs (per
 `bricks-exports/README.md`'s recommended build order) so these become dynamic templates rather
 than one-off pages — the two existing pages are the pattern library for this.
 
+**Update:** the ACF structure for this is now built (`acf-json/` — `services` CPT, the
+`service-areas`/`service-region` locations system, `testimonial`/`partner` CPTs, a sitewide
+Business Info Options Page) and the homepage already queries `services`/`testimonial`/`partner`
+live. The `services` detail-page and `service-areas` location-page templates themselves are
+still Phase 3 work — the data model exists, the templates don't yet.
+
 **Phase 4 — QA pass**
 Re-run the WCAG contrast check from §4.1 against final rendered buttons/badges. Confirm the
 generated ACSS hover states read correctly. Cross-browser check the animated route/truck

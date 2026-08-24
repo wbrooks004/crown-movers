@@ -111,18 +111,18 @@
       "parent": "w5mzvd",
       "children": [],
       "settings": {
-        "text": "Free Quote",
+        "text": "{acf_primary_cta @fallback:'Free Quote'}",
         "tag": "a",
         "link": {
-          "type": "external",
-          "url": "/free-quote/"
+          "type": "meta",
+          "useDynamicData": "{acf_primary_cta}"
         },
         "_cssGlobalClasses": [
           "o4st4u",
           "2en45x"
         ]
       },
-      "label": "btn btn--primary"
+      "label": "btn btn--primary (dynamic: options page primary_cta)"
     },
     {
       "id": "t793v3",
@@ -130,18 +130,18 @@
       "parent": "w5mzvd",
       "children": [],
       "settings": {
-        "text": "Call Us \u2014 (514) 606-4030",
+        "text": "{acf_secondary_cta @fallback:'Call Us \u2014 (514) 606-4030'}",
         "tag": "a",
         "link": {
-          "type": "external",
-          "url": "tel:+15146064030"
+          "type": "meta",
+          "useDynamicData": "{acf_secondary_cta}"
         },
         "_cssGlobalClasses": [
           "o4st4u",
           "kky55n"
         ]
       },
-      "label": "btn btn--secondary"
+      "label": "btn btn--secondary (dynamic: options page secondary_cta)"
     },
     {
       "id": "b358zx",
@@ -519,7 +519,7 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "/long-distance-moving/"
+          "url": "/services/long-distance-moving/"
         },
         "_cssGlobalClasses": [
           "kxwf4c",
@@ -527,7 +527,7 @@
           "p604y3"
         ]
       },
-      "label": "quicklink"
+      "label": "quicklink (base path confirmed via services CPT rewrite slug; verify post slug)"
     },
     {
       "id": "o9vfgy",
@@ -572,7 +572,7 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "/commercial-moving/"
+          "url": "/services/commercial-moving/"
         },
         "_cssGlobalClasses": [
           "kxwf4c",
@@ -580,7 +580,7 @@
           "p604y3"
         ]
       },
-      "label": "quicklink (verify this slug)"
+      "label": "quicklink (base path confirmed via services CPT rewrite slug; verify post slug)"
     },
     {
       "id": "smmo0n",
@@ -1005,17 +1005,23 @@
         "query": {
           "objectType": "post",
           "post_type": [
-            "service"
+            "services"
           ],
           "posts_per_page": "12",
           "orderby": "menu_order",
           "order": "ASC"
         },
+        "tag": "a",
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{post_url}"
+        },
         "_cssGlobalClasses": [
-          "kxwf4c"
+          "kxwf4c",
+          "5p8m89"
         ]
       },
-      "label": "service card (loops post_type=service)"
+      "label": "service card (loops post_type=services, links to {post_url})"
     },
     {
       "id": "xq085n",
@@ -1083,13 +1089,13 @@
       "parent": "ov6gi9",
       "children": [],
       "settings": {
-        "text": "{acf_short_description}",
+        "text": "{post_excerpt}",
         "tag": "p",
         "_cssGlobalClasses": [
           "y7h2rv"
         ]
       },
-      "label": "service__text"
+      "label": "service__text (post excerpt)"
     },
     {
       "id": "rocqql",
@@ -1636,18 +1642,18 @@
       "parent": "nhuba6",
       "children": [],
       "settings": {
-        "text": "Get a Free Quote",
+        "text": "{acf_primary_cta @fallback:'Get a Free Quote'}",
         "tag": "a",
         "link": {
-          "type": "external",
-          "url": "/free-quote/"
+          "type": "meta",
+          "useDynamicData": "{acf_primary_cta}"
         },
         "_cssGlobalClasses": [
           "o4st4u",
           "2en45x"
         ]
       },
-      "label": "btn btn--primary"
+      "label": "btn btn--primary (dynamic: options page primary_cta)"
     },
     {
       "id": "ewhbbt",
@@ -1655,18 +1661,18 @@
       "parent": "nhuba6",
       "children": [],
       "settings": {
-        "text": "Call (514) 606-4030",
+        "text": "{acf_secondary_cta @fallback:'Call (514) 606-4030'}",
         "tag": "a",
         "link": {
-          "type": "external",
-          "url": "tel:+15146064030"
+          "type": "meta",
+          "useDynamicData": "{acf_secondary_cta}"
         },
         "_cssGlobalClasses": [
           "o4st4u",
           "n2rfe2"
         ]
       },
-      "label": "btn btn--outline-primary"
+      "label": "btn btn--outline-primary (dynamic: options page secondary_cta)"
     }
   ],
   "source": "bricksCopiedElements",
