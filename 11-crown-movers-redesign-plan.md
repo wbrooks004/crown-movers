@@ -113,6 +113,12 @@ Header/nav + language switcher, footer, mobile sticky conversion bar, button set
 (primary/dark/outline), form field styling for the ACF-driven quote flow. These touch every
 page, so get them right once.
 
+**Update:** header (utility bar + nav) and footer are now built (`bricks-json/header.json` /
+`footer.json`, Template Import format) as part of the v5 homepage redesign — see
+`14-crown-movers-homepage-build-notes.md`. Not yet covered: a mobile sticky conversion bar as
+its own distinct element (the header itself is sticky), and dedicated form-field styling beyond
+what WS Form's own Style settings already provide for the embedded quote form.
+
 **Phase 2 — Rebuild the 2 pages that already exist, natively in Bricks**
 Port the 9 already-validated custom sections from Oxygen code blocks into real Bricks
 elements/components using the corrected tokens — not a re-design, a re-platform. This is the

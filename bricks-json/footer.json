@@ -1,0 +1,721 @@
+{
+  "name": "footer-crown-movers",
+  "title": "Footer \u2014 Crown Movers",
+  "type": "footer",
+  "footer": [
+    {
+      "id": "e00001",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00002",
+        "e00025"
+      ],
+      "settings": {
+        "tag": "footer",
+        "_cssGlobalClasses": [
+          "c00001"
+        ]
+      },
+      "label": "Footer"
+    },
+    {
+      "id": "e00002",
+      "name": "container",
+      "parent": "e00001",
+      "children": [
+        "e00003",
+        "e00007",
+        "e00013",
+        "e00019"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00002"
+        ]
+      },
+      "label": "footer__top"
+    },
+    {
+      "id": "e00003",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00004",
+        "e00005",
+        "e00006"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00003"
+        ]
+      },
+      "label": "footer__brand"
+    },
+    {
+      "id": "e00004",
+      "name": "image",
+      "parent": "e00003",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2022/07/Crown-Movers-Logo-4-White.webp"
+        },
+        "altText": "Crown Movers",
+        "_cssGlobalClasses": [
+          "c00004"
+        ]
+      },
+      "label": "logo, white variant (real asset)"
+    },
+    {
+      "id": "e00005",
+      "name": "text-basic",
+      "parent": "e00003",
+      "children": [],
+      "settings": {
+        "text": "{acf_office_address @fallback:'4030 Blvd. Cote-Vertu Ouest, Suite 111, Montreal, QC H4R 1V4'}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00005"
+        ]
+      },
+      "label": "office address (dynamic)"
+    },
+    {
+      "id": "e00006",
+      "name": "text-link",
+      "parent": "e00003",
+      "children": [],
+      "settings": {
+        "text": "{acf_primary_phone @fallback:'514-606-4030'}",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:{acf_primary_phone}"
+        },
+        "_cssGlobalClasses": [
+          "c00006"
+        ]
+      },
+      "label": "phone (dynamic)"
+    },
+    {
+      "id": "e00007",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00008",
+        "e00009",
+        "e00010",
+        "e00011",
+        "e00012"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "footer col: Services"
+    },
+    {
+      "id": "e00008",
+      "name": "text-basic",
+      "parent": "e00007",
+      "children": [],
+      "settings": {
+        "text": "Services",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00008"
+        ]
+      },
+      "label": "col heading"
+    },
+    {
+      "id": "e00009",
+      "name": "text-link",
+      "parent": "e00007",
+      "children": [],
+      "settings": {
+        "text": "Residential Moving",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Residential Moving (confirmed real page)"
+    },
+    {
+      "id": "e00010",
+      "name": "text-link",
+      "parent": "e00007",
+      "children": [],
+      "settings": {
+        "text": "Long-Distance",
+        "link": {
+          "type": "external",
+          "url": "/services/long-distance-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Long-Distance (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00011",
+      "name": "text-link",
+      "parent": "e00007",
+      "children": [],
+      "settings": {
+        "text": "Commercial Moving",
+        "link": {
+          "type": "external",
+          "url": "/services/commercial-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Commercial Moving (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00012",
+      "name": "text-link",
+      "parent": "e00007",
+      "children": [],
+      "settings": {
+        "text": "Packing & Storage",
+        "link": {
+          "type": "external",
+          "url": "/services/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Packing & Storage (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00013",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00014",
+        "e00015",
+        "e00016",
+        "e00017",
+        "e00018"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "footer col: Company"
+    },
+    {
+      "id": "e00014",
+      "name": "text-basic",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Company",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00008"
+        ]
+      },
+      "label": "col heading"
+    },
+    {
+      "id": "e00015",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "About Us",
+        "link": {
+          "type": "external",
+          "url": "/about/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "About Us (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00016",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Why Crown",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Why Crown (confirmed real page)"
+    },
+    {
+      "id": "e00017",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Careers",
+        "link": {
+          "type": "external",
+          "url": "/careers/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Careers (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00018",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Contact Us",
+        "link": {
+          "type": "external",
+          "url": "/free-quote/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Contact Us (confirmed real page)"
+    },
+    {
+      "id": "e00019",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00020",
+        "e00021",
+        "e00022",
+        "e00023",
+        "e00024"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "footer col: Resources"
+    },
+    {
+      "id": "e00020",
+      "name": "text-basic",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "Resources",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00008"
+        ]
+      },
+      "label": "col heading"
+    },
+    {
+      "id": "e00021",
+      "name": "text-link",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "Moving Tips",
+        "link": {
+          "type": "external",
+          "url": "/blog/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Moving Tips (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00022",
+      "name": "text-link",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "Moving Checklist",
+        "link": {
+          "type": "external",
+          "url": "/blog/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Moving Checklist (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00023",
+      "name": "text-link",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "FAQ",
+        "link": {
+          "type": "external",
+          "url": "/faq/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "FAQ (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00024",
+      "name": "text-link",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "Blog",
+        "link": {
+          "type": "external",
+          "url": "/blog/"
+        },
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "Blog (placeholder slug \u2014 page not built yet)"
+    },
+    {
+      "id": "e00025",
+      "name": "container",
+      "parent": "e00001",
+      "children": [
+        "e00026",
+        "e00030"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00010"
+        ]
+      },
+      "label": "footer__bottom"
+    },
+    {
+      "id": "e00026",
+      "name": "block",
+      "parent": "e00025",
+      "children": [
+        "e00027",
+        "e00028",
+        "e00029"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00011"
+        ]
+      },
+      "label": "footer__bottom-left"
+    },
+    {
+      "id": "e00027",
+      "name": "text-basic",
+      "parent": "e00026",
+      "children": [],
+      "settings": {
+        "text": "\u00a9 {current_date:Y} Crown Movers. All rights reserved.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "copyright, dynamic year"
+    },
+    {
+      "id": "e00028",
+      "name": "text-link",
+      "parent": "e00026",
+      "children": [],
+      "settings": {
+        "text": "Privacy Policy",
+        "link": {
+          "type": "external",
+          "url": "/privacy-policy/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Privacy Policy (placeholder slug)"
+    },
+    {
+      "id": "e00029",
+      "name": "text-link",
+      "parent": "e00026",
+      "children": [],
+      "settings": {
+        "text": "Terms of Service",
+        "link": {
+          "type": "external",
+          "url": "/terms-of-service/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Terms of Service (placeholder slug)"
+    },
+    {
+      "id": "e00030",
+      "name": "social-icons",
+      "parent": "e00025",
+      "children": [],
+      "settings": {
+        "icons": [
+          {
+            "id": "fs001",
+            "label": "Facebook",
+            "icon": {
+              "library": "fontawesomeBrands",
+              "icon": "fab fa-facebook"
+            },
+            "link": {
+              "type": "external",
+              "url": "{acf_facebook_url}",
+              "newTab": true,
+              "ariaLabel": "Crown Movers on Facebook"
+            }
+          },
+          {
+            "id": "fs002",
+            "label": "Instagram",
+            "icon": {
+              "library": "fontawesomeBrands",
+              "icon": "fab fa-instagram"
+            },
+            "link": {
+              "type": "external",
+              "url": "{acf_instagram_url}",
+              "newTab": true,
+              "ariaLabel": "Crown Movers on Instagram"
+            }
+          },
+          {
+            "id": "fs003",
+            "label": "Google Business Profile",
+            "icon": {
+              "library": "fontawesomeBrands",
+              "icon": "fab fa-google"
+            },
+            "link": {
+              "type": "external",
+              "url": "{acf_google_business_profile_url}",
+              "newTab": true,
+              "ariaLabel": "Crown Movers on Google"
+            }
+          }
+        ],
+        "iconColor": {
+          "raw": "var(--white)"
+        },
+        "iconSize": "16px",
+        "gap": "16px"
+      },
+      "label": "social icons (dynamic: options page URLs)"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "any"
+      }
+    ]
+  },
+  "global_classes": [
+    {
+      "id": "c00001",
+      "name": "footer",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "32px"
+        },
+        "_rowGap": "var(--section-space-m)"
+      }
+    },
+    {
+      "id": "c00002",
+      "name": "footer__top",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "1.4fr 1fr 1fr 1fr",
+        "_gridGap": "var(--container-gap)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_portrait": "1fr"
+      }
+    },
+    {
+      "id": "c00003",
+      "name": "footer__brand",
+      "settings": {
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00004",
+      "name": "footer__logo",
+      "settings": {
+        "_height": "38px",
+        "_width": "auto"
+      }
+    },
+    {
+      "id": "c00005",
+      "name": "footer__address",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 70%, transparent)"
+          },
+          "font-size": "0.9375rem",
+          "line-height": "1.6"
+        }
+      }
+    },
+    {
+      "id": "c00006",
+      "name": "footer__phone",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--white)"
+          },
+          "font-weight": "700",
+          "font-size": "0.9375rem"
+        }
+      }
+    },
+    {
+      "id": "c00007",
+      "name": "footer__col",
+      "settings": {
+        "_rowGap": "12px",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00008",
+      "name": "footer__heading",
+      "settings": {
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "700",
+          "letter-spacing": "0.08em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--tertiary)"
+          }
+        },
+        "_margin": {
+          "bottom": "4px"
+        }
+      }
+    },
+    {
+      "id": "c00009",
+      "name": "footer__link",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 80%, transparent)"
+          },
+          "font-size": "0.9375rem"
+        },
+        "_cssTransition": "color 0.2s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00010",
+      "name": "footer__bottom",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_padding": {
+          "top": "24px"
+        },
+        "_border": {
+          "width": {
+            "top": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 12%, transparent)"
+          }
+        },
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "16px"
+      }
+    },
+    {
+      "id": "c00011",
+      "name": "footer__bottom-left",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "20px"
+      }
+    },
+    {
+      "id": "c00012",
+      "name": "footer__legal",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 55%, transparent)"
+          },
+          "font-size": "0.8125rem"
+        }
+      }
+    },
+    {
+      "id": "c00013",
+      "name": "footer__lang",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 55%, transparent)"
+          },
+          "font-size": "0.8125rem"
+        }
+      }
+    }
+  ],
+  "globalVariables": []
+}

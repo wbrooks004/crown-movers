@@ -1,0 +1,574 @@
+{
+  "name": "header-crown-movers",
+  "title": "Header \u2014 Crown Movers",
+  "type": "header",
+  "header": [
+    {
+      "id": "e00001",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00002"
+      ],
+      "settings": {
+        "tag": "div",
+        "_cssGlobalClasses": [
+          "c00001"
+        ]
+      },
+      "label": "Utility Bar"
+    },
+    {
+      "id": "e00002",
+      "name": "container",
+      "parent": "e00001",
+      "children": [
+        "e00003",
+        "e00006"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00002"
+        ]
+      },
+      "label": "utility__inner"
+    },
+    {
+      "id": "e00003",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00004",
+        "e00005"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00003"
+        ]
+      },
+      "label": "utility__location"
+    },
+    {
+      "id": "e00004",
+      "name": "icon",
+      "parent": "e00003",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "c00005"
+        ]
+      },
+      "label": "location icon"
+    },
+    {
+      "id": "e00005",
+      "name": "text-basic",
+      "parent": "e00003",
+      "children": [],
+      "settings": {
+        "text": "Montreal & Greater Montreal",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00004"
+        ]
+      },
+      "label": "service-area text"
+    },
+    {
+      "id": "e00006",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00007",
+        "e00008",
+        "e00009"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00003"
+        ]
+      },
+      "label": "utility__right"
+    },
+    {
+      "id": "e00007",
+      "name": "text-link",
+      "parent": "e00006",
+      "children": [],
+      "settings": {
+        "text": "{acf_primary_phone @fallback:'514-606-4030'}",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:{acf_primary_phone}"
+        },
+        "_cssGlobalClasses": [
+          "c00006"
+        ]
+      },
+      "label": "phone (dynamic: options page primary_phone)"
+    },
+    {
+      "id": "e00008",
+      "name": "block",
+      "parent": "e00006",
+      "children": [],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "divider"
+    },
+    {
+      "id": "e00009",
+      "name": "shortcode",
+      "parent": "e00006",
+      "children": [],
+      "settings": {
+        "shortcode": "[polylang]",
+        "_cssGlobalClasses": [
+          "c00006"
+        ]
+      },
+      "label": "FR language switcher (Polylang shortcode \u2014 verify display args in wp-admin)"
+    },
+    {
+      "id": "e00010",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00011"
+      ],
+      "settings": {
+        "tag": "header",
+        "_cssGlobalClasses": [
+          "c00008"
+        ]
+      },
+      "label": "Main Header"
+    },
+    {
+      "id": "e00011",
+      "name": "container",
+      "parent": "e00010",
+      "children": [
+        "e00012",
+        "e00013",
+        "e00019"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00009"
+        ]
+      },
+      "label": "header__inner"
+    },
+    {
+      "id": "e00012",
+      "name": "image",
+      "parent": "e00011",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2021/05/Crown-Movers-Logo.png"
+        },
+        "altText": "Crown Movers",
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{site_url}"
+        },
+        "_cssGlobalClasses": [
+          "c00010"
+        ]
+      },
+      "label": "logo (real asset)"
+    },
+    {
+      "id": "e00013",
+      "name": "nav-nested",
+      "parent": "e00011",
+      "children": [
+        "e00014",
+        "e00015",
+        "e00016",
+        "e00017",
+        "e00018"
+      ],
+      "settings": {
+        "ariaLabel": "Main navigation",
+        "mobileMenu": "tablet_portrait",
+        "_cssGlobalClasses": [
+          "c00011"
+        ]
+      },
+      "label": "primary nav"
+    },
+    {
+      "id": "e00014",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Services",
+        "link": {
+          "type": "external",
+          "url": "/services/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Services (guessed slug \u2014 verify)"
+    },
+    {
+      "id": "e00015",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Montreal Movers",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Montreal Movers (confirmed real page)"
+    },
+    {
+      "id": "e00016",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Long Distance",
+        "link": {
+          "type": "external",
+          "url": "/services/long-distance-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Long Distance (confirmed CPT base, post slug unverified)"
+    },
+    {
+      "id": "e00017",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Commercial",
+        "link": {
+          "type": "external",
+          "url": "/services/commercial-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Commercial (confirmed CPT base, post slug unverified)"
+    },
+    {
+      "id": "e00018",
+      "name": "text-link",
+      "parent": "e00013",
+      "children": [],
+      "settings": {
+        "text": "Resources",
+        "link": {
+          "type": "external",
+          "url": "/resources/"
+        },
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "Resources (guessed slug \u2014 verify)"
+    },
+    {
+      "id": "e00019",
+      "name": "block",
+      "parent": "e00011",
+      "children": [
+        "e00020"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00013"
+        ]
+      },
+      "label": "header__actions"
+    },
+    {
+      "id": "e00020",
+      "name": "button",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "{acf_primary_cta @fallback:'Get a Free Quote'}",
+        "tag": "a",
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{acf_primary_cta}"
+        },
+        "_cssGlobalClasses": [
+          "c00014",
+          "c00015"
+        ]
+      },
+      "label": "btn btn--primary (dynamic: options page primary_cta)"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "any"
+      }
+    ],
+    "headerSticky": true,
+    "headerStickySlideUpAfter": "300",
+    "headerStickyScrollingBackground": {
+      "color": {
+        "raw": "var(--white)"
+      }
+    },
+    "headerStickyScrollingBoxShadow": {
+      "values": {
+        "offsetX": "0",
+        "offsetY": "2",
+        "blur": "16",
+        "spread": "0"
+      },
+      "color": {
+        "rgb": "rgba(17, 17, 17, 0.08)"
+      }
+    }
+  },
+  "global_classes": [
+    {
+      "id": "c00001",
+      "name": "util",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_padding": {
+          "top": "10px",
+          "bottom": "10px"
+        }
+      }
+    },
+    {
+      "id": "c00002",
+      "name": "util__inner",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_columnGap": "var(--content-gap)",
+        "_display:mobile_landscape": "none"
+      }
+    },
+    {
+      "id": "c00003",
+      "name": "util__group",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "8px"
+      }
+    },
+    {
+      "id": "c00004",
+      "name": "util__text",
+      "settings": {
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "500",
+          "color": {
+            "raw": "var(--white)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00005",
+      "name": "util__icon",
+      "settings": {
+        "iconColor": {
+          "raw": "var(--tertiary)"
+        }
+      }
+    },
+    {
+      "id": "c00006",
+      "name": "util__link",
+      "settings": {
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "600",
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_cssTransition": "opacity 0.2s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--tertiary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00007",
+      "name": "util__divider",
+      "settings": {
+        "_border": {
+          "width": {
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 25%, transparent)"
+          }
+        },
+        "_height": "16px"
+      }
+    },
+    {
+      "id": "c00008",
+      "name": "hdr",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_padding": {
+          "top": "16px",
+          "bottom": "16px"
+        },
+        "_border": {
+          "width": {
+            "bottom": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 8%, transparent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00009",
+      "name": "hdr__inner",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_columnGap": "var(--container-gap)"
+      }
+    },
+    {
+      "id": "c00010",
+      "name": "hdr__logo",
+      "settings": {
+        "_height": "42px",
+        "_width": "auto"
+      }
+    },
+    {
+      "id": "c00011",
+      "name": "hdr__nav",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "4px"
+      }
+    },
+    {
+      "id": "c00012",
+      "name": "hdr__link",
+      "settings": {
+        "_padding": {
+          "top": "8px",
+          "right": "16px",
+          "bottom": "8px",
+          "left": "16px"
+        },
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        },
+        "_cssTransition": "color 0.2s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00013",
+      "name": "hdr__actions",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "16px"
+      }
+    },
+    {
+      "id": "c00014",
+      "name": "btn",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "text-transform": "uppercase",
+          "letter-spacing": "0.06em",
+          "font-size": "0.8125rem"
+        },
+        "_padding": {
+          "top": "0.9em",
+          "right": "1.6em",
+          "bottom": "0.9em",
+          "left": "1.6em"
+        },
+        "_border": {
+          "radius": {
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
+          }
+        },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.3s ease, background-position 0.4s ease",
+        "_transform:hover": {
+          "translateY": "-2"
+        }
+      }
+    },
+    {
+      "id": "c00015",
+      "name": "btn--primary",
+      "settings": {
+        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%); background-size: 160% 160%; background-position: 0% 0%; color: var(--secondary); box-shadow: var(--box-shadow-3); }%root%:hover { background-position: 100% 100%; }"
+      }
+    }
+  ],
+  "globalVariables": []
+}

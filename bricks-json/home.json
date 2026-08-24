@@ -1,1645 +1,114 @@
 {
   "content": [
     {
-      "id": "yjxaj0",
+      "id": "e00001",
       "name": "section",
       "parent": 0,
       "children": [
-        "gl17eg"
+        "e00002"
       ],
       "settings": {
         "tag": "section",
-        "_cssId": "hero",
         "_cssGlobalClasses": [
-          "tgxuq1"
+          "c00014"
         ]
       },
-      "label": "hero"
+      "label": "Hero"
     },
     {
-      "id": "gl17eg",
+      "id": "e00002",
       "name": "container",
-      "parent": "yjxaj0",
+      "parent": "e00001",
       "children": [
-        "g5je0b",
-        "b358zx"
+        "e00003",
+        "e00014"
       ],
       "settings": {
         "_cssGlobalClasses": [
-          "zweed0"
+          "c00015"
         ]
       },
       "label": "hero__inner"
     },
     {
-      "id": "g5je0b",
+      "id": "e00003",
       "name": "block",
-      "parent": "gl17eg",
+      "parent": "e00002",
       "children": [
-        "cw36xb",
-        "cbr3sz",
-        "qtoc0k",
-        "w5mzvd"
+        "e00004",
+        "e00005",
+        "e00006",
+        "e00007",
+        "e00010"
       ],
       "settings": {
         "_cssGlobalClasses": [
-          "dawzpq"
+          "c00016"
         ]
       },
       "label": "hero__content"
     },
     {
-      "id": "cw36xb",
+      "id": "e00004",
       "name": "text-basic",
-      "parent": "g5je0b",
+      "parent": "e00003",
       "children": [],
       "settings": {
-        "text": "MONTREAL'S TRUSTED MOVERS",
+        "text": "Montreal's Careful Moving Team",
         "tag": "span",
         "_cssGlobalClasses": [
-          "t5d4eh"
+          "c00007"
         ]
       },
-      "label": "hero__eyebrow"
+      "label": "eyebrow"
     },
     {
-      "id": "cbr3sz",
+      "id": "e00005",
       "name": "heading",
-      "parent": "g5je0b",
+      "parent": "e00003",
       "children": [],
       "settings": {
-        "text": "Reliable Moving Services in Montreal",
+        "text": "Your move, handled with care.",
         "tag": "h1",
         "_cssGlobalClasses": [
-          "n5th3y"
+          "c00017"
         ]
       },
       "label": "hero__title"
     },
     {
-      "id": "qtoc0k",
+      "id": "e00006",
       "name": "text-basic",
-      "parent": "g5je0b",
+      "parent": "e00003",
       "children": [],
       "settings": {
-        "text": "We truly care about your moving experience \u2014 from the first call to the last box unpacked.",
+        "text": "Local, long-distance and commercial moving across Montreal and beyond.",
         "tag": "p",
         "_cssGlobalClasses": [
-          "h1tjy5"
+          "c00018"
         ]
       },
-      "label": "hero__lead"
+      "label": "hero__subtitle"
     },
     {
-      "id": "w5mzvd",
+      "id": "e00007",
       "name": "block",
-      "parent": "g5je0b",
+      "parent": "e00003",
       "children": [
-        "dd413t",
-        "t793v3"
+        "e00008",
+        "e00009"
       ],
       "settings": {
         "_cssGlobalClasses": [
-          "lpe0sn"
+          "c00019"
         ]
       },
       "label": "hero__actions"
     },
     {
-      "id": "dd413t",
+      "id": "e00008",
       "name": "button",
-      "parent": "w5mzvd",
-      "children": [],
-      "settings": {
-        "text": "{acf_primary_cta @fallback:'Free Quote'}",
-        "tag": "a",
-        "link": {
-          "type": "meta",
-          "useDynamicData": "{acf_primary_cta}"
-        },
-        "_cssGlobalClasses": [
-          "o4st4u",
-          "2en45x"
-        ]
-      },
-      "label": "btn btn--primary (dynamic: options page primary_cta)"
-    },
-    {
-      "id": "t793v3",
-      "name": "button",
-      "parent": "w5mzvd",
-      "children": [],
-      "settings": {
-        "text": "{acf_secondary_cta @fallback:'Call Us \u2014 (514) 606-4030'}",
-        "tag": "a",
-        "link": {
-          "type": "meta",
-          "useDynamicData": "{acf_secondary_cta}"
-        },
-        "_cssGlobalClasses": [
-          "o4st4u",
-          "kky55n"
-        ]
-      },
-      "label": "btn btn--secondary (dynamic: options page secondary_cta)"
-    },
-    {
-      "id": "b358zx",
-      "name": "block",
-      "parent": "gl17eg",
-      "children": [
-        "ba3yoc"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "nqvkek"
-        ]
-      },
-      "label": "hero__media"
-    },
-    {
-      "id": "ba3yoc",
-      "name": "image",
-      "parent": "b358zx",
-      "children": [],
-      "settings": {
-        "image": {
-          "url": "https://www.crownmovers.ca/wp-content/uploads/2026/06/montreal-residential-movers-crown-moving-truck-home.webp"
-        },
-        "altText": "Crown Movers branded truck outside a Montreal home",
-        "loading": "eager",
-        "_cssGlobalClasses": [
-          "omltdi"
-        ]
-      },
-      "label": "hero__image"
-    },
-    {
-      "id": "qerwqj",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "y9e2e3"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "pi27vc"
-        ]
-      },
-      "label": "stats"
-    },
-    {
-      "id": "y9e2e3",
-      "name": "container",
-      "parent": "qerwqj",
-      "children": [
-        "gzjvgz"
-      ],
-      "settings": {},
-      "label": "stats__inner"
-    },
-    {
-      "id": "gzjvgz",
-      "name": "div",
-      "parent": "y9e2e3",
-      "children": [
-        "3yuw4q",
-        "ntw62a"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "x3yu0r"
-        ]
-      },
-      "label": "stats__grid"
-    },
-    {
-      "id": "3yuw4q",
-      "name": "block",
-      "parent": "gzjvgz",
-      "children": [
-        "aq2dai",
-        "afu5ji",
-        "njg7qz"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "stat card"
-    },
-    {
-      "id": "aq2dai",
-      "name": "block",
-      "parent": "3yuw4q",
-      "children": [
-        "lhtq24"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "ukbghd"
-        ]
-      },
-      "label": "stat__number-row"
-    },
-    {
-      "id": "lhtq24",
-      "name": "counter",
-      "parent": "aq2dai",
-      "children": [],
-      "settings": {
-        "countFrom": "0",
-        "countTo": "1000",
-        "duration": "1800",
-        "suffix": "{acf_stat_one_suffix}",
-        "_cssGlobalClasses": [
-          "3py4uk"
-        ]
-      },
-      "label": "stat__number (countTo is literal, not ACF-bound \u2014 see build notes)"
-    },
-    {
-      "id": "afu5ji",
-      "name": "heading",
-      "parent": "3yuw4q",
-      "children": [],
-      "settings": {
-        "text": "{acf_stat_one_label}",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "yk2fys"
-        ]
-      },
-      "label": "stat__label"
-    },
-    {
-      "id": "njg7qz",
-      "name": "text-basic",
-      "parent": "3yuw4q",
-      "children": [],
-      "settings": {
-        "text": "{acf_stat_one_description}",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "e6t8zt"
-        ]
-      },
-      "label": "stat__description"
-    },
-    {
-      "id": "ntw62a",
-      "name": "block",
-      "parent": "gzjvgz",
-      "children": [
-        "1y25jn",
-        "deq18n",
-        "g7db9i"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "stat card"
-    },
-    {
-      "id": "1y25jn",
-      "name": "block",
-      "parent": "ntw62a",
-      "children": [
-        "wfy45n"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "ukbghd"
-        ]
-      },
-      "label": "stat__number-row"
-    },
-    {
-      "id": "wfy45n",
-      "name": "counter",
-      "parent": "1y25jn",
-      "children": [],
-      "settings": {
-        "countFrom": "0",
-        "countTo": "29",
-        "duration": "1800",
-        "suffix": "{acf_stat_two_suffix}",
-        "_cssGlobalClasses": [
-          "3py4uk"
-        ]
-      },
-      "label": "stat__number (countTo is literal, not ACF-bound \u2014 see build notes)"
-    },
-    {
-      "id": "deq18n",
-      "name": "heading",
-      "parent": "ntw62a",
-      "children": [],
-      "settings": {
-        "text": "{acf_stat_two_label}",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "yk2fys"
-        ]
-      },
-      "label": "stat__label"
-    },
-    {
-      "id": "g7db9i",
-      "name": "text-basic",
-      "parent": "ntw62a",
-      "children": [],
-      "settings": {
-        "text": "{acf_stat_two_description}",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "e6t8zt"
-        ]
-      },
-      "label": "stat__description"
-    },
-    {
-      "id": "j9y4j8",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "gpupkm"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "iqiovj"
-        ]
-      },
-      "label": "quicklinks"
-    },
-    {
-      "id": "gpupkm",
-      "name": "container",
-      "parent": "j9y4j8",
-      "children": [
-        "dai6fe",
-        "7lhc40"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "1xyf0t"
-        ]
-      },
-      "label": "quicklinks__inner"
-    },
-    {
-      "id": "dai6fe",
-      "name": "block",
-      "parent": "gpupkm",
-      "children": [
-        "79d1a8",
-        "j84q7l"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "z2530f",
-          "1xyf0t"
-        ]
-      },
-      "label": "quicklinks__header"
-    },
-    {
-      "id": "79d1a8",
-      "name": "heading",
-      "parent": "dai6fe",
-      "children": [],
-      "settings": {
-        "text": "Professional Canadian Moving Services",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "9aaw4z"
-        ]
-      },
-      "label": "quicklinks__title"
-    },
-    {
-      "id": "j84q7l",
-      "name": "text-basic",
-      "parent": "dai6fe",
-      "children": [],
-      "settings": {
-        "text": "We've brought joy and excitement back to your moving day. Whether you're looking for local Montreal moving services or across-Canada moving services, our experienced and carefully trained moving team focuses on handling all your moving, packing and storage needs.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "coogx5"
-        ]
-      },
-      "label": "quicklinks__text"
-    },
-    {
-      "id": "7lhc40",
-      "name": "div",
-      "parent": "gpupkm",
-      "children": [
-        "672qnh",
-        "j967hx",
-        "6hda34"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "qn5kkr"
-        ]
-      },
-      "label": "quicklinks__grid"
-    },
-    {
-      "id": "672qnh",
-      "name": "block",
-      "parent": "7lhc40",
-      "children": [
-        "b98zly",
-        "s8i8ng"
-      ],
-      "settings": {
-        "tag": "a",
-        "link": {
-          "type": "external",
-          "url": "/montreal-movers/"
-        },
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "5p8m89",
-          "p604y3"
-        ]
-      },
-      "label": "quicklink"
-    },
-    {
-      "id": "b98zly",
-      "name": "text-basic",
-      "parent": "672qnh",
-      "children": [],
-      "settings": {
-        "text": "Moving in Montreal",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "wpvj0t"
-        ]
-      },
-      "label": "quicklink__label"
-    },
-    {
-      "id": "s8i8ng",
-      "name": "icon",
-      "parent": "672qnh",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-arrow-forward"
-        },
-        "iconSize": "1.1em",
-        "_cssGlobalClasses": [
-          "8d6qlg"
-        ]
-      },
-      "label": "quicklink__icon"
-    },
-    {
-      "id": "j967hx",
-      "name": "block",
-      "parent": "7lhc40",
-      "children": [
-        "o9vfgy",
-        "rkpqt4"
-      ],
-      "settings": {
-        "tag": "a",
-        "link": {
-          "type": "external",
-          "url": "/services/long-distance-moving/"
-        },
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "5p8m89",
-          "p604y3"
-        ]
-      },
-      "label": "quicklink (base path confirmed via services CPT rewrite slug; verify post slug)"
-    },
-    {
-      "id": "o9vfgy",
-      "name": "text-basic",
-      "parent": "j967hx",
-      "children": [],
-      "settings": {
-        "text": "Long Distance Moving",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "wpvj0t"
-        ]
-      },
-      "label": "quicklink__label"
-    },
-    {
-      "id": "rkpqt4",
-      "name": "icon",
-      "parent": "j967hx",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-arrow-forward"
-        },
-        "iconSize": "1.1em",
-        "_cssGlobalClasses": [
-          "8d6qlg"
-        ]
-      },
-      "label": "quicklink__icon"
-    },
-    {
-      "id": "6hda34",
-      "name": "block",
-      "parent": "7lhc40",
-      "children": [
-        "smmo0n",
-        "9ijmqr"
-      ],
-      "settings": {
-        "tag": "a",
-        "link": {
-          "type": "external",
-          "url": "/services/commercial-moving/"
-        },
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "5p8m89",
-          "p604y3"
-        ]
-      },
-      "label": "quicklink (base path confirmed via services CPT rewrite slug; verify post slug)"
-    },
-    {
-      "id": "smmo0n",
-      "name": "text-basic",
-      "parent": "6hda34",
-      "children": [],
-      "settings": {
-        "text": "Commercial Moving",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "wpvj0t"
-        ]
-      },
-      "label": "quicklink__label"
-    },
-    {
-      "id": "9ijmqr",
-      "name": "icon",
-      "parent": "6hda34",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-arrow-forward"
-        },
-        "iconSize": "1.1em",
-        "_cssGlobalClasses": [
-          "8d6qlg"
-        ]
-      },
-      "label": "quicklink__icon"
-    },
-    {
-      "id": "52evsi",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "pchc61"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "mzslbz"
-        ]
-      },
-      "label": "keys"
-    },
-    {
-      "id": "pchc61",
-      "name": "container",
-      "parent": "52evsi",
-      "children": [
-        "adliuv",
-        "th6xwp"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "1xyf0t"
-        ]
-      },
-      "label": "keys__inner"
-    },
-    {
-      "id": "adliuv",
-      "name": "block",
-      "parent": "pchc61",
-      "children": [
-        "hb8czi",
-        "981vva"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "5x754k",
-          "1xyf0t"
-        ]
-      },
-      "label": "keys__header"
-    },
-    {
-      "id": "hb8czi",
-      "name": "heading",
-      "parent": "adliuv",
-      "children": [],
-      "settings": {
-        "text": "Hassle-Free Moving Services Montreal",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "6l4fhi"
-        ]
-      },
-      "label": "keys__title"
-    },
-    {
-      "id": "981vva",
-      "name": "text-basic",
-      "parent": "adliuv",
-      "children": [],
-      "settings": {
-        "text": "At Crown Movers, our friendly and reliable movers aim to give you that 5-star moving service you've been reading about! Listed below are the keys to a perfect moving day.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "hnkm8y"
-        ]
-      },
-      "label": "keys__text"
-    },
-    {
-      "id": "th6xwp",
-      "name": "div",
-      "parent": "pchc61",
-      "children": [
-        "yw9t4b",
-        "nltjbb",
-        "gymtkg"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "eb0xvj"
-        ]
-      },
-      "label": "keys__grid"
-    },
-    {
-      "id": "yw9t4b",
-      "name": "block",
-      "parent": "th6xwp",
-      "children": [
-        "p4iy52",
-        "6143gq",
-        "ww1h6n"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "key card"
-    },
-    {
-      "id": "p4iy52",
-      "name": "icon",
-      "parent": "yw9t4b",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-heart"
-        },
-        "iconSize": "20px",
-        "_cssGlobalClasses": [
-          "4t0aa4"
-        ]
-      },
-      "label": "key__icon"
-    },
-    {
-      "id": "6143gq",
-      "name": "heading",
-      "parent": "yw9t4b",
-      "children": [],
-      "settings": {
-        "text": "You Are Our Priority",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "rr4jcb"
-        ]
-      },
-      "label": "key__title"
-    },
-    {
-      "id": "ww1h6n",
-      "name": "text-basic",
-      "parent": "yw9t4b",
-      "children": [],
-      "settings": {
-        "text": "From your first phone call to the last box we unpack, you are our priority. Our aim is to make your move memorable for all the right reasons.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "loe2kn"
-        ]
-      },
-      "label": "key__text"
-    },
-    {
-      "id": "nltjbb",
-      "name": "block",
-      "parent": "th6xwp",
-      "children": [
-        "usyhbs",
-        "hqkrkg",
-        "sw0k4d"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "key card"
-    },
-    {
-      "id": "usyhbs",
-      "name": "icon",
-      "parent": "nltjbb",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-people"
-        },
-        "iconSize": "20px",
-        "_cssGlobalClasses": [
-          "4t0aa4"
-        ]
-      },
-      "label": "key__icon"
-    },
-    {
-      "id": "hqkrkg",
-      "name": "heading",
-      "parent": "nltjbb",
-      "children": [],
-      "settings": {
-        "text": "Experienced Movers",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "rr4jcb"
-        ]
-      },
-      "label": "key__title"
-    },
-    {
-      "id": "sw0k4d",
-      "name": "text-basic",
-      "parent": "nltjbb",
-      "children": [],
-      "settings": {
-        "text": "The Rule of the 3 E's. Experience Equals Efficiency. Every moving service is planned and organized in advance \u2014 we come ready for action.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "loe2kn"
-        ]
-      },
-      "label": "key__text"
-    },
-    {
-      "id": "gymtkg",
-      "name": "block",
-      "parent": "th6xwp",
-      "children": [
-        "77lamr",
-        "wwckps",
-        "f3p6ps"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "key card"
-    },
-    {
-      "id": "77lamr",
-      "name": "icon",
-      "parent": "gymtkg",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-pricetag"
-        },
-        "iconSize": "20px",
-        "_cssGlobalClasses": [
-          "4t0aa4"
-        ]
-      },
-      "label": "key__icon"
-    },
-    {
-      "id": "wwckps",
-      "name": "heading",
-      "parent": "gymtkg",
-      "children": [],
-      "settings": {
-        "text": "No Hidden Fees",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "rr4jcb"
-        ]
-      },
-      "label": "key__title"
-    },
-    {
-      "id": "f3p6ps",
-      "name": "text-basic",
-      "parent": "gymtkg",
-      "children": [],
-      "settings": {
-        "text": "We go through as many details as needed to assure an accurate quotation, with hourly rates so there are no hidden fees.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "loe2kn"
-        ]
-      },
-      "label": "key__text"
-    },
-    {
-      "id": "dd09hq",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "876iz1"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "aohija"
-        ]
-      },
-      "label": "services"
-    },
-    {
-      "id": "876iz1",
-      "name": "container",
-      "parent": "dd09hq",
-      "children": [
-        "2z1nm1",
-        "ttkk30"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "1xyf0t"
-        ]
-      },
-      "label": "services__inner"
-    },
-    {
-      "id": "2z1nm1",
-      "name": "block",
-      "parent": "876iz1",
-      "children": [
-        "wqmufd",
-        "flpkkm",
-        "w5nfkt"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "dpqzvx",
-          "1xyf0t"
-        ]
-      },
-      "label": "services__header"
-    },
-    {
-      "id": "wqmufd",
-      "name": "text-basic",
-      "parent": "2z1nm1",
-      "children": [],
-      "settings": {
-        "text": "PACKING, MOVING, STORAGE & CLEANING",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "t5d4eh"
-        ]
-      },
-      "label": "services__eyebrow"
-    },
-    {
-      "id": "flpkkm",
-      "name": "heading",
-      "parent": "2z1nm1",
-      "children": [],
-      "settings": {
-        "text": "We Do It All",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "de3w3y"
-        ]
-      },
-      "label": "services__title"
-    },
-    {
-      "id": "w5nfkt",
-      "name": "text-basic",
-      "parent": "2z1nm1",
-      "children": [],
-      "settings": {
-        "text": "Crown Movers takes pride in offering a complete service to all our customers \u2014 packing, unpacking, disassembly, assembly, storage solutions, and deep cleaning included.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "2anjoy"
-        ]
-      },
-      "label": "services__text"
-    },
-    {
-      "id": "ttkk30",
-      "name": "div",
-      "parent": "876iz1",
-      "children": [
-        "wki07j"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "a0nzte"
-        ]
-      },
-      "label": "services__grid"
-    },
-    {
-      "id": "wki07j",
-      "name": "block",
-      "parent": "ttkk30",
-      "children": [
-        "xq085n",
-        "ov6gi9"
-      ],
-      "settings": {
-        "hasLoop": true,
-        "query": {
-          "objectType": "post",
-          "post_type": [
-            "services"
-          ],
-          "posts_per_page": "12",
-          "orderby": "menu_order",
-          "order": "ASC"
-        },
-        "tag": "a",
-        "link": {
-          "type": "meta",
-          "useDynamicData": "{post_url}"
-        },
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "5p8m89"
-        ]
-      },
-      "label": "service card (loops post_type=services, links to {post_url})"
-    },
-    {
-      "id": "xq085n",
-      "name": "block",
-      "parent": "wki07j",
-      "children": [
-        "ayv9pr"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "p87r9s"
-        ]
-      },
-      "label": "service__media"
-    },
-    {
-      "id": "ayv9pr",
-      "name": "image",
-      "parent": "xq085n",
-      "children": [],
-      "settings": {
-        "image": {
-          "useDynamicData": "{featured_image @fallback-image:'https://www.crownmovers.ca/wp-content/uploads/2022/07/Packing-And-Organizing.webp'}",
-          "size": "medium_large"
-        },
-        "altText": "{post_title}",
-        "_width": "100%",
-        "_height": "100%",
-        "_objectFit": "cover"
-      },
-      "label": "service__image"
-    },
-    {
-      "id": "ov6gi9",
-      "name": "block",
-      "parent": "wki07j",
-      "children": [
-        "7hnz2y",
-        "dgagg7"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "mr5ok1"
-        ]
-      },
-      "label": "service__body"
-    },
-    {
-      "id": "7hnz2y",
-      "name": "heading",
-      "parent": "ov6gi9",
-      "children": [],
-      "settings": {
-        "text": "{post_title}",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "c5luyw"
-        ]
-      },
-      "label": "service__title"
-    },
-    {
-      "id": "dgagg7",
-      "name": "text-basic",
-      "parent": "ov6gi9",
-      "children": [],
-      "settings": {
-        "text": "{post_excerpt}",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "y7h2rv"
-        ]
-      },
-      "label": "service__text (post excerpt)"
-    },
-    {
-      "id": "rocqql",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "01aoh4"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "eruixw"
-        ]
-      },
-      "label": "testimonials"
-    },
-    {
-      "id": "01aoh4",
-      "name": "container",
-      "parent": "rocqql",
-      "children": [
-        "oauf1i",
-        "qtzpki"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "1xyf0t"
-        ]
-      },
-      "label": "testimonials__inner"
-    },
-    {
-      "id": "oauf1i",
-      "name": "block",
-      "parent": "01aoh4",
-      "children": [
-        "gha58y",
-        "fo5rsm"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "wylzbv",
-          "1xyf0t"
-        ]
-      },
-      "label": "testimonials__header"
-    },
-    {
-      "id": "gha58y",
-      "name": "heading",
-      "parent": "oauf1i",
-      "children": [],
-      "settings": {
-        "text": "What Our Clients Have To Say",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "0n3pms"
-        ]
-      },
-      "label": "testimonials__title"
-    },
-    {
-      "id": "fo5rsm",
-      "name": "text-basic",
-      "parent": "oauf1i",
-      "children": [],
-      "settings": {
-        "text": "Crown Movers is proud of how we treat every move we make.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "vbvm8c"
-        ]
-      },
-      "label": "testimonials__text"
-    },
-    {
-      "id": "qtzpki",
-      "name": "div",
-      "parent": "01aoh4",
-      "children": [
-        "ojjpjx"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "6pnmpu"
-        ]
-      },
-      "label": "testimonials__grid"
-    },
-    {
-      "id": "ojjpjx",
-      "name": "block",
-      "parent": "qtzpki",
-      "children": [
-        "nl0bgk",
-        "k0hk3o",
-        "qgh76c"
-      ],
-      "settings": {
-        "hasLoop": true,
-        "query": {
-          "objectType": "post",
-          "post_type": [
-            "testimonial"
-          ],
-          "posts_per_page": "3",
-          "orderby": "date",
-          "order": "DESC"
-        },
-        "_cssGlobalClasses": [
-          "kxwf4c",
-          "1xyf0t"
-        ]
-      },
-      "label": "testimonial card (loops post_type=testimonial)"
-    },
-    {
-      "id": "nl0bgk",
-      "name": "text-basic",
-      "parent": "ojjpjx",
-      "children": [],
-      "settings": {
-        "text": "\u201c{acf_pull_quote}\u201d",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "98n88z"
-        ]
-      },
-      "label": "testimonial__quote"
-    },
-    {
-      "id": "k0hk3o",
-      "name": "text",
-      "parent": "ojjpjx",
-      "children": [],
-      "settings": {
-        "text": "<p>{post_excerpt}</p>",
-        "_cssGlobalClasses": [
-          "tatfnl"
-        ]
-      },
-      "label": "testimonial__excerpt"
-    },
-    {
-      "id": "qgh76c",
-      "name": "block",
-      "parent": "ojjpjx",
-      "children": [
-        "216z2e",
-        "o4wqmr"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "g7b7l7"
-        ]
-      },
-      "label": "testimonial__meta"
-    },
-    {
-      "id": "216z2e",
-      "name": "image",
-      "parent": "qgh76c",
-      "children": [],
-      "settings": {
-        "image": {
-          "useDynamicData": "{featured_image @fallback-image:'https://www.crownmovers.ca/wp-content/uploads/2022/07/brucerickerd-movers-review-crown-movers-Montreal-1.webp'}",
-          "size": "thumbnail"
-        },
-        "altText": "{post_title}",
-        "_cssGlobalClasses": [
-          "ry12g9"
-        ]
-      },
-      "label": "testimonial__avatar"
-    },
-    {
-      "id": "o4wqmr",
-      "name": "block",
-      "parent": "qgh76c",
-      "children": [
-        "4wz014",
-        "xce61h"
-      ],
-      "settings": {},
-      "label": "testimonial__meta-text"
-    },
-    {
-      "id": "4wz014",
-      "name": "text-basic",
-      "parent": "o4wqmr",
-      "children": [],
-      "settings": {
-        "text": "{post_title}",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "n36yvq"
-        ]
-      },
-      "label": "testimonial__name"
-    },
-    {
-      "id": "xce61h",
-      "name": "text-basic",
-      "parent": "o4wqmr",
-      "children": [],
-      "settings": {
-        "text": "{acf_role}",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "9z3lbu"
-        ]
-      },
-      "label": "testimonial__role"
-    },
-    {
-      "id": "d60c4m",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "xq2pua"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "ox37sa"
-        ]
-      },
-      "label": "partners"
-    },
-    {
-      "id": "xq2pua",
-      "name": "container",
-      "parent": "d60c4m",
-      "children": [
-        "9iedte",
-        "v95pt9"
-      ],
-      "settings": {},
-      "label": "partners__inner"
-    },
-    {
-      "id": "9iedte",
-      "name": "text-basic",
-      "parent": "xq2pua",
-      "children": [],
-      "settings": {
-        "text": "OUR NETWORK OF TRUSTED PARTNERS",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "8jxqsc"
-        ]
-      },
-      "label": "partners__label"
-    },
-    {
-      "id": "v95pt9",
-      "name": "div",
-      "parent": "xq2pua",
-      "children": [
-        "hf7hfi"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "0eqgpi"
-        ]
-      },
-      "label": "partners__grid"
-    },
-    {
-      "id": "hf7hfi",
-      "name": "image",
-      "parent": "v95pt9",
-      "children": [],
-      "settings": {
-        "hasLoop": true,
-        "query": {
-          "objectType": "post",
-          "post_type": [
-            "partner"
-          ],
-          "posts_per_page": "24",
-          "orderby": "menu_order",
-          "order": "ASC"
-        },
-        "image": {
-          "useDynamicData": "{featured_image}",
-          "size": "medium"
-        },
-        "altText": "{post_title}",
-        "_cssGlobalClasses": [
-          "r2uywn"
-        ]
-      },
-      "label": "partner logo (loops post_type=partner)"
-    },
-    {
-      "id": "7efmkz",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "vxswri"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "h72po3"
-        ]
-      },
-      "label": "faq"
-    },
-    {
-      "id": "vxswri",
-      "name": "container",
-      "parent": "7efmkz",
-      "children": [
-        "k12x6q",
-        "xscw3e"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "n3w3k7"
-        ]
-      },
-      "label": "faq__inner"
-    },
-    {
-      "id": "k12x6q",
-      "name": "heading",
-      "parent": "vxswri",
-      "children": [],
-      "settings": {
-        "text": "Moving FAQ",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "bpriv6"
-        ]
-      },
-      "label": "faq__title"
-    },
-    {
-      "id": "xscw3e",
-      "name": "accordion-nested",
-      "parent": "vxswri",
-      "children": [
-        "inr37x"
-      ],
-      "settings": {
-        "faqSchema": true,
-        "expandFirstItem": true
-      },
-      "label": "faq__accordion"
-    },
-    {
-      "id": "inr37x",
-      "name": "block",
-      "parent": "xscw3e",
-      "children": [
-        "6fwee1",
-        "4d5ct2"
-      ],
-      "settings": {
-        "hasLoop": true,
-        "query": {
-          "objectType": "acf_faq_items"
-        },
-        "_cssGlobalClasses": [
-          "tw00y8"
-        ]
-      },
-      "label": "faq__item (loops acf_faq_items \u2014 see acf-json/README.md)"
-    },
-    {
-      "id": "6fwee1",
-      "name": "block",
-      "parent": "inr37x",
-      "children": [
-        "zmido2",
-        "h66z6f"
-      ],
-      "settings": {
-        "_hidden": {
-          "_cssClasses": "accordion-title-wrapper"
-        },
-        "_cssGlobalClasses": [
-          "a63maw"
-        ]
-      },
-      "label": "faq__item-title"
-    },
-    {
-      "id": "zmido2",
-      "name": "heading",
-      "parent": "6fwee1",
-      "children": [],
-      "settings": {
-        "text": "{acf_faq_items_question}",
-        "tag": "h3",
-        "_cssGlobalClasses": [
-          "s7pyoh"
-        ]
-      },
-      "label": "faq__question"
-    },
-    {
-      "id": "h66z6f",
-      "name": "icon",
-      "parent": "6fwee1",
-      "children": [],
-      "settings": {
-        "icon": {
-          "library": "ionicons",
-          "icon": "ion-ios-arrow-forward"
-        },
-        "iconSize": "1em",
-        "isAccordionIcon": true,
-        "_cssGlobalClasses": [
-          "yq080q"
-        ]
-      },
-      "label": "faq__icon"
-    },
-    {
-      "id": "4d5ct2",
-      "name": "block",
-      "parent": "inr37x",
-      "children": [
-        "p68s8v"
-      ],
-      "settings": {
-        "_hidden": {
-          "_cssClasses": "accordion-content-wrapper"
-        },
-        "_cssGlobalClasses": [
-          "x789xt"
-        ]
-      },
-      "label": "faq__item-content"
-    },
-    {
-      "id": "p68s8v",
-      "name": "text-basic",
-      "parent": "4d5ct2",
-      "children": [],
-      "settings": {
-        "text": "{acf_faq_items_answer}",
-        "_cssGlobalClasses": [
-          "61jhel"
-        ]
-      },
-      "label": "faq__answer"
-    },
-    {
-      "id": "2ua28e",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "5d2bkd"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "3xngwr"
-        ]
-      },
-      "label": "cta"
-    },
-    {
-      "id": "5d2bkd",
-      "name": "container",
-      "parent": "2ua28e",
-      "children": [
-        "zadvx7",
-        "wo5fim",
-        "n5eubz",
-        "nhuba6"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "0wotsw"
-        ]
-      },
-      "label": "cta__inner"
-    },
-    {
-      "id": "zadvx7",
-      "name": "text-basic",
-      "parent": "5d2bkd",
-      "children": [],
-      "settings": {
-        "text": "FREE QUOTE FOR MOVING SERVICES",
-        "tag": "span",
-        "_cssGlobalClasses": [
-          "fl2ka1"
-        ]
-      },
-      "label": "cta__eyebrow"
-    },
-    {
-      "id": "wo5fim",
-      "name": "heading",
-      "parent": "5d2bkd",
-      "children": [],
-      "settings": {
-        "text": "Ready to plan your move?",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "7v9i8d"
-        ]
-      },
-      "label": "cta__title"
-    },
-    {
-      "id": "n5eubz",
-      "name": "text-basic",
-      "parent": "5d2bkd",
-      "children": [],
-      "settings": {
-        "text": "Send us your moving date, addresses, and access details \u2014 the more we know, the better your estimate will be.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "aukm1r"
-        ]
-      },
-      "label": "cta__text"
-    },
-    {
-      "id": "nhuba6",
-      "name": "block",
-      "parent": "5d2bkd",
-      "children": [
-        "scvlop",
-        "ewhbbt"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "uf8uil"
-        ]
-      },
-      "label": "cta__actions"
-    },
-    {
-      "id": "scvlop",
-      "name": "button",
-      "parent": "nhuba6",
+      "parent": "e00007",
       "children": [],
       "settings": {
         "text": "{acf_primary_cta @fallback:'Get a Free Quote'}",
@@ -1649,30 +118,2241 @@
           "useDynamicData": "{acf_primary_cta}"
         },
         "_cssGlobalClasses": [
-          "o4st4u",
-          "2en45x"
+          "c00001",
+          "c00002"
         ]
       },
-      "label": "btn btn--primary (dynamic: options page primary_cta)"
+      "label": "btn btn--primary (dynamic: primary_cta)"
     },
     {
-      "id": "ewhbbt",
+      "id": "e00009",
       "name": "button",
-      "parent": "nhuba6",
+      "parent": "e00007",
       "children": [],
       "settings": {
-        "text": "{acf_secondary_cta @fallback:'Call (514) 606-4030'}",
+        "text": "Call {acf_primary_phone @fallback:'514-606-4030'}",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:{acf_primary_phone}"
+        },
+        "_cssGlobalClasses": [
+          "c00005"
+        ]
+      },
+      "label": "btn--text (dynamic: primary_phone)"
+    },
+    {
+      "id": "e00010",
+      "name": "block",
+      "parent": "e00003",
+      "children": [
+        "e00011",
+        "e00012",
+        "e00013"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00020"
+        ]
+      },
+      "label": "hero__rating"
+    },
+    {
+      "id": "e00011",
+      "name": "rating",
+      "parent": "e00010",
+      "children": [],
+      "settings": {
+        "rating": "5",
+        "ratingMax": "5",
+        "iconSize": "1rem",
+        "iconColor": {
+          "raw": "var(--accent)"
+        }
+      },
+      "label": "5-star rating (Google \u2014 per client confirmation)"
+    },
+    {
+      "id": "e00012",
+      "name": "text-basic",
+      "parent": "e00010",
+      "children": [],
+      "settings": {
+        "text": "5.0",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00021"
+        ]
+      },
+      "label": "rating value"
+    },
+    {
+      "id": "e00013",
+      "name": "text-basic",
+      "parent": "e00010",
+      "children": [],
+      "settings": {
+        "text": "on Google",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00022"
+        ]
+      },
+      "label": "rating suffix"
+    },
+    {
+      "id": "e00014",
+      "name": "block",
+      "parent": "e00002",
+      "children": [
+        "e00015",
+        "e00016"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00023"
+        ]
+      },
+      "label": "hero__media"
+    },
+    {
+      "id": "e00015",
+      "name": "image",
+      "parent": "e00014",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2026/06/montreal-residential-movers-crown-moving-truck-home.webp"
+        },
+        "altText": "Crown Movers branded truck outside a Montreal home",
+        "_cssGlobalClasses": [
+          "c00024"
+        ]
+      },
+      "label": "hero image (real asset, placeholder crop)"
+    },
+    {
+      "id": "e00016",
+      "name": "block",
+      "parent": "e00014",
+      "children": [
+        "e00017",
+        "e00019"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00025"
+        ]
+      },
+      "label": "hero__badge"
+    },
+    {
+      "id": "e00017",
+      "name": "block",
+      "parent": "e00016",
+      "children": [
+        "e00018"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00026"
+        ]
+      },
+      "label": "badge icon wrap"
+    },
+    {
+      "id": "e00018",
+      "name": "icon",
+      "parent": "e00017",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-people"
+        },
+        "iconSize": "1.4rem"
+      },
+      "label": "people icon"
+    },
+    {
+      "id": "e00019",
+      "name": "block",
+      "parent": "e00016",
+      "children": [
+        "e00020",
+        "e00021"
+      ],
+      "settings": {},
+      "label": "badge text"
+    },
+    {
+      "id": "e00020",
+      "name": "text-basic",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "3,000+",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00027"
+        ]
+      },
+      "label": "badge value (per client confirmation)"
+    },
+    {
+      "id": "e00021",
+      "name": "text-basic",
+      "parent": "e00019",
+      "children": [],
+      "settings": {
+        "text": "moves handled every year",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00028"
+        ]
+      },
+      "label": "badge label"
+    },
+    {
+      "id": "e00022",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00023"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00029"
+        ]
+      },
+      "label": "Trust Stats Bar (dark)"
+    },
+    {
+      "id": "e00023",
+      "name": "container",
+      "parent": "e00022",
+      "children": [
+        "e00024",
+        "e00029",
+        "e00033"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00030"
+        ]
+      },
+      "label": "stats-bar__inner"
+    },
+    {
+      "id": "e00024",
+      "name": "block",
+      "parent": "e00023",
+      "children": [
+        "e00025"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00031",
+          "c00032"
+        ]
+      },
+      "label": "stats-bar item: google rating"
+    },
+    {
+      "id": "e00025",
+      "name": "block",
+      "parent": "e00024",
+      "children": [
+        "e00026",
+        "e00027",
+        "e00028"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00035"
+        ]
+      },
+      "label": "col"
+    },
+    {
+      "id": "e00026",
+      "name": "rating",
+      "parent": "e00025",
+      "children": [],
+      "settings": {
+        "rating": "5",
+        "ratingMax": "5",
+        "iconSize": "0.9rem",
+        "iconColor": {
+          "raw": "var(--accent)"
+        },
+        "_cssGlobalClasses": [
+          "c00036"
+        ]
+      },
+      "label": "stars (Google \u2014 per client confirmation)"
+    },
+    {
+      "id": "e00027",
+      "name": "text-basic",
+      "parent": "e00025",
+      "children": [],
+      "settings": {
+        "text": "5.0",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00033"
+        ]
+      },
+      "label": "value"
+    },
+    {
+      "id": "e00028",
+      "name": "text-basic",
+      "parent": "e00025",
+      "children": [],
+      "settings": {
+        "text": "Google Rating",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00034"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00029",
+      "name": "block",
+      "parent": "e00023",
+      "children": [
+        "e00030"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00031"
+        ]
+      },
+      "label": "stats-bar item: services per year"
+    },
+    {
+      "id": "e00030",
+      "name": "block",
+      "parent": "e00029",
+      "children": [
+        "e00031",
+        "e00032"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00035"
+        ]
+      },
+      "label": "col"
+    },
+    {
+      "id": "e00031",
+      "name": "counter",
+      "parent": "e00030",
+      "children": [],
+      "settings": {
+        "countFrom": "0",
+        "countTo": "3000",
+        "duration": "2000",
+        "suffix": "+",
+        "_cssGlobalClasses": [
+          "c00033"
+        ]
+      },
+      "label": "counter (per client confirmation)"
+    },
+    {
+      "id": "e00032",
+      "name": "text-basic",
+      "parent": "e00030",
+      "children": [],
+      "settings": {
+        "text": "Services / Year",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00034"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00033",
+      "name": "block",
+      "parent": "e00023",
+      "children": [
+        "e00034",
+        "e00035"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00031"
+        ]
+      },
+      "label": "stats-bar item: no hidden fees"
+    },
+    {
+      "id": "e00034",
+      "name": "icon",
+      "parent": "e00033",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-shield"
+        },
+        "iconSize": "1.6rem",
+        "iconColor": {
+          "raw": "var(--tertiary)"
+        }
+      },
+      "label": "shield icon"
+    },
+    {
+      "id": "e00035",
+      "name": "text-basic",
+      "parent": "e00033",
+      "children": [],
+      "settings": {
+        "text": "No Hidden Fees",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00034"
+        ]
+      },
+      "label": "label (real, sourced copy)"
+    },
+    {
+      "id": "e00036",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00037"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00037"
+        ]
+      },
+      "label": "Moving Services (icon band)"
+    },
+    {
+      "id": "e00037",
+      "name": "container",
+      "parent": "e00036",
+      "children": [
+        "e00038",
+        "e00042"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00038"
+        ]
+      },
+      "label": "services-band__inner"
+    },
+    {
+      "id": "e00038",
+      "name": "block",
+      "parent": "e00037",
+      "children": [
+        "e00039",
+        "e00040",
+        "e00041"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00009",
+          "c00010"
+        ]
+      },
+      "label": "section header"
+    },
+    {
+      "id": "e00039",
+      "name": "text-basic",
+      "parent": "e00038",
+      "children": [],
+      "settings": {
+        "text": "Moving Services",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "eyebrow"
+    },
+    {
+      "id": "e00040",
+      "name": "heading",
+      "parent": "e00038",
+      "children": [],
+      "settings": {
+        "text": "The right team for every kind of move.",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "c00011"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00041",
+      "name": "text-basic",
+      "parent": "e00038",
+      "children": [],
+      "settings": {
+        "text": "From apartments to offices and everything in between, we make moving simpler.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00012"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00042",
+      "name": "block",
+      "parent": "e00037",
+      "children": [
+        "e00043",
+        "e00048",
+        "e00053",
+        "e00058"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00039"
+        ]
+      },
+      "label": "services-band__grid"
+    },
+    {
+      "id": "e00043",
+      "name": "block",
+      "parent": "e00042",
+      "children": [
+        "e00044",
+        "e00046",
+        "e00047"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_cssGlobalClasses": [
+          "c00040",
+          "c00041"
+        ]
+      },
+      "label": "Residential Moving (links to a confirmed real destination)"
+    },
+    {
+      "id": "e00044",
+      "name": "block",
+      "parent": "e00043",
+      "children": [
+        "e00045"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
+      },
+      "label": "icon wrap"
+    },
+    {
+      "id": "e00045",
+      "name": "icon",
+      "parent": "e00044",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-home"
+        },
+        "iconSize": "1.6rem"
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-home' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00046",
+      "name": "text-basic",
+      "parent": "e00043",
+      "children": [],
+      "settings": {
+        "text": "Residential Moving",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00043"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00047",
+      "name": "text-basic",
+      "parent": "e00043",
+      "children": [],
+      "settings": {
+        "text": "Homes, condos and apartments",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00044"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00048",
+      "name": "block",
+      "parent": "e00042",
+      "children": [
+        "e00049",
+        "e00051",
+        "e00052"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/services/long-distance-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00040"
+        ]
+      },
+      "label": "Long-Distance (links to /services/ base (confirmed CPT slug), exact post slug unverified)"
+    },
+    {
+      "id": "e00049",
+      "name": "block",
+      "parent": "e00048",
+      "children": [
+        "e00050"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
+      },
+      "label": "icon wrap"
+    },
+    {
+      "id": "e00050",
+      "name": "icon",
+      "parent": "e00049",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-car"
+        },
+        "iconSize": "1.6rem"
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-car' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00051",
+      "name": "text-basic",
+      "parent": "e00048",
+      "children": [],
+      "settings": {
+        "text": "Long-Distance",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00043"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00052",
+      "name": "text-basic",
+      "parent": "e00048",
+      "children": [],
+      "settings": {
+        "text": "Across Quebec and Canada",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00044"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00053",
+      "name": "block",
+      "parent": "e00042",
+      "children": [
+        "e00054",
+        "e00056",
+        "e00057"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/services/commercial-moving/"
+        },
+        "_cssGlobalClasses": [
+          "c00040"
+        ]
+      },
+      "label": "Commercial Moving (links to /services/ base (confirmed CPT slug), exact post slug unverified)"
+    },
+    {
+      "id": "e00054",
+      "name": "block",
+      "parent": "e00053",
+      "children": [
+        "e00055"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
+      },
+      "label": "icon wrap"
+    },
+    {
+      "id": "e00055",
+      "name": "icon",
+      "parent": "e00054",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-briefcase"
+        },
+        "iconSize": "1.6rem"
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-briefcase' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00056",
+      "name": "text-basic",
+      "parent": "e00053",
+      "children": [],
+      "settings": {
+        "text": "Commercial Moving",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00043"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00057",
+      "name": "text-basic",
+      "parent": "e00053",
+      "children": [],
+      "settings": {
+        "text": "Offices, retail and workspaces",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00044"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00058",
+      "name": "block",
+      "parent": "e00042",
+      "children": [
+        "e00059",
+        "e00061",
+        "e00062"
+      ],
+      "settings": {
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/services/"
+        },
+        "_cssGlobalClasses": [
+          "c00040"
+        ]
+      },
+      "label": "Packing & Storage (links to a confirmed real destination)"
+    },
+    {
+      "id": "e00059",
+      "name": "block",
+      "parent": "e00058",
+      "children": [
+        "e00060"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00042"
+        ]
+      },
+      "label": "icon wrap"
+    },
+    {
+      "id": "e00060",
+      "name": "icon",
+      "parent": "e00059",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-cube"
+        },
+        "iconSize": "1.6rem"
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-cube' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00061",
+      "name": "text-basic",
+      "parent": "e00058",
+      "children": [],
+      "settings": {
+        "text": "Packing & Storage",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00043"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00062",
+      "name": "text-basic",
+      "parent": "e00058",
+      "children": [],
+      "settings": {
+        "text": "Professional packing and secure storage",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00044"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00063",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00064"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00045"
+        ]
+      },
+      "label": "Why Crown (split)"
+    },
+    {
+      "id": "e00064",
+      "name": "container",
+      "parent": "e00063",
+      "children": [
+        "e00065",
+        "e00067"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00013"
+        ]
+      },
+      "label": "container--split"
+    },
+    {
+      "id": "e00065",
+      "name": "block",
+      "parent": "e00064",
+      "children": [
+        "e00066"
+      ],
+      "settings": {},
+      "label": "why__media"
+    },
+    {
+      "id": "e00066",
+      "name": "image",
+      "parent": "e00065",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2022/07/furniture-movers.webp"
+        },
+        "altText": "Crown Movers team carefully wrapping and protecting furniture",
+        "_cssGlobalClasses": [
+          "c00046"
+        ]
+      },
+      "label": "why image (real asset, placeholder crop)"
+    },
+    {
+      "id": "e00067",
+      "name": "block",
+      "parent": "e00064",
+      "children": [
+        "e00068",
+        "e00069",
+        "e00070",
+        "e00071",
+        "e00084"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00047"
+        ]
+      },
+      "label": "why__content"
+    },
+    {
+      "id": "e00068",
+      "name": "text-basic",
+      "parent": "e00067",
+      "children": [],
+      "settings": {
+        "text": "Why Crown",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00007"
+        ]
+      },
+      "label": "eyebrow"
+    },
+    {
+      "id": "e00069",
+      "name": "heading",
+      "parent": "e00067",
+      "children": [],
+      "settings": {
+        "text": "Clear plan. Careful hands. A smoother move.",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "c00048"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00070",
+      "name": "text-basic",
+      "parent": "e00067",
+      "children": [],
+      "settings": {
+        "text": "We plan every detail so your move is efficient, protected and stress-free from start to finish.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00049"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00071",
+      "name": "block",
+      "parent": "e00067",
+      "children": [
+        "e00072",
+        "e00075",
+        "e00078",
+        "e00081"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00050"
+        ]
+      },
+      "label": "why__list"
+    },
+    {
+      "id": "e00072",
+      "name": "block",
+      "parent": "e00071",
+      "children": [
+        "e00073",
+        "e00074"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00051"
+        ]
+      },
+      "label": "checklist item"
+    },
+    {
+      "id": "e00073",
+      "name": "icon",
+      "parent": "e00072",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-checkmark-circle"
+        },
+        "iconSize": "1.3rem",
+        "_cssGlobalClasses": [
+          "c00052"
+        ]
+      },
+      "label": "check icon (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00074",
+      "name": "text-basic",
+      "parent": "e00072",
+      "children": [],
+      "settings": {
+        "text": "Accurate estimates",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00053"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00075",
+      "name": "block",
+      "parent": "e00071",
+      "children": [
+        "e00076",
+        "e00077"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00051"
+        ]
+      },
+      "label": "checklist item"
+    },
+    {
+      "id": "e00076",
+      "name": "icon",
+      "parent": "e00075",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-checkmark-circle"
+        },
+        "iconSize": "1.3rem",
+        "_cssGlobalClasses": [
+          "c00052"
+        ]
+      },
+      "label": "check icon (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00077",
+      "name": "text-basic",
+      "parent": "e00075",
+      "children": [],
+      "settings": {
+        "text": "Furniture protection included",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00053"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00078",
+      "name": "block",
+      "parent": "e00071",
+      "children": [
+        "e00079",
+        "e00080"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00051"
+        ]
+      },
+      "label": "checklist item"
+    },
+    {
+      "id": "e00079",
+      "name": "icon",
+      "parent": "e00078",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-checkmark-circle"
+        },
+        "iconSize": "1.3rem",
+        "_cssGlobalClasses": [
+          "c00052"
+        ]
+      },
+      "label": "check icon (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00080",
+      "name": "text-basic",
+      "parent": "e00078",
+      "children": [],
+      "settings": {
+        "text": "Experienced, trained crews",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00053"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00081",
+      "name": "block",
+      "parent": "e00071",
+      "children": [
+        "e00082",
+        "e00083"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00051"
+        ]
+      },
+      "label": "checklist item"
+    },
+    {
+      "id": "e00082",
+      "name": "icon",
+      "parent": "e00081",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-checkmark-circle"
+        },
+        "iconSize": "1.3rem",
+        "_cssGlobalClasses": [
+          "c00052"
+        ]
+      },
+      "label": "check icon (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00083",
+      "name": "text-basic",
+      "parent": "e00081",
+      "children": [],
+      "settings": {
+        "text": "Assembly & disassembly",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00053"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00084",
+      "name": "text-link",
+      "parent": "e00067",
+      "children": [],
+      "settings": {
+        "text": "Why Montreal Trusts Crown \u2192",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        },
+        "_cssGlobalClasses": [
+          "c00005"
+        ]
+      },
+      "label": "link (confirmed real page)"
+    },
+    {
+      "id": "e00085",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00086"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00054"
+        ]
+      },
+      "label": "Get a Quote (dark, embedded WS Form)"
+    },
+    {
+      "id": "e00086",
+      "name": "container",
+      "parent": "e00085",
+      "children": [
+        "e00087",
+        "e00100"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00055"
+        ]
+      },
+      "label": "quote-cta__inner"
+    },
+    {
+      "id": "e00087",
+      "name": "block",
+      "parent": "e00086",
+      "children": [
+        "e00088",
+        "e00089",
+        "e00090"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00056"
+        ]
+      },
+      "label": "quote-cta__content"
+    },
+    {
+      "id": "e00088",
+      "name": "heading",
+      "parent": "e00087",
+      "children": [],
+      "settings": {
+        "text": "Get a clear starting estimate.",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "c00057"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00089",
+      "name": "text-basic",
+      "parent": "e00087",
+      "children": [],
+      "settings": {
+        "text": "Tell us a few details and we'll provide a personalized estimate for your move.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00058"
+        ]
+      },
+      "label": "text"
+    },
+    {
+      "id": "e00090",
+      "name": "block",
+      "parent": "e00087",
+      "children": [
+        "e00091",
+        "e00094",
+        "e00097"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00059"
+        ]
+      },
+      "label": "quote-cta__trust"
+    },
+    {
+      "id": "e00091",
+      "name": "block",
+      "parent": "e00090",
+      "children": [
+        "e00092",
+        "e00093"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00060"
+        ]
+      },
+      "label": "trust item"
+    },
+    {
+      "id": "e00092",
+      "name": "icon",
+      "parent": "e00091",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pricetag"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00061"
+        ]
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-pricetag' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00093",
+      "name": "text-basic",
+      "parent": "e00091",
+      "children": [],
+      "settings": {
+        "text": "Free, no obligation",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00062"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00094",
+      "name": "block",
+      "parent": "e00090",
+      "children": [
+        "e00095",
+        "e00096"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00060"
+        ]
+      },
+      "label": "trust item"
+    },
+    {
+      "id": "e00095",
+      "name": "icon",
+      "parent": "e00094",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-person"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00061"
+        ]
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-person' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00096",
+      "name": "text-basic",
+      "parent": "e00094",
+      "children": [],
+      "settings": {
+        "text": "Reviewed by our team",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00062"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00097",
+      "name": "block",
+      "parent": "e00090",
+      "children": [
+        "e00098",
+        "e00099"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00060"
+        ]
+      },
+      "label": "trust item"
+    },
+    {
+      "id": "e00098",
+      "name": "icon",
+      "parent": "e00097",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-time"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00061"
+        ]
+      },
+      "label": "icon (best-guess ionicons name 'ion-ios-time' \u2014 verify it renders)"
+    },
+    {
+      "id": "e00099",
+      "name": "text-basic",
+      "parent": "e00097",
+      "children": [],
+      "settings": {
+        "text": "Takes about 2 minutes",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00062"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00100",
+      "name": "block",
+      "parent": "e00086",
+      "children": [
+        "e00101"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00063"
+        ]
+      },
+      "label": "quote-cta__form-card"
+    },
+    {
+      "id": "e00101",
+      "name": "shortcode",
+      "parent": "e00100",
+      "children": [],
+      "settings": {
+        "shortcode": "[ws_form id=\"20\"]"
+      },
+      "label": "REAL embedded quote form (WS Form, id 20 \u2014 confirmed live backend at /free-quote/; field styling controlled by WS Form's own Style settings in wp-admin, not this JSON)"
+    },
+    {
+      "id": "e00102",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00103"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00064"
+        ]
+      },
+      "label": "Process (3 steps)"
+    },
+    {
+      "id": "e00103",
+      "name": "container",
+      "parent": "e00102",
+      "children": [
+        "e00104",
+        "e00105"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00065"
+        ]
+      },
+      "label": "process__inner"
+    },
+    {
+      "id": "e00104",
+      "name": "heading",
+      "parent": "e00103",
+      "children": [],
+      "settings": {
+        "text": "From quote to move day.",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "c00066"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00105",
+      "name": "block",
+      "parent": "e00103",
+      "children": [
+        "e00106",
+        "e00110",
+        "e00111",
+        "e00115",
+        "e00116"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00067"
+        ]
+      },
+      "label": "process__steps"
+    },
+    {
+      "id": "e00106",
+      "name": "block",
+      "parent": "e00105",
+      "children": [
+        "e00107",
+        "e00108",
+        "e00109"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00068"
+        ]
+      },
+      "label": "step 01"
+    },
+    {
+      "id": "e00107",
+      "name": "text-basic",
+      "parent": "e00106",
+      "children": [],
+      "settings": {
+        "text": "01",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00069"
+        ]
+      },
+      "label": "number"
+    },
+    {
+      "id": "e00108",
+      "name": "text-basic",
+      "parent": "e00106",
+      "children": [],
+      "settings": {
+        "text": "Tell us about your move",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00070"
+        ]
+      },
+      "label": "step title"
+    },
+    {
+      "id": "e00109",
+      "name": "text-basic",
+      "parent": "e00106",
+      "children": [],
+      "settings": {
+        "text": "Share the details so we can understand your needs.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00071"
+        ]
+      },
+      "label": "step text"
+    },
+    {
+      "id": "e00110",
+      "name": "icon",
+      "parent": "e00105",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "_cssGlobalClasses": [
+          "c00072"
+        ]
+      },
+      "label": "arrow (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00111",
+      "name": "block",
+      "parent": "e00105",
+      "children": [
+        "e00112",
+        "e00113",
+        "e00114"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00068"
+        ]
+      },
+      "label": "step 02"
+    },
+    {
+      "id": "e00112",
+      "name": "text-basic",
+      "parent": "e00111",
+      "children": [],
+      "settings": {
+        "text": "02",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00069"
+        ]
+      },
+      "label": "number"
+    },
+    {
+      "id": "e00113",
+      "name": "text-basic",
+      "parent": "e00111",
+      "children": [],
+      "settings": {
+        "text": "We build the right plan",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00070"
+        ]
+      },
+      "label": "step title"
+    },
+    {
+      "id": "e00114",
+      "name": "text-basic",
+      "parent": "e00111",
+      "children": [],
+      "settings": {
+        "text": "We create a custom plan and confirm all the details.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00071"
+        ]
+      },
+      "label": "step text"
+    },
+    {
+      "id": "e00115",
+      "name": "icon",
+      "parent": "e00105",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-arrow-forward"
+        },
+        "_cssGlobalClasses": [
+          "c00072"
+        ]
+      },
+      "label": "arrow (confirmed real ionicons name)"
+    },
+    {
+      "id": "e00116",
+      "name": "block",
+      "parent": "e00105",
+      "children": [
+        "e00117",
+        "e00118",
+        "e00119"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00068"
+        ]
+      },
+      "label": "step 03"
+    },
+    {
+      "id": "e00117",
+      "name": "text-basic",
+      "parent": "e00116",
+      "children": [],
+      "settings": {
+        "text": "03",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00069"
+        ]
+      },
+      "label": "number"
+    },
+    {
+      "id": "e00118",
+      "name": "text-basic",
+      "parent": "e00116",
+      "children": [],
+      "settings": {
+        "text": "Move with confidence",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00070"
+        ]
+      },
+      "label": "step title"
+    },
+    {
+      "id": "e00119",
+      "name": "text-basic",
+      "parent": "e00116",
+      "children": [],
+      "settings": {
+        "text": "Our team arrives on time and handles everything with care.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00071"
+        ]
+      },
+      "label": "step text"
+    },
+    {
+      "id": "e00120",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00121",
+        "e00127"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00073"
+        ]
+      },
+      "label": "Testimonial + Service Area (decorative map)"
+    },
+    {
+      "id": "e00121",
+      "name": "block",
+      "parent": "e00120",
+      "children": [
+        "e00122",
+        "e00123"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00074"
+        ]
+      },
+      "label": "tm__quote"
+    },
+    {
+      "id": "e00122",
+      "name": "icon",
+      "parent": "e00121",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-quote"
+        },
+        "iconSize": "2rem",
+        "_cssGlobalClasses": [
+          "c00075"
+        ]
+      },
+      "label": "quote mark (best-guess ionicons name \u2014 verify it renders)"
+    },
+    {
+      "id": "e00123",
+      "name": "block",
+      "parent": "e00121",
+      "children": [
+        "e00124",
+        "e00125",
+        "e00126"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "testimonial"
+          ],
+          "posts_per_page": "1",
+          "orderby": "menu_order",
+          "order": "ASC"
+        }
+      },
+      "label": "testimonial loop, 1 post (per client confirmation: Karen L. \u2014 set as first via menu_order once created)"
+    },
+    {
+      "id": "e00124",
+      "name": "text-basic",
+      "parent": "e00123",
+      "children": [],
+      "settings": {
+        "text": "\u201c{acf_pull_quote}\u201d",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00076"
+        ]
+      },
+      "label": "pull quote"
+    },
+    {
+      "id": "e00125",
+      "name": "text-basic",
+      "parent": "e00123",
+      "children": [],
+      "settings": {
+        "text": "{post_title} \u00b7 {acf_role}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c00077"
+        ]
+      },
+      "label": "author + route"
+    },
+    {
+      "id": "e00126",
+      "name": "rating",
+      "parent": "e00123",
+      "children": [],
+      "settings": {
+        "rating": "{acf_rating}",
+        "ratingMax": "5",
+        "iconSize": "1rem",
+        "iconColor": {
+          "raw": "var(--accent)"
+        }
+      },
+      "label": "star rating (dynamic, acf_rating is a number field 1-5)"
+    },
+    {
+      "id": "e00127",
+      "name": "block",
+      "parent": "e00120",
+      "children": [
+        "e00128",
+        "e00131",
+        "e00134",
+        "e00137",
+        "e00140",
+        "e00143"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00078"
+        ]
+      },
+      "label": "tm__map (decorative service-area illustration, not an interactive map)"
+    },
+    {
+      "id": "e00128",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00129",
+        "e00130"
+      ],
+      "settings": {
+        "_left": "22%",
+        "_top": "18%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: Laval"
+    },
+    {
+      "id": "e00129",
+      "name": "icon",
+      "parent": "e00128",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00130",
+      "name": "text-basic",
+      "parent": "e00128",
+      "children": [],
+      "settings": {
+        "text": "Laval",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00131",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00132",
+        "e00133"
+      ],
+      "settings": {
+        "_left": "42%",
+        "_top": "42%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: Montreal"
+    },
+    {
+      "id": "e00132",
+      "name": "icon",
+      "parent": "e00131",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00133",
+      "name": "text-basic",
+      "parent": "e00131",
+      "children": [],
+      "settings": {
+        "text": "Montreal",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00134",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00135",
+        "e00136"
+      ],
+      "settings": {
+        "_left": "12%",
+        "_top": "52%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: West Island"
+    },
+    {
+      "id": "e00135",
+      "name": "icon",
+      "parent": "e00134",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00136",
+      "name": "text-basic",
+      "parent": "e00134",
+      "children": [],
+      "settings": {
+        "text": "West Island",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00137",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00138",
+        "e00139"
+      ],
+      "settings": {
+        "_left": "38%",
+        "_top": "68%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: South Shore"
+    },
+    {
+      "id": "e00138",
+      "name": "icon",
+      "parent": "e00137",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00139",
+      "name": "text-basic",
+      "parent": "e00137",
+      "children": [],
+      "settings": {
+        "text": "South Shore",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00140",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00141",
+        "e00142"
+      ],
+      "settings": {
+        "_left": "72%",
+        "_top": "14%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: Quebec City"
+    },
+    {
+      "id": "e00141",
+      "name": "icon",
+      "parent": "e00140",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00142",
+      "name": "text-basic",
+      "parent": "e00140",
+      "children": [],
+      "settings": {
+        "text": "Quebec City",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00143",
+      "name": "block",
+      "parent": "e00127",
+      "children": [
+        "e00144",
+        "e00145"
+      ],
+      "settings": {
+        "_left": "78%",
+        "_top": "58%",
+        "_cssGlobalClasses": [
+          "c00079"
+        ]
+      },
+      "label": "pin: Toronto"
+    },
+    {
+      "id": "e00144",
+      "name": "icon",
+      "parent": "e00143",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1.1rem",
+        "_cssGlobalClasses": [
+          "c00080"
+        ]
+      },
+      "label": "pin icon"
+    },
+    {
+      "id": "e00145",
+      "name": "text-basic",
+      "parent": "e00143",
+      "children": [],
+      "settings": {
+        "text": "Toronto",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c00081"
+        ]
+      },
+      "label": "label"
+    },
+    {
+      "id": "e00146",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "e00147"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c00082"
+        ]
+      },
+      "label": "Closing CTA"
+    },
+    {
+      "id": "e00147",
+      "name": "container",
+      "parent": "e00146",
+      "children": [
+        "e00148",
+        "e00153"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00013"
+        ]
+      },
+      "label": "container--split"
+    },
+    {
+      "id": "e00148",
+      "name": "block",
+      "parent": "e00147",
+      "children": [
+        "e00149",
+        "e00150"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00084"
+        ]
+      },
+      "label": "cta__content"
+    },
+    {
+      "id": "e00149",
+      "name": "heading",
+      "parent": "e00148",
+      "children": [],
+      "settings": {
+        "text": "Ready for a move that feels organized?",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "c00083"
+        ]
+      },
+      "label": "title"
+    },
+    {
+      "id": "e00150",
+      "name": "block",
+      "parent": "e00148",
+      "children": [
+        "e00151",
+        "e00152"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c00085"
+        ]
+      },
+      "label": "cta__actions"
+    },
+    {
+      "id": "e00151",
+      "name": "button",
+      "parent": "e00150",
+      "children": [],
+      "settings": {
+        "text": "{acf_primary_cta @fallback:'Get a Free Quote'}",
         "tag": "a",
         "link": {
           "type": "meta",
-          "useDynamicData": "{acf_secondary_cta}"
+          "useDynamicData": "{acf_primary_cta}"
         },
         "_cssGlobalClasses": [
-          "o4st4u",
-          "n2rfe2"
+          "c00001",
+          "c00002"
         ]
       },
-      "label": "btn btn--outline-primary (dynamic: options page secondary_cta)"
+      "label": "btn btn--primary (dynamic: primary_cta)"
+    },
+    {
+      "id": "e00152",
+      "name": "button",
+      "parent": "e00150",
+      "children": [],
+      "settings": {
+        "text": "Call {acf_primary_phone @fallback:'514-606-4030'}",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:{acf_primary_phone}"
+        },
+        "_cssGlobalClasses": [
+          "c00005"
+        ]
+      },
+      "label": "btn--text (dynamic: primary_phone)"
+    },
+    {
+      "id": "e00153",
+      "name": "block",
+      "parent": "e00147",
+      "children": [
+        "e00154"
+      ],
+      "settings": {},
+      "label": "cta__media"
+    },
+    {
+      "id": "e00154",
+      "name": "image",
+      "parent": "e00153",
+      "children": [],
+      "settings": {
+        "image": {
+          "url": "https://www.crownmovers.ca/wp-content/uploads/2022/07/Furniture-Disassembly-Assembly.webp"
+        },
+        "altText": "Crown Movers team ready for moving day",
+        "_cssGlobalClasses": [
+          "c00086"
+        ]
+      },
+      "label": "cta image (real asset, placeholder crop)"
     }
   ],
   "source": "bricksCopiedElements",
@@ -1680,7 +2360,7 @@
   "version": "2.3.11",
   "globalClasses": [
     {
-      "id": "o4st4u",
+      "id": "c00001",
       "name": "btn",
       "settings": {
         "_typography": {
@@ -1697,48 +2377,27 @@
         },
         "_border": {
           "radius": {
-            "top": "var(--radius-l)",
-            "right": "var(--radius-l)",
-            "bottom": "var(--radius-l)",
-            "left": "var(--radius-l)"
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
           }
         },
-        "_cssTransition": "transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease"
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.3s ease, background-position 0.4s ease, background-color 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-2"
+        }
       }
     },
     {
-      "id": "2en45x",
+      "id": "c00002",
       "name": "btn--primary",
       "settings": {
-        "_gradient": {
-          "applyTo": "background",
-          "gradientType": "linear",
-          "angle": "135",
-          "colors": [
-            {
-              "color": {
-                "raw": "var(--primary)"
-              },
-              "stop": "0"
-            },
-            {
-              "color": {
-                "raw": "var(--tertiary)"
-              },
-              "stop": "100"
-            }
-          ]
-        },
-        "_typography": {
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        },
-        "_cssCustom": "%root% { box-shadow: var(--box-shadow-3); }\n%root%:hover { transform: translateY(-3px); }"
+        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%); background-size: 160% 160%; background-position: 0% 0%; color: var(--secondary); box-shadow: var(--box-shadow-3); }%root%:hover { background-position: 100% 100%; }"
       }
     },
     {
-      "id": "kky55n",
+      "id": "c00003",
       "name": "btn--secondary",
       "settings": {
         "_background": {
@@ -1750,16 +2409,22 @@
           "color": {
             "raw": "var(--white)"
           }
-        }
+        },
+        "_background:hover": {
+          "color": {
+            "raw": "var(--primary-hover)"
+          }
+        },
+        "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }"
       }
     },
     {
-      "id": "n2rfe2",
+      "id": "c00004",
       "name": "btn--outline-primary",
       "settings": {
         "_background": {
           "color": {
-            "rgb": "rgba(255,255,255,0)"
+            "raw": "transparent"
           }
         },
         "_typography": {
@@ -1778,18 +2443,318 @@
           "color": {
             "raw": "var(--primary)"
           }
+        },
+        "_background:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
         }
       }
     },
     {
-      "id": "kxwf4c",
-      "name": "card",
+      "id": "c00005",
+      "name": "btn--text",
       "settings": {
-        "_padding": "var(--content-gap)",
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "text-transform": "none",
+          "letter-spacing": "normal"
+        },
+        "_padding": {
+          "top": "0.6em",
+          "right": "0",
+          "bottom": "0.6em",
+          "left": "0"
+        },
+        "_background": {
+          "color": {
+            "raw": "transparent"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00006",
+      "name": "btn--text-light",
+      "settings": {
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--white)"
+          },
+          "text-transform": "none",
+          "letter-spacing": "normal"
+        },
+        "_padding": {
+          "top": "0.6em",
+          "right": "0",
+          "bottom": "0.6em",
+          "left": "0"
+        },
+        "_background": {
+          "color": {
+            "raw": "transparent"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--tertiary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00007",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "800",
+          "letter-spacing": "0.08em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_margin": {
+          "bottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "c00008",
+      "name": "eyebrow--light",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--tertiary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00009",
+      "name": "section-header",
+      "settings": {
+        "_alignItems": "flex-start",
+        "_widthMax": "var(--col-width-l)"
+      }
+    },
+    {
+      "id": "c00010",
+      "name": "section-header--center",
+      "settings": {
+        "_alignItems": "center",
+        "_typography": {
+          "text-align": "center"
+        },
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "c00011",
+      "name": "section-header__title",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--h2)",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00012",
+      "name": "section-header__text",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--text-m)",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 80%, transparent)"
+          },
+          "line-height": "1.6"
+        },
+        "_margin": {
+          "top": "var(--content-gap)"
+        }
+      }
+    },
+    {
+      "id": "c00013",
+      "name": "container--split",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "1fr 1fr",
+        "_alignItems": "center",
+        "_gridGap": "var(--container-gap)",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      }
+    },
+    {
+      "id": "c00014",
+      "name": "hero",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
+        }
+      }
+    },
+    {
+      "id": "c00015",
+      "name": "hero__inner",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "1.1fr 1fr",
+        "_alignItems": "center",
+        "_gridGap": "var(--container-gap)",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      }
+    },
+    {
+      "id": "c00016",
+      "name": "hero__content",
+      "settings": {
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00017",
+      "name": "hero__title",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--h1)",
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "line-height": "1.1",
+          "letter-spacing": "-0.03em"
+        }
+      }
+    },
+    {
+      "id": "c00018",
+      "name": "hero__subtitle",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--text-l)",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 80%, transparent)"
+          },
+          "line-height": "1.6"
+        },
+        "_widthMax": "var(--col-width-m)"
+      }
+    },
+    {
+      "id": "c00019",
+      "name": "hero__actions",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "var(--content-gap)",
+        "_direction:mobile_portrait": "column",
+        "_alignItems:mobile_portrait": "stretch"
+      }
+    },
+    {
+      "id": "c00020",
+      "name": "hero__rating",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "10px"
+      }
+    },
+    {
+      "id": "c00021",
+      "name": "hero__rating-text",
+      "settings": {
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00022",
+      "name": "hero__rating-suffix",
+      "settings": {
+        "_typography": {
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 70%, transparent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00023",
+      "name": "hero__media",
+      "settings": {
+        "_position": "relative"
+      }
+    },
+    {
+      "id": "c00024",
+      "name": "hero__image",
+      "settings": {
+        "_width": "100%",
+        "_height": "100%",
+        "_objectFit": "cover",
+        "_border": {
+          "radius": {
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
+          }
+        },
+        "_aspectRatio": "4/5"
+      }
+    },
+    {
+      "id": "c00025",
+      "name": "hero__badge",
+      "settings": {
+        "_position": "absolute",
+        "_bottom": "24px",
+        "_left": "-24px",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "14px",
         "_background": {
           "color": {
             "raw": "var(--white)"
           }
+        },
+        "_padding": {
+          "top": "18px",
+          "right": "22px",
+          "bottom": "18px",
+          "left": "22px"
         },
         "_border": {
           "radius": {
@@ -1797,60 +2762,27 @@
             "right": "var(--radius)",
             "bottom": "var(--radius)",
             "left": "var(--radius)"
-          },
-          "width": {
-            "top": "1px",
-            "right": "1px",
-            "bottom": "1px",
-            "left": "1px"
-          },
-          "style": "solid",
-          "color": {
-            "rgb": "rgba(254, 75, 3, 0.14)"
           }
         },
-        "_cssCustom": "%root% { box-shadow: var(--box-shadow-1); }",
-        "_cssTransition": "transform 0.2s ease, box-shadow 0.3s ease"
+        "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }",
+        "_left:mobile_portrait": "12px",
+        "_bottom:mobile_portrait": "12px"
       }
     },
     {
-      "id": "5p8m89",
-      "name": "card--hover",
+      "id": "c00026",
+      "name": "hero__badge-icon",
       "settings": {
-        "_transform:hover": {
-          "translateY": "-3"
-        },
-        "_cssCustom": "%root%:hover { box-shadow: var(--box-shadow-2); }"
-      }
-    },
-    {
-      "id": "t5d4eh",
-      "name": "eyebrow",
-      "settings": {
-        "_typography": {
-          "font-size": "0.8125rem",
-          "font-weight": "800",
-          "letter-spacing": "0.12em",
-          "text-transform": "uppercase",
-          "color": {
-            "raw": "var(--primary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "4t0aa4",
-      "name": "icon-badge",
-      "settings": {
-        "_display": "flex",
-        "_alignItems": "center",
-        "_justifyContent": "center",
-        "_width": "44px",
-        "_height": "44px",
         "_background": {
           "color": {
-            "raw": "var(--primary)"
+            "raw": "color-mix(in srgb, var(--primary) 12%, transparent)"
           }
+        },
+        "_padding": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
         },
         "_border": {
           "radius": {
@@ -1861,58 +2793,244 @@
           }
         },
         "iconColor": {
-          "raw": "var(--white)"
+          "raw": "var(--primary)"
         }
       }
     },
     {
-      "id": "1xyf0t",
-      "name": "stack--content-gap",
+      "id": "c00027",
+      "name": "hero__badge-value",
       "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_rowGap": "var(--content-gap)"
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "var(--h5)",
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "line-height": "1"
+        }
       }
     },
     {
-      "id": "tgxuq1",
-      "name": "hero",
+      "id": "c00028",
+      "name": "hero__badge-label",
       "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); background: var(--neutral-ultra-light); }"
+        "_typography": {
+          "font-size": "0.8125rem",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 70%, transparent)"
+          }
+        }
       }
     },
     {
-      "id": "zweed0",
-      "name": "hero__inner",
+      "id": "c00029",
+      "name": "stats-bar",
+      "settings": {
+        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--secondary) 0%, color-mix(in srgb, var(--secondary) 85%, black) 100%); }",
+        "_padding": {
+          "top": "var(--content-gap)",
+          "bottom": "var(--content-gap)"
+        }
+      }
+    },
+    {
+      "id": "c00030",
+      "name": "stats-bar__inner",
       "settings": {
         "_direction": "row",
         "_alignItems": "center",
-        "_columnGap": "var(--container-gap)",
-        "_rowGap": "var(--container-gap)",
-        "_direction:tablet_portrait": "column"
+        "_justifyContent": "space-around",
+        "_direction:mobile_portrait": "column",
+        "_rowGap:mobile_portrait": "var(--content-gap)"
       }
     },
     {
-      "id": "dawzpq",
-      "name": "hero__content",
+      "id": "c00031",
+      "name": "stats-bar__item",
       "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_rowGap": "var(--content-gap)",
-        "_width": "50%",
-        "_width:tablet_portrait": "100%"
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "12px",
+        "_padding": {
+          "left": "var(--content-gap)",
+          "right": "var(--content-gap)"
+        },
+        "_border": {
+          "width": {
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 15%, transparent)"
+          }
+        }
       }
     },
     {
-      "id": "n5th3y",
-      "name": "hero__title",
+      "id": "c00032",
+      "name": "stats-bar__item--first",
+      "settings": {
+        "_border": {
+          "width": {
+            "left": "0"
+          }
+        },
+        "_padding": {
+          "left": "0"
+        }
+      }
+    },
+    {
+      "id": "c00033",
+      "name": "stats-bar__value",
       "settings": {
         "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h1)",
           "font-weight": "800",
-          "line-height": "1.04",
-          "letter-spacing": "-0.02em",
+          "font-size": "var(--h4)",
+          "color": {
+            "raw": "var(--white)"
+          },
+          "line-height": "1"
+        }
+      }
+    },
+    {
+      "id": "c00034",
+      "name": "stats-bar__label",
+      "settings": {
+        "_typography": {
+          "font-size": "0.8125rem",
+          "font-weight": "700",
+          "letter-spacing": "0.06em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 75%, transparent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00035",
+      "name": "stats-bar__col",
+      "settings": {
+        "_rowGap": "4px",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00036",
+      "name": "stats-bar__stars",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "4px",
+        "_margin": {
+          "bottom": "2px"
+        }
+      }
+    },
+    {
+      "id": "c00037",
+      "name": "services-band",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
+        }
+      }
+    },
+    {
+      "id": "c00038",
+      "name": "services-band__inner",
+      "settings": {
+        "_rowGap": "var(--section-space-m)"
+      }
+    },
+    {
+      "id": "c00039",
+      "name": "services-band__grid",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-start",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "var(--content-gap)"
+      }
+    },
+    {
+      "id": "c00040",
+      "name": "services-band__item",
+      "settings": {
+        "_rowGap": "12px",
+        "_alignItems": "flex-start",
+        "_padding": {
+          "left": "var(--content-gap)",
+          "right": "var(--content-gap)"
+        },
+        "_border": {
+          "width": {
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 12%, transparent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00041",
+      "name": "services-band__item--first",
+      "settings": {
+        "_border": {
+          "width": {
+            "left": "0"
+          }
+        },
+        "_padding": {
+          "left": "0"
+        }
+      }
+    },
+    {
+      "id": "c00042",
+      "name": "services-band__icon",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "color-mix(in srgb, var(--primary) 10%, transparent)"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "14px",
+          "bottom": "14px",
+          "left": "14px"
+        },
+        "_border": {
+          "radius": {
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
+          }
+        },
+        "iconColor": {
+          "raw": "var(--primary)"
+        }
+      }
+    },
+    {
+      "id": "c00043",
+      "name": "services-band__title",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "var(--h6)",
           "color": {
             "raw": "var(--secondary)"
           }
@@ -1920,94 +3038,316 @@
       }
     },
     {
-      "id": "h1tjy5",
-      "name": "hero__lead",
+      "id": "c00044",
+      "name": "services-band__text",
       "settings": {
         "_typography": {
-          "font-size": "var(--text-l)",
-          "line-height": "1.6",
+          "font-size": "0.9375rem",
           "color": {
-            "raw": "var(--neutral-semi-dark)"
+            "raw": "color-mix(in srgb, var(--secondary) 75%, transparent)"
+          },
+          "line-height": "1.5"
+        }
+      }
+    },
+    {
+      "id": "c00045",
+      "name": "why",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
           }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
+        }
+      }
+    },
+    {
+      "id": "c00046",
+      "name": "why__image",
+      "settings": {
+        "_width": "100%",
+        "_height": "100%",
+        "_objectFit": "cover",
+        "_aspectRatio": "4/3",
+        "_border": {
+          "radius": {
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00047",
+      "name": "why__content",
+      "settings": {
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00048",
+      "name": "why__title",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--h2)",
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "line-height": "1.15"
+        }
+      }
+    },
+    {
+      "id": "c00049",
+      "name": "why__text",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--text-m)",
+          "color": {
+            "raw": "color-mix(in srgb, var(--secondary) 80%, transparent)"
+          },
+          "line-height": "1.6"
+        }
+      }
+    },
+    {
+      "id": "c00050",
+      "name": "why__list",
+      "settings": {
+        "_rowGap": "12px",
+        "_alignItems": "flex-start",
+        "_margin": {
+          "top": "4px",
+          "bottom": "4px"
+        }
+      }
+    },
+    {
+      "id": "c00051",
+      "name": "why__list-item",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "10px"
+      }
+    },
+    {
+      "id": "c00052",
+      "name": "why__check",
+      "settings": {
+        "iconColor": {
+          "raw": "var(--success)"
+        }
+      }
+    },
+    {
+      "id": "c00053",
+      "name": "why__list-text",
+      "settings": {
+        "_typography": {
+          "font-weight": "600",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "var(--secondary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00054",
+      "name": "quote-cta",
+      "settings": {
+        "_cssCustom": "%root% { background-image: linear-gradient(135deg, var(--secondary) 0%, color-mix(in srgb, var(--secondary) 85%, black) 100%); }",
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
+        }
+      }
+    },
+    {
+      "id": "c00055",
+      "name": "quote-cta__inner",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "1fr 1fr",
+        "_alignItems": "center",
+        "_gridGap": "var(--container-gap)",
+        "_gridTemplateColumns:tablet_portrait": "1fr"
+      }
+    },
+    {
+      "id": "c00056",
+      "name": "quote-cta__content",
+      "settings": {
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c00057",
+      "name": "quote-cta__title",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--h2)",
+          "color": {
+            "raw": "var(--white)"
+          },
+          "line-height": "1.15"
+        }
+      }
+    },
+    {
+      "id": "c00058",
+      "name": "quote-cta__text",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--text-m)",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 80%, transparent)"
+          },
+          "line-height": "1.6"
         },
         "_widthMax": "var(--col-width-m)"
       }
     },
     {
-      "id": "lpe0sn",
-      "name": "hero__actions",
+      "id": "c00059",
+      "name": "quote-cta__trust",
       "settings": {
-        "_display": "flex",
+        "_rowGap": "12px",
+        "_alignItems": "flex-start",
+        "_margin": {
+          "top": "8px"
+        }
+      }
+    },
+    {
+      "id": "c00060",
+      "name": "quote-cta__trust-item",
+      "settings": {
         "_direction": "row",
-        "_flexWrap": "wrap",
-        "_columnGap": "var(--content-gap)",
-        "_rowGap": "var(--content-gap)",
-        "_direction:mobile_portrait": "column"
+        "_alignItems": "center",
+        "_columnGap": "10px"
       }
     },
     {
-      "id": "nqvkek",
-      "name": "hero__media",
+      "id": "c00061",
+      "name": "quote-cta__trust-icon",
       "settings": {
-        "_width": "50%",
-        "_width:tablet_portrait": "100%"
+        "iconColor": {
+          "raw": "var(--tertiary)"
+        }
       }
     },
     {
-      "id": "omltdi",
-      "name": "hero__image",
+      "id": "c00062",
+      "name": "quote-cta__trust-text",
       "settings": {
-        "_width": "100%",
-        "_aspectRatio": "4/3",
-        "_objectFit": "cover",
+        "_typography": {
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 85%, transparent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c00063",
+      "name": "quote-cta__form-card",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_padding": {
+          "top": "var(--content-gap)",
+          "right": "var(--content-gap)",
+          "bottom": "var(--content-gap)",
+          "left": "var(--content-gap)"
+        },
         "_border": {
           "radius": {
-            "top": "var(--radius-l)",
-            "right": "var(--radius-l)",
-            "bottom": "var(--radius-l)",
-            "left": "var(--radius-l)"
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
           }
         },
         "_cssCustom": "%root% { box-shadow: var(--box-shadow-2); }"
       }
     },
     {
-      "id": "pi27vc",
-      "name": "stats",
+      "id": "c00064",
+      "name": "process",
       "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); background: var(--gradient-wash); }"
+        "_background": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
+        }
       }
     },
     {
-      "id": "x3yu0r",
-      "name": "stats__grid",
+      "id": "c00065",
+      "name": "process__inner",
       "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
-        "_gridGap": "var(--grid-gap)",
-        "_gridTemplateColumns:mobile_portrait": "1fr"
+        "_rowGap": "var(--section-space-m)",
+        "_alignItems": "center"
       }
     },
     {
-      "id": "ukbghd",
-      "name": "stat__number-row",
-      "settings": {
-        "_display": "flex",
-        "_direction": "row",
-        "_alignItems": "flex-end",
-        "_columnGap": "0.15em"
-      }
-    },
-    {
-      "id": "3py4uk",
-      "name": "stat__number",
+      "id": "c00066",
+      "name": "process__title",
       "settings": {
         "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "clamp(2.6rem, 5vw, 4rem)",
-          "font-weight": "900",
-          "line-height": "0.9",
-          "letter-spacing": "-0.03em",
+          "font-size": "var(--h2)",
+          "color": {
+            "raw": "var(--secondary)"
+          },
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "c00067",
+      "name": "process__steps",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-start",
+        "_justifyContent": "center",
+        "_columnGap": "var(--content-gap)",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "var(--content-gap)"
+      }
+    },
+    {
+      "id": "c00068",
+      "name": "process__step",
+      "settings": {
+        "_rowGap": "10px",
+        "_alignItems": "flex-start",
+        "_widthMax": "var(--col-width-s)"
+      }
+    },
+    {
+      "id": "c00069",
+      "name": "process__number",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "var(--h3)",
           "color": {
             "raw": "var(--primary)"
           }
@@ -2015,54 +3355,12 @@
       }
     },
     {
-      "id": "yk2fys",
-      "name": "stat__label",
+      "id": "c00070",
+      "name": "process__step-title",
       "settings": {
         "_typography": {
-          "font-size": "var(--text-l)",
-          "font-weight": "800",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "e6t8zt",
-      "name": "stat__description",
-      "settings": {
-        "_typography": {
+          "font-weight": "700",
           "font-size": "var(--text-m)",
-          "line-height": "1.55",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "iqiovj",
-      "name": "quicklinks",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); }"
-      }
-    },
-    {
-      "id": "z2530f",
-      "name": "quicklinks__header",
-      "settings": {
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "9aaw4z",
-      "name": "quicklinks__title",
-      "settings": {
-        "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h2)",
-          "font-weight": "800",
-          "letter-spacing": "-0.02em",
           "color": {
             "raw": "var(--secondary)"
           }
@@ -2070,53 +3368,128 @@
       }
     },
     {
-      "id": "coogx5",
-      "name": "quicklinks__text",
+      "id": "c00071",
+      "name": "process__step-text",
       "settings": {
         "_typography": {
-          "font-size": "var(--text-l)",
-          "line-height": "1.65",
+          "font-size": "0.9375rem",
           "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
+            "raw": "color-mix(in srgb, var(--secondary) 75%, transparent)"
+          },
+          "line-height": "1.5"
         }
       }
     },
     {
-      "id": "qn5kkr",
-      "name": "quicklinks__grid",
+      "id": "c00072",
+      "name": "process__arrow",
+      "settings": {
+        "iconColor": {
+          "raw": "var(--tertiary)"
+        },
+        "_alignSelf": "center",
+        "_margin": {
+          "top": "24px"
+        },
+        "_display:tablet_portrait": "none"
+      }
+    },
+    {
+      "id": "c00073",
+      "name": "tm",
       "settings": {
         "_display": "grid",
-        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
-        "_gridGap": "var(--grid-gap)",
+        "_gridTemplateColumns": "1fr 1fr",
         "_gridTemplateColumns:tablet_portrait": "1fr"
       }
     },
     {
-      "id": "p604y3",
-      "name": "quicklink",
+      "id": "c00074",
+      "name": "tm__quote",
       "settings": {
-        "_direction": "row",
-        "_alignItems": "center",
-        "_justifyContent": "space-between"
+        "_background": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "right": "var(--container-gap)",
+          "bottom": "var(--section-space-m)",
+          "left": "var(--container-gap)"
+        },
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start",
+        "_justifyContent": "center"
       }
     },
     {
-      "id": "wpvj0t",
-      "name": "quicklink__label",
+      "id": "c00075",
+      "name": "tm__quote-mark",
+      "settings": {
+        "iconColor": {
+          "raw": "color-mix(in srgb, var(--white) 45%, transparent)"
+        }
+      }
+    },
+    {
+      "id": "c00076",
+      "name": "tm__quote-text",
       "settings": {
         "_typography": {
           "font-weight": "800",
-          "font-size": "var(--text-l)",
+          "font-size": "var(--h3)",
           "color": {
-            "raw": "var(--secondary)"
+            "raw": "var(--white)"
+          },
+          "line-height": "1.2"
+        }
+      }
+    },
+    {
+      "id": "c00077",
+      "name": "tm__quote-author",
+      "settings": {
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "0.9375rem",
+          "color": {
+            "raw": "color-mix(in srgb, var(--white) 90%, transparent)"
           }
         }
       }
     },
     {
-      "id": "8d6qlg",
-      "name": "quicklink__icon",
+      "id": "c00078",
+      "name": "tm__map",
+      "settings": {
+        "_position": "relative",
+        "_height": "100%",
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_padding": {
+          "top": "48px",
+          "bottom": "48px"
+        },
+        "_height:tablet_portrait": "360px"
+      }
+    },
+    {
+      "id": "c00079",
+      "name": "tm__pin",
+      "settings": {
+        "_position": "absolute",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "6px"
+      }
+    },
+    {
+      "id": "c00080",
+      "name": "tm__pin-icon",
       "settings": {
         "iconColor": {
           "raw": "var(--primary)"
@@ -2124,285 +3497,27 @@
       }
     },
     {
-      "id": "mzslbz",
-      "name": "keys",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); background: var(--base); }"
-      }
-    },
-    {
-      "id": "5x754k",
-      "name": "keys__header",
-      "settings": {
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "6l4fhi",
-      "name": "keys__title",
+      "id": "c00081",
+      "name": "tm__pin-label",
       "settings": {
         "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h2)",
-          "font-weight": "800",
-          "letter-spacing": "-0.02em",
+          "font-weight": "700",
+          "font-size": "0.8125rem",
           "color": {
             "raw": "var(--secondary)"
           }
-        }
-      }
-    },
-    {
-      "id": "hnkm8y",
-      "name": "keys__text",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "line-height": "1.6",
+        },
+        "_background": {
           "color": {
-            "raw": "var(--neutral-semi-dark)"
+            "raw": "color-mix(in srgb, var(--white) 90%, transparent)"
           }
-        }
-      }
-    },
-    {
-      "id": "eb0xvj",
-      "name": "keys__grid",
-      "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
-        "_gridGap": "var(--grid-gap)",
-        "_gridTemplateColumns:tablet_portrait": "1fr"
-      }
-    },
-    {
-      "id": "rr4jcb",
-      "name": "key__title",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--h3)",
-          "font-weight": "800",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "loe2kn",
-      "name": "key__text",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-m)",
-          "line-height": "1.55",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "aohija",
-      "name": "services",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); }"
-      }
-    },
-    {
-      "id": "dpqzvx",
-      "name": "services__header",
-      "settings": {
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "de3w3y",
-      "name": "services__title",
-      "settings": {
-        "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h2)",
-          "font-weight": "800",
-          "letter-spacing": "-0.02em",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "2anjoy",
-      "name": "services__text",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "line-height": "1.6",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "a0nzte",
-      "name": "services__grid",
-      "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
-        "_gridGap": "var(--grid-gap)",
-        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
-        "_gridTemplateColumns:mobile_portrait": "1fr"
-      }
-    },
-    {
-      "id": "p87r9s",
-      "name": "service__media",
-      "settings": {
-        "_aspectRatio": "4/3",
-        "_position": "relative",
-        "_overflow": "hidden",
-        "_border": {
-          "radius": {
-            "top": "var(--radius-s)",
-            "right": "var(--radius-s)",
-            "bottom": "var(--radius-s)",
-            "left": "var(--radius-s)"
-          }
-        }
-      }
-    },
-    {
-      "id": "mr5ok1",
-      "name": "service__body",
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_rowGap": "0.4em",
-        "_margin": {
-          "top": "var(--content-gap)"
-        }
-      }
-    },
-    {
-      "id": "c5luyw",
-      "name": "service__title",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--h3)",
-          "font-weight": "800",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "y7h2rv",
-      "name": "service__text",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-m)",
-          "line-height": "1.55",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "eruixw",
-      "name": "testimonials",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); background: var(--base); }"
-      }
-    },
-    {
-      "id": "wylzbv",
-      "name": "testimonials__header",
-      "settings": {
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "0n3pms",
-      "name": "testimonials__title",
-      "settings": {
-        "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h2)",
-          "font-weight": "800",
-          "letter-spacing": "-0.02em",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "vbvm8c",
-      "name": "testimonials__text",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "6pnmpu",
-      "name": "testimonials__grid",
-      "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
-        "_gridGap": "var(--grid-gap)",
-        "_gridTemplateColumns:tablet_portrait": "1fr"
-      }
-    },
-    {
-      "id": "98n88z",
-      "name": "testimonial__quote",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "font-weight": "800",
-          "font-style": "italic",
-          "color": {
-            "raw": "var(--primary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "tatfnl",
-      "name": "testimonial__excerpt",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-m)",
-          "line-height": "1.6",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "g7b7l7",
-      "name": "testimonial__meta",
-      "settings": {
-        "_direction": "row",
-        "_alignItems": "center",
-        "_columnGap": "0.6em"
-      }
-    },
-    {
-      "id": "ry12g9",
-      "name": "testimonial__avatar",
-      "settings": {
-        "_width": "44px",
-        "_height": "44px",
-        "_objectFit": "cover",
+        },
+        "_padding": {
+          "top": "3px",
+          "right": "8px",
+          "bottom": "3px",
+          "left": "8px"
+        },
         "_border": {
           "radius": {
             "top": "999px",
@@ -2414,283 +3529,68 @@
       }
     },
     {
-      "id": "n36yvq",
-      "name": "testimonial__name",
-      "settings": {
-        "_typography": {
-          "font-weight": "800",
-          "font-size": "var(--text-m)",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "9z3lbu",
-      "name": "testimonial__role",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-s)",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          }
-        }
-      }
-    },
-    {
-      "id": "ox37sa",
-      "name": "partners",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--content-gap); }",
-        "_border": {
-          "width": {
-            "top": "1px",
-            "bottom": "1px"
-          },
-          "style": "solid",
-          "color": {
-            "rgb": "rgba(17, 17, 17, 0.08)"
-          }
-        }
-      }
-    },
-    {
-      "id": "8jxqsc",
-      "name": "partners__label",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-s)",
-          "font-weight": "700",
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          },
-          "text-align": "center",
-          "text-transform": "uppercase",
-          "letter-spacing": "0.1em"
-        }
-      }
-    },
-    {
-      "id": "0eqgpi",
-      "name": "partners__grid",
-      "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(auto-fit, minmax(140px, 1fr))",
-        "_gridGap": "var(--grid-gap)",
-        "_alignItemsGrid": "center",
-        "_justifyItemsGrid": "center",
-        "_margin": {
-          "top": "var(--content-gap)"
-        }
-      }
-    },
-    {
-      "id": "r2uywn",
-      "name": "partner__logo",
-      "settings": {
-        "_height": "36px",
-        "_objectFit": "contain",
-        "_cssFilters": {
-          "grayscale": "100",
-          "opacity": "65"
-        },
-        "_cssTransition": "filter 0.2s ease, opacity 0.2s ease",
-        "_cssFilters:hover": {
-          "grayscale": "0",
-          "opacity": "100"
-        }
-      }
-    },
-    {
-      "id": "h72po3",
-      "name": "faq",
-      "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); }"
-      }
-    },
-    {
-      "id": "n3w3k7",
-      "name": "faq__inner",
-      "settings": {
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "bpriv6",
-      "name": "faq__title",
-      "settings": {
-        "_typography": {
-          "font-family": "Montserrat",
-          "font-size": "var(--h2)",
-          "font-weight": "800",
-          "text-align": "center",
-          "letter-spacing": "-0.02em",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        },
-        "_margin": {
-          "bottom": "var(--content-gap)"
-        }
-      }
-    },
-    {
-      "id": "tw00y8",
-      "name": "faq__item",
-      "settings": {
-        "_overflow": "hidden",
-        "_margin": {
-          "bottom": "var(--space-xs)"
-        },
-        "_border": {
-          "width": {
-            "top": "1px",
-            "right": "1px",
-            "bottom": "1px",
-            "left": "1px"
-          },
-          "style": "solid",
-          "color": {
-            "rgb": "rgba(254, 75, 3, 0.15)"
-          },
-          "radius": {
-            "top": "var(--radius-s)",
-            "right": "var(--radius-s)",
-            "bottom": "var(--radius-s)",
-            "left": "var(--radius-s)"
-          }
-        }
-      }
-    },
-    {
-      "id": "a63maw",
-      "name": "faq__item-title",
-      "settings": {
-        "_direction": "row",
-        "_justifyContent": "space-between",
-        "_alignItems": "center",
-        "_cursor": "pointer",
-        "_padding": "var(--content-gap)"
-      }
-    },
-    {
-      "id": "s7pyoh",
-      "name": "faq__question",
-      "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "font-weight": "700",
-          "color": {
-            "raw": "var(--secondary)"
-          }
-        }
-      }
-    },
-    {
-      "id": "yq080q",
-      "name": "faq__icon",
-      "settings": {
-        "iconColor": {
-          "raw": "var(--primary)"
-        }
-      }
-    },
-    {
-      "id": "x789xt",
-      "name": "faq__item-content",
-      "settings": {
-        "_padding": {
-          "right": "var(--content-gap)",
-          "bottom": "var(--content-gap)",
-          "left": "var(--content-gap)"
-        }
-      }
-    },
-    {
-      "id": "61jhel",
-      "name": "faq__answer",
-      "settings": {
-        "_typography": {
-          "color": {
-            "raw": "var(--neutral-semi-dark)"
-          },
-          "line-height": "1.65",
-          "font-size": "var(--text-m)"
-        }
-      }
-    },
-    {
-      "id": "3xngwr",
+      "id": "c00082",
       "name": "cta",
       "settings": {
-        "_cssCustom": "%root% { padding-block: var(--section-space-m); background: var(--gradient-ink); }"
-      }
-    },
-    {
-      "id": "0wotsw",
-      "name": "cta__inner",
-      "settings": {
-        "_display": "flex",
-        "_direction": "column",
-        "_alignItems": "center",
-        "_rowGap": "var(--content-gap)",
-        "_widthMax": "var(--col-width-l)"
-      }
-    },
-    {
-      "id": "fl2ka1",
-      "name": "cta__eyebrow",
-      "settings": {
-        "_typography": {
-          "font-size": "0.8125rem",
-          "font-weight": "800",
-          "letter-spacing": "0.12em",
+        "_background": {
           "color": {
-            "raw": "var(--tertiary)"
-          },
-          "text-align": "center"
+            "raw": "var(--base)"
+          }
+        },
+        "_padding": {
+          "top": "var(--section-space-m)",
+          "bottom": "var(--section-space-m)"
         }
       }
     },
     {
-      "id": "7v9i8d",
+      "id": "c00083",
       "name": "cta__title",
       "settings": {
         "_typography": {
-          "font-family": "Montserrat",
           "font-size": "var(--h2)",
-          "font-weight": "800",
-          "text-align": "center",
-          "letter-spacing": "-0.025em",
           "color": {
-            "raw": "var(--white)"
-          }
+            "raw": "var(--secondary)"
+          },
+          "line-height": "1.15"
         }
       }
     },
     {
-      "id": "aukm1r",
-      "name": "cta__text",
+      "id": "c00084",
+      "name": "cta__content",
       "settings": {
-        "_typography": {
-          "font-size": "var(--text-l)",
-          "line-height": "1.6",
-          "color": {
-            "rgb": "rgba(255,255,255,0.78)"
-          },
-          "text-align": "center"
-        },
-        "_widthMax": "var(--col-width-m)"
+        "_rowGap": "var(--content-gap)",
+        "_alignItems": "flex-start"
       }
     },
     {
-      "id": "uf8uil",
+      "id": "c00085",
       "name": "cta__actions",
       "settings": {
         "_direction": "row",
+        "_alignItems": "center",
         "_columnGap": "var(--content-gap)",
-        "_direction:mobile_portrait": "column"
+        "_direction:mobile_portrait": "column",
+        "_alignItems:mobile_portrait": "stretch"
+      }
+    },
+    {
+      "id": "c00086",
+      "name": "cta__image",
+      "settings": {
+        "_width": "100%",
+        "_height": "100%",
+        "_objectFit": "cover",
+        "_aspectRatio": "4/3",
+        "_border": {
+          "radius": {
+            "top": "var(--radius)",
+            "right": "var(--radius)",
+            "bottom": "var(--radius)",
+            "left": "var(--radius)"
+          }
+        }
       }
     }
   ],

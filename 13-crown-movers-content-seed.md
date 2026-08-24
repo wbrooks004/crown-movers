@@ -1,14 +1,31 @@
 # Crown Movers — Content Seed (real content, ready to enter)
 
-Everything below is real, already-published Crown Movers content pulled directly from the
-live site — nothing invented. Use it to populate the CPTs in `acf-json/` and to fill in the
-homepage. Source page noted per item so it's traceable.
+Everything below is either real, already-published Crown Movers content pulled directly from
+the live site, or content you confirmed directly as accurate when I asked (marked "per your
+confirmation" below) — nothing else is invented. Use it to populate the CPTs in `acf-json/` and
+to fill in the homepage. Source noted per item so it's traceable.
 
-## Testimonials (→ `testimonial` post type)
+## Testimonials (→ `testimonial` post type, 2 items)
 
-**1 real testimonial found on the homepage** (there may be more collected elsewhere, e.g. via
-the NotificationX plugin already installed on the live site — worth checking before assuming
-this is the only one you have).
+The v5 homepage design features **one** testimonial (in the red quote panel next to the
+service-area map) — set it first via the post's `menu_order` (or lowest-order) so the query
+loop picks it up. Bruce Rickerd's review is still real, sourced content — keep it as a second
+post for use elsewhere (a dedicated testimonials/reviews page, a future carousel, etc.), just
+not on the homepage in this design.
+
+**Featured on the v5 homepage — per your confirmation:**
+
+| Field | Value |
+|---|---|
+| Title (name) | Karen L. |
+| Role (repurposed as route) | Westmount to Vaudreuil |
+| Pull quote | The quote was spot on. The team took the stress away. |
+| Rating | 5 |
+
+No photo/excerpt supplied for this one — add them if you have them, both are optional on this
+CPT.
+
+**Not used on the v5 homepage, real, sourced from crownmovers.ca:**
 
 | Field | Value |
 |---|---|
@@ -19,9 +36,16 @@ this is the only one you have).
 | Excerpt (review) | "Crown Movers and Storage were a great bunch of people to deal with. They were super careful handling all of my belongings just as if they were their own. Everyone was extremely nice and friendly. They worked their butt off and showed pride in their work. I can't thank all of you enough for your help. You're great!." |
 | Photo | `https://www.crownmovers.ca/wp-content/uploads/2022/07/brucerickerd-movers-review-crown-movers-Montreal-1.webp` |
 
-Source: crownmovers.ca homepage.
+Source: crownmovers.ca homepage. (There may be more testimonials collected elsewhere, e.g. via
+the NotificationX plugin already installed on the live site — worth checking.)
 
-## Services (→ `services` post type, 6 items — the homepage's "Complete Moving Service" grid)
+## Services (→ `services` post type, 6 items)
+
+**v5 homepage note:** the homepage no longer shows a full grid of every service — it shows 4
+fixed, curated category links instead (Residential Moving, Long-Distance, Commercial Moving,
+Packing & Storage — see the build notes). These 6 posts are still needed: they're what
+`/services/` and each `/services/{slug}/` page will show once those templates are built, and
+"Packing & Storage" links straight to the `/services/` archive.
 
 The `services` CPT has no separate "short description" field — the homepage card loop reads
 the native WordPress **Excerpt** box, so enter the description text there (not in a custom
@@ -89,27 +113,37 @@ on the homepage and keep it page-specific.
    address, drop-off address, access details, stairs, elevator information, walking distance,
    boxes, photos, inventory, and any heavy or fragile items.
 
-## Homepage stats (already defaulted in `group_homepage_stats.json`, restated here for reference)
+## Homepage stats — v5 design (hero badge + dark stats bar)
 
-- **1,000+** Moving Services Per Year — "Our experience is unmatched! Our professional
-  Montreal moving services guarantees a successful move every time."
-- **29%** (SAVE) Affordable Moving Service — "Crown's affordable moving services save you time
-  and money! Crown Movers is 29% less expensive than our competitors."
+**Per your confirmation**, not from `group_homepage_stats.json`:
 
-## Hero / "keys to a perfect moving day" copy (static content, not a CPT — goes straight in the homepage JSON)
+- **3,000+** moves handled every year (hero photo badge + dark stats bar counter)
+- **5.0 ★★★★★** on Google (hero rating line + dark stats bar)
+- **No Hidden Fees** (dark stats bar — this one *is* real, sourced live-site copy, previously
+  used in the old "keys to a perfect moving day" section, reused here)
 
-- Hero: "Reliable Moving Services in Montreal" / "We truly care about your moving experience —
-  from the first call to the last box unpacked." (adapted from the real live tagline)
-- **You Are Our Priority** — From your first phone call to the last box we unpack, you are our
-  priority. Your move is more than just a job. Our aim is to make your move memorable for all
-  the right reasons. We value your moving experience and aim to have you pleasantly surprised
-  with how fun and easy moving can be!
-- **Experienced Movers** — The Rule of the 3 E's. Experience Equals Efficiency. Our
-  experienced Montreal moving company has all the right moves and is equipped with the tools
-  to have your move done in no time. Every moving service is planned out and organized in
-  advance.
-- **No Hidden Fees** — From the moment you call Crown Movers, we go through as many details as
-  needed to assure an accurate quotation. We offer hourly rates so there are no hidden fees.
+`group_homepage_stats.json`'s original fields (`acf_stat_one_*`/`acf_stat_two_*` — the real,
+live-sourced 1,000+ services/year and 29% savings numbers) aren't read anywhere in the v5
+homepage JSON. I left the field group in `acf-json/` rather than deleting it — it's still real,
+verified content, useful if you want it on another page or a future homepage revision. Let me
+know if you'd rather I remove it.
+
+## Hero / "Why Crown" copy (static content, not a CPT — goes straight in the homepage JSON)
+
+The v5 design's hero and "Why Crown" split section replaced the old hero tagline and the old
+3-item "keys to a perfect moving day" section. Current copy:
+
+- Hero: "Your move, handled with care." / "Local, long-distance and commercial moving across
+  Montreal and beyond." (adapted — reflects the three real, confirmed service lines)
+- **Why Crown** — "Clear plan. Careful hands. A smoother move." / "We plan every detail so your
+  move is efficient, protected and stress-free from start to finish." Checklist: Accurate
+  estimates · Furniture protection included · Experienced, trained crews · Assembly &
+  disassembly (all four map to real, previously-sourced service copy — furniture protection,
+  assembly/disassembly, and experienced crews all come from the live site's own service
+  descriptions).
+- The old "You Are Our Priority" / "Experienced Movers" / "No Hidden Fees" 3-column section
+  doesn't exist as its own section in v5 — "No Hidden Fees" moved to the stats bar (above),
+  the other two ideas are folded into the Why Crown checklist instead.
 
 ## Business Info (→ Options Page `business-info`, single source of truth sitewide)
 
@@ -133,6 +167,11 @@ fallback text but a dead link until you do.
 | `primary_cta` (link) | Text: "Get a Free Quote" → URL: `/free-quote/` | recommended — matches the live site's existing free-quote page and the homepage's own fallback copy |
 | `secondary_cta` (link) | Text: "Call Crown Movers" (or "Call Us — (514) 606-4030") → URL: `tel:+15146064030` | recommended — the field's own instructions name "Call Crown Movers" as the expected default |
 
+**v5 footer note:** the new footer's social-icon row shows exactly 3 icons (Facebook,
+Instagram, Google) to match the reference design — `facebook_url`/`instagram_url`/
+`google_business_profile_url` power those. `linkedin_url`/`youtube_url` are still collected
+here and available if you want a 4th/5th icon added later.
+
 ## What I did *not* pull in
 
 - The claim "highest-rated Montreal moving company on Google" / "#1 moving company in
@@ -147,3 +186,9 @@ fallback text but a dead link until you do.
   becomes its own post at `/locations/{slug}/` once that phase starts, rather than living only
   as flat footer links. I haven't pulled the per-city page content (if any exists beyond the
   name) — that's a future fetch, not done here.
+- The v5 homepage's testimonial+map section shows 6 pinned regions (Laval, Montreal, West
+  Island, South Shore, Quebec City, Toronto) — a simplified, decorative regional set, not the
+  full 40-city list, and not pulled from a specific live-site source; it's a reasonable summary
+  of the service area already established elsewhere in this project (Montreal & Greater
+  Montreal, plus long-distance moving reaching Toronto/Quebec City). Sanity-check it names the
+  regions you actually want to feature there.

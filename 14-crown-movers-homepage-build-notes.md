@@ -1,125 +1,123 @@
-# Crown Movers Homepage — Build Notes (v4, ACF integration pass)
+# Crown Movers Homepage — Build Notes (v5, full redesign to your reference image)
 
-Fourth pass. v1 hand-rolled inline pixel styling; v2 moved to ACSS's own utility classes
-(`.section`/`.container`/`.btn.primary`) but that meant guessing ACSS's exact compiled class
-names; v3 followed your instruction directly: every element carries exactly one (or base +
-modifier) purpose-built BEM global class, and every value inside those classes is an ACSS
-variable — nothing else. v4 doesn't touch any of that BEM/ACSS work — it rewires *content
-bindings* onto the more complete ACF structure you sent (Business Info Options Page, the real
-`services`/`service-areas` CPT system), replacing the placeholder structure v3 was built
-against. See `acf-json/README.md` for the full field reference.
+Fifth pass, and a different kind of change from v2→v3→v4: you sent a complete reference image
+of the new design and said "I want it to look like this." This isn't a content-binding pass on
+top of the old structure — it's a from-scratch rebuild to that reference, using the same BEM +
+ACSS-variable discipline v3/v4 established, now extended to the header and footer (previously
+deferred as separate, not-yet-started work).
 
-## What changed in v4
+## Three files now, two different delivery mechanisms
 
-- **Service loop**: `post_type` changed from the placeholder `service` to the real `services`
-  CPT. Card body text changed from `{acf_short_description}` (a field that no longer exists) to
-  `{post_excerpt}` — the new CPT has no separate short-description field, native WP Excerpt is
-  the summary. The service card block itself is now a real link (`tag: "a"`, `link:
-  {"type":"meta","useDynamicData":"{post_url}"}`) to its own post, and picked up the existing
-  `card--hover` modifier class (already used by the quicklinks, so this is reusing an existing
-  BEM component, not inventing a new one) — previously the cards weren't clickable at all,
-  which only became fixable once `services` posts had real permalinks to link to.
-- **Hero + closing CTA buttons are now sitewide-dynamic**, not hardcoded per instance. All four
-  primary buttons (hero + CTA section) bind to the Business Info Options Page's `primary_cta`
-  link field; both "call us" buttons bind to `secondary_cta`. Text uses the tag directly
-  (`{acf_primary_cta}`, resolves to the link's title) with an `@fallback` matching the old
-  hardcoded copy so the button isn't blank before the Options Page is filled in; the `link`
-  setting binds the whole field via `{"type":"meta","useDynamicData":"{acf_primary_cta}"}` —
-  documented in Bricks' own ACF provider reference as the correct shape for a link-type field.
-  **Tradeoff worth naming**: the hero and CTA-section primary buttons previously had slightly
-  different copy ("Free Quote" vs. "Get a Free Quote") — now they render identical text, since
-  both fields are explicitly documented as "the one global CTA used throughout the site."
-  That's the field's own stated intent, not a side effect I introduced quietly.
-- **Quicklinks slugs**: `/long-distance-moving/` and `/commercial-moving/` both got a
-  `/services/` prefix, since the real `services` CPT's registered rewrite slug is now known
-  (`services`, confirmed from the CPT's own JSON, not a guess) — so the base path is correct
-  even though the exact post slug per item is still unconfirmed (see below).
+| File | Format | How you use it |
+|---|---|---|
+| `bricks-json/home.json` | Clipboard format (`bricksCopiedElements`) | Same as before — paste into the page canvas (Ctrl/Cmd+V in the structure panel) |
+| `bricks-json/header.json` | **Template export format** | New for this project: **Bricks → Templates → Import**, not paste. Creates a template post with Type = Header, sitewide condition. |
+| `bricks-json/footer.json` | **Template export format** | Same — **Bricks → Templates → Import**, Type = Footer. |
 
-## What's actually on each element now
+Header/footer use a different JSON shape than every other file I've given you in this project
+(top-level `header`/`footer` array instead of `content`, `global_classes` instead of
+`globalClasses`, plus `templateSettings`) — that's not a mistake, it's what Bricks' own
+Template Import feature actually expects. Import (not paste) regenerates element IDs, merges
+global classes, and pulls the remote image URLs into your media library automatically.
 
-Every one of the 107 nodes in `bricks-json/home.json` holds **only** content — `text`, `tag`,
-`link`, `image`, `icon`, `hasLoop`/`query` — plus `_cssGlobalClasses` pointing at 1-2 BEM
-classes. No inline `_padding`, `_typography`, `_background`, `_border`, anything. A validation
-pass in the generator script asserts this for every node (checked: 0 elements have styling
-settings outside a class reference) and asserts no element carries a plain `_cssClasses`
-string at all — this fixes the earlier version's dependency on guessing ACSS's own compiled
-selector names, since I'm no longer attaching ACSS's utility classes directly; I'm authoring
-the BEM classes myself and pulling in ACSS's **variables** as values, which I have much higher
-confidence in (they're literally the keys I set in `crown-movers-acss-settings.json`).
+**One thing worth knowing before you paste `home.json`:** if any earlier version (v1–v4) of
+this homepage was ever actually pasted into your real Bricks site, some global class *names*
+here match names from those versions (`hero`, `btn`, `cta`...) with different definitions.
+Bricks' paste-merge rule is "same name → use the local (existing) class" — so a same-named
+leftover class from an old paste could silently keep its old styling instead of picking up v5's
+definitions. If you haven't pasted anything into the real builder yet (sounded like you hadn't,
+last we spoke), this doesn't apply. If you have, delete the old global classes first, or paste
+this into a fresh, never-used page.
 
-## What's actually on each element now
+## Section-by-section (home.json, 154 nodes / 86 BEM classes)
 
-Every one of the 107 nodes in `bricks-json/home.json` holds **only** content — `text`, `tag`,
-`link`, `image`, `icon`, `hasLoop`/`query` — plus `_cssGlobalClasses` pointing at 1-2 BEM
-classes. No inline `_padding`, `_typography`, `_background`, `_border`, anything. A validation
-pass in the generator script asserts this for every node (checked: 0 elements have styling
-settings outside a class reference) and asserts no element carries a plain `_cssClasses`
-string at all — this fixes the earlier version's dependency on guessing ACSS's own compiled
-selector names, since I'm no longer attaching ACSS's utility classes directly; I'm authoring
-the BEM classes myself and pulling in ACSS's **variables** as values, which I have much higher
-confidence in (they're literally the keys I set in `crown-movers-acss-settings.json`).
+1. **Hero** — eyebrow, `h1`, subtext, primary CTA button + phone link, 5-star Google rating
+   line, photo with a "3,000+ moves handled every year" badge overlay.
+2. **Stats bar** (dark) — 5.0 Google rating, animated 3,000+ counter, "No Hidden Fees" (the one
+   real, previously-sourced line in this bar).
+3. **Services band** — 4 curated category links (Residential / Long-Distance / Commercial /
+   Packing & Storage) with icons, replacing the old photo-card grid of all 6 services.
+4. **Why Crown** (split photo + checklist) — new section, replaces the old 3-column "keys to a
+   perfect moving day."
+5. **Quote CTA** (dark) — heading, 3 trust badges, and your **real, live quote form embedded**
+   via `[ws_form id="20"]` (see below) — not a fake duplicate form.
+6. **Process** — 3 numbered steps, new section.
+7. **Testimonial + map** — one testimonial (query loop, 1 post) in a red panel, next to a
+   decorative pinned-region graphic. New section.
+8. **Closing CTA** — heading, primary + phone buttons, photo. Same idea as v4's, restyled.
 
-## Contextual spacing/sizing, not the raw scale
+**Dropped from the homepage** (not deleted — just not in this design): the old quicklinks strip,
+the full 6-item services photo grid, the trusted-partners logo strip, and the FAQ accordion.
+The `partner` CPT and the page-level `faq_items` repeater are untouched and still usable on
+other pages; the `services` CPT still needs all 6 posts (services band links to them, and
+they're the future `/services/{slug}/` detail pages).
 
-Per your note, spacing/sizing pulls from ACSS's *contextual* tokens rather than picking a
-specific rung on the raw scale by hand:
+## Header (20 nodes / 15 classes) + Footer (30 nodes / 13 classes)
 
-- `var(--content-gap)` — gap between stacked content (paragraph-to-button, card padding).
-  Confirmed real: `contextual-content-gap: var(--space-m)` in your settings.
-- `var(--container-gap)` — horizontal gutter on the hero row. Confirmed:
-  `contextual-container-gap: var(--space-xl)`.
-- `var(--grid-gap)` — every card-grid gap. Confirmed: `contextual-grid-gap: var(--space-m)`.
-- `var(--section-space-m)` — every section's vertical padding. Confirmed 1:1, it was already
-  wired to `section-padding-block` in your settings.
-- `var(--col-width-s/m/l)` (13/25/38rem, confirmed real settings) for content-width
-  constraints — hero lead paragraph, section headers, FAQ/CTA column widths — instead of
-  picking arbitrary rem numbers.
-- `var(--h1)`/`var(--h2)`/`var(--h3)` and `var(--text-s)`/`var(--text-m)`/`var(--text-l)` for
-  every font-size. These are the one part of this pass I haven't hand-verified against
-  compiled output (no live connection to your builder from here) — but they're strongly
-  implied by settings that are directly confirmed present and active: `heading-scale: 1.333`,
-  `text-scale: 1.333`, `base-heading-desk/mob: 20/18`, `base-text-desk/mob: 18/16`. Font
-  *family*/*weight*/*letter-spacing* stay explicit brand choices (Montserrat 800 etc.) — only
-  the size value comes from the scale.
+- **Utility bar**: location text, phone (dynamic, `{acf_primary_phone}`), and an **FR** language
+  link via `[polylang]` — Polylang's standard switcher shortcode. I didn't guess at its display
+  options (flags/names/hide-current) — check it renders how you want in Polylang's own settings
+  after import, adjust the shortcode's attributes there if needed.
+- **Main header**: real logo (`Crown-Movers-Logo.png`, the non-white variant, pulled from your
+  live site's own media library — not invented), `nav-nested` primary nav, dynamic primary CTA
+  button. Sticky on scroll (`headerSticky: true`) — a reasonable default for a site whose main
+  CTA should stay reachable while scrolling, not something visible in a static reference image,
+  so say the word if you'd rather it not stick.
+- **Footer**: white-logo variant (also a real asset), dynamic address/phone, 3 link columns,
+  dynamic social icons (Facebook/Instagram/Google — see content-seed), dynamic copyright year.
 
-## Buttons carry the accessibility fix directly, not through an assumed selector
+## Real vs. placeholder, all in one place
 
-`btn--primary` sets `color: var(--secondary)` (ink) on the orange gradient — the exact
-resolved pairing from the earlier WCAG pass (5.59:1), written directly into the class I
-authored rather than trusted to an ACSS-generated `.btn.primary` selector whose exact string I
-was never fully certain of. `btn--secondary` (ink bg, white text, 18.88:1) and
-`btn--outline-primary` (transparent bg, white text, orange border — for the CTA section's dark
-background, mirroring the live site's own `crown-simple-hero-button--dark` pattern) follow the
-same logic. One minor tradeoff worth naming: this means the button colors now live in two
-places (the ACSS settings file and these BEM classes) rather than one — if you ever change the
-brand orange, both need updating. Everything else (spacing, sizing, other colors) still flows
-from the ACSS variables live, so this is the one deliberate exception.
+**Confirmed real** (sourced from crownmovers.ca or your own ACF field definitions):
+- Both logo files, the hero/why-crown/cta photos (placeholder *crops*, still real Crown Movers
+  photography — swap for better-fitted shots before launch, same as earlier versions)
+- `/montreal-movers/`, `/free-quote/` links
+- "No Hidden Fees" stats-bar line
+- Facebook/Instagram/LinkedIn/YouTube/Google Business URLs, business hours, address, phone
+- The `services`/`service-areas` CPT rewrite base paths (`/services/`, `/locations/`)
 
-## 9 blocks, 77 BEM classes total
+**Per your confirmation this session** (not independently verified against the live site):
+- 3,000+ moves/year, 5.0 Google rating, the Karen L. testimonial
 
-`hero`, `stats`/`stat`, `quicklinks`/`quicklink`, `keys`/`key`, `services`/`service`,
-`testimonials`/`testimonial`, `partners`/`partner`, `faq`, `cta` — each section is its own BEM
-block with `__element` children; `btn` and `card` are shared component blocks reused across
-sections (e.g. `card` backs the stat/quicklink/key/service/testimonial/faq-item surfaces, so a
-future change to card styling changes all of them at once).
+**Still placeholder — flagged inline in the JSON `label` fields, not hidden:**
+- Nav's "Resources" link and every footer Company/Resources column link (no such pages
+  confirmed to exist yet)
+- The exact post slugs for `long-distance-moving`/`commercial-moving` (the `/services/` base is
+  now confirmed real; the specific slug per post isn't)
+- Icon glyph names in the services band / why-crown checks / process arrows / trust badges —
+  chosen from Bricks' bundled ionicons set by best-guess naming, same convention as the one
+  already-confirmed-real name (`ion-ios-arrow-forward`) used since v3. A wrong guess just shows
+  a blank icon, nothing breaks — spot-check each in the icon picker after import and swap any
+  that don't render.
+- The testimonial+map decorative graphic is exactly that — decorative, hand-positioned pins on
+  a tinted panel, not an interactive map. Bricks does have real `map`/`map-leaflet` elements if
+  you'd rather have an actual embedded map later.
+
+## The quote form is real, not a duplicate
+
+Your live `/free-quote/` page runs on **WS Form** (confirmed from its own markup —
+`wp-json/ws-form/v1/submit`, form id `20`), not Bricks' native form element or any of the more
+common plugins. Rather than guess at rebuilding its fields and validation by hand, the quote-CTA
+section embeds the actual form via Bricks' `shortcode` element: `[ws_form id="20"]` — WS Form's
+own standard embed shortcode. This is the same form, same backend, same submissions — not a
+second thing to maintain. One real caveat: the *look* of the fields inside that card (input
+borders, spacing, the submit button's exact color) is controlled by WS Form's own Style settings
+in wp-admin, not by this JSON — open WS Form's styling once the form is embedded and align it
+with the rest of the site if it doesn't already match.
 
 ## Still true from earlier passes
 
 - rem base confirmed at 16px (`root-font-size: 100` in your ACSS settings).
-- Nothing renders until the CPT posts and Options Page fields exist —
-  `13-crown-movers-content-seed.md` + `acf-json/README.md`. The hero/CTA buttons specifically
-  need `primary_cta`/`secondary_cta` filled in on the Business Info Options Page before they
-  point anywhere — see the README's "launch blocker" note.
-- `/services/long-distance-moving/` and `/services/commercial-moving/` — the `/services/` base
-  is now confirmed (it's the real CPT's registered rewrite slug), but whether posts actually
-  exist at those exact two slugs is still unconfirmed — verify once the `services` posts are
-  created, or send me the real slugs.
-- The FAQ loop's `objectType: "acf_faq_items"` binding is worth a spot-check in the builder.
-- Stat counter numbers (1,000 / 29) are literals, not ACF-bound — see earlier notes for why.
-- Image URLs point at the live site as placeholders — swap before production.
-- Header/footer are separate Bricks templates, not part of this page JSON. Now that Business
-  Info exists as an Options Page, the footer template is the natural home for
-  `office_address`/`business_hours`/social links/`primary_phone` — none of those are used on
-  the homepage itself.
-- `service-areas`/`service-region` (the locations system) and full `services` detail-page
-  templates aren't built yet — the CPTs/field groups exist as of this pass, the pages don't.
+- Nothing renders until the CPT posts and Options Page fields exist — `13-content-seed.md` +
+  `acf-json/README.md`. The primary/secondary CTA buttons (4 of them now: hero, closing CTA,
+  and the header) need `primary_cta`/`secondary_cta` filled in before they point anywhere.
+- Every color value in every new class is an ACSS variable (`var(--primary)`, `var(--secondary)`,
+  `var(--text-dark-muted)`-style `color-mix()` derivations, etc.) — none are hardcoded hex,
+  including the gradients: `linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%)`
+  on buttons and a `color-mix()`-derived two-stop dark gradient on the stats bar / quote-CTA
+  section, both built from your role colors rather than snapshotted hex, unlike v3's one
+  disclosed exception on button colors (that workaround is no longer needed).
+- Radius is uniformly `var(--radius)` (your ACSS settings already consolidate card/button/icon
+  radius to this one token — confirmed directly from `crown-movers-acss-settings.json`, not
+  assumed) — except pill shapes (badges), which use a literal `999px`, matching the one other
+  pattern-file precedent for pills in this project.
