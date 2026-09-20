@@ -1,6 +1,6 @@
 # Crown Movers — Bricks Builder component pack
 
-Paste-ready Bricks 2.3.6 JSON for the 7 components approved to build against placeholder content, plus the token/theme setup they depend on. Built with the `anthropic-skills:bricks` skill against your confirmed conventions: **1rem = 10px** (62.5% reset) and **native ACSS 4.x variables** (`--primary`, `--base`, `--accent`, `--neutral` + light/dark steps) — no invented parallel variable namespace.
+Paste-ready Bricks 2.3.6 JSON for the components approved to build against placeholder content, plus the token/theme setup they depend on. Built with the `anthropic-skills:bricks` skill against your confirmed conventions: **1rem = 10px** (62.5% reset) and **native ACSS 4.x variables** (`--primary`, `--base`, `--accent`, `--neutral` + light/dark steps) — no invented parallel variable namespace.
 
 ## Files, in build order
 
@@ -9,8 +9,9 @@ Paste-ready Bricks 2.3.6 JSON for the 7 components approved to build against pla
 | `00-setup-acss-and-theme-styles.md` | reference | read first |
 | `00-theme-styles.json` | theme styles | Bricks Settings → Theme Styles (hand-enter; see table in the setup doc) |
 | `01-header.json` | template (header) | Bricks → Templates → Import |
-| `02-hero.json` | clipboard | paste into a page (Cmd/Ctrl+V in structure panel) |
-| `03-trust-strip.json` | clipboard | paste, directly under the hero |
+| `02-hero-home.json` | clipboard | paste — **homepage only.** Full split hero with photo, dual CTA, trust line |
+| `02b-hero-inner.json` | clipboard | paste — **every inner page** (service, location, quote, blog). Compact: breadcrumbs + eyebrow + dynamic `{post_title}` H1 + short intro + CTA row, no photo column. Home and inner pages don't share a hero — using the home hero everywhere was wrong, this replaces that |
+| `03-trust-strip.json` | clipboard | paste, directly under the home hero |
 | `04-service-card.json` | clipboard | paste — 3-card grid, duplicate the card pattern for more services once the service list is confirmed |
 | `05-quote-form.json` | clipboard | paste — native Bricks `form` element |
 | `06-faq.json` | clipboard | paste — `accordion-nested` with `faqSchema: true` (FAQ JSON-LD for SEO) |
@@ -36,4 +37,4 @@ This was scoped as "build the existing 7 reference components with placeholder c
 
 ## Not built yet (from the original 43-component docx spec)
 
-This pack covers 7 of 43 named components. Still open: announcement bar, breadcrumbs, rating/stats strip, location cards, multi-step estimate form + calculator, date picker/radio-card form inputs, testimonial cards, team cards, partner logo row, popups, and the ACF field groups + query loops that would make services/locations dynamic instead of hand-typed. Build these next once the business-fact gaps above are closed — hand-typed content now would just need to be redone as dynamic data later.
+This pack covers 9 of 43 named components (breadcrumbs landed as part of `02b-hero-inner.json`, using Bricks' native `breadcrumbs` element rather than hand-built links). Still open: announcement bar, rating/stats strip, location cards, multi-step estimate form + calculator, date picker/radio-card form inputs, testimonial cards, team cards, partner logo row, popups, and the ACF field groups + query loops that would make services/locations dynamic instead of hand-typed. Build these next once the business-fact gaps above are closed — hand-typed content now would just need to be redone as dynamic data later.

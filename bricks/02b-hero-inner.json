@@ -1,0 +1,124 @@
+{
+  "content": [
+    {
+      "id": "ihsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["ihcon1"],
+      "label": "Hero — Inner Page (service / location / quote / blog)",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "var(--space-2xl)", "bottom": "var(--space-2xl)" },
+        "_background": { "color": { "hex": "#F7F5F1" } }
+      }
+    },
+    {
+      "id": "ihcon1",
+      "name": "container",
+      "parent": "ihsec1",
+      "children": ["ihbc01", "iheyb1", "ihh1", "ihsub1", "ihbtn1"],
+      "settings": { "_rowGap": "var(--space-s)", "_widthMax": "760px" }
+    },
+    {
+      "id": "ihbc01",
+      "name": "breadcrumbs",
+      "parent": "ihcon1",
+      "children": [],
+      "label": "Native Bricks breadcrumbs — reflects real page hierarchy automatically, no settings needed",
+      "settings": {}
+    },
+    {
+      "id": "iheyb1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "label": "[VERIFY] category label — hand-typed until ACF service/location category field exists",
+      "settings": {
+        "text": "Moving service",
+        "tag": "span",
+        "_typography": { "font-size": "1.25rem", "font-weight": "800", "letter-spacing": "0.11em", "text-transform": "uppercase", "color": { "raw": "var(--primary)" } }
+      }
+    },
+    {
+      "id": "ihh1",
+      "name": "heading",
+      "parent": "ihcon1",
+      "children": [],
+      "label": "Dynamic — uses the real post/page title, works with zero ACF setup on any post type",
+      "settings": { "text": "{post_title}", "tag": "h1" }
+    },
+    {
+      "id": "ihsub1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "label": "[VERIFY] short intro — hand-typed until an ACF intro/excerpt field exists to bind here",
+      "settings": {
+        "text": "State the service or area, who it's for, and the one thing a visitor should do next.",
+        "tag": "p",
+        "_typography": { "font-size": "1.89rem", "line-height": "1.6", "color": { "raw": "var(--neutral-dark)" } },
+        "_widthMax": "640px"
+      }
+    },
+    {
+      "id": "ihbtn1",
+      "name": "block",
+      "parent": "ihcon1",
+      "children": ["ihct01", "ihct02"],
+      "label": "Buttons",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-s)",
+        "_rowGap": "var(--space-s)",
+        "_margin": { "top": "var(--space-2xs)" }
+      }
+    },
+    {
+      "id": "ihct01",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "label": "Primary — dark ink text on coral (accessibility rule)",
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": { "type": "external", "url": "#quote" },
+        "_background": { "raw": "var(--primary)" },
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_padding": { "top": "12px", "right": "20px", "bottom": "12px", "left": "20px" },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": { "color": { "hex": "#D93E2E" } },
+        "_transform:hover": { "translateY": "-1" }
+      }
+    },
+    {
+      "id": "ihct02",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "label": "[VERIFY] placeholder phone number",
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": { "type": "external", "url": "tel:+10000000000" },
+        "outline": true,
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--base)" }, "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_padding": { "top": "12px", "right": "20px", "bottom": "12px", "left": "20px" },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": { "color": { "raw": "var(--base)" } },
+        "_typography:hover": { "color": { "hex": "#FFFFFF" } }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}
