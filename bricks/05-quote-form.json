@@ -1,0 +1,120 @@
+{
+  "content": [
+    {
+      "id": "qfsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["qfcon1"],
+      "label": "Quote Form",
+      "settings": {
+        "tag": "section",
+        "_cssId": "quote",
+        "_padding": { "top": "var(--space-2xl)", "bottom": "var(--space-2xl)" },
+        "_background": { "color": { "hex": "#F7F5F1" } }
+      }
+    },
+    {
+      "id": "qfcon1",
+      "name": "container",
+      "parent": "qfsec1",
+      "children": ["qfcrd1"],
+      "settings": { "_widthMax": "760px" }
+    },
+    {
+      "id": "qfcrd1",
+      "name": "block",
+      "parent": "qfcon1",
+      "children": ["qfhdr1", "qffrm1", "qfpriv"],
+      "label": "Quote Panel",
+      "settings": {
+        "_rowGap": "var(--space-l)",
+        "_background": { "color": { "hex": "#FFFFFF" } },
+        "_border": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" }, "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } },
+        "_boxShadow": { "values": { "offsetX": "0", "offsetY": "8", "blur": "24", "spread": "-8" }, "color": { "rgb": "rgba(21,21,21,0.07)" } },
+        "_padding": { "top": "var(--space-l)", "right": "var(--space-l)", "bottom": "var(--space-l)", "left": "var(--space-l)" }
+      }
+    },
+    {
+      "id": "qfhdr1",
+      "name": "block",
+      "parent": "qfcrd1",
+      "children": ["qfeyb1", "qfttl1", "qfsub1"],
+      "settings": { "_rowGap": "var(--space-2xs)" }
+    },
+    {
+      "id": "qfeyb1",
+      "name": "text-basic",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": {
+        "text": "Free moving quote",
+        "tag": "span",
+        "_typography": { "font-size": "1.25rem", "font-weight": "800", "letter-spacing": "0.11em", "text-transform": "uppercase", "color": { "raw": "var(--primary)" } }
+      }
+    },
+    {
+      "id": "qfttl1",
+      "name": "heading",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": { "text": "Tell us about your move", "tag": "h2" }
+    },
+    {
+      "id": "qfsub1",
+      "name": "text-basic",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": {
+        "text": "This is a starting request, not a confirmed quote — a team member will follow up to confirm availability and final pricing.",
+        "tag": "p",
+        "_typography": { "color": { "raw": "var(--neutral-dark)" } }
+      }
+    },
+    {
+      "id": "qffrm1",
+      "name": "form",
+      "parent": "qfcrd1",
+      "children": [],
+      "label": "[TODO] actions=email (admin_email) is a working default — swap to a webhook action + real n8n endpoint once that destination is decided. [VERIFY] submit button uses theme-style \"primary\" (coral bg from 00-theme-styles.json); confirm its text renders as dark ink (--base) not white — set manually in the Style tab if not.",
+      "settings": {
+        "fields": [
+          { "id": "qffdat", "type": "datepicker", "label": "Move date", "required": true, "width": "50" },
+          { "id": "qfftyp", "type": "select", "label": "Move type", "options": "Residential\nCommercial\nLong distance", "required": true, "width": "50" },
+          { "id": "qffor1", "type": "text", "label": "Moving from", "placeholder": "Street address", "required": true, "width": "50" },
+          { "id": "qffde1", "type": "text", "label": "Moving to", "placeholder": "Street address", "required": true, "width": "50" },
+          { "id": "qffnam", "type": "text", "label": "Name", "required": true, "width": "50" },
+          { "id": "qffphn", "type": "tel", "label": "Phone", "required": true, "width": "50" },
+          { "id": "qffdet", "type": "textarea", "label": "Access details or specialty items", "placeholder": "Stairs, elevator, parking, piano, etc. (optional)", "required": false, "width": "100" }
+        ],
+        "columns": "2",
+        "submitButtonText": "Request my quote",
+        "submitButtonStyle": "primary",
+        "actions": ["email"],
+        "emailSubject": "New quote request — {{qffnam}}",
+        "emailTo": "admin_email",
+        "replyToEmail": "{{qffphn}}",
+        "emailContent": "Name: {{qffnam}}\nPhone: {{qffphn}}\nMove date: {{qffdat}}\nMove type: {{qfftyp}}\nFrom: {{qffor1}}\nTo: {{qffde1}}\nDetails: {{qffdet}}",
+        "successMessage": "Thanks — this is a request, not a confirmed quote. A Crown Movers team member will follow up to confirm availability and pricing.",
+        "showLabels": true,
+        "fieldBorder": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" }, "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } }
+      }
+    },
+    {
+      "id": "qfpriv",
+      "name": "text-basic",
+      "parent": "qfcrd1",
+      "children": [],
+      "label": "[VERIFY] link this to the real privacy policy once published",
+      "settings": {
+        "text": "Your details are used only to prepare your moving quote and are never sold or shared. [VERIFY link to Privacy Policy]",
+        "tag": "p",
+        "_typography": { "font-size": "1.25rem", "color": { "raw": "var(--neutral)" } }
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

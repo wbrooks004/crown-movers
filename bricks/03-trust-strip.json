@@ -1,0 +1,118 @@
+{
+  "content": [
+    {
+      "id": "tssec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["tscon1"],
+      "label": "Trust Strip",
+      "settings": {
+        "tag": "section",
+        "_background": { "color": { "hex": "#FFFFFF" } },
+        "_border": {
+          "width": { "top": "1px", "bottom": "1px" },
+          "style": "solid",
+          "color": { "raw": "var(--neutral-light)" }
+        }
+      }
+    },
+    {
+      "id": "tscon1",
+      "name": "container",
+      "parent": "tssec1",
+      "children": ["tsit01", "tsit02", "tsit03"],
+      "label": "Trust Items",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "tsit01",
+      "name": "block",
+      "parent": "tscon1",
+      "children": ["tsht01", "tstx01"],
+      "label": "[VERIFY] real supporting statement needed",
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" }
+      }
+    },
+    {
+      "id": "tsht01",
+      "name": "text-basic",
+      "parent": "tsit01",
+      "children": [],
+      "settings": { "text": "Professional crews", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+    },
+    {
+      "id": "tstx01",
+      "name": "text-basic",
+      "parent": "tsit01",
+      "children": [],
+      "settings": { "text": "Replace with verified supporting statement", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+    },
+    {
+      "id": "tsit02",
+      "name": "block",
+      "parent": "tscon1",
+      "children": ["tsht02", "tstx02"],
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" },
+        "_border": { "width": { "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
+        "_border:mobile_landscape": { "width": { "left": "0", "top": "1px" } }
+      }
+    },
+    {
+      "id": "tsht02",
+      "name": "text-basic",
+      "parent": "tsit02",
+      "children": [],
+      "settings": { "text": "Careful protection", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+    },
+    {
+      "id": "tstx02",
+      "name": "text-basic",
+      "parent": "tsit02",
+      "children": [],
+      "settings": { "text": "Furniture, floors, doors, and high-contact surfaces", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+    },
+    {
+      "id": "tsit03",
+      "name": "block",
+      "parent": "tscon1",
+      "children": ["tsht03", "tstx03"],
+      "label": "[VERIFY] real supporting statement needed — do not display unverified pricing/policy claims",
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" },
+        "_border": { "width": { "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
+        "_border:mobile_landscape": { "width": { "left": "0", "top": "1px" } }
+      }
+    },
+    {
+      "id": "tsht03",
+      "name": "text-basic",
+      "parent": "tsit03",
+      "children": [],
+      "settings": { "text": "Clear communication", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+    },
+    {
+      "id": "tstx03",
+      "name": "text-basic",
+      "parent": "tsit03",
+      "children": [],
+      "settings": { "text": "[VERIFY] insert a real, verified pricing/communication policy statement", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}

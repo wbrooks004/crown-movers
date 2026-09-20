@@ -1,0 +1,284 @@
+{
+  "content": [
+    {
+      "id": "scsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["sccon1"],
+      "label": "Services",
+      "settings": {
+        "tag": "section",
+        "_cssId": "services",
+        "_padding": { "top": "var(--space-2xl)", "bottom": "var(--space-2xl)" },
+        "_background": { "color": { "hex": "#FFFFFF" } }
+      }
+    },
+    {
+      "id": "sccon1",
+      "name": "container",
+      "parent": "scsec1",
+      "children": ["schdr1", "scgrd1"],
+      "settings": { "_rowGap": "var(--space-xl)" }
+    },
+    {
+      "id": "schdr1",
+      "name": "block",
+      "parent": "sccon1",
+      "children": ["sceyb1", "scttl1", "scsub1"],
+      "label": "Section Header",
+      "settings": { "_rowGap": "var(--space-2xs)", "_widthMax": "640px" }
+    },
+    {
+      "id": "sceyb1",
+      "name": "text-basic",
+      "parent": "schdr1",
+      "children": [],
+      "settings": {
+        "text": "Moving services",
+        "tag": "span",
+        "_typography": { "font-size": "1.25rem", "font-weight": "800", "letter-spacing": "0.11em", "text-transform": "uppercase", "color": { "raw": "var(--primary)" } }
+      }
+    },
+    {
+      "id": "scttl1",
+      "name": "heading",
+      "parent": "schdr1",
+      "children": [],
+      "settings": { "text": "Support for the move you are planning", "tag": "h2" }
+    },
+    {
+      "id": "scsub1",
+      "name": "text-basic",
+      "parent": "schdr1",
+      "children": [],
+      "settings": {
+        "text": "One reusable card system across every service and location page — same pattern whether it's three services or twelve.",
+        "tag": "p",
+        "_typography": { "color": { "raw": "var(--neutral-dark)" } }
+      }
+    },
+    {
+      "id": "scgrd1",
+      "name": "div",
+      "parent": "sccon1",
+      "children": ["sccd01", "sccd02", "sccd03"],
+      "label": "Service Grid — duplicate the card pattern for additional confirmed services (Packing, Storage, etc.) once scoped",
+      "settings": { "_cssGlobalClasses": ["svcgrid"] }
+    },
+    {
+      "id": "sccd01",
+      "name": "block",
+      "parent": "scgrd1",
+      "children": ["scim01", "scbd01"],
+      "label": "Service Card — Residential",
+      "settings": { "_cssGlobalClasses": ["svccard"], "link": { "type": "external", "url": "#" } }
+    },
+    {
+      "id": "scim01",
+      "name": "image",
+      "parent": "sccd01",
+      "children": [],
+      "label": "[VERIFY] select real photo — see 07-existing-site-photo-manifest.csv (Family moving photo row). Do not hotlink.",
+      "settings": { "image": { "size": "medium_large" }, "altText": "[VERIFY] describe once photo selected", "loading": "lazy", "_cssGlobalClasses": ["svcimg"] }
+    },
+    {
+      "id": "scbd01",
+      "name": "block",
+      "parent": "sccd01",
+      "children": ["sceb01", "scht01", "sctx01", "sclk01"],
+      "settings": { "_cssGlobalClasses": ["svcbody"] }
+    },
+    {
+      "id": "sceb01",
+      "name": "text-basic",
+      "parent": "scbd01",
+      "children": [],
+      "settings": { "text": "Residential", "tag": "span", "_cssGlobalClasses": ["svceyebrow"] }
+    },
+    {
+      "id": "scht01",
+      "name": "heading",
+      "parent": "scbd01",
+      "children": [],
+      "settings": { "text": "Residential moving", "tag": "h3" }
+    },
+    {
+      "id": "sctx01",
+      "name": "text-basic",
+      "parent": "scbd01",
+      "children": [],
+      "settings": { "text": "Apartments, condos, and houses across Montreal and the surrounding area.", "tag": "p", "_cssGlobalClasses": ["svctext"] }
+    },
+    {
+      "id": "sclk01",
+      "name": "text-link",
+      "parent": "scbd01",
+      "children": [],
+      "settings": { "text": "Explore residential moving →", "link": { "type": "external", "url": "#" }, "_cssGlobalClasses": ["svclink"] }
+    },
+    {
+      "id": "sccd02",
+      "name": "block",
+      "parent": "scgrd1",
+      "children": ["scim02", "scbd02"],
+      "label": "Service Card — Commercial",
+      "settings": { "_cssGlobalClasses": ["svccard"], "link": { "type": "external", "url": "#" } }
+    },
+    {
+      "id": "scim02",
+      "name": "image",
+      "parent": "sccd02",
+      "children": [],
+      "label": "[VERIFY] select real photo. Do not hotlink.",
+      "settings": { "image": { "size": "medium_large" }, "altText": "[VERIFY] describe once photo selected", "loading": "lazy", "_cssGlobalClasses": ["svcimg"] }
+    },
+    {
+      "id": "scbd02",
+      "name": "block",
+      "parent": "sccd02",
+      "children": ["sceb02", "scht02", "sctx02", "sclk02"],
+      "settings": { "_cssGlobalClasses": ["svcbody"] }
+    },
+    {
+      "id": "sceb02",
+      "name": "text-basic",
+      "parent": "scbd02",
+      "children": [],
+      "settings": { "text": "Commercial", "tag": "span", "_cssGlobalClasses": ["svceyebrow"] }
+    },
+    {
+      "id": "scht02",
+      "name": "heading",
+      "parent": "scbd02",
+      "children": [],
+      "settings": { "text": "Commercial moving", "tag": "h3" }
+    },
+    {
+      "id": "sctx02",
+      "name": "text-basic",
+      "parent": "scbd02",
+      "children": [],
+      "settings": { "text": "Office and business relocations planned around your operating hours.", "tag": "p", "_cssGlobalClasses": ["svctext"] }
+    },
+    {
+      "id": "sclk02",
+      "name": "text-link",
+      "parent": "scbd02",
+      "children": [],
+      "settings": { "text": "Explore commercial moving →", "link": { "type": "external", "url": "#" }, "_cssGlobalClasses": ["svclink"] }
+    },
+    {
+      "id": "sccd03",
+      "name": "block",
+      "parent": "scgrd1",
+      "children": ["scim03", "scbd03"],
+      "label": "Service Card — Long-distance",
+      "settings": { "_cssGlobalClasses": ["svccard"], "link": { "type": "external", "url": "#" } }
+    },
+    {
+      "id": "scim03",
+      "name": "image",
+      "parent": "sccd03",
+      "children": [],
+      "label": "[VERIFY] select real photo. Do not hotlink.",
+      "settings": { "image": { "size": "medium_large" }, "altText": "[VERIFY] describe once photo selected", "loading": "lazy", "_cssGlobalClasses": ["svcimg"] }
+    },
+    {
+      "id": "scbd03",
+      "name": "block",
+      "parent": "sccd03",
+      "children": ["sceb03", "scht03", "sctx03", "sclk03"],
+      "settings": { "_cssGlobalClasses": ["svcbody"] }
+    },
+    {
+      "id": "sceb03",
+      "name": "text-basic",
+      "parent": "scbd03",
+      "children": [],
+      "settings": { "text": "Long distance", "tag": "span", "_cssGlobalClasses": ["svceyebrow"] }
+    },
+    {
+      "id": "scht03",
+      "name": "heading",
+      "parent": "scbd03",
+      "children": [],
+      "settings": { "text": "Long-distance moving", "tag": "h3" }
+    },
+    {
+      "id": "sctx03",
+      "name": "text-basic",
+      "parent": "scbd03",
+      "children": [],
+      "settings": { "text": "[VERIFY] route and destination coverage require confirmation before publishing.", "tag": "p", "_cssGlobalClasses": ["svctext"] }
+    },
+    {
+      "id": "sclk03",
+      "name": "text-link",
+      "parent": "scbd03",
+      "children": [],
+      "settings": { "text": "Explore long-distance moving →", "link": { "type": "external", "url": "#" }, "_cssGlobalClasses": ["svclink"] }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "svcgrid",
+      "name": "service-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "svccard",
+      "name": "service-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_overflow": "hidden",
+        "_background": { "color": { "hex": "#FFFFFF" } },
+        "_border": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" }, "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } },
+        "_boxShadow": { "values": { "offsetX": "0", "offsetY": "8", "blur": "24", "spread": "-8" }, "color": { "rgb": "rgba(21,21,21,0.07)" } },
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": { "translateY": "-3" },
+        "_boxShadow:hover": { "values": { "offsetX": "0", "offsetY": "16", "blur": "32", "spread": "-8" }, "color": { "rgb": "rgba(21,21,21,0.14)" } }
+      }
+    },
+    {
+      "id": "svcimg",
+      "name": "service-card__image",
+      "settings": { "_aspectRatio": "16/10", "_objectFit": "cover", "_width": "100%" }
+    },
+    {
+      "id": "svcbody",
+      "name": "service-card__body",
+      "settings": { "_display": "flex", "_flexDirection": "column", "_flexGrow": "1", "_rowGap": "var(--space-s)", "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" } }
+    },
+    {
+      "id": "svceyebrow",
+      "name": "service-card__eyebrow",
+      "settings": { "_typography": { "font-size": "1.25rem", "font-weight": "800", "letter-spacing": "0.09em", "text-transform": "uppercase", "color": { "raw": "var(--accent)" } } }
+    },
+    {
+      "id": "svctext",
+      "name": "service-card__text",
+      "settings": { "_typography": { "color": { "raw": "var(--neutral-dark)" } }, "_flexGrow": "1" }
+    },
+    {
+      "id": "svclink",
+      "name": "service-card__link",
+      "settings": {
+        "_typography": { "font-weight": "800", "color": { "raw": "var(--base)" } },
+        "_margin": { "top": "auto" },
+        "_cssTransition": "color 0.16s ease",
+        "_typography:hover": { "color": { "raw": "var(--primary)" } }
+      }
+    }
+  ],
+  "globalElements": []
+}

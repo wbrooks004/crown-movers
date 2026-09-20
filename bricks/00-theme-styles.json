@@ -1,0 +1,58 @@
+{
+  "crownmain": {
+    "label": "Crown Movers Main",
+    "settings": {
+      "general": {
+        "containerWidth": "1280px",
+        "sectionVerticalPadding": "80px"
+      },
+      "typography": {
+        "fontFamily": "Inter",
+        "h1Typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(4.08rem, 2.8rem + 3vw, 7.44rem)",
+          "font-weight": "750",
+          "line-height": "1.05",
+          "letter-spacing": "-0.025em",
+          "color": { "raw": "var(--base)" }
+        },
+        "h2Typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(3.2rem, 2.48rem + 1.7vw, 4.96rem)",
+          "font-weight": "750",
+          "line-height": "1.05",
+          "letter-spacing": "-0.025em",
+          "color": { "raw": "var(--base)" }
+        },
+        "h3Typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(2.48rem, 2rem + 1vw, 3.52rem)",
+          "font-weight": "750",
+          "line-height": "1.05",
+          "letter-spacing": "-0.025em",
+          "color": { "raw": "var(--base)" }
+        },
+        "h4Typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(2rem, 1.76rem + 0.55vw, 2.64rem)",
+          "font-weight": "750",
+          "line-height": "1.05",
+          "letter-spacing": "-0.025em",
+          "color": { "raw": "var(--base)" }
+        },
+        "bodyTypography": {
+          "font-family": "Inter",
+          "font-size": "clamp(1.6rem, 1.54rem + 0.2vw, 1.8rem)",
+          "line-height": "1.65",
+          "color": { "raw": "var(--neutral-dark)" }
+        },
+        "linkColor": { "raw": "var(--base)" }
+      },
+      "button": {
+        "backgroundColor": { "raw": "var(--primary)" },
+        "border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } }
+      },
+      "conditions": [ { "main": "any" } ]
+    }
+  }
+}

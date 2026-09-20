@@ -1,0 +1,195 @@
+{
+  "name": "header-crown-movers",
+  "title": "Crown Movers — Header",
+  "type": "header",
+  "header": [
+    {
+      "id": "hdsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["hdcon1"],
+      "label": "Header",
+      "settings": {
+        "tag": "header",
+        "_padding": { "top": "12.8px", "bottom": "12.8px" },
+        "_background": { "color": { "rgb": "rgba(255, 255, 255, 0.96)" } },
+        "_border": { "width": { "bottom": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
+        "_cssCustom": "%root% { backdrop-filter: blur(10px); }"
+      }
+    },
+    {
+      "id": "hdcon1",
+      "name": "container",
+      "parent": "hdsec1",
+      "children": ["hdlgw1", "hdnav1", "hdact1"],
+      "label": "Header Row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_columnGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "hdlgw1",
+      "name": "block",
+      "parent": "hdcon1",
+      "children": ["hdlgo1"],
+      "label": "Logo chip (ink background for white logo)",
+      "settings": {
+        "link": { "type": "external", "url": "/" },
+        "_background": { "raw": "var(--base)" },
+        "_padding": { "top": "8px", "right": "12px", "bottom": "8px", "left": "12px" },
+        "_border": { "radius": { "top": "4px", "right": "4px", "bottom": "4px", "left": "4px" } }
+      }
+    },
+    {
+      "id": "hdlgo1",
+      "name": "logo",
+      "parent": "hdlgw1",
+      "children": [],
+      "label": "[VERIFY] swap for uploaded crown-logo-white.webp once in Media Library",
+      "settings": {
+        "logoText": "Crown Movers",
+        "logoHeight": "28"
+      }
+    },
+    {
+      "id": "hdnav1",
+      "name": "nav-nested",
+      "parent": "hdcon1",
+      "children": ["hdlk01", "hdlk02", "hdlk03", "hdlk04", "hdlng1"],
+      "label": "Primary Nav",
+      "settings": {
+        "ariaLabel": "Primary navigation",
+        "mobileMenu": "tablet_portrait",
+        "_columnGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "hdlk01",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "label": "[VERIFY] anchor placeholder — real services page not yet defined",
+      "settings": {
+        "text": "Services",
+        "link": { "type": "external", "url": "#services" },
+        "_padding": { "top": "8px", "right": "10px", "bottom": "8px", "left": "10px" },
+        "_typography": { "font-weight": "700", "font-size": "1.44rem" }
+      }
+    },
+    {
+      "id": "hdlk02",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "label": "[VERIFY] anchor placeholder — real service-area page not yet defined",
+      "settings": {
+        "text": "Service areas",
+        "link": { "type": "external", "url": "#areas" },
+        "_padding": { "top": "8px", "right": "10px", "bottom": "8px", "left": "10px" },
+        "_typography": { "font-weight": "700", "font-size": "1.44rem" }
+      }
+    },
+    {
+      "id": "hdlk03",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "label": "[VERIFY] anchor placeholder",
+      "settings": {
+        "text": "Reviews",
+        "link": { "type": "external", "url": "#reviews" },
+        "_padding": { "top": "8px", "right": "10px", "bottom": "8px", "left": "10px" },
+        "_typography": { "font-weight": "700", "font-size": "1.44rem" }
+      }
+    },
+    {
+      "id": "hdlk04",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "label": "[VERIFY] anchor placeholder",
+      "settings": {
+        "text": "About",
+        "link": { "type": "external", "url": "#about" },
+        "_padding": { "top": "8px", "right": "10px", "bottom": "8px", "left": "10px" },
+        "_typography": { "font-weight": "700", "font-size": "1.44rem" }
+      }
+    },
+    {
+      "id": "hdlng1",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "label": "Language switcher — replace with real Polylang switcher once Polylang is configured",
+      "settings": {
+        "text": "FR",
+        "link": { "type": "external", "url": "/fr/" },
+        "_attributes": [ { "id": "lngfr1", "name": "lang", "value": "fr" } ],
+        "_padding": { "top": "8px", "right": "10px", "bottom": "8px", "left": "10px" },
+        "_typography": { "font-weight": "800", "font-size": "1.44rem" }
+      }
+    },
+    {
+      "id": "hdact1",
+      "name": "block",
+      "parent": "hdcon1",
+      "children": ["hdphn1", "hdcta1"],
+      "label": "Actions (phone + quote)",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-xs)"
+      }
+    },
+    {
+      "id": "hdphn1",
+      "name": "button",
+      "parent": "hdact1",
+      "children": [],
+      "label": "[VERIFY] placeholder phone number",
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": { "type": "external", "url": "tel:+10000000000" },
+        "icon": { "library": "ionicons", "icon": "ion-ios-call" },
+        "iconPosition": "left",
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "700" },
+        "_background": { "color": { "rgb": "rgba(0,0,0,0)" } },
+        "_border": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" }, "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_display:tablet_portrait": "none"
+      }
+    },
+    {
+      "id": "hdcta1",
+      "name": "button",
+      "parent": "hdact1",
+      "children": [],
+      "label": "Primary quote CTA — dark ink text on coral per accessibility rule (4.94:1; white fails AA)",
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": { "type": "external", "url": "#quote" },
+        "_background": { "raw": "var(--primary)" },
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_padding": { "top": "12px", "right": "20px", "bottom": "12px", "left": "20px" },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": { "color": { "hex": "#D93E2E" } },
+        "_transform:hover": { "translateY": "-1" },
+        "_display:mobile_landscape": "none"
+      }
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [ { "main": "any" } ],
+    "headerSticky": true,
+    "headerStickyScrollingBackground": { "color": { "rgb": "rgba(255, 255, 255, 0.98)" } }
+  },
+  "global_classes": [],
+  "globalVariables": []
+}

@@ -1,0 +1,233 @@
+{
+  "name": "footer-crown-movers",
+  "title": "Crown Movers — Footer",
+  "type": "footer",
+  "footer": [
+    {
+      "id": "fosec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["focon1", "folbar"],
+      "label": "Footer",
+      "settings": {
+        "tag": "footer",
+        "_padding": { "top": "var(--space-2xl)", "bottom": "var(--space-l)" },
+        "_background": { "raw": "var(--base)" },
+        "_typography": { "color": { "hex": "#FFFFFF" } },
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "focon1",
+      "name": "container",
+      "parent": "fosec1",
+      "children": ["fobrd1", "focl01", "focl02"],
+      "label": "Footer Columns",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "2fr 1fr 1fr",
+        "_gridGap": "var(--space-xl)",
+        "_gridTemplateColumns:tablet_portrait": "1fr 1fr",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "fobrd1",
+      "name": "block",
+      "parent": "focon1",
+      "children": ["folgo1", "fodsc1"],
+      "label": "Brand",
+      "settings": { "_rowGap": "var(--space-s)", "_alignItems": "flex-start" }
+    },
+    {
+      "id": "folgo1",
+      "name": "heading",
+      "parent": "fobrd1",
+      "children": [],
+      "settings": { "text": "Crown Movers", "tag": "span", "_typography": { "font-family": "Archivo", "font-weight": "750", "font-size": "1.89rem", "color": { "hex": "#FFFFFF" } } }
+    },
+    {
+      "id": "fodsc1",
+      "name": "text-basic",
+      "parent": "fobrd1",
+      "children": [],
+      "settings": { "text": "Use Déménagement Crown on the French website.", "tag": "p", "_typography": { "color": { "rgb": "rgba(255,255,255,0.7)" }, "font-size": "1.44rem" }, "_widthMax": "320px" }
+    },
+    {
+      "id": "focl01",
+      "name": "block",
+      "parent": "focon1",
+      "children": ["foht01", "folk01", "folk02", "folk03"],
+      "label": "Services",
+      "settings": { "_rowGap": "var(--space-xs)", "_alignItems": "flex-start" }
+    },
+    {
+      "id": "foht01",
+      "name": "text-basic",
+      "parent": "focl01",
+      "children": [],
+      "settings": { "text": "Services", "tag": "span", "_typography": { "font-size": "1.25rem", "font-weight": "700", "letter-spacing": "0.08em", "text-transform": "uppercase", "color": { "rgb": "rgba(255,255,255,0.5)" } } }
+    },
+    {
+      "id": "folk01",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": { "text": "Residential moving", "link": { "type": "external", "url": "#" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.85)" } } }
+    },
+    {
+      "id": "folk02",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": { "text": "Commercial moving", "link": { "type": "external", "url": "#" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.85)" } } }
+    },
+    {
+      "id": "folk03",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": { "text": "Long-distance moving", "link": { "type": "external", "url": "#" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.85)" } } }
+    },
+    {
+      "id": "focl02",
+      "name": "block",
+      "parent": "focon1",
+      "children": ["foht02", "folk04", "folk05"],
+      "label": "Contact",
+      "settings": { "_rowGap": "var(--space-xs)", "_alignItems": "flex-start" }
+    },
+    {
+      "id": "foht02",
+      "name": "text-basic",
+      "parent": "focl02",
+      "children": [],
+      "settings": { "text": "Contact", "tag": "span", "_typography": { "font-size": "1.25rem", "font-weight": "700", "letter-spacing": "0.08em", "text-transform": "uppercase", "color": { "rgb": "rgba(255,255,255,0.5)" } } }
+    },
+    {
+      "id": "folk04",
+      "name": "text-link",
+      "parent": "focl02",
+      "children": [],
+      "label": "[VERIFY] placeholder phone number",
+      "settings": { "text": "[VERIFY phone number]", "link": { "type": "external", "url": "tel:+10000000000" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.85)" } } }
+    },
+    {
+      "id": "folk05",
+      "name": "text-link",
+      "parent": "focl02",
+      "children": [],
+      "settings": { "text": "Get a free quote", "link": { "type": "external", "url": "#quote" }, "_typography": { "color": { "hex": "#FFFFFF" }, "font-weight": "700" } }
+    },
+    {
+      "id": "folbar",
+      "name": "container",
+      "parent": "fosec1",
+      "children": ["focpy1", "folgl1"],
+      "label": "Bottom / Legal Bar",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_padding": { "top": "var(--space-m)" },
+        "_border": { "width": { "top": "1px" }, "style": "solid", "color": { "rgb": "rgba(255,255,255,0.12)" } },
+        "_direction:mobile_landscape": "column",
+        "_rowGap:mobile_landscape": "var(--space-s)"
+      }
+    },
+    {
+      "id": "focpy1",
+      "name": "text-basic",
+      "parent": "folbar",
+      "children": [],
+      "settings": { "text": "© {current_date:Y} Crown Movers. All rights reserved.", "tag": "p", "_typography": { "color": { "rgb": "rgba(255,255,255,0.5)" }, "font-size": "1.25rem" } }
+    },
+    {
+      "id": "folgl1",
+      "name": "block",
+      "parent": "folbar",
+      "children": ["folgl2", "folgl3"],
+      "label": "[VERIFY] Privacy/Terms pages don't exist yet — required for Quebec Law 25 disclosures before launch",
+      "settings": { "_direction": "row", "_columnGap": "var(--space-m)" }
+    },
+    {
+      "id": "folgl2",
+      "name": "text-link",
+      "parent": "folgl1",
+      "children": [],
+      "settings": { "text": "Privacy Policy", "link": { "type": "external", "url": "#" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.5)" }, "font-size": "1.25rem" } }
+    },
+    {
+      "id": "folgl3",
+      "name": "text-link",
+      "parent": "folgl1",
+      "children": [],
+      "settings": { "text": "Terms", "link": { "type": "external", "url": "#" }, "_typography": { "color": { "rgb": "rgba(255,255,255,0.5)" }, "font-size": "1.25rem" } }
+    },
+    {
+      "id": "mbsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["mbct01", "mbct02"],
+      "label": "Mobile Sticky Actions — fixed bottom bar, mobile only. Add body{padding-bottom:64px} via Page Settings → Custom CSS on pages using this footer so content doesn't sit under it.",
+      "settings": {
+        "tag": "div",
+        "_position": "fixed",
+        "_bottom": "0",
+        "_left": "0",
+        "_right": "0",
+        "_zIndex": "110",
+        "_display": "none",
+        "_display:mobile_landscape": "grid",
+        "_gridTemplateColumns:mobile_landscape": "1fr 1fr",
+        "_gridGap": "8px",
+        "_padding": { "top": "10px", "right": "10px", "bottom": "10px", "left": "10px" },
+        "_background": { "color": { "hex": "#FFFFFF" } },
+        "_border": { "width": { "top": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
+        "_boxShadow": { "values": { "offsetX": "0", "offsetY": "-12", "blur": "32", "spread": "0" }, "color": { "rgb": "rgba(21,21,21,0.12)" } }
+      }
+    },
+    {
+      "id": "mbct01",
+      "name": "button",
+      "parent": "mbsec1",
+      "children": [],
+      "label": "[VERIFY] placeholder phone number",
+      "settings": {
+        "text": "Call",
+        "tag": "a",
+        "link": { "type": "external", "url": "tel:+10000000000" },
+        "icon": { "library": "ionicons", "icon": "ion-ios-call" },
+        "iconPosition": "left",
+        "_background": { "raw": "var(--base)" },
+        "_typography": { "color": { "hex": "#FFFFFF" }, "font-weight": "750" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_heightMin": "44px",
+        "_justifyContent": "center"
+      }
+    },
+    {
+      "id": "mbct02",
+      "name": "button",
+      "parent": "mbsec1",
+      "children": [],
+      "label": "Dark ink text on coral per accessibility rule",
+      "settings": {
+        "text": "Free quote",
+        "tag": "a",
+        "link": { "type": "external", "url": "#quote" },
+        "_background": { "raw": "var(--primary)" },
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_heightMin": "44px",
+        "_justifyContent": "center"
+      }
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [ { "main": "any" } ]
+  },
+  "global_classes": [],
+  "globalVariables": []
+}

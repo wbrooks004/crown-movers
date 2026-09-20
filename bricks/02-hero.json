@@ -1,0 +1,200 @@
+{
+  "content": [
+    {
+      "id": "hrsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["hrcon1"],
+      "label": "Hero — Split",
+      "settings": {
+        "tag": "section",
+        "_padding": { "top": "clamp(6.4rem, 5.6rem + 4vw, 12.8rem)", "bottom": "clamp(6.4rem, 5.6rem + 4vw, 12.8rem)" },
+        "_background": { "color": { "hex": "#FFFFFF" } },
+        "_gradient": {
+          "applyTo": "background",
+          "gradientType": "linear",
+          "angle": "120",
+          "colors": [
+            { "color": { "hex": "#FFF4EE" }, "stop": "0" },
+            { "color": { "rgb": "rgba(255,244,238,0)" }, "stop": "55" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hrcon1",
+      "name": "container",
+      "parent": "hrsec1",
+      "children": ["hrrow1"],
+      "settings": {}
+    },
+    {
+      "id": "hrrow1",
+      "name": "block",
+      "parent": "hrcon1",
+      "children": ["hrlft1", "hrrgt1"],
+      "label": "Hero Row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-xl)",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "hrlft1",
+      "name": "block",
+      "parent": "hrrow1",
+      "children": ["hreyb1", "hrttl1", "hrsub1", "hrbtn1", "hrprf1"],
+      "label": "Hero Content",
+      "settings": {
+        "_rowGap": "var(--space-m)",
+        "_alignItems": "flex-start",
+        "_width": "54%",
+        "_width:tablet_portrait": "100%"
+      }
+    },
+    {
+      "id": "hreyb1",
+      "name": "text-basic",
+      "parent": "hrlft1",
+      "children": [],
+      "settings": {
+        "text": "Montreal moving company",
+        "tag": "span",
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": { "raw": "var(--primary)" }
+        }
+      }
+    },
+    {
+      "id": "hrttl1",
+      "name": "heading",
+      "parent": "hrlft1",
+      "children": [],
+      "label": "Inherits Theme Styles H1 — no local override",
+      "settings": {
+        "text": "Moving day, handled.",
+        "tag": "h1"
+      }
+    },
+    {
+      "id": "hrsub1",
+      "name": "text-basic",
+      "parent": "hrlft1",
+      "children": [],
+      "settings": {
+        "text": "Professional movers for residential, commercial, and long-distance moves in Montreal and surrounding areas.",
+        "tag": "p",
+        "_typography": { "font-size": "1.89rem", "line-height": "1.6", "color": { "raw": "var(--neutral-dark)" } },
+        "_widthMax": "560px"
+      }
+    },
+    {
+      "id": "hrbtn1",
+      "name": "block",
+      "parent": "hrlft1",
+      "children": ["hrct01", "hrct02"],
+      "label": "Buttons",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-s)",
+        "_rowGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "hrct01",
+      "name": "button",
+      "parent": "hrbtn1",
+      "children": [],
+      "label": "Primary — dark ink text on coral (accessibility rule)",
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": { "type": "external", "url": "#quote" },
+        "_background": { "raw": "var(--primary)" },
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_padding": { "top": "14px", "right": "22px", "bottom": "14px", "left": "22px" },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": { "color": { "hex": "#D93E2E" } },
+        "_transform:hover": { "translateY": "-1" }
+      }
+    },
+    {
+      "id": "hrct02",
+      "name": "button",
+      "parent": "hrbtn1",
+      "children": [],
+      "label": "[VERIFY] placeholder phone number",
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": { "type": "external", "url": "tel:+10000000000" },
+        "outline": true,
+        "_typography": { "color": { "raw": "var(--base)" }, "font-weight": "750" },
+        "_border": { "width": { "top": "1px", "right": "1px", "bottom": "1px", "left": "1px" }, "style": "solid", "color": { "raw": "var(--base)" }, "radius": { "top": "8px", "right": "8px", "bottom": "8px", "left": "8px" } },
+        "_padding": { "top": "14px", "right": "22px", "bottom": "14px", "left": "22px" },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": { "color": { "raw": "var(--base)" } },
+        "_typography:hover": { "color": { "hex": "#FFFFFF" } }
+      }
+    },
+    {
+      "id": "hrprf1",
+      "name": "text-basic",
+      "parent": "hrlft1",
+      "children": [],
+      "label": "[VERIFY] real trust proof required before launch",
+      "settings": {
+        "text": "Replace with verified proof: review rating, number of moves, or service guarantee.",
+        "tag": "p",
+        "_typography": { "font-size": "1.25rem", "color": { "raw": "var(--neutral)" } }
+      }
+    },
+    {
+      "id": "hrrgt1",
+      "name": "block",
+      "parent": "hrrow1",
+      "children": ["hrimg1"],
+      "label": "Hero Media",
+      "settings": {
+        "_width": "46%",
+        "_width:tablet_portrait": "100%",
+        "_heightMin": "280px",
+        "_overflow": "hidden",
+        "_border": { "radius": { "top": "12px", "right": "12px", "bottom": "12px", "left": "12px" } },
+        "_boxShadow": { "values": { "offsetX": "0", "offsetY": "16", "blur": "40", "spread": "-12" }, "color": { "rgb": "rgba(21,21,21,0.18)" } }
+      }
+    },
+    {
+      "id": "hrimg1",
+      "name": "image",
+      "parent": "hrrgt1",
+      "children": [],
+      "label": "[VERIFY] select real Crown Movers photo from Media Library — see 07-existing-site-photo-manifest.csv. Do not hotlink crownmovers.ca in production.",
+      "settings": {
+        "image": { "size": "full" },
+        "altText": "[VERIFY] describe the real photo once selected — e.g. Crown Movers branded moving trucks",
+        "loading": "eager",
+        "_width": "100%",
+        "_height": "100%",
+        "_objectFit": "cover"
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [],
+  "globalElements": []
+}
