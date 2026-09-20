@@ -1,0 +1,1306 @@
+{
+  "name": "single-location",
+  "title": "Crown Movers — Single Location",
+  "type": "single",
+  "content": [
+    {
+      "id": "lohs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lohc1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "cfb368",
+          "c457c7"
+        ]
+      },
+      "label": "Hero band"
+    },
+    {
+      "id": "lohc1",
+      "name": "container",
+      "parent": "lohs1",
+      "children": [
+        "lohb1",
+        "lohe1",
+        "lohh1",
+        "lohx1",
+        "loht1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cbd531",
+          "c80a54"
+        ]
+      }
+    },
+    {
+      "id": "lohb1",
+      "name": "breadcrumbs",
+      "parent": "lohc1",
+      "children": [],
+      "settings": {},
+      "label": "Native Bricks breadcrumbs"
+    },
+    {
+      "id": "lohe1",
+      "name": "text-basic",
+      "parent": "lohc1",
+      "children": [],
+      "settings": {
+        "text": "Local moving service",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c72e04"
+        ]
+      },
+      "label": "[VERIFY] category label"
+    },
+    {
+      "id": "lohh1",
+      "name": "heading",
+      "parent": "lohc1",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h1"
+      },
+      "label": "Dynamic — real post title, zero ACF setup"
+    },
+    {
+      "id": "lohx1",
+      "name": "text-basic",
+      "parent": "lohc1",
+      "children": [],
+      "settings": {
+        "text": "{post_excerpt}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c0f4a7",
+          "cb9f18"
+        ]
+      },
+      "label": "Dynamic — real post excerpt (neighbourhood access notes, stairs/elevator/parking specifics once written)"
+    },
+    {
+      "id": "loht1",
+      "name": "block",
+      "parent": "lohc1",
+      "children": [
+        "loht2",
+        "loht3"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c341e1",
+          "cbd531",
+          "c559e7"
+        ]
+      },
+      "label": "Buttons"
+    },
+    {
+      "id": "loht2",
+      "name": "button",
+      "parent": "loht1",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/quote/"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Dark ink text on coral (accessibility rule)"
+    },
+    {
+      "id": "loht3",
+      "name": "button",
+      "parent": "loht1",
+      "children": [],
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+10000000000"
+        },
+        "outline": true,
+        "_cssGlobalClasses": [
+          "c6b60c"
+        ]
+      },
+      "label": "[VERIFY] placeholder phone number"
+    },
+    {
+      "id": "lobs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lobc1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c285a4",
+          "c457c7"
+        ]
+      },
+      "label": "Body"
+    },
+    {
+      "id": "lobc1",
+      "name": "container",
+      "parent": "lobs1",
+      "children": [
+        "lobm1",
+        "loba1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c07741"
+        ]
+      }
+    },
+    {
+      "id": "lobm1",
+      "name": "block",
+      "parent": "lobc1",
+      "children": [
+        "lobm2",
+        "lobm3"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c35f67"
+        ]
+      },
+      "label": "Main content"
+    },
+    {
+      "id": "lobm2",
+      "name": "heading",
+      "parent": "lobm1",
+      "children": [],
+      "settings": {
+        "text": "Moving in this area",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "lobm3",
+      "name": "post-content",
+      "parent": "lobm1",
+      "children": [],
+      "settings": {},
+      "label": "Native post-content element — renders the real WP editor content for this post, fully dynamic with zero ACF"
+    },
+    {
+      "id": "loba1",
+      "name": "block",
+      "parent": "lobc1",
+      "children": [
+        "loba2"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c18d40"
+        ]
+      },
+      "label": "Aside"
+    },
+    {
+      "id": "loba2",
+      "name": "block",
+      "parent": "loba1",
+      "children": [
+        "loba3",
+        "loba4",
+        "loba5"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cd5a3a",
+          "cc161e"
+        ]
+      }
+    },
+    {
+      "id": "loba3",
+      "name": "heading",
+      "parent": "loba2",
+      "children": [],
+      "settings": {
+        "text": "Plan your move",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "loba4",
+      "name": "text-basic",
+      "parent": "loba2",
+      "children": [],
+      "settings": {
+        "text": "Get a starting estimate in a few minutes.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      }
+    },
+    {
+      "id": "loba5",
+      "name": "button",
+      "parent": "loba2",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/quote/"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Dark ink text on coral (accessibility rule)"
+    },
+    {
+      "id": "lops1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lopc1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "cfb368",
+          "c457c7"
+        ]
+      },
+      "label": "Process steps"
+    },
+    {
+      "id": "lopc1",
+      "name": "container",
+      "parent": "lops1",
+      "children": [
+        "loph1",
+        "lopg1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cf0315"
+        ]
+      }
+    },
+    {
+      "id": "loph1",
+      "name": "heading",
+      "parent": "lopc1",
+      "children": [],
+      "settings": {
+        "text": "How it works",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "cbab02"
+        ]
+      }
+    },
+    {
+      "id": "lopg1",
+      "name": "div",
+      "parent": "lopc1",
+      "children": [
+        "lop1a",
+        "lop2a",
+        "lop3a"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f7d2"
+        ]
+      }
+    },
+    {
+      "id": "lop1a",
+      "name": "block",
+      "parent": "lopg1",
+      "children": [
+        "lop1an",
+        "lop1at"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f4f7"
+        ]
+      }
+    },
+    {
+      "id": "lop1an",
+      "name": "text-basic",
+      "parent": "lop1a",
+      "children": [],
+      "settings": {
+        "text": "1",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "cf7a32"
+        ]
+      }
+    },
+    {
+      "id": "lop1at",
+      "name": "block",
+      "parent": "lop1a",
+      "children": [
+        "lop1ah",
+        "lop1ad"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cae3bc"
+        ]
+      }
+    },
+    {
+      "id": "lop1ah",
+      "name": "heading",
+      "parent": "lop1at",
+      "children": [],
+      "settings": {
+        "text": "Tell us about your move",
+        "tag": "h4"
+      }
+    },
+    {
+      "id": "lop1ad",
+      "name": "text-basic",
+      "parent": "lop1at",
+      "children": [],
+      "settings": {
+        "text": "Share the details — dates, addresses, and what needs to move.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c28fb5"
+        ]
+      }
+    },
+    {
+      "id": "lop2a",
+      "name": "block",
+      "parent": "lopg1",
+      "children": [
+        "lop2an",
+        "lop2at"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f4f7"
+        ]
+      }
+    },
+    {
+      "id": "lop2an",
+      "name": "text-basic",
+      "parent": "lop2a",
+      "children": [],
+      "settings": {
+        "text": "2",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "cf7a32"
+        ]
+      }
+    },
+    {
+      "id": "lop2at",
+      "name": "block",
+      "parent": "lop2a",
+      "children": [
+        "lop2ah",
+        "lop2ad"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cae3bc"
+        ]
+      }
+    },
+    {
+      "id": "lop2ah",
+      "name": "heading",
+      "parent": "lop2at",
+      "children": [],
+      "settings": {
+        "text": "We confirm details and pricing",
+        "tag": "h4"
+      }
+    },
+    {
+      "id": "lop2ad",
+      "name": "text-basic",
+      "parent": "lop2at",
+      "children": [],
+      "settings": {
+        "text": "A team member follows up to confirm availability and a final quote.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c28fb5"
+        ]
+      }
+    },
+    {
+      "id": "lop3a",
+      "name": "block",
+      "parent": "lopg1",
+      "children": [
+        "lop3an",
+        "lop3at"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f4f7"
+        ]
+      }
+    },
+    {
+      "id": "lop3an",
+      "name": "text-basic",
+      "parent": "lop3a",
+      "children": [],
+      "settings": {
+        "text": "3",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "cf7a32"
+        ]
+      }
+    },
+    {
+      "id": "lop3at",
+      "name": "block",
+      "parent": "lop3a",
+      "children": [
+        "lop3ah",
+        "lop3ad"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cae3bc"
+        ]
+      }
+    },
+    {
+      "id": "lop3ah",
+      "name": "heading",
+      "parent": "lop3at",
+      "children": [],
+      "settings": {
+        "text": "Moving day, handled",
+        "tag": "h4"
+      }
+    },
+    {
+      "id": "lop3ad",
+      "name": "text-basic",
+      "parent": "lop3at",
+      "children": [],
+      "settings": {
+        "text": "Your crew arrives on schedule and takes it from there.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c28fb5"
+        ]
+      }
+    },
+    {
+      "id": "lon1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lon2"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c285a4",
+          "c457c7"
+        ]
+      },
+      "label": "Nearby locations"
+    },
+    {
+      "id": "lon2",
+      "name": "container",
+      "parent": "lon1",
+      "children": [
+        "lon3",
+        "lon4"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c87f38"
+        ]
+      }
+    },
+    {
+      "id": "lon3",
+      "name": "heading",
+      "parent": "lon2",
+      "children": [],
+      "settings": {
+        "text": "Nearby areas we also serve",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "lon4",
+      "name": "div",
+      "parent": "lon2",
+      "children": [
+        "lonL1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f7d2"
+        ]
+      },
+      "label": "Loop grid, excludes the current location"
+    },
+    {
+      "id": "lonL1",
+      "name": "block",
+      "parent": "lon4",
+      "children": [
+        "lonL2",
+        "lonL3"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "location"
+          ],
+          "posts_per_page": "3",
+          "orderby": "rand",
+          "exclude_current_post": true
+        },
+        "_cssGlobalClasses": [
+          "c614b5",
+          "cc161e",
+          "cb8f51",
+          "c27e53"
+        ]
+      },
+      "label": "Query loop — repeats once per result"
+    },
+    {
+      "id": "lonL2",
+      "name": "image",
+      "parent": "lonL1",
+      "children": [],
+      "settings": {
+        "image": {
+          "useDynamicData": "{featured_image}",
+          "size": "medium_large"
+        },
+        "altText": "{post_title}",
+        "loading": "lazy",
+        "_cssGlobalClasses": [
+          "c1d3fa"
+        ]
+      }
+    },
+    {
+      "id": "lonL3",
+      "name": "block",
+      "parent": "lonL1",
+      "children": [
+        "lonL4",
+        "lonL5",
+        "lonL6",
+        "lonL7"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c891a8"
+        ]
+      }
+    },
+    {
+      "id": "lonL4",
+      "name": "text-basic",
+      "parent": "lonL3",
+      "children": [],
+      "settings": {
+        "text": "Local moving",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c59a75"
+        ]
+      }
+    },
+    {
+      "id": "lonL5",
+      "name": "heading",
+      "parent": "lonL3",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "lonL6",
+      "name": "text-basic",
+      "parent": "lonL3",
+      "children": [],
+      "settings": {
+        "text": "{post_excerpt:16}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c28fb5"
+        ]
+      }
+    },
+    {
+      "id": "lonL7",
+      "name": "text-link",
+      "parent": "lonL3",
+      "children": [],
+      "settings": {
+        "text": "Learn more →",
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{post_url}"
+        },
+        "_cssGlobalClasses": [
+          "c15017"
+        ]
+      }
+    },
+    {
+      "id": "locta1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "locta2"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c457c7",
+          "c256f3"
+        ]
+      },
+      "label": "Dark CTA band"
+    },
+    {
+      "id": "locta2",
+      "name": "container",
+      "parent": "locta1",
+      "children": [
+        "locta3"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "locta3",
+      "name": "block",
+      "parent": "locta2",
+      "children": [
+        "locta4",
+        "locta5",
+        "locta6"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c50218"
+        ]
+      }
+    },
+    {
+      "id": "locta4",
+      "name": "heading",
+      "parent": "locta3",
+      "children": [],
+      "settings": {
+        "text": "Ready to check availability?",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "cbab02"
+        ]
+      }
+    },
+    {
+      "id": "locta5",
+      "name": "text-basic",
+      "parent": "locta3",
+      "children": [],
+      "settings": {
+        "text": "Get a starting estimate in a few minutes.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c41bc0"
+        ]
+      }
+    },
+    {
+      "id": "locta6",
+      "name": "button",
+      "parent": "locta3",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/quote/"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Dark ink text on coral (accessibility rule)"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "postType",
+        "postType": [
+          "location"
+        ]
+      }
+    ],
+    "templatePreviewType": "single"
+  },
+  "global_classes": [
+    {
+      "id": "cae3bc",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "cbd531",
+      "name": "u-gap-s",
+      "settings": {
+        "_columnGap": "var(--space-s)",
+        "_rowGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "c87f38",
+      "name": "u-gap-l",
+      "settings": {
+        "_columnGap": "var(--space-l)",
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "cf0315",
+      "name": "u-gap-xl",
+      "settings": {
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "c341e1",
+      "name": "u-row-wrap-center",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "cbab02",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "cb9f18",
+      "name": "u-max-s",
+      "settings": {
+        "_widthMax": "640px"
+      }
+    },
+    {
+      "id": "c80a54",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "c457c7",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "c72e04",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c0f4a7",
+      "name": "intro-text",
+      "settings": {
+        "_typography": {
+          "font-size": "1.89rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c1b54d",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c285a4",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "cfb368",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "c559e7",
+      "name": "u-mt-2xs",
+      "settings": {
+        "_margin": {
+          "top": "var(--space-2xs)"
+        }
+      }
+    },
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    },
+    {
+      "id": "c6b60c",
+      "name": "btn-outline",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "cc161e",
+      "name": "card-surface",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cb8f51",
+      "name": "card-hover-lift",
+      "settings": {
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-3"
+        },
+        "_boxShadow:hover": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "32",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.14)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c5f7d2",
+      "name": "service-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "c614b5",
+      "name": "service-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_overflow": "hidden"
+      }
+    },
+    {
+      "id": "c1d3fa",
+      "name": "service-card__image",
+      "settings": {
+        "_aspectRatio": "16/10",
+        "_objectFit": "cover",
+        "_width": "100%"
+      }
+    },
+    {
+      "id": "c891a8",
+      "name": "service-card__body",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_flexGrow": "1",
+        "_rowGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "c59a75",
+      "name": "service-card__eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.09em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--accent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c28fb5",
+      "name": "service-card__text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "c15017",
+      "name": "service-card__link",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_margin": {
+          "top": "auto"
+        },
+        "_cssTransition": "color 0.16s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cf7a32",
+      "name": "icon-circle",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_width": "40px",
+        "_height": "40px",
+        "_widthMin": "40px",
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          },
+          "font-weight": "700"
+        }
+      }
+    },
+    {
+      "id": "c5f4f7",
+      "name": "step-row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-start",
+        "_columnGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "c07741",
+      "name": "two-col-split",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "var(--space-xl)",
+        "_alignItems": "flex-start",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "c35f67",
+      "name": "col-main",
+      "settings": {
+        "_width": "62%",
+        "_width:tablet_portrait": "100%",
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "c18d40",
+      "name": "col-aside",
+      "settings": {
+        "_width": "38%",
+        "_width:tablet_portrait": "100%"
+      }
+    },
+    {
+      "id": "cd5a3a",
+      "name": "aside-panel",
+      "settings": {
+        "_rowGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-l)",
+          "right": "var(--space-l)",
+          "bottom": "var(--space-l)",
+          "left": "var(--space-l)"
+        },
+        "_position": "sticky",
+        "_top": "96px"
+      }
+    },
+    {
+      "id": "c27e53",
+      "name": "archive-loop-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column"
+      }
+    },
+    {
+      "id": "c256f3",
+      "name": "cta-dark-section",
+      "settings": {
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "c50218",
+      "name": "cta-dark-inner",
+      "settings": {
+        "_rowGap": "var(--space-m)",
+        "_alignItems": "center",
+        "_widthMax": "560px",
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "c41bc0",
+      "name": "cta-dark-text",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "color": {
+            "rgb": "rgba(255,255,255,0.75)"
+          }
+        }
+      }
+    }
+  ],
+  "globalVariables": []
+}

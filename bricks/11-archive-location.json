@@ -1,0 +1,663 @@
+{
+  "name": "archive-location",
+  "title": "Crown Movers — Location Archive",
+  "type": "archive",
+  "content": [
+    {
+      "id": "las1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lac1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "cfb368",
+          "c457c7"
+        ]
+      },
+      "label": "Archive header"
+    },
+    {
+      "id": "lac1",
+      "name": "container",
+      "parent": "las1",
+      "children": [
+        "lab1",
+        "lae1",
+        "lah1",
+        "lax1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cae3bc",
+          "c80a54"
+        ]
+      }
+    },
+    {
+      "id": "lab1",
+      "name": "breadcrumbs",
+      "parent": "lac1",
+      "children": [],
+      "settings": {}
+    },
+    {
+      "id": "lae1",
+      "name": "text-basic",
+      "parent": "lac1",
+      "children": [],
+      "settings": {
+        "text": "Service areas",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c72e04"
+        ]
+      }
+    },
+    {
+      "id": "lah1",
+      "name": "heading",
+      "parent": "lac1",
+      "children": [],
+      "settings": {
+        "text": "{archive_title}",
+        "tag": "h1"
+      },
+      "label": "Dynamic — real archive title (post type label)"
+    },
+    {
+      "id": "lax1",
+      "name": "text-basic",
+      "parent": "lac1",
+      "children": [],
+      "settings": {
+        "text": "{archive_description @fallback:''}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      },
+      "label": "[VERIFY] set the post type's archive description in WP admin, or this renders empty"
+    },
+    {
+      "id": "lag1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lag2"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c285a4",
+          "c457c7"
+        ]
+      },
+      "label": "Results grid"
+    },
+    {
+      "id": "lag2",
+      "name": "container",
+      "parent": "lag1",
+      "children": [
+        "lag3"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "lag3",
+      "name": "div",
+      "parent": "lag2",
+      "children": [
+        "laL1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c5f7d2"
+        ]
+      },
+      "label": "Loop grid — CSS grid on the parent, hasLoop card repeats as each grid cell"
+    },
+    {
+      "id": "laL1",
+      "name": "block",
+      "parent": "lag3",
+      "children": [
+        "laL2",
+        "laL3"
+      ],
+      "settings": {
+        "hasLoop": true,
+        "query": {
+          "objectType": "post",
+          "post_type": [
+            "location"
+          ],
+          "posts_per_page": "12",
+          "orderby": "title",
+          "order": "ASC",
+          "is_archive_main_query": true
+        },
+        "_cssGlobalClasses": [
+          "c614b5",
+          "cc161e",
+          "cb8f51",
+          "c27e53"
+        ]
+      },
+      "label": "Query loop — repeats once per result"
+    },
+    {
+      "id": "laL2",
+      "name": "image",
+      "parent": "laL1",
+      "children": [],
+      "settings": {
+        "image": {
+          "useDynamicData": "{featured_image}",
+          "size": "medium_large"
+        },
+        "altText": "{post_title}",
+        "loading": "lazy",
+        "_cssGlobalClasses": [
+          "c1d3fa"
+        ]
+      }
+    },
+    {
+      "id": "laL3",
+      "name": "block",
+      "parent": "laL1",
+      "children": [
+        "laL4",
+        "laL5",
+        "laL6",
+        "laL7"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c891a8"
+        ]
+      }
+    },
+    {
+      "id": "laL4",
+      "name": "text-basic",
+      "parent": "laL3",
+      "children": [],
+      "settings": {
+        "text": "Local moving",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c59a75"
+        ]
+      }
+    },
+    {
+      "id": "laL5",
+      "name": "heading",
+      "parent": "laL3",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "laL6",
+      "name": "text-basic",
+      "parent": "laL3",
+      "children": [],
+      "settings": {
+        "text": "{post_excerpt:20}",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c28fb5"
+        ]
+      }
+    },
+    {
+      "id": "laL7",
+      "name": "text-link",
+      "parent": "laL3",
+      "children": [],
+      "settings": {
+        "text": "Learn more →",
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{post_url}"
+        },
+        "_cssGlobalClasses": [
+          "c15017"
+        ]
+      }
+    },
+    {
+      "id": "lacta1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "lacta2"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c457c7",
+          "c256f3"
+        ]
+      },
+      "label": "Dark CTA band"
+    },
+    {
+      "id": "lacta2",
+      "name": "container",
+      "parent": "lacta1",
+      "children": [
+        "lacta3"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "lacta3",
+      "name": "block",
+      "parent": "lacta2",
+      "children": [
+        "lacta4",
+        "lacta5",
+        "lacta6"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c50218"
+        ]
+      }
+    },
+    {
+      "id": "lacta4",
+      "name": "heading",
+      "parent": "lacta3",
+      "children": [],
+      "settings": {
+        "text": "Don't see your neighbourhood listed?",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "cbab02"
+        ]
+      }
+    },
+    {
+      "id": "lacta5",
+      "name": "text-basic",
+      "parent": "lacta3",
+      "children": [],
+      "settings": {
+        "text": "We cover the greater Montreal area — ask us before assuming we don't serve you.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c41bc0"
+        ]
+      }
+    },
+    {
+      "id": "lacta6",
+      "name": "button",
+      "parent": "lacta3",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/quote/"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Dark ink text on coral (accessibility rule)"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "archiveType",
+        "archiveType": [
+          "postType"
+        ],
+        "archivePostTypes": [
+          "location"
+        ]
+      }
+    ],
+    "templatePreviewType": "archive-cpt",
+    "templatePreviewPostType": "location"
+  },
+  "global_classes": [
+    {
+      "id": "cae3bc",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "cbab02",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "c80a54",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "c457c7",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "c72e04",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c1b54d",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c285a4",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "cfb368",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    },
+    {
+      "id": "cc161e",
+      "name": "card-surface",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cb8f51",
+      "name": "card-hover-lift",
+      "settings": {
+        "_cssTransition": "transform 0.2s ease, box-shadow 0.2s ease",
+        "_transform:hover": {
+          "translateY": "-3"
+        },
+        "_boxShadow:hover": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "16",
+            "blur": "32",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.14)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c5f7d2",
+      "name": "service-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "c614b5",
+      "name": "service-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_overflow": "hidden"
+      }
+    },
+    {
+      "id": "c1d3fa",
+      "name": "service-card__image",
+      "settings": {
+        "_aspectRatio": "16/10",
+        "_objectFit": "cover",
+        "_width": "100%"
+      }
+    },
+    {
+      "id": "c891a8",
+      "name": "service-card__body",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_flexGrow": "1",
+        "_rowGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "c59a75",
+      "name": "service-card__eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.09em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--accent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c28fb5",
+      "name": "service-card__text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "c15017",
+      "name": "service-card__link",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_margin": {
+          "top": "auto"
+        },
+        "_cssTransition": "color 0.16s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c27e53",
+      "name": "archive-loop-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column"
+      }
+    },
+    {
+      "id": "c256f3",
+      "name": "cta-dark-section",
+      "settings": {
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "c50218",
+      "name": "cta-dark-inner",
+      "settings": {
+        "_rowGap": "var(--space-m)",
+        "_alignItems": "center",
+        "_widthMax": "560px",
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "c41bc0",
+      "name": "cta-dark-text",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "color": {
+            "rgb": "rgba(255,255,255,0.75)"
+          }
+        }
+      }
+    }
+  ],
+  "globalVariables": []
+}
