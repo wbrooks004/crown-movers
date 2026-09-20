@@ -4,67 +4,86 @@
       "id": "tssec1",
       "name": "section",
       "parent": 0,
-      "children": ["tscon1"],
-      "label": "Trust Strip",
+      "children": [
+        "tscon1"
+      ],
       "settings": {
         "tag": "section",
-        "_background": { "color": { "hex": "#FFFFFF" } },
-        "_border": {
-          "width": { "top": "1px", "bottom": "1px" },
-          "style": "solid",
-          "color": { "raw": "var(--neutral-light)" }
-        }
-      }
+        "_cssGlobalClasses": [
+          "cf6994"
+        ]
+      },
+      "label": "Trust Strip"
     },
     {
       "id": "tscon1",
       "name": "container",
       "parent": "tssec1",
-      "children": ["tsit01", "tsit02", "tsit03"],
-      "label": "Trust Items",
+      "children": [
+        "tsit01",
+        "tsit02",
+        "tsit03"
+      ],
       "settings": {
-        "_display": "grid",
-        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
-        "_gridTemplateColumns:mobile_landscape": "1fr"
-      }
+        "_cssGlobalClasses": [
+          "cf9d5c"
+        ]
+      },
+      "label": "Trust Items"
     },
     {
       "id": "tsit01",
       "name": "block",
       "parent": "tscon1",
-      "children": ["tsht01", "tstx01"],
-      "label": "[VERIFY] real supporting statement needed",
+      "children": [
+        "tsht01",
+        "tstx01"
+      ],
       "settings": {
-        "_rowGap": "var(--space-2xs)",
-        "_alignItems": "center",
-        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" }
-      }
+        "_cssGlobalClasses": [
+          "cad30a"
+        ]
+      },
+      "label": "[VERIFY] real supporting statement needed"
     },
     {
       "id": "tsht01",
       "name": "text-basic",
       "parent": "tsit01",
       "children": [],
-      "settings": { "text": "Professional crews", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+      "settings": {
+        "text": "Professional crews",
+        "tag": "strong",
+        "_cssGlobalClasses": [
+          "c749aa"
+        ]
+      }
     },
     {
       "id": "tstx01",
       "name": "text-basic",
       "parent": "tsit01",
       "children": [],
-      "settings": { "text": "Replace with verified supporting statement", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+      "settings": {
+        "text": "Replace with verified supporting statement",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c3d80d"
+        ]
+      }
     },
     {
       "id": "tsit02",
       "name": "block",
       "parent": "tscon1",
-      "children": ["tsht02", "tstx02"],
+      "children": [
+        "tsht02",
+        "tstx02"
+      ],
       "settings": {
-        "_rowGap": "var(--space-2xs)",
-        "_alignItems": "center",
-        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" },
-        "_border": { "width": { "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
-        "_border:mobile_landscape": { "width": { "left": "0", "top": "1px" } }
+        "_cssGlobalClasses": [
+          "ca26c2"
+        ]
       }
     },
     {
@@ -72,47 +91,171 @@
       "name": "text-basic",
       "parent": "tsit02",
       "children": [],
-      "settings": { "text": "Careful protection", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+      "settings": {
+        "text": "Careful protection",
+        "tag": "strong",
+        "_cssGlobalClasses": [
+          "c749aa"
+        ]
+      }
     },
     {
       "id": "tstx02",
       "name": "text-basic",
       "parent": "tsit02",
       "children": [],
-      "settings": { "text": "Furniture, floors, doors, and high-contact surfaces", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+      "settings": {
+        "text": "Furniture, floors, doors, and high-contact surfaces",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c3d80d"
+        ]
+      }
     },
     {
       "id": "tsit03",
       "name": "block",
       "parent": "tscon1",
-      "children": ["tsht03", "tstx03"],
-      "label": "[VERIFY] real supporting statement needed — do not display unverified pricing/policy claims",
+      "children": [
+        "tsht03",
+        "tstx03"
+      ],
       "settings": {
-        "_rowGap": "var(--space-2xs)",
-        "_alignItems": "center",
-        "_padding": { "top": "var(--space-m)", "right": "var(--space-m)", "bottom": "var(--space-m)", "left": "var(--space-m)" },
-        "_border": { "width": { "left": "1px" }, "style": "solid", "color": { "raw": "var(--neutral-light)" } },
-        "_border:mobile_landscape": { "width": { "left": "0", "top": "1px" } }
-      }
+        "_cssGlobalClasses": [
+          "ca26c2"
+        ]
+      },
+      "label": "[VERIFY] real supporting statement needed — do not display unverified pricing/policy claims"
     },
     {
       "id": "tsht03",
       "name": "text-basic",
       "parent": "tsit03",
       "children": [],
-      "settings": { "text": "Clear communication", "tag": "strong", "_typography": { "text-align": "center", "color": { "raw": "var(--base)" } } }
+      "settings": {
+        "text": "Clear communication",
+        "tag": "strong",
+        "_cssGlobalClasses": [
+          "c749aa"
+        ]
+      }
     },
     {
       "id": "tstx03",
       "name": "text-basic",
       "parent": "tsit03",
       "children": [],
-      "settings": { "text": "[VERIFY] insert a real, verified pricing/communication policy statement", "tag": "p", "_typography": { "text-align": "center", "font-size": "1.44rem", "color": { "raw": "var(--neutral)" } } }
+      "settings": {
+        "text": "[VERIFY] insert a real, verified pricing/communication policy statement",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c3d80d"
+        ]
+      }
     }
   ],
   "source": "bricksCopiedElements",
   "sourceUrl": "https://www.crownmovers.ca/",
   "version": "2.3.6",
-  "globalClasses": [],
+  "globalClasses": [
+    {
+      "id": "c749aa",
+      "name": "trust-item-title",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c3d80d",
+      "name": "trust-item-desc",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "font-size": "1.44rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cf6994",
+      "name": "trust-section",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "bottom": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cf9d5c",
+      "name": "trust-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "cad30a",
+      "name": "trust-item",
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "ca26c2",
+      "name": "trust-item-divider",
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        },
+        "_border": {
+          "width": {
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          }
+        },
+        "_border:mobile_landscape": {
+          "width": {
+            "left": "0",
+            "top": "1px"
+          }
+        }
+      }
+    }
+  ],
   "globalElements": []
 }

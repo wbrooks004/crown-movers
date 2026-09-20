@@ -1,6 +1,142 @@
 {
   "content": [
     {
+      "id": "ihsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "ihcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "cfb368",
+          "c457c7"
+        ]
+      },
+      "label": "Hero — Inner Page (service / location / quote / blog)"
+    },
+    {
+      "id": "ihcon1",
+      "name": "container",
+      "parent": "ihsec1",
+      "children": [
+        "ihbc01",
+        "iheyb1",
+        "ihh1",
+        "ihsub1",
+        "ihbtn1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cbd531",
+          "c80a54"
+        ]
+      }
+    },
+    {
+      "id": "ihbc01",
+      "name": "breadcrumbs",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {},
+      "label": "Native Bricks breadcrumbs — reflects real page hierarchy automatically, no settings needed"
+    },
+    {
+      "id": "iheyb1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "Moving service",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c72e04"
+        ]
+      },
+      "label": "[VERIFY] category label — hand-typed until ACF service/location category field exists"
+    },
+    {
+      "id": "ihh1",
+      "name": "heading",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h1"
+      },
+      "label": "Dynamic — uses the real post/page title, works with zero ACF setup on any post type"
+    },
+    {
+      "id": "ihsub1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "State the service or area, who it's for, and the one thing a visitor should do next.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c0f4a7",
+          "cb9f18"
+        ]
+      },
+      "label": "[VERIFY] short intro — hand-typed until an ACF intro/excerpt field exists to bind here"
+    },
+    {
+      "id": "ihbtn1",
+      "name": "block",
+      "parent": "ihcon1",
+      "children": [
+        "ihct01",
+        "ihct02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c341e1",
+          "cbd531",
+          "c559e7"
+        ]
+      },
+      "label": "Buttons"
+    },
+    {
+      "id": "ihct01",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "#quote"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Primary — dark ink text on coral (accessibility rule)"
+    },
+    {
+      "id": "ihct02",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+10000000000"
+        },
+        "outline": true,
+        "_cssGlobalClasses": [
+          "c6b60c"
+        ]
+      },
+      "label": "[VERIFY] placeholder phone number"
+    },
+    {
       "id": "qfsec1",
       "name": "section",
       "parent": 0,
@@ -212,11 +348,27 @@
   "version": "2.3.6",
   "globalClasses": [
     {
-      "id": "cae3bc",
-      "name": "u-gap-2xs",
+      "id": "cbd531",
+      "name": "u-gap-s",
       "settings": {
-        "_columnGap": "var(--space-2xs)",
-        "_rowGap": "var(--space-2xs)"
+        "_columnGap": "var(--space-s)",
+        "_rowGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "c341e1",
+      "name": "u-row-wrap-center",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "cb9f18",
+      "name": "u-max-s",
+      "settings": {
+        "_widthMax": "640px"
       }
     },
     {
@@ -252,6 +404,134 @@
       }
     },
     {
+      "id": "c0f4a7",
+      "name": "intro-text",
+      "settings": {
+        "_typography": {
+          "font-size": "1.89rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cfb368",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "c559e7",
+      "name": "u-mt-2xs",
+      "settings": {
+        "_margin": {
+          "top": "var(--space-2xs)"
+        }
+      }
+    },
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    },
+    {
+      "id": "c6b60c",
+      "name": "btn-outline",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "cae3bc",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
       "id": "c1b54d",
       "name": "body-text",
       "settings": {
@@ -270,17 +550,6 @@
           "font-size": "1.25rem",
           "color": {
             "raw": "var(--neutral)"
-          }
-        }
-      }
-    },
-    {
-      "id": "cfb368",
-      "name": "u-bg-warm",
-      "settings": {
-        "_background": {
-          "color": {
-            "hex": "#F7F5F1"
           }
         }
       }
