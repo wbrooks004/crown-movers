@@ -1,0 +1,1730 @@
+{
+  "content": [
+    {
+      "id": "efsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "efcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "kijkzh",
+          "qpu5lb"
+        ]
+      },
+      "label": "Multi-step moving estimate form — design brief item 20, distinct from the existing single-step 05-quote-form.json (that one stays; the brief's own five primary conversion actions name both “Request a free quote” and “Calculate a starting moving estimate” as separate actions). Built as ONE real Bricks form element (all fields for all 8 steps live in a single <form>, one submission, one email) with step PANELS shown/hidden via _interactions on the Next/Back buttons — not a native Bricks “wizard mode”, because Bricks 2.3.6's form element has no such mode (verified against includes/elements/form.php). \n\nHONEST LIMITATION, read before shipping: hiding a required field with _display:none removes it from native HTML5 validation in most browsers, so nothing here stops a visitor from clicking through to the last step without filling earlier required fields — there is no documented Bricks interaction for “validate step, then advance.” Two real fixes, neither attempted here: (a) custom JS on each Next button's click interaction (the `javascript` action type exists for this) that checks the current step's required fields before calling show/hide, or (b) rebuild this as a WS Form multi-step form — WS Form is the project's actual confirmed forms plugin (Crown_Movers_Content_Architecture_Spec_v2.md §9) and has real native multi-step support, which this Bricks-native version does not. Treat what's built here as a solid, reusable field list / content / visual design, not a production-ready validated wizard. \n\nNo pricing calculator: per spec §9, “the instant quote calculator remains a separate workstream. No pricing logic is reverse-engineered or inferred; formulas come from Crown Movers in writing.” The final step is an honest ‘request received’ confirmation, matching 05-quote-form.json's existing successMessage pattern — never a fabricated number. \n\nRadio-card visual: options below use Bricks' native `radio` field type (real inputs, real required validation) rather than a hand-styled card look, because Bricks' documented form field-styling keys (fieldBorder/fieldPadding/fieldBackgroundColor/fieldTypography) apply uniformly to the whole form, not per-option — achieving the design brief's bordered-card-per-option look with a selected-state fill needs either confirmed Bricks 2.3.6 radio markup selectors (verify once pasted into a live builder) or a small custom element. Functionally correct either way; only the visual polish is deferred."
+    },
+    {
+      "id": "efcon1",
+      "name": "container",
+      "parent": "efsec1",
+      "children": [
+        "efshl1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "m42voi"
+        ]
+      }
+    },
+    {
+      "id": "efshl1",
+      "name": "block",
+      "parent": "efcon1",
+      "children": [
+        "efhdr1",
+        "efprg1",
+        "effrm1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "pnbtba"
+        ]
+      }
+    },
+    {
+      "id": "efhdr1",
+      "name": "block",
+      "parent": "efshl1",
+      "children": [
+        "efeyb1",
+        "efttl1",
+        "efsub1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "hutly2"
+        ]
+      }
+    },
+    {
+      "id": "efeyb1",
+      "name": "text-basic",
+      "parent": "efhdr1",
+      "children": [],
+      "settings": {
+        "text": "Moving estimate",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "yeayal"
+        ]
+      }
+    },
+    {
+      "id": "efttl1",
+      "name": "heading",
+      "parent": "efhdr1",
+      "children": [],
+      "settings": {
+        "text": "Calculate my move",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "efsub1",
+      "name": "text-basic",
+      "parent": "efhdr1",
+      "children": [],
+      "settings": {
+        "text": "A few quick questions get you a starting estimate — takes about two minutes.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "n1fgzu"
+        ]
+      }
+    },
+    {
+      "id": "efpw01",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd01",
+        "efpl01"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd01",
+      "name": "text-basic",
+      "parent": "efpw01",
+      "children": [],
+      "settings": {
+        "text": "1",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th",
+          "h1twlg"
+        ],
+        "_cssId": "estimate-dot-1"
+      }
+    },
+    {
+      "id": "efpl01",
+      "name": "text-basic",
+      "parent": "efpw01",
+      "children": [],
+      "settings": {
+        "text": "Move type",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw02",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd02",
+        "efpl02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd02",
+      "name": "text-basic",
+      "parent": "efpw02",
+      "children": [],
+      "settings": {
+        "text": "2",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-2"
+      }
+    },
+    {
+      "id": "efpl02",
+      "name": "text-basic",
+      "parent": "efpw02",
+      "children": [],
+      "settings": {
+        "text": "From / to",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw03",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd03",
+        "efpl03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd03",
+      "name": "text-basic",
+      "parent": "efpw03",
+      "children": [],
+      "settings": {
+        "text": "3",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-3"
+      }
+    },
+    {
+      "id": "efpl03",
+      "name": "text-basic",
+      "parent": "efpw03",
+      "children": [],
+      "settings": {
+        "text": "Move date",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw04",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd04",
+        "efpl04"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd04",
+      "name": "text-basic",
+      "parent": "efpw04",
+      "children": [],
+      "settings": {
+        "text": "4",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-4"
+      }
+    },
+    {
+      "id": "efpl04",
+      "name": "text-basic",
+      "parent": "efpw04",
+      "children": [],
+      "settings": {
+        "text": "Property",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw05",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd05",
+        "efpl05"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd05",
+      "name": "text-basic",
+      "parent": "efpw05",
+      "children": [],
+      "settings": {
+        "text": "5",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-5"
+      }
+    },
+    {
+      "id": "efpl05",
+      "name": "text-basic",
+      "parent": "efpw05",
+      "children": [],
+      "settings": {
+        "text": "Access",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw06",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd06",
+        "efpl06"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd06",
+      "name": "text-basic",
+      "parent": "efpw06",
+      "children": [],
+      "settings": {
+        "text": "6",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-6"
+      }
+    },
+    {
+      "id": "efpl06",
+      "name": "text-basic",
+      "parent": "efpw06",
+      "children": [],
+      "settings": {
+        "text": "Home size",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw07",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd07",
+        "efpl07"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd07",
+      "name": "text-basic",
+      "parent": "efpw07",
+      "children": [],
+      "settings": {
+        "text": "7",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-7"
+      }
+    },
+    {
+      "id": "efpl07",
+      "name": "text-basic",
+      "parent": "efpw07",
+      "children": [],
+      "settings": {
+        "text": "Specialty items",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efpw08",
+      "name": "block",
+      "parent": "efprg1",
+      "children": [
+        "efpd08",
+        "efpl08"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c4wret"
+        ]
+      }
+    },
+    {
+      "id": "efpd08",
+      "name": "text-basic",
+      "parent": "efpw08",
+      "children": [],
+      "settings": {
+        "text": "8",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "xtl9th"
+        ],
+        "_cssId": "estimate-dot-8"
+      }
+    },
+    {
+      "id": "efpl08",
+      "name": "text-basic",
+      "parent": "efpw08",
+      "children": [],
+      "settings": {
+        "text": "Contact",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "n7uhy4"
+        ]
+      }
+    },
+    {
+      "id": "efprg1",
+      "name": "block",
+      "parent": "efshl1",
+      "children": [
+        "efpw01",
+        "efpw02",
+        "efpw03",
+        "efpw04",
+        "efpw05",
+        "efpw06",
+        "efpw07",
+        "efpw08"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "s795h7"
+        ]
+      },
+      "label": "Static step indicator — step 1's dot is styled active by default in the JSON; the rest do not update on Next/Back without custom JS (see root label). Functionally this still communicates “there are 8 steps” and roughly where the user is via which step-panel is visible."
+    },
+    {
+      "id": "effrm1",
+      "name": "block",
+      "parent": "efshl1",
+      "children": [
+        "efstep01",
+        "efstep02",
+        "efstep03",
+        "efstep04",
+        "efstep05",
+        "efstep06",
+        "efstep07",
+        "efstep08"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "uz6umb"
+        ]
+      }
+    },
+    {
+      "id": "efstep01",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep01h",
+        "efstep01fld",
+        "efnav01"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep01",
+        "_display:tablet_portrait": null
+      }
+    },
+    {
+      "id": "efstep01h",
+      "name": "heading",
+      "parent": "efstep01",
+      "children": [],
+      "settings": {
+        "text": "What kind of move is this?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep01fld",
+      "name": "text-basic",
+      "parent": "efstep01",
+      "children": [],
+      "settings": {
+        "text": "[form field: Move type — renders inline via the real form element below]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "8s7b69"
+        ]
+      },
+      "label": "Placeholder marker only — the actual field lives in effrm2's `fields` array (id efmvty) per Bricks' single-form-element model; see note on effrm2."
+    },
+    {
+      "id": "efstep02",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep02h",
+        "efnav02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep02",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep02h",
+      "name": "heading",
+      "parent": "efstep02",
+      "children": [],
+      "settings": {
+        "text": "Where are you moving from and to?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep03",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep03h",
+        "efnav03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep03",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep03h",
+      "name": "heading",
+      "parent": "efstep03",
+      "children": [],
+      "settings": {
+        "text": "When are you moving?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep04",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep04h",
+        "efnav04"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep04",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep04h",
+      "name": "heading",
+      "parent": "efstep04",
+      "children": [],
+      "settings": {
+        "text": "What type of property?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep05",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep05h",
+        "efnav05"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep05",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep05h",
+      "name": "heading",
+      "parent": "efstep05",
+      "children": [],
+      "settings": {
+        "text": "Anything we should know about access?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep06",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep06h",
+        "efnav06"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep06",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep06h",
+      "name": "heading",
+      "parent": "efstep06",
+      "children": [],
+      "settings": {
+        "text": "About how much is moving?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep07",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep07h",
+        "efnav07"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep07",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep07h",
+      "name": "heading",
+      "parent": "efstep07",
+      "children": [],
+      "settings": {
+        "text": "Any specialty items?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep08",
+      "name": "block",
+      "parent": "effrm1",
+      "children": [
+        "efstep08h",
+        "efstep08priv",
+        "efnav08"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "otry73"
+        ],
+        "_cssId": "efstep08",
+        "_display": "none"
+      }
+    },
+    {
+      "id": "efstep08h",
+      "name": "heading",
+      "parent": "efstep08",
+      "children": [],
+      "settings": {
+        "text": "Last step — how do we reach you?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "efstep08priv",
+      "name": "text-basic",
+      "parent": "efstep08",
+      "children": [],
+      "settings": {
+        "text": "Your details are used only to prepare your moving estimate and are never sold or shared. [VERIFY link to Privacy Policy — see 26-page-privacy-policy.json]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "amd8gg"
+        ]
+      },
+      "label": "Privacy reassurance near personal-info fields — explicit design-brief requirement for this exact stage (“Include privacy reassurance near personal-information fields”)."
+    },
+    {
+      "id": "efnv01n",
+      "name": "button",
+      "parent": "efnav01",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int001",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep01"
+          },
+          {
+            "id": "int002",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep02"
+          },
+          {
+            "id": "int003",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep02"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav01",
+      "name": "block",
+      "parent": "efstep01",
+      "children": [
+        "efnv01n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv02b",
+      "name": "button",
+      "parent": "efnav02",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int004",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep02"
+          },
+          {
+            "id": "int005",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv02n",
+      "name": "button",
+      "parent": "efnav02",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int006",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep02"
+          },
+          {
+            "id": "int007",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep03"
+          },
+          {
+            "id": "int008",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep03"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav02",
+      "name": "block",
+      "parent": "efstep02",
+      "children": [
+        "efnv02b",
+        "efnv02n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv03b",
+      "name": "button",
+      "parent": "efnav03",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int009",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep03"
+          },
+          {
+            "id": "int010",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep02"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv03n",
+      "name": "button",
+      "parent": "efnav03",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int011",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep03"
+          },
+          {
+            "id": "int012",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep04"
+          },
+          {
+            "id": "int013",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep04"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav03",
+      "name": "block",
+      "parent": "efstep03",
+      "children": [
+        "efnv03b",
+        "efnv03n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv04b",
+      "name": "button",
+      "parent": "efnav04",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int014",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep04"
+          },
+          {
+            "id": "int015",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep03"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv04n",
+      "name": "button",
+      "parent": "efnav04",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int016",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep04"
+          },
+          {
+            "id": "int017",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep05"
+          },
+          {
+            "id": "int018",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep05"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav04",
+      "name": "block",
+      "parent": "efstep04",
+      "children": [
+        "efnv04b",
+        "efnv04n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv05b",
+      "name": "button",
+      "parent": "efnav05",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int019",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep05"
+          },
+          {
+            "id": "int020",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep04"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv05n",
+      "name": "button",
+      "parent": "efnav05",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int021",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep05"
+          },
+          {
+            "id": "int022",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep06"
+          },
+          {
+            "id": "int023",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav05",
+      "name": "block",
+      "parent": "efstep05",
+      "children": [
+        "efnv05b",
+        "efnv05n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv06b",
+      "name": "button",
+      "parent": "efnav06",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int024",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep06"
+          },
+          {
+            "id": "int025",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep05"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv06n",
+      "name": "button",
+      "parent": "efnav06",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int026",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep06"
+          },
+          {
+            "id": "int027",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep07"
+          },
+          {
+            "id": "int028",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep07"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav06",
+      "name": "block",
+      "parent": "efstep06",
+      "children": [
+        "efnv06b",
+        "efnv06n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv07b",
+      "name": "button",
+      "parent": "efnav07",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int029",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep07"
+          },
+          {
+            "id": "int030",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnv07n",
+      "name": "button",
+      "parent": "efnav07",
+      "children": [],
+      "settings": {
+        "text": "Continue",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "wtbd9y"
+        ],
+        "_interactions": [
+          {
+            "id": "int031",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep07"
+          },
+          {
+            "id": "int032",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep08"
+          },
+          {
+            "id": "int033",
+            "trigger": "click",
+            "action": "scrollTo",
+            "target": "custom",
+            "targetSelector": "#efstep08"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav07",
+      "name": "block",
+      "parent": "efstep07",
+      "children": [
+        "efnv07b",
+        "efnv07n"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "efnv08b",
+      "name": "button",
+      "parent": "efnav08",
+      "children": [],
+      "settings": {
+        "text": "Back",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "065581"
+        ],
+        "_interactions": [
+          {
+            "id": "int034",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#efstep08"
+          },
+          {
+            "id": "int035",
+            "trigger": "click",
+            "action": "show",
+            "target": "custom",
+            "targetSelector": "#efstep07"
+          }
+        ]
+      }
+    },
+    {
+      "id": "efnav08",
+      "name": "block",
+      "parent": "efstep08",
+      "children": [
+        "efnv08b"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5o4wlc"
+        ]
+      }
+    },
+    {
+      "id": "effrm2",
+      "name": "form",
+      "parent": "efstep08",
+      "children": [],
+      "settings": {
+        "fields": [
+          {
+            "id": "efmvty",
+            "type": "radio",
+            "label": "Move type",
+            "options": "Residential\nCommercial\nLong-distance",
+            "required": true,
+            "width": "100"
+          },
+          {
+            "id": "efforg",
+            "type": "text",
+            "label": "Moving from",
+            "placeholder": "Street address",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "efdest",
+            "type": "text",
+            "label": "Moving to",
+            "placeholder": "Street address",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "efmvdt",
+            "type": "datepicker",
+            "label": "Move date",
+            "required": true,
+            "width": "100"
+          },
+          {
+            "id": "efprty",
+            "type": "radio",
+            "label": "Property type",
+            "options": "Apartment / condo\nHouse / townhouse\nOffice / commercial\nStorage unit",
+            "required": true,
+            "width": "100"
+          },
+          {
+            "id": "efaccs",
+            "type": "checkbox",
+            "label": "Access conditions (select all that apply)",
+            "options": "Elevator available\nStairs only\nLong carry / walk to entrance\nParking restrictions\nNarrow doorways or hallways",
+            "required": false,
+            "width": "100"
+          },
+          {
+            "id": "efsize",
+            "type": "radio",
+            "label": "Home / space size",
+            "options": "Studio\n1 bedroom\n2 bedroom\n3 bedroom\n4+ bedroom\nOffice / commercial space",
+            "required": true,
+            "width": "100"
+          },
+          {
+            "id": "efspec",
+            "type": "checkbox",
+            "label": "Specialty items (select all that apply)",
+            "options": "Piano\nSafe\nArtwork or antiques\nGym or exercise equipment\nOther fragile / high-value items",
+            "required": false,
+            "width": "100"
+          },
+          {
+            "id": "efname",
+            "type": "text",
+            "label": "Name",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "efphon",
+            "type": "tel",
+            "label": "Phone",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "efemal",
+            "type": "email",
+            "label": "Email",
+            "required": false,
+            "width": "100"
+          }
+        ],
+        "columns": "2",
+        "submitButtonText": "Get my estimate",
+        "submitButtonStyle": "primary",
+        "actions": [
+          "email"
+        ],
+        "emailSubject": "New moving estimate request — {{efname}}",
+        "emailTo": "admin_email",
+        "replyToEmail": "{{efemal}}",
+        "emailContent": "Move type: {{efmvty}}\nFrom: {{efforg}}\nTo: {{efdest}}\nMove date: {{efmvdt}}\nProperty: {{efprty}}\nAccess: {{efaccs}}\nSize: {{efsize}}\nSpecialty items: {{efspec}}\nName: {{efname}}\nPhone: {{efphon}}\nEmail: {{efemal}}",
+        "successMessage": "Thanks — this is a starting estimate request, not a confirmed quote or booking. A Crown Movers team member will follow up to confirm availability and final pricing.",
+        "showLabels": true,
+        "fieldBorder": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        }
+      },
+      "label": "The one real <form> — renders ALL 8 steps' fields (Bricks doesn't support splitting one form element's fields across multiple DOM locations, so this single element sits inside the last step panel and CSS/layout carries every field where it visually belongs is NOT what happens here: fields render together, in the order listed, wherever this element sits. [VERIFY — CORRECTNESS CAVEAT, read before pasting]: this is the one real structural limitation of hand-authoring a Bricks-native multi-step form — a single `form` element renders its fields as one contiguous block, it cannot be split so each field appears inside its own separate step panel above. Two ways to actually ship the visual you see in the step panels: (A) rebuild as 8 separate Bricks forms chained via `create-post`/`update-post` actions writing to one draft entry per step (real but complex), or (B) use this file for its content/copy/field-list/step-panel visual design and wire it up in WS Form instead, which natively supports true multi-step field placement — recommended, since WS Form is already the project's confirmed plugin. Do not paste this expecting fields to appear split across the step panels as drawn; today they render as one list. Left in place anyway because the field list, labels, options, and step copy are the real deliverable and are correct and reusable regardless of which of the two fixes above gets picked."
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "kijkzh",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "qpu5lb",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "m42voi",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "pnbtba",
+      "name": "estimate-form-shell",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        },
+        "_padding": {
+          "top": "var(--space-l)",
+          "right": "var(--space-l)",
+          "bottom": "var(--space-l)",
+          "left": "var(--space-l)"
+        },
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "hutly2",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "yeayal",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "n1fgzu",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "s795h7",
+      "name": "estimate-progress",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "c4wret",
+      "name": "estimate-progress__dot-wrap",
+      "settings": {
+        "_rowGap": "4px",
+        "_alignItems": "center",
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "xtl9th",
+      "name": "estimate-progress__dot",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_width": "28px",
+        "_height": "28px",
+        "_widthMin": "28px",
+        "_border": {
+          "width": {
+            "top": "2px",
+            "right": "2px",
+            "bottom": "2px",
+            "left": "2px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_typography": {
+          "font-weight": "700",
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "h1twlg",
+      "name": "estimate-progress__dot--active",
+      "settings": {
+        "_border": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        },
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    },
+    {
+      "id": "n7uhy4",
+      "name": "estimate-progress__label",
+      "settings": {
+        "_typography": {
+          "font-size": "1.1rem",
+          "text-align": "center",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        },
+        "_display:mobile_landscape": "none"
+      }
+    },
+    {
+      "id": "otry73",
+      "name": "estimate-step",
+      "settings": {
+        "_rowGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "5o4wlc",
+      "name": "estimate-step__nav",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_columnGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-2xs)"
+        }
+      }
+    },
+    {
+      "id": "8s7b69",
+      "name": "estimate-step__note",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "uz6umb",
+      "name": "u-gap-m",
+      "settings": {
+        "_columnGap": "var(--space-m)",
+        "_rowGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "amd8gg",
+      "name": "text-muted-sm",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "wtbd9y",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
+      }
+    },
+    {
+      "id": "065581",
+      "name": "btn-outline",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
+      }
+    }
+  ],
+  "globalElements": []
+}

@@ -1,0 +1,310 @@
+{
+  "name": "cookie-consent-banner",
+  "title": "Crown Movers — Cookie Consent Banner",
+  "type": "content",
+  "content": [
+    {
+      "id": "cbsec1",
+      "name": "block",
+      "parent": 0,
+      "children": [
+        "cbrow1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "9ma1ms"
+        ],
+        "_cssId": "cookie-banner",
+        "_interactions": [
+          {
+            "id": "cbint1",
+            "trigger": "contentLoaded",
+            "action": "show",
+            "target": "self",
+            "delay": "1s",
+            "interactionConditions": [
+              {
+                "conditionType": "localStorage",
+                "storageKey": "cm_cookie_consent",
+                "storageCompare": "notExists"
+              }
+            ]
+          }
+        ]
+      },
+      "label": "Cookie consent banner. [VERIFY] copy below is generic (“we use cookies”) because no confirmed list of cookies/tracking technologies actually in use on this site was found — update the copy to match whatever 25-page-privacy-policy.json's Cookies section ends up saying once that's confirmed, they need to agree. Show/hide-once and the Accept button's localStorage write both use documented, verified Bricks interaction mechanics (interactions.md's exit-intent-popup recipe uses the same storageAdd + interactionConditions pattern). What this does NOT do: actually gate any tracking script from firing before consent (real “consent mode” needs GTM/analytics-side wiring, which is outside what a static Bricks paste can set up) — if this site uses Google Analytics/Ads, wire real consent mode separately so “Reject” is not just cosmetic."
+    },
+    {
+      "id": "cbrow1",
+      "name": "block",
+      "parent": "cbsec1",
+      "children": [
+        "cbtxt1",
+        "cbact1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "5tb4wq"
+        ]
+      }
+    },
+    {
+      "id": "cbtxt1",
+      "name": "text-basic",
+      "parent": "cbrow1",
+      "children": [],
+      "settings": {
+        "text": "We use cookies to run this site and, where noted in our Privacy Policy, to understand how it's used. [VERIFY final copy once the Privacy Policy's Cookies section is confirmed]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "xhnran"
+        ]
+      }
+    },
+    {
+      "id": "cbact1",
+      "name": "block",
+      "parent": "cbrow1",
+      "children": [
+        "cbrej1",
+        "cback1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "karh0p"
+        ]
+      }
+    },
+    {
+      "id": "cbrej1",
+      "name": "button",
+      "parent": "cbact1",
+      "children": [],
+      "settings": {
+        "text": "Reject non-essential",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "ekbqbq"
+        ],
+        "_interactions": [
+          {
+            "id": "cbint2",
+            "trigger": "click",
+            "action": "storageAdd",
+            "storageType": "localStorage",
+            "actionAttributeKey": "cm_cookie_consent",
+            "actionAttributeValue": "rejected"
+          },
+          {
+            "id": "cbint3",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#cookie-banner"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cback1",
+      "name": "button",
+      "parent": "cbact1",
+      "children": [],
+      "settings": {
+        "text": "Accept",
+        "tag": "button",
+        "_cssGlobalClasses": [
+          "f17nn7"
+        ],
+        "_interactions": [
+          {
+            "id": "cbint4",
+            "trigger": "click",
+            "action": "storageAdd",
+            "storageType": "localStorage",
+            "actionAttributeKey": "cm_cookie_consent",
+            "actionAttributeValue": "accepted"
+          },
+          {
+            "id": "cbint5",
+            "trigger": "click",
+            "action": "hide",
+            "target": "custom",
+            "targetSelector": "#cookie-banner"
+          }
+        ]
+      }
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "hook",
+        "hookName": "bricks_before_footer",
+        "hookPriority": 10
+      }
+    ]
+  },
+  "global_classes": [
+    {
+      "id": "9ma1ms",
+      "name": "cookie-banner",
+      "settings": {
+        "_position": "fixed",
+        "_bottom": "0",
+        "_left": "0",
+        "_right": "0",
+        "_zIndex": "200",
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_padding": {
+          "top": "var(--space-s)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-s)",
+          "left": "var(--space-m)"
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "-8",
+            "blur": "24",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.2)"
+          }
+        },
+        "_display": "none"
+      }
+    },
+    {
+      "id": "5tb4wq",
+      "name": "cookie-banner__row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_columnGap": "var(--space-m)",
+        "_widthMax": "1280px",
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        },
+        "_direction:mobile_landscape": "column",
+        "_alignItems:mobile_landscape": "flex-start"
+      }
+    },
+    {
+      "id": "xhnran",
+      "name": "cookie-banner__text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "rgb": "rgba(255,255,255,0.85)"
+          },
+          "font-size": "1.36rem"
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "karh0p",
+      "name": "cookie-banner__actions",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "var(--space-xs)",
+        "_flexShrink": "0"
+      }
+    },
+    {
+      "id": "ekbqbq",
+      "name": "btn-outline",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "f17nn7",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    }
+  ],
+  "globalVariables": []
+}

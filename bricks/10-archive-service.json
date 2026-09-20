@@ -1,7 +1,4 @@
 {
-  "name": "archive-service",
-  "title": "Crown Movers — Service Archive",
-  "type": "archive",
   "content": [
     {
       "id": "sas1",
@@ -17,7 +14,7 @@
           "c457c7"
         ]
       },
-      "label": "Archive header"
+      "label": "Services listing header — paste onto a designed Page (e.g. the site's existing all-services index). Not a CPT archive: `service` stays Pages + Service field group in Phase 1 per Crown_Movers_Content_Architecture_Spec_v2 (service CPT explicitly listed as NOT created in Phase 1, §3.5)."
     },
     {
       "id": "sac1",
@@ -62,10 +59,10 @@
       "parent": "sac1",
       "children": [],
       "settings": {
-        "text": "{archive_title}",
+        "text": "{post_title}",
         "tag": "h1"
       },
-      "label": "Dynamic — real archive title (post type label)"
+      "label": "Dynamic — real Page title (this section is pasted onto a normal Page, not a CPT archive route)"
     },
     {
       "id": "sax1",
@@ -73,13 +70,13 @@
       "parent": "sac1",
       "children": [],
       "settings": {
-        "text": "{archive_description @fallback:''}",
+        "text": "[VERIFY] short intro for the services index — state what Crown Movers moves and who it's for.",
         "tag": "p",
         "_cssGlobalClasses": [
           "c1b54d"
         ]
       },
-      "label": "[VERIFY] set the post type's archive description in WP admin, or this renders empty"
+      "label": "[VERIFY] hand-typed intro — {archive_description} does not resolve outside a real archive route"
     },
     {
       "id": "sag1",
@@ -133,12 +130,17 @@
         "query": {
           "objectType": "post",
           "post_type": [
-            "service"
+            "page"
           ],
-          "posts_per_page": "12",
+          "posts_per_page": "100",
           "orderby": "title",
           "order": "ASC",
-          "is_archive_main_query": true
+          "tax_query_advanced": [
+            {
+              "taxonomy": "service_category",
+              "operator": "EXISTS"
+            }
+          ]
         },
         "_cssGlobalClasses": [
           "c614b5",
@@ -147,7 +149,7 @@
           "c27e53"
         ]
       },
-      "label": "Query loop — repeats once per result"
+      "label": "Query loop — WP Pages tagged with any service_category term (see wp-integration/01-post-types-and-taxonomies.php). Requires the service_category taxonomy registered on `page`."
     },
     {
       "id": "saL2",
@@ -188,12 +190,13 @@
       "parent": "saL3",
       "children": [],
       "settings": {
-        "text": "Moving service",
+        "text": "{post_terms_service_category:plain @fallback:'Moving service'}",
         "tag": "span",
         "_cssGlobalClasses": [
           "c59a75"
         ]
-      }
+      },
+      "label": "Dynamic — real service_category term, falls back to static label if untagged"
     },
     {
       "id": "saL5",
@@ -319,23 +322,10 @@
       "label": "Dark ink text on coral (accessibility rule)"
     }
   ],
-  "pageSettings": {},
-  "templateSettings": {
-    "templateConditions": [
-      {
-        "main": "archiveType",
-        "archiveType": [
-          "postType"
-        ],
-        "archivePostTypes": [
-          "service"
-        ]
-      }
-    ],
-    "templatePreviewType": "archive-cpt",
-    "templatePreviewPostType": "service"
-  },
-  "global_classes": [
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
     {
       "id": "cae3bc",
       "name": "u-gap-2xs",
@@ -454,7 +444,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -659,5 +650,5 @@
       }
     }
   ],
-  "globalVariables": []
+  "globalElements": []
 }

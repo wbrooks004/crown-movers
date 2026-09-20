@@ -120,7 +120,8 @@
         "_cssGlobalClasses": [
           "cf1f3e"
         ]
-      }
+      },
+      "label": "[VERIFY] anchor placeholder (\"#\") — real current URL for this service page not yet confirmed against the site crawl. Was not flagged in the original pack; flagging now for the same discipline as the rest of the file."
     },
     {
       "id": "folk02",
@@ -136,7 +137,8 @@
         "_cssGlobalClasses": [
           "cf1f3e"
         ]
-      }
+      },
+      "label": "[VERIFY] anchor placeholder (\"#\") — real current URL for this service page not yet confirmed against the site crawl. Was not flagged in the original pack; flagging now for the same discipline as the rest of the file."
     },
     {
       "id": "folk03",
@@ -152,7 +154,8 @@
         "_cssGlobalClasses": [
           "cf1f3e"
         ]
-      }
+      },
+      "label": "[VERIFY] anchor placeholder (\"#\") — real current URL for this service page not yet confirmed against the site crawl. Was not flagged in the original pack; flagging now for the same discipline as the rest of the file."
     },
     {
       "id": "focl02",
@@ -189,16 +192,16 @@
       "parent": "focl02",
       "children": [],
       "settings": {
-        "text": "[VERIFY phone number]",
+        "text": "514-606-4030",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "_cssGlobalClasses": [
           "cf1f3e"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "folk05",
@@ -257,7 +260,7 @@
           "c6aea8"
         ]
       },
-      "label": "[VERIFY] Privacy/Terms pages don't exist yet — required for Quebec Law 25 disclosures before launch"
+      "label": "Real EN URLs (confirmed live on crownmovers.ca via Screaming Frog crawl, 7 Jul 2026). Draft content built: 25-page-privacy-policy.json / 26-page-terms.json — both still need legal review before publishing (see their own root labels). [VERIFY] French equivalents not yet confirmed; this footer isn't language-conditional yet either way."
     },
     {
       "id": "folgl2",
@@ -268,7 +271,7 @@
         "text": "Privacy Policy",
         "link": {
           "type": "external",
-          "url": "#"
+          "url": "/privacy-policy/"
         },
         "_cssGlobalClasses": [
           "cb6833"
@@ -284,7 +287,7 @@
         "text": "Terms",
         "link": {
           "type": "external",
-          "url": "#"
+          "url": "/terms-of-use/"
         },
         "_cssGlobalClasses": [
           "cb6833"
@@ -317,7 +320,7 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "icon": {
           "library": "ionicons",
@@ -328,7 +331,7 @@
           "cec66d"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "mbct02",
@@ -343,9 +346,9 @@
           "url": "#quote"
         },
         "_cssGlobalClasses": [
-          "c1436a"
-        ],
-        "_justifyContent": "center"
+          "c1436a",
+          "gyv56s"
+        ]
       },
       "label": "Dark ink text on coral per accessibility rule"
     }
@@ -395,7 +398,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -426,7 +430,8 @@
           "left": "20px"
         },
         "_heightMin": "44px",
-        "_justifyContent": "center"
+        "_justifyContent": "center",
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -627,6 +632,13 @@
             "rgb": "rgba(21,21,21,0.12)"
           }
         }
+      }
+    },
+    {
+      "id": "gyv56s",
+      "name": "u-justify-center",
+      "settings": {
+        "_justifyContent": "center"
       }
     }
   ],

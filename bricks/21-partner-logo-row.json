@@ -1,0 +1,204 @@
+{
+  "content": [
+    {
+      "id": "plsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "plcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "1kwb9i",
+          "g91h0x"
+        ]
+      },
+      "label": "Partner logo row — static, not a carousel (design brief explicitly bans “endless logo carousels”). [VERIFY] no partner names or logo files were found in the project files gathered so far, and the design brief requires “Partner permissions” as an asset obtained BEFORE production (“Do not invent awards, affiliations, ratings... or certifications”). Do not populate this with a real company's logo without confirmed permission on file."
+    },
+    {
+      "id": "plcon1",
+      "name": "container",
+      "parent": "plsec1",
+      "children": [
+        "pleyb1",
+        "plrow1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "9igfqs"
+        ]
+      }
+    },
+    {
+      "id": "pleyb1",
+      "name": "text-basic",
+      "parent": "plcon1",
+      "children": [],
+      "settings": {
+        "text": "Trusted by",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "iyxzz5",
+          "3gypwv"
+        ]
+      }
+    },
+    {
+      "id": "plrow1",
+      "name": "block",
+      "parent": "plcon1",
+      "children": [
+        "pll1",
+        "pll2",
+        "pll3",
+        "pll4"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "tiboeo"
+        ]
+      }
+    },
+    {
+      "id": "pll1",
+      "name": "image",
+      "parent": "plrow1",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY partner name]",
+        "_cssGlobalClasses": [
+          "ddb2zi"
+        ]
+      },
+      "label": "[VERIFY] placeholder partner 1 — needs a real logo file + confirmed permission before publishing"
+    },
+    {
+      "id": "pll2",
+      "name": "image",
+      "parent": "plrow1",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY partner name]",
+        "_cssGlobalClasses": [
+          "ddb2zi"
+        ]
+      },
+      "label": "[VERIFY] placeholder partner 2 — needs a real logo file + confirmed permission before publishing"
+    },
+    {
+      "id": "pll3",
+      "name": "image",
+      "parent": "plrow1",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY partner name]",
+        "_cssGlobalClasses": [
+          "ddb2zi"
+        ]
+      },
+      "label": "[VERIFY] placeholder partner 3 — needs a real logo file + confirmed permission before publishing"
+    },
+    {
+      "id": "pll4",
+      "name": "image",
+      "parent": "plrow1",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY partner name]",
+        "_cssGlobalClasses": [
+          "ddb2zi"
+        ]
+      },
+      "label": "[VERIFY] placeholder partner 4 — needs a real logo file + confirmed permission before publishing"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "1kwb9i",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "g91h0x",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "9igfqs",
+      "name": "u-gap-l",
+      "settings": {
+        "_columnGap": "var(--space-l)",
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "iyxzz5",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "3gypwv",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "tiboeo",
+      "name": "partner-logo-row",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_justifyContent": "center",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "ddb2zi",
+      "name": "partner-logo",
+      "settings": {
+        "_heightMax": "32px",
+        "_widthMax": "140px",
+        "_objectFit": "contain"
+      }
+    }
+  ],
+  "globalElements": []
+}

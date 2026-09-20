@@ -127,14 +127,14 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "outline": true,
         "_cssGlobalClasses": [
           "c6b60c"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     }
   ],
   "source": "bricksCopiedElements",
@@ -266,7 +266,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -314,7 +315,8 @@
           "color": {
             "hex": "#FFFFFF"
           }
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     }
   ],

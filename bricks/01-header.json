@@ -86,20 +86,24 @@
     },
     {
       "id": "hdlk01",
-      "name": "text-link",
+      "name": "dropdown",
       "parent": "hdnav1",
-      "children": [],
+      "children": [
+        "hdsvc01",
+        "hdsvc02",
+        "hdsvc03",
+        "hdsvc04",
+        "hdsvc05",
+        "hdsvc06",
+        "hdsvc07"
+      ],
       "settings": {
         "text": "Services",
-        "link": {
-          "type": "external",
-          "url": "#services"
-        },
         "_cssGlobalClasses": [
           "ca5ccd"
         ]
       },
-      "label": "[VERIFY] anchor placeholder — real services page not yet defined"
+      "label": "Dropdown nav — lists the service_category taxonomy terms (wp-integration/01-post-types-and-taxonomies.php). Bricks nav-nested dropdowns need a dedicated `dropdown` element (text + children), not a text-link with children — verified against the bricks skill's elements.md before building this. [VERIFY] category URLs below are all \"#\" placeholders pending real service-page URLs."
     },
     {
       "id": "hdlk02",
@@ -202,7 +206,7 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "icon": {
           "library": "ionicons",
@@ -214,7 +218,7 @@
         ],
         "_display:tablet_portrait": "none"
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "hdcta1",
@@ -234,6 +238,125 @@
         "_display:mobile_landscape": "none"
       },
       "label": "Primary quote CTA — dark ink text on coral per accessibility rule (4.94:1; white fails AA)"
+    },
+    {
+      "id": "hdsvc01",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Residential",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Residential service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc02",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Commercial",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Commercial service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc03",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Specialty",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Specialty service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc04",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Packing & Assembly",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Packing & Assembly service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc05",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Storage",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Storage service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc06",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Long-Distance",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Long-Distance service category not yet confirmed against the site crawl"
+    },
+    {
+      "id": "hdsvc07",
+      "name": "text-link",
+      "parent": "hdlk01",
+      "children": [],
+      "settings": {
+        "text": "Junk Removal",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "xqxxba"
+        ]
+      },
+      "label": "[VERIFY] anchor placeholder — real URL for the Junk Removal service category not yet confirmed against the site crawl"
     }
   ],
   "pageSettings": {},
@@ -328,7 +451,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -451,6 +575,23 @@
           "font-weight": "800",
           "font-size": "1.44rem"
         }
+      }
+    },
+    {
+      "id": "xqxxba",
+      "name": "nav-dropdown-link",
+      "settings": {
+        "_padding": {
+          "top": "8px",
+          "right": "14px",
+          "bottom": "8px",
+          "left": "14px"
+        },
+        "_typography": {
+          "font-weight": "600",
+          "font-size": "1.44rem"
+        },
+        "_display": "block"
       }
     }
   ],

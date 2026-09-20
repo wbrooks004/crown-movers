@@ -1,0 +1,337 @@
+{
+  "content": [
+    {
+      "id": "tesec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "tecon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "f98m1i",
+          "wezznh"
+        ]
+      },
+      "label": "Team cards. [VERIFY] no real crew/staff photography or names were found in the project files gathered so far — only the two verified OWNERS (Jonathan Probonas, Carl Kortbaui, per Crown Movers Info.xlsx). Confirm with the business whether this section is meant to show ownership/leadership (in which case those two real names are ready to use) or moving crew (in which case real crew photos/names/roles are still needed) before filling this in — don't assume either. The design brief explicitly permits AI-generated placeholder photography here specifically: “No AI-generated workers unless clearly used as temporary placeholders.”"
+    },
+    {
+      "id": "tecon1",
+      "name": "container",
+      "parent": "tesec1",
+      "children": [
+        "tehdr1",
+        "tegrd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "u2ob3u"
+        ]
+      }
+    },
+    {
+      "id": "tehdr1",
+      "name": "block",
+      "parent": "tecon1",
+      "children": [
+        "teeyb1",
+        "tettl1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "9acait",
+          "zd645q",
+          "tkzatw"
+        ]
+      }
+    },
+    {
+      "id": "teeyb1",
+      "name": "text-basic",
+      "parent": "tehdr1",
+      "children": [],
+      "settings": {
+        "text": "Our team",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "ob0c9i"
+        ]
+      }
+    },
+    {
+      "id": "tettl1",
+      "name": "heading",
+      "parent": "tehdr1",
+      "children": [],
+      "settings": {
+        "text": "The people behind your move",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "tegrd1",
+      "name": "div",
+      "parent": "tecon1",
+      "children": [
+        "tec01",
+        "tec02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "z56v8f"
+        ]
+      }
+    },
+    {
+      "id": "tec01",
+      "name": "block",
+      "parent": "tegrd1",
+      "children": [
+        "tec01ph",
+        "tec01nm",
+        "tec01rl"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "f9vxpe"
+        ]
+      },
+      "label": "[VERIFY] placeholder team member 1"
+    },
+    {
+      "id": "tec01ph",
+      "name": "image",
+      "parent": "tec01",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY name]",
+        "_cssGlobalClasses": [
+          "3ndw35"
+        ]
+      },
+      "label": "[VERIFY] real photo or a clearly-temporary AI placeholder (design brief explicitly allows this here)"
+    },
+    {
+      "id": "tec01nm",
+      "name": "text-basic",
+      "parent": "tec01",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "fx76vh"
+        ]
+      }
+    },
+    {
+      "id": "tec01rl",
+      "name": "text-basic",
+      "parent": "tec01",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY role/title]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "fvvo0g"
+        ]
+      }
+    },
+    {
+      "id": "tec02",
+      "name": "block",
+      "parent": "tegrd1",
+      "children": [
+        "tec02ph",
+        "tec02nm",
+        "tec02rl"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "f9vxpe"
+        ]
+      },
+      "label": "[VERIFY] placeholder team member 2"
+    },
+    {
+      "id": "tec02ph",
+      "name": "image",
+      "parent": "tec02",
+      "children": [],
+      "settings": {
+        "image": {},
+        "loading": "lazy",
+        "altText": "[VERIFY name]",
+        "_cssGlobalClasses": [
+          "3ndw35"
+        ]
+      },
+      "label": "[VERIFY] real photo or a clearly-temporary AI placeholder (design brief explicitly allows this here)"
+    },
+    {
+      "id": "tec02nm",
+      "name": "text-basic",
+      "parent": "tec02",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "fx76vh"
+        ]
+      }
+    },
+    {
+      "id": "tec02rl",
+      "name": "text-basic",
+      "parent": "tec02",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY role/title]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "fvvo0g"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "f98m1i",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "wezznh",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "u2ob3u",
+      "name": "u-gap-xl",
+      "settings": {
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "9acait",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "zd645q",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "tkzatw",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "ob0c9i",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "z56v8f",
+      "name": "team-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(4, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "f9vxpe",
+      "name": "team-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "3ndw35",
+      "name": "team-card__photo",
+      "settings": {
+        "_aspectRatio": "3/4",
+        "_objectFit": "cover",
+        "_width": "100%",
+        "_border": {
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        }
+      }
+    },
+    {
+      "id": "fx76vh",
+      "name": "team-card__name",
+      "settings": {
+        "_typography": {
+          "font-weight": "750",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-size": "1.6rem"
+        }
+      }
+    },
+    {
+      "id": "fvvo0g",
+      "name": "team-card__role",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

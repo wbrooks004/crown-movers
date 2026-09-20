@@ -140,14 +140,14 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "outline": true,
         "_cssGlobalClasses": [
           "c6b60c"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "hrprf1",
@@ -155,13 +155,13 @@
       "parent": "hrlft1",
       "children": [],
       "settings": {
-        "text": "Replace with verified proof: review rating, number of moves, or service guarantee.",
+        "text": "Rated 5.0 on Google — 593 reviews (Montreal)",
         "tag": "p",
         "_cssGlobalClasses": [
           "cdf3cd"
         ]
       },
-      "label": "[VERIFY] real trust proof required before launch"
+      "label": "Real, verified — Crown Movers GBP listing, 5.0★/593 reviews, per Crown_Movers_Content_Architecture_Spec_v2.md §3.2. [VERIFY] re-check the count before launch, it moves over time; do not emit Review/AggregateRating schema for this (spec §8.3 — self-published rating markup isn't eligible for rich results)."
     },
     {
       "id": "hrrgt1",
@@ -193,7 +193,7 @@
         ],
         "altText": "[VERIFY] describe the real photo once selected — e.g. Crown Movers branded moving trucks"
       },
-      "label": "[VERIFY] select real Crown Movers photo from Media Library — see 07-existing-site-photo-manifest.csv. Do not hotlink crownmovers.ca in production."
+      "label": "[VERIFY] select real Crown Movers photo — see 07-existing-site-photo-manifest.csv; candidates \"Free quote trucks wide\" (branded trucks, authoritative) or \"Family moving photo\" (customer-care angle) both fit a home hero. Do not hotlink crownmovers.ca in production."
     }
   ],
   "source": "bricksCopiedElements",
@@ -309,7 +309,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -357,12 +358,13 @@
           "color": {
             "hex": "#FFFFFF"
           }
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
       "id": "c15b86",
-      "name": "hero-bg-home",
+      "name": "hero__bg-home",
       "settings": {
         "_background": {
           "color": {
@@ -392,7 +394,7 @@
     },
     {
       "id": "cdf86a",
-      "name": "hero-row",
+      "name": "hero__row",
       "settings": {
         "_direction": "row",
         "_alignItems": "center",
@@ -403,7 +405,7 @@
     },
     {
       "id": "c28234",
-      "name": "hero-col-left",
+      "name": "hero__col-left",
       "settings": {
         "_rowGap": "var(--space-m)",
         "_alignItems": "flex-start",
@@ -413,7 +415,7 @@
     },
     {
       "id": "c3a6b5",
-      "name": "hero-col-right",
+      "name": "hero__col-right",
       "settings": {
         "_width": "46%",
         "_width:tablet_portrait": "100%"
@@ -421,7 +423,7 @@
     },
     {
       "id": "c798d0",
-      "name": "hero-media",
+      "name": "hero__media",
       "settings": {
         "_heightMin": "280px",
         "_overflow": "hidden",
@@ -448,7 +450,7 @@
     },
     {
       "id": "c6c957",
-      "name": "hero-pad-home",
+      "name": "hero__pad-home",
       "settings": {
         "_padding": {
           "top": "clamp(6.4rem, 5.6rem + 4vw, 12.8rem)",

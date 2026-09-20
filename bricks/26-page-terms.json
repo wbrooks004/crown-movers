@@ -1,0 +1,471 @@
+{
+  "content": [
+    {
+      "id": "tphs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "tpcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "740i40",
+          "wx7kwz"
+        ]
+      },
+      "label": "Terms of Use. Same caveat as 25-page-privacy-policy.json: real structure and real confirmed business facts, not legal advice, not ready to publish without review — particularly the governing-law/liability sections, which a generic draft can get wrong for a specific business's actual insurance and liability arrangements. Preserves the existing live URL /terms-of-use/ (confirmed via the 7 Jul 2026 Screaming Frog crawl)."
+    },
+    {
+      "id": "tpcon1",
+      "name": "container",
+      "parent": "tphs1",
+      "children": [
+        "tpeyb1",
+        "tpttl1",
+        "tpupd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "w0ahl1",
+          "mh1iwc"
+        ]
+      }
+    },
+    {
+      "id": "tpeyb1",
+      "name": "text-basic",
+      "parent": "tpcon1",
+      "children": [],
+      "settings": {
+        "text": "Legal",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "moy3eb"
+        ]
+      }
+    },
+    {
+      "id": "tpttl1",
+      "name": "heading",
+      "parent": "tpcon1",
+      "children": [],
+      "settings": {
+        "text": "Terms of Use",
+        "tag": "h1"
+      }
+    },
+    {
+      "id": "tpupd1",
+      "name": "text-basic",
+      "parent": "tpcon1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY effective date]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "ej69h1"
+        ]
+      }
+    },
+    {
+      "id": "tpbs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "tpbc1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "e4fmv3",
+          "wx7kwz"
+        ]
+      }
+    },
+    {
+      "id": "tpbc1",
+      "name": "container",
+      "parent": "tpbs1",
+      "children": [
+        "tpbody1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "mh1iwc"
+        ]
+      }
+    },
+    {
+      "id": "tpsh01",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Acceptance of these terms",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp011",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "By using crownmovers.ca, you agree to these Terms of Use. If you don't agree, please don't use this website.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh02",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Use of this website",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp021",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "This website is provided to give information about Crown Movers' services and to let you request a quote, request a moving estimate, or contact us. You agree to use it only for lawful purposes and not to interfere with its normal operation.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh03",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Quotes and estimates are not binding",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp031",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Any quote or moving-estimate figure you receive through this website — including the multi-step estimate tool — is a starting request, not a confirmed quote, contract, or booking. A Crown Movers team member confirms availability and final pricing directly with you before any move is booked. This matches the confirmation copy already used throughout the site's forms.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh04",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Intellectual property",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp041",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "The content, design, and branding on this website belong to Crown Movers unless otherwise noted. You may view and share pages for personal, non-commercial reference; you may not reproduce, resell, or otherwise use the content commercially without our written permission.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh05",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Third-party links",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp051",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "This site may link to third-party websites (for example, our Google Business Profile or social media pages). We don't control those sites and aren't responsible for their content or practices.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh06",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Limitation of liability",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp061",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] This section needs to match Crown Movers' actual insurance, liability, and claims-handling terms for the moving services themselves (not just website use) — those are business-specific and shouldn't be drafted generically. Do not publish a liability section that overstates or understates real coverage.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh07",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Governing law",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp071",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "These terms are governed by the laws of the Province of Quebec and the federal laws of Canada applicable in Quebec.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh08",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Changes to these terms",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp081",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "We may update these Terms of Use from time to time. The effective date above reflects the most recent version.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpsh09",
+      "name": "heading",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Contact us",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "v0amj7"
+        ]
+      }
+    },
+    {
+      "id": "tpsp091",
+      "name": "text-basic",
+      "parent": "tpbody1",
+      "children": [],
+      "settings": {
+        "text": "Questions about these terms: info@crownmovers.ca or 514-606-4030.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "gu6f2l"
+        ]
+      }
+    },
+    {
+      "id": "tpbody1",
+      "name": "block",
+      "parent": "tpbc1",
+      "children": [
+        "tpsh01",
+        "tpsp011",
+        "tpsh02",
+        "tpsp021",
+        "tpsh03",
+        "tpsp031",
+        "tpsh04",
+        "tpsp041",
+        "tpsh05",
+        "tpsp051",
+        "tpsh06",
+        "tpsp061",
+        "tpsh07",
+        "tpsp071",
+        "tpsh08",
+        "tpsp081",
+        "tpsh09",
+        "tpsp091"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "w07zb1"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "740i40",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "wx7kwz",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "w0ahl1",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "mh1iwc",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "moy3eb",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "ej69h1",
+      "name": "text-muted-sm",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "w07zb1",
+      "name": "legal-body",
+      "settings": {
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "e4fmv3",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "v0amj7",
+      "name": "legal-h2",
+      "settings": {
+        "_margin": {
+          "top": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "gu6f2l",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

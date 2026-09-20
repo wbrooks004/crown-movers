@@ -1,0 +1,612 @@
+{
+  "content": [
+    {
+      "id": "pphs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "ppcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "3oztvf",
+          "c5igfo"
+        ]
+      },
+      "label": "Privacy Policy — real Quebec Law 25 (Act respecting the protection of personal information in the private sector, as amended by Bill 64) structure and real confirmed business facts (name, address, phone, email from Crown Movers Info.xlsx), but this is NOT legal advice and NOT ready to publish as-is. [VERIFY — BEFORE PUBLISHING] Every operational claim below that isn't a bare fact from the business-info sheet is a placeholder: the designated privacy officer's name, the actual data retention period, which third-party processors/analytics/CRM tools are really in use, whether any data is transferred or stored outside Quebec (Cloudways hosting region should be checked), and the cookie categories actually deployed. Have this reviewed by someone qualified to confirm Law 25 compliance before it goes live — privacy policies carry real legal liability if they misstate practice. Preserves the existing live URL /privacy-policy/ (confirmed via the 7 Jul 2026 Screaming Frog crawl) rather than introducing a new one."
+    },
+    {
+      "id": "ppcon1",
+      "name": "container",
+      "parent": "pphs1",
+      "children": [
+        "ppeyb1",
+        "ppttl1",
+        "ppupd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "dbmemq",
+          "90il52"
+        ]
+      }
+    },
+    {
+      "id": "ppeyb1",
+      "name": "text-basic",
+      "parent": "ppcon1",
+      "children": [],
+      "settings": {
+        "text": "Legal",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "g8dx4d"
+        ]
+      }
+    },
+    {
+      "id": "ppttl1",
+      "name": "heading",
+      "parent": "ppcon1",
+      "children": [],
+      "settings": {
+        "text": "Privacy Policy",
+        "tag": "h1"
+      }
+    },
+    {
+      "id": "ppupd1",
+      "name": "text-basic",
+      "parent": "ppcon1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY effective date]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "811770"
+        ]
+      },
+      "label": "[VERIFY] set a real effective/last-updated date when this is actually published, not before"
+    },
+    {
+      "id": "ppbs1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "ppbc1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "yn62z3",
+          "c5igfo"
+        ]
+      }
+    },
+    {
+      "id": "ppbc1",
+      "name": "container",
+      "parent": "ppbs1",
+      "children": [
+        "ppbody1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "90il52"
+        ]
+      }
+    },
+    {
+      "id": "ppsh01",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Who we are",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp011",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Crown Movers (English) / Déménagement Crown (French) operates crownmovers.ca and provides moving, packing, storage-related, and long-distance moving services in the Montreal area.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp012",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Address: 4030 Boulevard Côte-Vertu Ouest #111, Montreal, Quebec H4R 1V4.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp013",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Email: info@crownmovers.ca · Phone: 514-606-4030.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh02",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Personal information we collect",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp021",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "When you request a quote, request a moving estimate, or contact us through this website, we collect the information you provide directly: your name, phone number, email address, moving-related addresses, move date, and any details you choose to share about your move (property type, access conditions, inventory size, specialty items).",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp022",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] If this site uses analytics, advertising pixels, or other tracking technology (e.g. Google Analytics, a Meta Pixel), list each one here by name along with what it collects — none is asserted here because none is confirmed as currently in use.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh03",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Why we collect it",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp031",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "To prepare and respond to your quote or moving-estimate request, to schedule and carry out your move, to respond to questions submitted through the contact form, and for our own record-keeping and customer service.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp032",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "We do not sell your personal information, and we do not use it for any purpose beyond what's needed to serve your request unless we ask for your separate consent first.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh04",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Who we share it with",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp041",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Crown Movers staff and crew directly involved in preparing your quote or carrying out your move.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp042",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] Any third-party service providers who process personal information on our behalf — for example an email delivery service, a CRM, or a forms/automation provider — should be named here specifically, along with whether any of them store or process data outside Quebec or Canada (Law 25 requires this be disclosed, and a privacy impact assessment before certain transfers).",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh05",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "How long we keep it",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp051",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] State the real retention period and destruction practice for quote requests, contact-form submissions, and any resulting customer records. Not asserted here because no retention schedule was found in the project files gathered so far.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh06",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Your rights",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp061",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Under Quebec's Act respecting the protection of personal information in the private sector, you have the right to access the personal information we hold about you, to request that inaccurate information be corrected, and to withdraw consent to its use where consent is the basis for that use.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsp062",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "To exercise these rights, contact our person in charge of the protection of personal information (below). If you're not satisfied with our response, you may file a complaint with the Commission d’accès à l’information du Québec (CAI).",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh07",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Person in charge of the protection of personal information",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp071",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name and direct contact] — Quebec law requires every business to designate a specific person in this role and publish how to reach them; by default that responsibility falls to the person with the highest authority in the business unless someone else is formally designated. Confirm who that is for Crown Movers before publishing this page.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh08",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Cookies and similar technologies",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp081",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] Describe the specific cookies or similar technologies this site actually uses (e.g. session cookies for form functionality, analytics cookies, advertising cookies) and how a visitor can decline non-essential ones. See the cookie banner (27-cookie-consent.json) for the on-site control — the two need to describe the same real practice, whatever that turns out to be.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh09",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Confidentiality incidents",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp091",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "If a confidentiality incident creates a risk of serious injury to you, we will notify the Commission d’accès à l’information du Québec and you, as required by law.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh10",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Changes to this policy",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp101",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "We may update this policy from time to time. The effective date above reflects the most recent version.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppsh11",
+      "name": "heading",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Contact us",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "4to8rn"
+        ]
+      }
+    },
+    {
+      "id": "ppsp111",
+      "name": "text-basic",
+      "parent": "ppbody1",
+      "children": [],
+      "settings": {
+        "text": "Questions about this policy or your personal information: info@crownmovers.ca or 514-606-4030.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "eex93o"
+        ]
+      }
+    },
+    {
+      "id": "ppbody1",
+      "name": "block",
+      "parent": "ppbc1",
+      "children": [
+        "ppsh01",
+        "ppsp011",
+        "ppsp012",
+        "ppsp013",
+        "ppsh02",
+        "ppsp021",
+        "ppsp022",
+        "ppsh03",
+        "ppsp031",
+        "ppsp032",
+        "ppsh04",
+        "ppsp041",
+        "ppsp042",
+        "ppsh05",
+        "ppsp051",
+        "ppsh06",
+        "ppsp061",
+        "ppsp062",
+        "ppsh07",
+        "ppsp071",
+        "ppsh08",
+        "ppsp081",
+        "ppsh09",
+        "ppsp091",
+        "ppsh10",
+        "ppsp101",
+        "ppsh11",
+        "ppsp111"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "lt83dn"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "3oztvf",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "c5igfo",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "dbmemq",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "90il52",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "g8dx4d",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "811770",
+      "name": "text-muted-sm",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "lt83dn",
+      "name": "legal-body",
+      "settings": {
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "yn62z3",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "4to8rn",
+      "name": "legal-h2",
+      "settings": {
+        "_margin": {
+          "top": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "eex93o",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

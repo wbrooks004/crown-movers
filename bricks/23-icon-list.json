@@ -1,0 +1,304 @@
+{
+  "content": [
+    {
+      "id": "ilsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "ilcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "z0sqp3",
+          "5y8ex1"
+        ]
+      },
+      "label": "Icon list — covers design-brief items “Benefit lists” and “Icon lists” as one component: the docx names both once each with no further elaboration distinguishing them, and both are structurally an icon (or none) + short label repeating row. If the business later wants a visually distinct short-statement-only benefit list (no icons) vs. a denser icon-only checklist, split this into two — flagging that ambiguity rather than guessing a split that might not match what's wanted. Icon set stays on ionicons (“ion-ios-*”) to match every other icon usage already in this pack (01-header.json, 06-faq.json, 07-footer-mobile-actions.json), not the design brief's “similar to Lucide” suggestion — switching icon libraries mid-pack would be a bigger, uglier inconsistency than the brief's stylistic preference is worth."
+    },
+    {
+      "id": "ilcon1",
+      "name": "container",
+      "parent": "ilsec1",
+      "children": [
+        "ilrow1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "iq9whg"
+        ]
+      }
+    },
+    {
+      "id": "ilrow1",
+      "name": "div",
+      "parent": "ilcon1",
+      "children": [
+        "ili01",
+        "ili02",
+        "ili03",
+        "ili04"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "o2an13"
+        ]
+      }
+    },
+    {
+      "id": "ili01",
+      "name": "block",
+      "parent": "ilrow1",
+      "children": [
+        "ili01i",
+        "ili01t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "8zxwsm"
+        ]
+      },
+      "label": "[VERIFY] sample copy — confirm each claim is real before publishing (design brief: “Verify every factual claim”); swap icon/label pairs freely, this is a repeatable pattern not fixed content"
+    },
+    {
+      "id": "ili01i",
+      "name": "icon",
+      "parent": "ili01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-shield-checkmark"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "sk9t9i"
+        ]
+      }
+    },
+    {
+      "id": "ili01t",
+      "name": "text-basic",
+      "parent": "ili01",
+      "children": [],
+      "settings": {
+        "text": "Insured and protected moves",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "30633j"
+        ]
+      }
+    },
+    {
+      "id": "ili02",
+      "name": "block",
+      "parent": "ilrow1",
+      "children": [
+        "ili02i",
+        "ili02t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "8zxwsm"
+        ]
+      },
+      "label": "[VERIFY] sample copy — confirm each claim is real before publishing (design brief: “Verify every factual claim”); swap icon/label pairs freely, this is a repeatable pattern not fixed content"
+    },
+    {
+      "id": "ili02i",
+      "name": "icon",
+      "parent": "ili02",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-people"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "sk9t9i"
+        ]
+      }
+    },
+    {
+      "id": "ili02t",
+      "name": "text-basic",
+      "parent": "ili02",
+      "children": [],
+      "settings": {
+        "text": "Trained, uniformed crews",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "30633j"
+        ]
+      }
+    },
+    {
+      "id": "ili03",
+      "name": "block",
+      "parent": "ilrow1",
+      "children": [
+        "ili03i",
+        "ili03t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "8zxwsm"
+        ]
+      },
+      "label": "[VERIFY] sample copy — confirm each claim is real before publishing (design brief: “Verify every factual claim”); swap icon/label pairs freely, this is a repeatable pattern not fixed content"
+    },
+    {
+      "id": "ili03i",
+      "name": "icon",
+      "parent": "ili03",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pricetag"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "sk9t9i"
+        ]
+      }
+    },
+    {
+      "id": "ili03t",
+      "name": "text-basic",
+      "parent": "ili03",
+      "children": [],
+      "settings": {
+        "text": "Clear pricing, no hidden fees",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "30633j"
+        ]
+      }
+    },
+    {
+      "id": "ili04",
+      "name": "block",
+      "parent": "ilrow1",
+      "children": [
+        "ili04i",
+        "ili04t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "8zxwsm"
+        ]
+      },
+      "label": "[VERIFY] sample copy — confirm each claim is real before publishing (design brief: “Verify every factual claim”); swap icon/label pairs freely, this is a repeatable pattern not fixed content"
+    },
+    {
+      "id": "ili04i",
+      "name": "icon",
+      "parent": "ili04",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-time"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "sk9t9i"
+        ]
+      }
+    },
+    {
+      "id": "ili04t",
+      "name": "text-basic",
+      "parent": "ili04",
+      "children": [],
+      "settings": {
+        "text": "On-time, on schedule",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "30633j"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "z0sqp3",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "5y8ex1",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "iq9whg",
+      "name": "u-gap-l",
+      "settings": {
+        "_columnGap": "var(--space-l)",
+        "_rowGap": "var(--space-l)"
+      }
+    },
+    {
+      "id": "o2an13",
+      "name": "icon-list",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "var(--space-m)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "8zxwsm",
+      "name": "icon-list__item",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "flex-start",
+        "_columnGap": "var(--space-xs)"
+      }
+    },
+    {
+      "id": "sk9t9i",
+      "name": "icon-list__icon",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--primary)"
+          },
+          "font-size": "2rem"
+        }
+      }
+    },
+    {
+      "id": "30633j",
+      "name": "icon-list__label",
+      "settings": {
+        "_typography": {
+          "font-weight": "600",
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

@@ -1,0 +1,421 @@
+{
+  "content": [
+    {
+      "id": "stsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "stcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "okg6aj",
+          "sp91sl"
+        ]
+      },
+      "label": "Stats + Google rating strip — real, verified numbers only (Crown_Movers_Content_Architecture_Spec_v2.md §3.2 GBP records; Crown Movers Info.xlsx founding date). Do not add more stat items without an equally verified source per each one; do not emit Review/AggregateRating schema for the rating (spec §8.3 bans self-serving review markup — this is display only)."
+    },
+    {
+      "id": "stcon1",
+      "name": "container",
+      "parent": "stsec1",
+      "children": [
+        "stgrd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "wtg7nc"
+        ]
+      }
+    },
+    {
+      "id": "stgrd1",
+      "name": "block",
+      "parent": "stcon1",
+      "children": [
+        "stit01",
+        "stit02",
+        "stit03",
+        "stit04"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "htk9c2"
+        ]
+      }
+    },
+    {
+      "id": "stit01",
+      "name": "block",
+      "parent": "stgrd1",
+      "children": [
+        "stst01",
+        "stv01",
+        "stl01"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "1mcqfm"
+        ],
+        "link": {
+          "type": "external",
+          "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4cc917ce662c0989:0x8cacc13e74271aa7?source=g.page.default"
+        }
+      },
+      "label": "Real, verified — Crown Movers (Montreal / English) GBP listing, per Crown_Movers_Content_Architecture_Spec_v2.md §3.2. Links out to the real Google listing rather than asserting the number in isolation. [VERIFY] recheck the review count before launch, it moves over time. The French listing (Déménagement Crown) separately shows 5.0★/48 reviews if a French-specific stat is ever wanted instead of/alongside this one."
+    },
+    {
+      "id": "ststar1",
+      "name": "icon",
+      "parent": "stst01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "ststar2",
+      "name": "icon",
+      "parent": "stst01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "ststar3",
+      "name": "icon",
+      "parent": "stst01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "ststar4",
+      "name": "icon",
+      "parent": "stst01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "ststar5",
+      "name": "icon",
+      "parent": "stst01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "stst01",
+      "name": "block",
+      "parent": "stit01",
+      "children": [
+        "ststar1",
+        "ststar2",
+        "ststar3",
+        "ststar4",
+        "ststar5"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "q5ya9i"
+        ]
+      }
+    },
+    {
+      "id": "stv01",
+      "name": "text-basic",
+      "parent": "stit01",
+      "children": [],
+      "settings": {
+        "text": "5.0",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "7uyf5g"
+        ]
+      }
+    },
+    {
+      "id": "stl01",
+      "name": "text-basic",
+      "parent": "stit01",
+      "children": [],
+      "settings": {
+        "text": "593 Google reviews",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "8861l1"
+        ]
+      }
+    },
+    {
+      "id": "stit02",
+      "name": "block",
+      "parent": "stgrd1",
+      "children": [
+        "stv02",
+        "stl02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "1mcqfm"
+        ]
+      },
+      "label": "Real — founded Jan. 16, 2020 per Crown Movers Info.xlsx. [VERIFY] this component's copy hardcodes \"6+ years\"; recalculate from the founding date before each relaunch rather than leaving it to drift."
+    },
+    {
+      "id": "stv02",
+      "name": "text-basic",
+      "parent": "stit02",
+      "children": [],
+      "settings": {
+        "text": "6+",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "i55nbh"
+        ]
+      }
+    },
+    {
+      "id": "stl02",
+      "name": "text-basic",
+      "parent": "stit02",
+      "children": [],
+      "settings": {
+        "text": "Years in business",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "8861l1"
+        ]
+      }
+    },
+    {
+      "id": "stit03",
+      "name": "block",
+      "parent": "stgrd1",
+      "children": [
+        "stv03",
+        "stl03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "1mcqfm"
+        ]
+      },
+      "label": "Real — Montreal, Rive-Sud, Rive-Nord, Laval per Crown Movers Info.xlsx \"Service Areas\". Matches the `region` taxonomy seed list in wp-integration/01-post-types-and-taxonomies.php."
+    },
+    {
+      "id": "stv03",
+      "name": "text-basic",
+      "parent": "stit03",
+      "children": [],
+      "settings": {
+        "text": "4",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "7uyf5g"
+        ]
+      }
+    },
+    {
+      "id": "stl03",
+      "name": "text-basic",
+      "parent": "stit03",
+      "children": [],
+      "settings": {
+        "text": "Regions served",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "8861l1"
+        ]
+      }
+    },
+    {
+      "id": "stit04",
+      "name": "block",
+      "parent": "stgrd1",
+      "children": [
+        "stv04",
+        "stl04"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "1mcqfm"
+        ]
+      },
+      "label": "[VERIFY] Temporary placeholder, not a real number — moves completed / crew size / years-experience-per-mover are all plausible 4th stats per the design brief's TRUST AND PROOF SYSTEM, but none is in Crown Movers Info.xlsx. Do not invent a figure here; replace with a real one or delete this 4th grid item (grid degrades cleanly to 3 columns via _gridTemplateColumns without it)."
+    },
+    {
+      "id": "stv04",
+      "name": "text-basic",
+      "parent": "stit04",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "7uyf5g"
+        ]
+      }
+    },
+    {
+      "id": "stl04",
+      "name": "text-basic",
+      "parent": "stit04",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY real stat]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "8861l1"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "okg6aj",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "sp91sl",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "wtg7nc",
+      "name": "u-gap-xl",
+      "settings": {
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "htk9c2",
+      "name": "stats-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(4, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "1mcqfm",
+      "name": "stat-item",
+      "settings": {
+        "_rowGap": "var(--space-2xs)",
+        "_alignItems": "center",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-s)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-s)"
+        }
+      }
+    },
+    {
+      "id": "7uyf5g",
+      "name": "stat-value",
+      "settings": {
+        "_typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(3.2rem, 2.6rem + 2.4vw, 4.8rem)",
+          "font-weight": "800",
+          "line-height": "1",
+          "text-align": "center",
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    },
+    {
+      "id": "i55nbh",
+      "name": "stat-value--accent",
+      "settings": {
+        "_typography": {
+          "font-family": "Archivo",
+          "font-size": "clamp(3.2rem, 2.6rem + 2.4vw, 4.8rem)",
+          "font-weight": "800",
+          "line-height": "1",
+          "text-align": "center",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "8861l1",
+      "name": "stat-label",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "font-size": "1.44rem",
+          "font-weight": "600",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "q5ya9i",
+      "name": "stat-stars",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "center",
+        "_columnGap": "2px",
+        "_typography": {
+          "color": {
+            "raw": "var(--accent)"
+          },
+          "font-size": "1.6rem"
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}
