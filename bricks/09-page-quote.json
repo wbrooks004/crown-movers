@@ -1,0 +1,612 @@
+{
+  "content": [
+    {
+      "id": "ihsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "ihcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "cfb368",
+          "c457c7"
+        ]
+      },
+      "label": "Hero — Inner Page (service / location / quote / blog)"
+    },
+    {
+      "id": "ihcon1",
+      "name": "container",
+      "parent": "ihsec1",
+      "children": [
+        "ihbc01",
+        "iheyb1",
+        "ihh1",
+        "ihsub1",
+        "ihbtn1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cbd531",
+          "c80a54"
+        ]
+      }
+    },
+    {
+      "id": "ihbc01",
+      "name": "breadcrumbs",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {},
+      "label": "Native Bricks breadcrumbs — reflects real page hierarchy automatically, no settings needed"
+    },
+    {
+      "id": "iheyb1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "Moving service",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c72e04"
+        ]
+      },
+      "label": "[VERIFY] category label — hand-typed until ACF service/location category field exists"
+    },
+    {
+      "id": "ihh1",
+      "name": "heading",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "{post_title}",
+        "tag": "h1"
+      },
+      "label": "Dynamic — uses the real post/page title, works with zero ACF setup on any post type"
+    },
+    {
+      "id": "ihsub1",
+      "name": "text-basic",
+      "parent": "ihcon1",
+      "children": [],
+      "settings": {
+        "text": "State the service or area, who it's for, and the one thing a visitor should do next.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c0f4a7",
+          "cb9f18"
+        ]
+      },
+      "label": "[VERIFY] short intro — hand-typed until an ACF intro/excerpt field exists to bind here"
+    },
+    {
+      "id": "ihbtn1",
+      "name": "block",
+      "parent": "ihcon1",
+      "children": [
+        "ihct01",
+        "ihct02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c341e1",
+          "cbd531",
+          "c559e7"
+        ]
+      },
+      "label": "Buttons"
+    },
+    {
+      "id": "ihct01",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "#quote"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Primary — dark ink text on coral (accessibility rule)"
+    },
+    {
+      "id": "ihct02",
+      "name": "button",
+      "parent": "ihbtn1",
+      "children": [],
+      "settings": {
+        "text": "Call Crown Movers",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+10000000000"
+        },
+        "outline": true,
+        "_cssGlobalClasses": [
+          "c6b60c"
+        ]
+      },
+      "label": "[VERIFY] placeholder phone number"
+    },
+    {
+      "id": "qfsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "qfcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssId": "quote",
+        "_cssGlobalClasses": [
+          "c457c7",
+          "cfb368"
+        ]
+      },
+      "label": "Quote Form"
+    },
+    {
+      "id": "qfcon1",
+      "name": "container",
+      "parent": "qfsec1",
+      "children": [
+        "qfcrd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c80a54"
+        ]
+      }
+    },
+    {
+      "id": "qfcrd1",
+      "name": "block",
+      "parent": "qfcon1",
+      "children": [
+        "qfhdr1",
+        "qffrm1",
+        "qfpriv"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "ccb828",
+          "cc161e"
+        ]
+      },
+      "label": "Quote Panel"
+    },
+    {
+      "id": "qfhdr1",
+      "name": "block",
+      "parent": "qfcrd1",
+      "children": [
+        "qfeyb1",
+        "qfttl1",
+        "qfsub1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cae3bc"
+        ]
+      }
+    },
+    {
+      "id": "qfeyb1",
+      "name": "text-basic",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": {
+        "text": "Free moving quote",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c72e04"
+        ]
+      }
+    },
+    {
+      "id": "qfttl1",
+      "name": "heading",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": {
+        "text": "Tell us about your move",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "qfsub1",
+      "name": "text-basic",
+      "parent": "qfhdr1",
+      "children": [],
+      "settings": {
+        "text": "This is a starting request, not a confirmed quote — a team member will follow up to confirm availability and final pricing.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      }
+    },
+    {
+      "id": "qffrm1",
+      "name": "form",
+      "parent": "qfcrd1",
+      "children": [],
+      "settings": {
+        "fields": [
+          {
+            "id": "qffdat",
+            "type": "datepicker",
+            "label": "Move date",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qfftyp",
+            "type": "select",
+            "label": "Move type",
+            "options": "Residential\nCommercial\nLong distance",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qffor1",
+            "type": "text",
+            "label": "Moving from",
+            "placeholder": "Street address",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qffde1",
+            "type": "text",
+            "label": "Moving to",
+            "placeholder": "Street address",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qffnam",
+            "type": "text",
+            "label": "Name",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qffphn",
+            "type": "tel",
+            "label": "Phone",
+            "required": true,
+            "width": "50"
+          },
+          {
+            "id": "qffdet",
+            "type": "textarea",
+            "label": "Access details or specialty items",
+            "placeholder": "Stairs, elevator, parking, piano, etc. (optional)",
+            "required": false,
+            "width": "100"
+          }
+        ],
+        "columns": "2",
+        "submitButtonText": "Request my quote",
+        "submitButtonStyle": "primary",
+        "actions": [
+          "email"
+        ],
+        "emailSubject": "New quote request — {{qffnam}}",
+        "emailTo": "admin_email",
+        "replyToEmail": "{{qffphn}}",
+        "emailContent": "Name: {{qffnam}}\nPhone: {{qffphn}}\nMove date: {{qffdat}}\nMove type: {{qfftyp}}\nFrom: {{qffor1}}\nTo: {{qffde1}}\nDetails: {{qffdet}}",
+        "successMessage": "Thanks — this is a request, not a confirmed quote. A Crown Movers team member will follow up to confirm availability and pricing.",
+        "showLabels": true,
+        "fieldBorder": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        }
+      },
+      "label": "[TODO] actions=email (admin_email) is a working default — swap to a webhook action + real n8n endpoint once that destination is decided. [VERIFY] submit button uses theme-style \"primary\" (coral bg from 00-theme-styles.json); confirm its text renders as dark ink (--base) not white — set manually in the Style tab if not."
+    },
+    {
+      "id": "qfpriv",
+      "name": "text-basic",
+      "parent": "qfcrd1",
+      "children": [],
+      "settings": {
+        "text": "Your details are used only to prepare your moving quote and are never sold or shared. [VERIFY link to Privacy Policy]",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "cdf3cd"
+        ]
+      },
+      "label": "[VERIFY] link this to the real privacy policy once published"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "cbd531",
+      "name": "u-gap-s",
+      "settings": {
+        "_columnGap": "var(--space-s)",
+        "_rowGap": "var(--space-s)"
+      }
+    },
+    {
+      "id": "c341e1",
+      "name": "u-row-wrap-center",
+      "settings": {
+        "_direction": "row",
+        "_flexWrap": "wrap",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "cb9f18",
+      "name": "u-max-s",
+      "settings": {
+        "_widthMax": "640px"
+      }
+    },
+    {
+      "id": "c80a54",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "c457c7",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "c72e04",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c0f4a7",
+      "name": "intro-text",
+      "settings": {
+        "_typography": {
+          "font-size": "1.89rem",
+          "line-height": "1.6",
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cfb368",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "c559e7",
+      "name": "u-mt-2xs",
+      "settings": {
+        "_margin": {
+          "top": "var(--space-2xs)"
+        }
+      }
+    },
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    },
+    {
+      "id": "c6b60c",
+      "name": "btn-outline",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--base)"
+          },
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, color 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "cae3bc",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "c1b54d",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cdf3cd",
+      "name": "text-muted-sm",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cc161e",
+      "name": "card-surface",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        }
+      }
+    },
+    {
+      "id": "ccb828",
+      "name": "quote-panel",
+      "settings": {
+        "_rowGap": "var(--space-l)",
+        "_padding": {
+          "top": "var(--space-l)",
+          "right": "var(--space-l)",
+          "bottom": "var(--space-l)",
+          "left": "var(--space-l)"
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

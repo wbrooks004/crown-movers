@@ -1,0 +1,410 @@
+{
+  "content": [
+    {
+      "id": "fqsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "fqcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c457c7",
+          "c285a4"
+        ]
+      },
+      "label": "FAQ"
+    },
+    {
+      "id": "fqcon1",
+      "name": "container",
+      "parent": "fqsec1",
+      "children": [
+        "fqttl1",
+        "fqacc1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cf0315",
+          "c0d490"
+        ]
+      }
+    },
+    {
+      "id": "fqttl1",
+      "name": "heading",
+      "parent": "fqcon1",
+      "children": [],
+      "settings": {
+        "text": "Frequently asked questions",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "cbab02"
+        ]
+      }
+    },
+    {
+      "id": "fqacc1",
+      "name": "accordion-nested",
+      "parent": "fqcon1",
+      "children": [
+        "fqit01",
+        "fqit02",
+        "fqit03"
+      ],
+      "settings": {
+        "faqSchema": true,
+        "expandFirstItem": true,
+        "titlePadding": {
+          "top": "var(--space-s)",
+          "right": "var(--space-2xs)",
+          "bottom": "var(--space-s)",
+          "left": "var(--space-2xs)"
+        },
+        "contentPadding": {
+          "top": "0",
+          "right": "var(--space-2xs)",
+          "bottom": "var(--space-s)",
+          "left": "var(--space-2xs)"
+        }
+      },
+      "label": "FAQ Accordion"
+    },
+    {
+      "id": "fqit01",
+      "name": "block",
+      "parent": "fqacc1",
+      "children": [
+        "fqtw01",
+        "fqcw01"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "caf16c"
+        ]
+      },
+      "label": "Item — booking timeline"
+    },
+    {
+      "id": "fqtw01",
+      "name": "block",
+      "parent": "fqit01",
+      "children": [
+        "fqhd01",
+        "fqic01"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cc492b"
+        ],
+        "_hidden": {
+          "_cssClasses": "accordion-title-wrapper"
+        }
+      },
+      "label": "Title"
+    },
+    {
+      "id": "fqhd01",
+      "name": "heading",
+      "parent": "fqtw01",
+      "children": [],
+      "settings": {
+        "text": "How far in advance should I book?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "fqic01",
+      "name": "icon",
+      "parent": "fqtw01",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-add"
+        },
+        "iconSize": "1em",
+        "isAccordionIcon": true
+      }
+    },
+    {
+      "id": "fqcw01",
+      "name": "block",
+      "parent": "fqit01",
+      "children": [
+        "fqtx01"
+      ],
+      "settings": {
+        "_hidden": {
+          "_cssClasses": "accordion-content-wrapper"
+        }
+      },
+      "label": "Content"
+    },
+    {
+      "id": "fqtx01",
+      "name": "text",
+      "parent": "fqcw01",
+      "children": [],
+      "settings": {
+        "text": "<p>[VERIFY] Insert a real, verified Crown Movers answer here.</p>",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      },
+      "label": "[VERIFY] insert a real, verified answer — do not invent booking timelines"
+    },
+    {
+      "id": "fqit02",
+      "name": "block",
+      "parent": "fqacc1",
+      "children": [
+        "fqtw02",
+        "fqcw02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "caf16c"
+        ]
+      },
+      "label": "Item — what's included / insurance"
+    },
+    {
+      "id": "fqtw02",
+      "name": "block",
+      "parent": "fqit02",
+      "children": [
+        "fqhd02",
+        "fqic02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cc492b"
+        ],
+        "_hidden": {
+          "_cssClasses": "accordion-title-wrapper"
+        }
+      },
+      "label": "Title"
+    },
+    {
+      "id": "fqhd02",
+      "name": "heading",
+      "parent": "fqtw02",
+      "children": [],
+      "settings": {
+        "text": "What's included in the moving cost, and is my furniture insured?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "fqic02",
+      "name": "icon",
+      "parent": "fqtw02",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-add"
+        },
+        "iconSize": "1em",
+        "isAccordionIcon": true
+      }
+    },
+    {
+      "id": "fqcw02",
+      "name": "block",
+      "parent": "fqit02",
+      "children": [
+        "fqtx02"
+      ],
+      "settings": {
+        "_hidden": {
+          "_cssClasses": "accordion-content-wrapper"
+        }
+      },
+      "label": "Content"
+    },
+    {
+      "id": "fqtx02",
+      "name": "text",
+      "parent": "fqcw02",
+      "children": [],
+      "settings": {
+        "text": "<p>[VERIFY] Insert a real, verified pricing and insurance/protection policy answer here.</p>",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      },
+      "label": "[VERIFY] insert real, verified pricing/insurance policy — do not invent coverage terms"
+    },
+    {
+      "id": "fqit03",
+      "name": "block",
+      "parent": "fqacc1",
+      "children": [
+        "fqtw03",
+        "fqcw03"
+      ],
+      "settings": {},
+      "label": "Item — service area"
+    },
+    {
+      "id": "fqtw03",
+      "name": "block",
+      "parent": "fqit03",
+      "children": [
+        "fqhd03",
+        "fqic03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cc492b"
+        ],
+        "_hidden": {
+          "_cssClasses": "accordion-title-wrapper"
+        }
+      },
+      "label": "Title"
+    },
+    {
+      "id": "fqhd03",
+      "name": "heading",
+      "parent": "fqtw03",
+      "children": [],
+      "settings": {
+        "text": "Which areas around Montreal do you serve?",
+        "tag": "h3"
+      }
+    },
+    {
+      "id": "fqic03",
+      "name": "icon",
+      "parent": "fqtw03",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-add"
+        },
+        "iconSize": "1em",
+        "isAccordionIcon": true
+      }
+    },
+    {
+      "id": "fqcw03",
+      "name": "block",
+      "parent": "fqit03",
+      "children": [
+        "fqtx03"
+      ],
+      "settings": {
+        "_hidden": {
+          "_cssClasses": "accordion-content-wrapper"
+        }
+      },
+      "label": "Content"
+    },
+    {
+      "id": "fqtx03",
+      "name": "text",
+      "parent": "fqcw03",
+      "children": [],
+      "settings": {
+        "text": "<p>[VERIFY] Insert the confirmed list of Montreal-area cities/boroughs served.</p>",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      },
+      "label": "[VERIFY] insert the real, confirmed service-area list — not yet defined anywhere in the project"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "cf0315",
+      "name": "u-gap-xl",
+      "settings": {
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "cbab02",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "c0d490",
+      "name": "u-max-l",
+      "settings": {
+        "_widthMax": "820px"
+      }
+    },
+    {
+      "id": "c457c7",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "c1b54d",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
+      "id": "c285a4",
+      "name": "u-bg-white",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "caf16c",
+      "name": "faq-item-border",
+      "settings": {
+        "_border": {
+          "width": {
+            "bottom": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cc492b",
+      "name": "faq-title-row",
+      "settings": {
+        "_alignItems": "center",
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_cursor": "pointer"
+      }
+    }
+  ],
+  "globalElements": []
+}

@@ -1,0 +1,634 @@
+{
+  "name": "footer-crown-movers",
+  "title": "Crown Movers — Footer",
+  "type": "footer",
+  "footer": [
+    {
+      "id": "fosec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "focon1",
+        "folbar"
+      ],
+      "settings": {
+        "tag": "footer",
+        "_cssGlobalClasses": [
+          "c8dde9"
+        ]
+      },
+      "label": "Footer"
+    },
+    {
+      "id": "focon1",
+      "name": "container",
+      "parent": "fosec1",
+      "children": [
+        "fobrd1",
+        "focl01",
+        "focl02"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "ca9f23"
+        ]
+      },
+      "label": "Footer Columns"
+    },
+    {
+      "id": "fobrd1",
+      "name": "block",
+      "parent": "focon1",
+      "children": [
+        "folgo1",
+        "fodsc1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c500dc"
+        ]
+      },
+      "label": "Brand"
+    },
+    {
+      "id": "folgo1",
+      "name": "heading",
+      "parent": "fobrd1",
+      "children": [],
+      "settings": {
+        "text": "Crown Movers",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c5302f"
+        ]
+      }
+    },
+    {
+      "id": "fodsc1",
+      "name": "text-basic",
+      "parent": "fobrd1",
+      "children": [],
+      "settings": {
+        "text": "Use Déménagement Crown on the French website.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c67875"
+        ]
+      }
+    },
+    {
+      "id": "focl01",
+      "name": "block",
+      "parent": "focon1",
+      "children": [
+        "foht01",
+        "folk01",
+        "folk02",
+        "folk03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cc6755"
+        ]
+      },
+      "label": "Services"
+    },
+    {
+      "id": "foht01",
+      "name": "text-basic",
+      "parent": "focl01",
+      "children": [],
+      "settings": {
+        "text": "Services",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c6c833"
+        ]
+      }
+    },
+    {
+      "id": "folk01",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": {
+        "text": "Residential moving",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "cf1f3e"
+        ]
+      }
+    },
+    {
+      "id": "folk02",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": {
+        "text": "Commercial moving",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "cf1f3e"
+        ]
+      }
+    },
+    {
+      "id": "folk03",
+      "name": "text-link",
+      "parent": "focl01",
+      "children": [],
+      "settings": {
+        "text": "Long-distance moving",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "cf1f3e"
+        ]
+      }
+    },
+    {
+      "id": "focl02",
+      "name": "block",
+      "parent": "focon1",
+      "children": [
+        "foht02",
+        "folk04",
+        "folk05"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "cc6755"
+        ]
+      },
+      "label": "Contact"
+    },
+    {
+      "id": "foht02",
+      "name": "text-basic",
+      "parent": "focl02",
+      "children": [],
+      "settings": {
+        "text": "Contact",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "c6c833"
+        ]
+      }
+    },
+    {
+      "id": "folk04",
+      "name": "text-link",
+      "parent": "focl02",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY phone number]",
+        "link": {
+          "type": "external",
+          "url": "tel:+10000000000"
+        },
+        "_cssGlobalClasses": [
+          "cf1f3e"
+        ]
+      },
+      "label": "[VERIFY] placeholder phone number"
+    },
+    {
+      "id": "folk05",
+      "name": "text-link",
+      "parent": "focl02",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "link": {
+          "type": "external",
+          "url": "#quote"
+        },
+        "_cssGlobalClasses": [
+          "cea77a"
+        ]
+      }
+    },
+    {
+      "id": "folbar",
+      "name": "container",
+      "parent": "fosec1",
+      "children": [
+        "focpy1",
+        "folgl1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c7760a"
+        ]
+      },
+      "label": "Bottom / Legal Bar"
+    },
+    {
+      "id": "focpy1",
+      "name": "text-basic",
+      "parent": "folbar",
+      "children": [],
+      "settings": {
+        "text": "© {current_date:Y} Crown Movers. All rights reserved.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "cb6833"
+        ]
+      }
+    },
+    {
+      "id": "folgl1",
+      "name": "block",
+      "parent": "folbar",
+      "children": [
+        "folgl2",
+        "folgl3"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c6aea8"
+        ]
+      },
+      "label": "[VERIFY] Privacy/Terms pages don't exist yet — required for Quebec Law 25 disclosures before launch"
+    },
+    {
+      "id": "folgl2",
+      "name": "text-link",
+      "parent": "folgl1",
+      "children": [],
+      "settings": {
+        "text": "Privacy Policy",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "cb6833"
+        ]
+      }
+    },
+    {
+      "id": "folgl3",
+      "name": "text-link",
+      "parent": "folgl1",
+      "children": [],
+      "settings": {
+        "text": "Terms",
+        "link": {
+          "type": "external",
+          "url": "#"
+        },
+        "_cssGlobalClasses": [
+          "cb6833"
+        ]
+      }
+    },
+    {
+      "id": "mbsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "mbct01",
+        "mbct02"
+      ],
+      "settings": {
+        "tag": "div",
+        "_cssGlobalClasses": [
+          "cd9f16"
+        ]
+      },
+      "label": "Mobile Sticky Actions — fixed bottom bar, mobile only. Add body{padding-bottom:64px} via Page Settings → Custom CSS on pages using this footer so content doesn't sit under it."
+    },
+    {
+      "id": "mbct01",
+      "name": "button",
+      "parent": "mbsec1",
+      "children": [],
+      "settings": {
+        "text": "Call",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "tel:+10000000000"
+        },
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-call"
+        },
+        "iconPosition": "left",
+        "_cssGlobalClasses": [
+          "cec66d"
+        ]
+      },
+      "label": "[VERIFY] placeholder phone number"
+    },
+    {
+      "id": "mbct02",
+      "name": "button",
+      "parent": "mbsec1",
+      "children": [],
+      "settings": {
+        "text": "Free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "#quote"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ],
+        "_justifyContent": "center"
+      },
+      "label": "Dark ink text on coral per accessibility rule"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "any"
+      }
+    ]
+  },
+  "global_classes": [
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        }
+      }
+    },
+    {
+      "id": "cec66d",
+      "name": "btn-dark",
+      "settings": {
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "12px",
+          "right": "20px",
+          "bottom": "12px",
+          "left": "20px"
+        },
+        "_heightMin": "44px",
+        "_justifyContent": "center"
+      }
+    },
+    {
+      "id": "c8dde9",
+      "name": "site-footer",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-l)"
+        },
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "ca9f23",
+      "name": "footer-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "2fr 1fr 1fr",
+        "_gridGap": "var(--space-xl)",
+        "_gridTemplateColumns:tablet_portrait": "1fr 1fr",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "c500dc",
+      "name": "footer-col",
+      "settings": {
+        "_rowGap": "var(--space-s)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "cc6755",
+      "name": "footer-col-tight",
+      "settings": {
+        "_rowGap": "var(--space-xs)",
+        "_alignItems": "flex-start"
+      }
+    },
+    {
+      "id": "c5302f",
+      "name": "footer-brand-name",
+      "settings": {
+        "_typography": {
+          "font-family": "Archivo",
+          "font-weight": "750",
+          "font-size": "1.89rem",
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "c67875",
+      "name": "footer-brand-desc",
+      "settings": {
+        "_typography": {
+          "color": {
+            "rgb": "rgba(255,255,255,0.7)"
+          },
+          "font-size": "1.44rem"
+        },
+        "_widthMax": "320px"
+      }
+    },
+    {
+      "id": "c6c833",
+      "name": "footer-heading",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "700",
+          "letter-spacing": "0.08em",
+          "text-transform": "uppercase",
+          "color": {
+            "rgb": "rgba(255,255,255,0.5)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cf1f3e",
+      "name": "footer-link",
+      "settings": {
+        "_typography": {
+          "color": {
+            "rgb": "rgba(255,255,255,0.85)"
+          }
+        }
+      }
+    },
+    {
+      "id": "cea77a",
+      "name": "footer-link-strong",
+      "settings": {
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          },
+          "font-weight": "700"
+        }
+      }
+    },
+    {
+      "id": "c7760a",
+      "name": "footer-bottom-bar",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "space-between",
+        "_alignItems": "center",
+        "_padding": {
+          "top": "var(--space-m)"
+        },
+        "_border": {
+          "width": {
+            "top": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "rgb": "rgba(255,255,255,0.12)"
+          }
+        },
+        "_direction:mobile_landscape": "column",
+        "_rowGap:mobile_landscape": "var(--space-s)"
+      }
+    },
+    {
+      "id": "cb6833",
+      "name": "footer-fine-print",
+      "settings": {
+        "_typography": {
+          "color": {
+            "rgb": "rgba(255,255,255,0.5)"
+          },
+          "font-size": "1.25rem"
+        }
+      }
+    },
+    {
+      "id": "c6aea8",
+      "name": "footer-legal-row",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "cd9f16",
+      "name": "mobile-action-bar",
+      "settings": {
+        "_position": "fixed",
+        "_bottom": "0",
+        "_left": "0",
+        "_right": "0",
+        "_zIndex": "110",
+        "_display": "none",
+        "_display:mobile_landscape": "grid",
+        "_gridTemplateColumns:mobile_landscape": "1fr 1fr",
+        "_gridGap": "8px",
+        "_padding": {
+          "top": "10px",
+          "right": "10px",
+          "bottom": "10px",
+          "left": "10px"
+        },
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "-12",
+            "blur": "32",
+            "spread": "0"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.12)"
+          }
+        }
+      }
+    }
+  ],
+  "globalVariables": []
+}
