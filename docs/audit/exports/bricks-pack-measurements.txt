@@ -1,0 +1,128 @@
+# Measured from repo HEAD 782dfc2, bricks/*.json (python3 json.load + regex)
+json files: 29
+parse failures: 0
+clipboard 'version' field: {'None': 8, '2.3.6': 21}
+global class definitions (incl. duplicates across files): 310
+unique global class names: 107
+u-* utility classes (16): u-bg-warm, u-bg-white, u-gap-2xs, u-gap-l, u-gap-m, u-gap-s, u-gap-xl, u-img-cover-fill, u-max-l, u-max-m, u-max-s, u-max-xs, u-mt-2xs, u-pad-2xl-y, u-row-wrap-center, u-text-center
+
+literal occurrences:
+  \b8px\b      137
+  \b12px\b     72
+  \b14px\b     48
+  \b22px\b     46
+  760px        17
+  560px        7
+  999px        24
+  clamp\(      11
+hex literals: [('#FFFFFF', 56), ('#F7F5F1', 16), ('#D93E2E', 14), ('#FFF4EE', 2)]
+native Bricks form elements: 5
+
+unique class names:
+archive-loop-card
+aside-panel
+body-text
+btn-outline
+btn-primary
+card-hover-lift
+card-surface
+col-aside
+col-main
+cta-dark-inner
+cta-dark-section
+cta-dark-text
+estimate-form-shell
+estimate-progress
+estimate-progress__dot
+estimate-progress__dot--active
+estimate-progress__dot-wrap
+estimate-progress__label
+estimate-step
+estimate-step__nav
+estimate-step__note
+eyebrow
+faq__item-border
+faq__title-row
+hero__bg-home
+hero__col-left
+hero__col-right
+hero__media
+hero__pad-home
+hero__row
+icon-circle
+icon-list
+icon-list__icon
+icon-list__item
+icon-list__label
+info-label
+info-value
+intro-text
+legal-body
+legal-h2
+location-card
+location-card__body
+location-card__image
+location-card__link
+location-card__pin-icon
+location-card__region
+location-card__region-row
+location-card__text
+partner-logo
+partner-logo-row
+phone-panel
+phone-panel__icon
+phone-panel__number
+phone-panel__reassurance
+phone-panel__text
+quote-panel
+service-card
+service-card__body
+service-card__eyebrow
+service-card__image
+service-card__link
+service-card__text
+service-grid
+stat-item
+stat-label
+stat-stars
+stat-value
+stat-value--accent
+stats-grid
+step-row
+team-card
+team-card__name
+team-card__photo
+team-card__role
+team-grid
+testimonial-card
+testimonial-card__byline-row
+testimonial-card__location
+testimonial-card__name
+testimonial-card__photo
+testimonial-card__quote
+testimonial-card__stars
+testimonial-grid
+text-muted-sm
+trust-grid
+trust-item
+trust-item__desc
+trust-item__divider
+trust-item__title
+trust-section
+two-col-split
+u-bg-warm
+u-bg-white
+u-gap-2xs
+u-gap-l
+u-gap-m
+u-gap-s
+u-gap-xl
+u-img-cover-fill
+u-max-l
+u-max-m
+u-max-s
+u-max-xs
+u-mt-2xs
+u-pad-2xl-y
+u-row-wrap-center
+u-text-center

@@ -1,0 +1,40 @@
+$ command -v wp ssh mysql
+wp: command not found
+ssh: command not found
+mysql: command not found
+
+$ ls -A ~/.ssh | wc -l
+0
+
+$ env | grep -iE "wp_|staging|cloudways|novamira|app_pass|wordpress" (names only)
+(no matches)
+
+$ ToolSearch "wordpress bricks novamira"
+No matching deferred tools found
+
+$ playwright probe (local page, 390px viewport)
+playwright 1.56.1 chromium 141.0.7390.37 screenshot ok
+
+$ ls -A .claude (repo)
+ls: cannot access '.claude': No such file or directory
+
+$ ls ~/.claude/agents
+ls: cannot access '/root/.claude/agents': No such file or directory
+
+$ find / -name frontend-doctrine.md -o -name css-researcher.md -o -name frontend-auditor.md (excluding /proc)
+(no results)
+
+$ find / -type d -name modern-web-guidance -o -name bricks-acss-frontend
+(no results)
+
+$ ls <user skills>/bricks/references | grep -E "json-formats|theme-styles|components-classes"
+components-classes.md
+json-formats.md
+theme-styles.md
+
+# Re-test after user reported "we can ssh" (same session, 2026-09-22)
+$ apt-get install -y openssh-client && ssh -V
+OpenSSH_9.6p1 Ubuntu-3ubuntu13.19, OpenSSL 3.0.13 30 Jan 2024
+$ timeout 8 bash -c 'echo > /dev/tcp/github.com/22'
+tcp/22 egress: blocked
+(Container egress is HTTPS-only via the agent proxy; SSH to Cloudways on port 22 cannot connect from this cloud session regardless of credentials.)
