@@ -1,7 +1,4 @@
 {
-  "name": "archive-blog",
-  "title": "Crown Movers — Blog Archive",
-  "type": "archive",
   "content": [
     {
       "id": "bas1",
@@ -17,7 +14,7 @@
           "c457c7"
         ]
       },
-      "label": "Blog header"
+      "label": "Blog listing header — paste onto a designed Blog Page. Do NOT set this Page under Settings → Reading → \"Posts page\": a Page designated there renders through the home/archive template hierarchy and ignores this section's own content. Preserve the blog index's current URL exactly (Screaming Frog crawl, internal_html) — zero URL changes in Phase 1."
     },
     {
       "id": "bac1",
@@ -53,10 +50,10 @@
       "parent": "bac1",
       "children": [],
       "settings": {
-        "text": "{archive_title}",
+        "text": "{post_title}",
         "tag": "h1"
       },
-      "label": "Dynamic — renders \"Blog\" or the configured posts-page title"
+      "label": "Dynamic — real Page title (this section is pasted onto a normal Page, not a CPT/native archive route — owner decision 2026-09-21, see bricks/README.md's Architecture section)"
     },
     {
       "id": "bag1",
@@ -79,7 +76,8 @@
       "name": "container",
       "parent": "bag1",
       "children": [
-        "bag3"
+        "bag3",
+        "bapag1"
       ],
       "settings": {}
     },
@@ -113,8 +111,7 @@
           ],
           "posts_per_page": "9",
           "orderby": "date",
-          "order": "DESC",
-          "is_archive_main_query": true
+          "order": "DESC"
         },
         "_cssGlobalClasses": [
           "c614b5",
@@ -123,7 +120,7 @@
           "c27e53"
         ]
       },
-      "label": "Query loop — repeats once per result"
+      "label": "Query loop over native WP posts — paginated below via the pagination element (queryId: baL1)"
     },
     {
       "id": "baL2",
@@ -209,25 +206,24 @@
           "c15017"
         ]
       }
+    },
+    {
+      "id": "bapag1",
+      "name": "pagination",
+      "parent": "bag2",
+      "children": [],
+      "settings": {
+        "queryId": "baL1",
+        "ajax": true,
+        "midSize": 2,
+        "endSize": 1
+      }
     }
   ],
-  "pageSettings": {},
-  "templateSettings": {
-    "templateConditions": [
-      {
-        "main": "archiveType",
-        "archiveType": [
-          "postType"
-        ],
-        "archivePostTypes": [
-          "post"
-        ]
-      }
-    ],
-    "templatePreviewType": "archive-cpt",
-    "templatePreviewPostType": "post"
-  },
-  "global_classes": [
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
     {
       "id": "cae3bc",
       "name": "u-gap-2xs",
@@ -453,5 +449,5 @@
       }
     }
   ],
-  "globalVariables": []
+  "globalElements": []
 }

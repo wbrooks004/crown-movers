@@ -24,8 +24,8 @@ Requires ACF Pro (Repeater field type) for `02-acf-field-groups.php`.
 - **A `service` CPT.** The spec lists it under "post types deliberately not created" in
   Phase 1 (§3.5) — it's gated behind the service-URL decision (§6.3) and a translated
   URL base, which needs Polylang Pro. Services stay Pages + the Service field group
-  until that gate opens. See `bricks/README.md` for how `10-archive-service.json` and
-  `12-single-service.json` were rebuilt around that.
+  until that gate opens. See `bricks/README.md` for how `10-section-services-listing.json`
+  and `12-single-service.json` were rebuilt around that.
 - **Branch Details (§5.2) and Route Details (§5.4) field groups**, and a branch CPT/page
   template. The spec calls for /montreal-movers/ and /fr/demenagement-montreal/ to get
   "their own Bricks template" (§3.2) with `LocalBusiness` schema — that template doesn't

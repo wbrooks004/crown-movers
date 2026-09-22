@@ -30,9 +30,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Empty rewrite slug preserves existing URLs (/laval-movers/,
  * /fr/demenagement-laval/, ...) unchanged, per the spec's Phase 1 rule of
  * zero URL changes. has_archive is false on purpose: the "areas we serve"
- * hub is a designed Page (bricks/11-archive-location.json), not a CPT
- * archive route — a true archive route would collide with the empty-slug
- * namespace Pages already occupy.
+ * hub is a designed Page (bricks/11-section-locations-listing.json), not a
+ * CPT archive route — a true archive route would collide with the empty-slug
+ * namespace Pages already occupy. (Owner decision 2026-09-21: no archive
+ * templates anywhere on this site, not just here — see bricks/README.md.)
  */
 add_action( 'init', function () {
 	register_post_type( 'location', [
@@ -91,7 +92,7 @@ add_action( 'init', function () {
  *
  * bricks/12-single-service.json's single-service Bricks template targets
  * `templateConditions: [{"main":"terms","terms":["service_category::all"]}]`
- * — i.e. any Page carrying ANY term in this taxonomy. bricks/10-archive-service.json's
+ * — i.e. any Page carrying ANY term in this taxonomy. bricks/10-section-services-listing.json's
  * services-listing loop filters page posts where this taxonomy EXISTS. Both
  * require every service Page to be tagged with at least one term here.
  */
