@@ -1,14 +1,11 @@
 {
-  "name": "archive-blog",
-  "title": "Crown Movers — Blog Archive",
-  "type": "archive",
   "content": [
     {
-      "id": "bas1",
+      "id": "sas1",
       "name": "section",
       "parent": 0,
       "children": [
-        "bac1"
+        "sac1"
       ],
       "settings": {
         "tag": "section",
@@ -17,15 +14,17 @@
           "c457c7"
         ]
       },
-      "label": "Blog header"
+      "label": "Services listing header — paste onto a designed Page (e.g. the site's existing all-services index). Not a CPT archive: `service` stays Pages + Service field group in Phase 1 per Crown_Movers_Content_Architecture_Spec_v2 (service CPT explicitly listed as NOT created in Phase 1, §3.5)."
     },
     {
-      "id": "bac1",
+      "id": "sac1",
       "name": "container",
-      "parent": "bas1",
+      "parent": "sas1",
       "children": [
-        "bae1",
-        "bah1"
+        "sab1",
+        "sae1",
+        "sah1",
+        "sax1"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -35,12 +34,19 @@
       }
     },
     {
-      "id": "bae1",
+      "id": "sab1",
+      "name": "breadcrumbs",
+      "parent": "sac1",
+      "children": [],
+      "settings": {}
+    },
+    {
+      "id": "sae1",
       "name": "text-basic",
-      "parent": "bac1",
+      "parent": "sac1",
       "children": [],
       "settings": {
-        "text": "From Crown Movers",
+        "text": "Moving services",
         "tag": "span",
         "_cssGlobalClasses": [
           "c72e04"
@@ -48,22 +54,36 @@
       }
     },
     {
-      "id": "bah1",
+      "id": "sah1",
       "name": "heading",
-      "parent": "bac1",
+      "parent": "sac1",
       "children": [],
       "settings": {
-        "text": "{archive_title}",
+        "text": "{post_title}",
         "tag": "h1"
       },
-      "label": "Dynamic — renders \"Blog\" or the configured posts-page title"
+      "label": "Dynamic — real Page title (this section is pasted onto a normal Page, not a CPT archive route)"
     },
     {
-      "id": "bag1",
+      "id": "sax1",
+      "name": "text-basic",
+      "parent": "sac1",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] short intro for the services index — state what Crown Movers moves and who it's for.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c1b54d"
+        ]
+      },
+      "label": "[VERIFY] hand-typed intro — {archive_description} does not resolve outside a real archive route"
+    },
+    {
+      "id": "sag1",
       "name": "section",
       "parent": 0,
       "children": [
-        "bag2"
+        "sag2"
       ],
       "settings": {
         "tag": "section",
@@ -72,49 +92,55 @@
           "c457c7"
         ]
       },
-      "label": "Post grid"
+      "label": "Results grid"
     },
     {
-      "id": "bag2",
+      "id": "sag2",
       "name": "container",
-      "parent": "bag1",
+      "parent": "sag1",
       "children": [
-        "bag3"
+        "sag3"
       ],
       "settings": {}
     },
     {
-      "id": "bag3",
+      "id": "sag3",
       "name": "div",
-      "parent": "bag2",
+      "parent": "sag2",
       "children": [
-        "baL1"
+        "saL1"
       ],
       "settings": {
         "_cssGlobalClasses": [
           "c5f7d2"
         ]
-      }
+      },
+      "label": "Loop grid — CSS grid on the parent, hasLoop card repeats as each grid cell"
     },
     {
-      "id": "baL1",
+      "id": "saL1",
       "name": "block",
-      "parent": "bag3",
+      "parent": "sag3",
       "children": [
-        "baL2",
-        "baL3"
+        "saL2",
+        "saL3"
       ],
       "settings": {
         "hasLoop": true,
         "query": {
           "objectType": "post",
           "post_type": [
-            "post"
+            "page"
           ],
-          "posts_per_page": "9",
-          "orderby": "date",
-          "order": "DESC",
-          "is_archive_main_query": true
+          "posts_per_page": "100",
+          "orderby": "title",
+          "order": "ASC",
+          "tax_query_advanced": [
+            {
+              "taxonomy": "service_category",
+              "operator": "EXISTS"
+            }
+          ]
         },
         "_cssGlobalClasses": [
           "c614b5",
@@ -123,12 +149,12 @@
           "c27e53"
         ]
       },
-      "label": "Query loop — repeats once per result"
+      "label": "Query loop — WP Pages tagged with any service_category term (see wp-integration/01-post-types-and-taxonomies.php). Requires the service_category taxonomy registered on `page`."
     },
     {
-      "id": "baL2",
+      "id": "saL2",
       "name": "image",
-      "parent": "baL1",
+      "parent": "saL1",
       "children": [],
       "settings": {
         "image": {
@@ -143,14 +169,14 @@
       }
     },
     {
-      "id": "baL3",
+      "id": "saL3",
       "name": "block",
-      "parent": "baL1",
+      "parent": "saL1",
       "children": [
-        "baL4",
-        "baL5",
-        "baL6",
-        "baL7"
+        "saL4",
+        "saL5",
+        "saL6",
+        "saL7"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -159,22 +185,23 @@
       }
     },
     {
-      "id": "baL4",
+      "id": "saL4",
       "name": "text-basic",
-      "parent": "baL3",
+      "parent": "saL3",
       "children": [],
       "settings": {
-        "text": "{post_date:M j, Y}",
+        "text": "{post_terms_service_category:plain @fallback:'Moving service'}",
         "tag": "span",
         "_cssGlobalClasses": [
           "c59a75"
         ]
-      }
+      },
+      "label": "Dynamic — real service_category term, falls back to static label if untagged"
     },
     {
-      "id": "baL5",
+      "id": "saL5",
       "name": "heading",
-      "parent": "baL3",
+      "parent": "saL3",
       "children": [],
       "settings": {
         "text": "{post_title}",
@@ -182,9 +209,9 @@
       }
     },
     {
-      "id": "baL6",
+      "id": "saL6",
       "name": "text-basic",
-      "parent": "baL3",
+      "parent": "saL3",
       "children": [],
       "settings": {
         "text": "{post_excerpt:20}",
@@ -195,9 +222,9 @@
       }
     },
     {
-      "id": "baL7",
+      "id": "saL7",
       "name": "text-link",
-      "parent": "baL3",
+      "parent": "saL3",
       "children": [],
       "settings": {
         "text": "Learn more →",
@@ -209,31 +236,111 @@
           "c15017"
         ]
       }
-    }
-  ],
-  "pageSettings": {},
-  "templateSettings": {
-    "templateConditions": [
-      {
-        "main": "archiveType",
-        "archiveType": [
-          "postType"
-        ],
-        "archivePostTypes": [
-          "post"
+    },
+    {
+      "id": "sacta1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "sacta2"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "c457c7",
+          "c256f3"
+        ]
+      },
+      "label": "Dark CTA band"
+    },
+    {
+      "id": "sacta2",
+      "name": "container",
+      "parent": "sacta1",
+      "children": [
+        "sacta3"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "sacta3",
+      "name": "block",
+      "parent": "sacta2",
+      "children": [
+        "sacta4",
+        "sacta5",
+        "sacta6"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "c50218"
         ]
       }
-    ],
-    "templatePreviewType": "archive-cpt",
-    "templatePreviewPostType": "post"
-  },
-  "global_classes": [
+    },
+    {
+      "id": "sacta4",
+      "name": "heading",
+      "parent": "sacta3",
+      "children": [],
+      "settings": {
+        "text": "Don't see the exact service you need?",
+        "tag": "h2",
+        "_cssGlobalClasses": [
+          "cbab02"
+        ]
+      }
+    },
+    {
+      "id": "sacta5",
+      "name": "text-basic",
+      "parent": "sacta3",
+      "children": [],
+      "settings": {
+        "text": "Every move is different. Tell us the details and we'll confirm what's possible.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "c41bc0"
+        ]
+      }
+    },
+    {
+      "id": "sacta6",
+      "name": "button",
+      "parent": "sacta3",
+      "children": [],
+      "settings": {
+        "text": "Get a free quote",
+        "tag": "a",
+        "link": {
+          "type": "external",
+          "url": "/quote/"
+        },
+        "_cssGlobalClasses": [
+          "c1436a"
+        ]
+      },
+      "label": "Dark ink text on coral (accessibility rule)"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
     {
       "id": "cae3bc",
       "name": "u-gap-2xs",
       "settings": {
         "_columnGap": "var(--space-2xs)",
         "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "cbab02",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
       }
     },
     {
@@ -269,6 +376,17 @@
       }
     },
     {
+      "id": "c1b54d",
+      "name": "body-text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        }
+      }
+    },
+    {
       "id": "c285a4",
       "name": "u-bg-white",
       "settings": {
@@ -288,6 +406,46 @@
             "hex": "#F7F5F1"
           }
         }
+      }
+    },
+    {
+      "id": "c1436a",
+      "name": "btn-primary",
+      "settings": {
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-weight": "750"
+        },
+        "_border": {
+          "radius": {
+            "top": "8px",
+            "right": "8px",
+            "bottom": "8px",
+            "left": "8px"
+          }
+        },
+        "_padding": {
+          "top": "14px",
+          "right": "22px",
+          "bottom": "14px",
+          "left": "22px"
+        },
+        "_heightMin": "44px",
+        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
+        "_background:hover": {
+          "color": {
+            "hex": "#D93E2E"
+          }
+        },
+        "_transform:hover": {
+          "translateY": "-1"
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -451,7 +609,46 @@
         "_display": "flex",
         "_flexDirection": "column"
       }
+    },
+    {
+      "id": "c256f3",
+      "name": "cta-dark-section",
+      "settings": {
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        }
+      }
+    },
+    {
+      "id": "c50218",
+      "name": "cta-dark-inner",
+      "settings": {
+        "_rowGap": "var(--space-m)",
+        "_alignItems": "center",
+        "_widthMax": "560px",
+        "_margin": {
+          "left": "auto",
+          "right": "auto"
+        }
+      }
+    },
+    {
+      "id": "c41bc0",
+      "name": "cta-dark-text",
+      "settings": {
+        "_typography": {
+          "text-align": "center",
+          "color": {
+            "rgb": "rgba(255,255,255,0.75)"
+          }
+        }
+      }
     }
   ],
-  "globalVariables": []
+  "globalElements": []
 }

@@ -1,0 +1,834 @@
+{
+  "content": [
+    {
+      "id": "tmsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "tmcon1"
+      ],
+      "settings": {
+        "tag": "section",
+        "_cssGlobalClasses": [
+          "9snird",
+          "ifueps"
+        ]
+      },
+      "label": "Testimonial cards. Deliberately a CSS grid/wrap, not a slider — the design brief bans \"oversized sliders\" and the implementation rules ban \"complex carousels\" (this covers design-brief item 29, \"review carousel alternative\": the alternative IS this grid). Do not emit Review/AggregateRating schema (Crown_Movers_Content_Architecture_Spec_v2.md §8.3 — self-published rating markup isn't eligible for rich results); this is content display only."
+    },
+    {
+      "id": "tmcon1",
+      "name": "container",
+      "parent": "tmsec1",
+      "children": [
+        "tmhdr1",
+        "tmgrd1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "0suz6r"
+        ]
+      }
+    },
+    {
+      "id": "tmhdr1",
+      "name": "block",
+      "parent": "tmcon1",
+      "children": [
+        "tmeyb1",
+        "tmttl1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "4hfab1",
+          "ytu6ik",
+          "day68t"
+        ]
+      }
+    },
+    {
+      "id": "tmeyb1",
+      "name": "text-basic",
+      "parent": "tmhdr1",
+      "children": [],
+      "settings": {
+        "text": "What customers say",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "m7za52"
+        ]
+      }
+    },
+    {
+      "id": "tmttl1",
+      "name": "heading",
+      "parent": "tmhdr1",
+      "children": [],
+      "settings": {
+        "text": "Real moves, real feedback",
+        "tag": "h2"
+      }
+    },
+    {
+      "id": "tmgrd1",
+      "name": "div",
+      "parent": "tmcon1",
+      "children": [
+        "tmc01",
+        "tmc02",
+        "tmc03"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "b55yye"
+        ]
+      }
+    },
+    {
+      "id": "tmc01",
+      "name": "block",
+      "parent": "tmgrd1",
+      "children": [
+        "tmc01s",
+        "tmc01q",
+        "tmc01b"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "xv16e0",
+          "7tuo1p"
+        ]
+      },
+      "label": "[VERIFY] placeholder testimonial 1 — no real customer testimonial text exists in the project files gathered so far. Replace with a real, attributable quote (design brief TRUST AND PROOF SYSTEM: “Do not invent... customer reviews”) before this ships; Crown Movers' real aggregate rating (5.0★/593 Google reviews) is already wired into 18-stats-strip.json and does not depend on this component."
+    },
+    {
+      "id": "tmc01s",
+      "name": "block",
+      "parent": "tmc01",
+      "children": [
+        "tmc01st1",
+        "tmc01st2",
+        "tmc01st3",
+        "tmc01st4",
+        "tmc01st5"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "tnef81"
+        ]
+      }
+    },
+    {
+      "id": "tmc01st1",
+      "name": "icon",
+      "parent": "tmc01s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc01st2",
+      "name": "icon",
+      "parent": "tmc01s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc01st3",
+      "name": "icon",
+      "parent": "tmc01s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc01st4",
+      "name": "icon",
+      "parent": "tmc01s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc01st5",
+      "name": "icon",
+      "parent": "tmc01s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc01q",
+      "name": "text-basic",
+      "parent": "tmc01",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] Insert a real, attributable customer quote here.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "rixtsm"
+        ]
+      }
+    },
+    {
+      "id": "tmc01b",
+      "name": "block",
+      "parent": "tmc01",
+      "children": [
+        "tmc01ph",
+        "tmc01bt"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "unakyi"
+        ]
+      }
+    },
+    {
+      "id": "tmc01ph",
+      "name": "image",
+      "parent": "tmc01b",
+      "children": [],
+      "settings": {
+        "image": {},
+        "altText": "[VERIFY] customer name",
+        "_cssGlobalClasses": [
+          "i693gk"
+        ]
+      },
+      "label": "[VERIFY] optional — omit the photo element entirely if the customer didn't provide one; do not use a stock headshot"
+    },
+    {
+      "id": "tmc01bt",
+      "name": "block",
+      "parent": "tmc01b",
+      "children": [
+        "tmc01nm",
+        "tmc01lc"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "tmc01nm",
+      "name": "text-basic",
+      "parent": "tmc01bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "lnpgbk"
+        ]
+      }
+    },
+    {
+      "id": "tmc01lc",
+      "name": "text-basic",
+      "parent": "tmc01bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY neighbourhood/city]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "3fvlia"
+        ]
+      }
+    },
+    {
+      "id": "tmc02",
+      "name": "block",
+      "parent": "tmgrd1",
+      "children": [
+        "tmc02s",
+        "tmc02q",
+        "tmc02b"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "xv16e0",
+          "7tuo1p"
+        ]
+      },
+      "label": "[VERIFY] placeholder testimonial 2 — no real customer testimonial text exists in the project files gathered so far. Replace with a real, attributable quote (design brief TRUST AND PROOF SYSTEM: “Do not invent... customer reviews”) before this ships; Crown Movers' real aggregate rating (5.0★/593 Google reviews) is already wired into 18-stats-strip.json and does not depend on this component."
+    },
+    {
+      "id": "tmc02s",
+      "name": "block",
+      "parent": "tmc02",
+      "children": [
+        "tmc02st1",
+        "tmc02st2",
+        "tmc02st3",
+        "tmc02st4",
+        "tmc02st5"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "tnef81"
+        ]
+      }
+    },
+    {
+      "id": "tmc02st1",
+      "name": "icon",
+      "parent": "tmc02s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc02st2",
+      "name": "icon",
+      "parent": "tmc02s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc02st3",
+      "name": "icon",
+      "parent": "tmc02s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc02st4",
+      "name": "icon",
+      "parent": "tmc02s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc02st5",
+      "name": "icon",
+      "parent": "tmc02s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc02q",
+      "name": "text-basic",
+      "parent": "tmc02",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] Insert a real, attributable customer quote here.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "rixtsm"
+        ]
+      }
+    },
+    {
+      "id": "tmc02b",
+      "name": "block",
+      "parent": "tmc02",
+      "children": [
+        "tmc02ph",
+        "tmc02bt"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "unakyi"
+        ]
+      }
+    },
+    {
+      "id": "tmc02ph",
+      "name": "image",
+      "parent": "tmc02b",
+      "children": [],
+      "settings": {
+        "image": {},
+        "altText": "[VERIFY] customer name",
+        "_cssGlobalClasses": [
+          "i693gk"
+        ]
+      },
+      "label": "[VERIFY] optional — omit the photo element entirely if the customer didn't provide one; do not use a stock headshot"
+    },
+    {
+      "id": "tmc02bt",
+      "name": "block",
+      "parent": "tmc02b",
+      "children": [
+        "tmc02nm",
+        "tmc02lc"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "tmc02nm",
+      "name": "text-basic",
+      "parent": "tmc02bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "lnpgbk"
+        ]
+      }
+    },
+    {
+      "id": "tmc02lc",
+      "name": "text-basic",
+      "parent": "tmc02bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY neighbourhood/city]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "3fvlia"
+        ]
+      }
+    },
+    {
+      "id": "tmc03",
+      "name": "block",
+      "parent": "tmgrd1",
+      "children": [
+        "tmc03s",
+        "tmc03q",
+        "tmc03b"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "xv16e0",
+          "7tuo1p"
+        ]
+      },
+      "label": "[VERIFY] placeholder testimonial 3 — no real customer testimonial text exists in the project files gathered so far. Replace with a real, attributable quote (design brief TRUST AND PROOF SYSTEM: “Do not invent... customer reviews”) before this ships; Crown Movers' real aggregate rating (5.0★/593 Google reviews) is already wired into 18-stats-strip.json and does not depend on this component."
+    },
+    {
+      "id": "tmc03s",
+      "name": "block",
+      "parent": "tmc03",
+      "children": [
+        "tmc03st1",
+        "tmc03st2",
+        "tmc03st3",
+        "tmc03st4",
+        "tmc03st5"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "tnef81"
+        ]
+      }
+    },
+    {
+      "id": "tmc03st1",
+      "name": "icon",
+      "parent": "tmc03s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc03st2",
+      "name": "icon",
+      "parent": "tmc03s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc03st3",
+      "name": "icon",
+      "parent": "tmc03s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc03st4",
+      "name": "icon",
+      "parent": "tmc03s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc03st5",
+      "name": "icon",
+      "parent": "tmc03s",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-star"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "tmc03q",
+      "name": "text-basic",
+      "parent": "tmc03",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY] Insert a real, attributable customer quote here.",
+        "tag": "p",
+        "_cssGlobalClasses": [
+          "rixtsm"
+        ]
+      }
+    },
+    {
+      "id": "tmc03b",
+      "name": "block",
+      "parent": "tmc03",
+      "children": [
+        "tmc03ph",
+        "tmc03bt"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "unakyi"
+        ]
+      }
+    },
+    {
+      "id": "tmc03ph",
+      "name": "image",
+      "parent": "tmc03b",
+      "children": [],
+      "settings": {
+        "image": {},
+        "altText": "[VERIFY] customer name",
+        "_cssGlobalClasses": [
+          "i693gk"
+        ]
+      },
+      "label": "[VERIFY] optional — omit the photo element entirely if the customer didn't provide one; do not use a stock headshot"
+    },
+    {
+      "id": "tmc03bt",
+      "name": "block",
+      "parent": "tmc03b",
+      "children": [
+        "tmc03nm",
+        "tmc03lc"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "tmc03nm",
+      "name": "text-basic",
+      "parent": "tmc03bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY name]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "lnpgbk"
+        ]
+      }
+    },
+    {
+      "id": "tmc03lc",
+      "name": "text-basic",
+      "parent": "tmc03bt",
+      "children": [],
+      "settings": {
+        "text": "[VERIFY neighbourhood/city]",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "3fvlia"
+        ]
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "9snird",
+      "name": "u-bg-warm",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#F7F5F1"
+          }
+        }
+      }
+    },
+    {
+      "id": "ifueps",
+      "name": "u-pad-2xl-y",
+      "settings": {
+        "_padding": {
+          "top": "var(--space-2xl)",
+          "bottom": "var(--space-2xl)"
+        }
+      }
+    },
+    {
+      "id": "0suz6r",
+      "name": "u-gap-xl",
+      "settings": {
+        "_columnGap": "var(--space-xl)",
+        "_rowGap": "var(--space-xl)"
+      }
+    },
+    {
+      "id": "4hfab1",
+      "name": "u-gap-2xs",
+      "settings": {
+        "_columnGap": "var(--space-2xs)",
+        "_rowGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "ytu6ik",
+      "name": "u-max-m",
+      "settings": {
+        "_widthMax": "760px"
+      }
+    },
+    {
+      "id": "day68t",
+      "name": "u-text-center",
+      "settings": {
+        "_typography": {
+          "text-align": "center"
+        }
+      }
+    },
+    {
+      "id": "m7za52",
+      "name": "eyebrow",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.11em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
+    },
+    {
+      "id": "b55yye",
+      "name": "testimonial-grid",
+      "settings": {
+        "_display": "grid",
+        "_gridTemplateColumns": "repeat(3, minmax(0, 1fr))",
+        "_gridGap": "var(--space-l)",
+        "_gridTemplateColumns:tablet_portrait": "repeat(2, minmax(0, 1fr))",
+        "_gridTemplateColumns:mobile_landscape": "1fr"
+      }
+    },
+    {
+      "id": "xv16e0",
+      "name": "testimonial-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_rowGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-l)",
+          "right": "var(--space-l)",
+          "bottom": "var(--space-l)",
+          "left": "var(--space-l)"
+        }
+      }
+    },
+    {
+      "id": "tnef81",
+      "name": "testimonial-card__stars",
+      "settings": {
+        "_direction": "row",
+        "_columnGap": "2px",
+        "_typography": {
+          "color": {
+            "raw": "var(--accent)"
+          },
+          "font-size": "1.6rem"
+        }
+      }
+    },
+    {
+      "id": "rixtsm",
+      "name": "testimonial-card__quote",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "unakyi",
+      "name": "testimonial-card__byline-row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-2xs)"
+      }
+    },
+    {
+      "id": "i693gk",
+      "name": "testimonial-card__photo",
+      "settings": {
+        "_width": "40px",
+        "_height": "40px",
+        "_widthMin": "40px",
+        "_aspectRatio": "1/1",
+        "_objectFit": "cover",
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        }
+      }
+    },
+    {
+      "id": "lnpgbk",
+      "name": "testimonial-card__name",
+      "settings": {
+        "_typography": {
+          "font-weight": "700",
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    },
+    {
+      "id": "3fvlia",
+      "name": "testimonial-card__location",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "7tuo1p",
+      "name": "card-surface",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

@@ -160,7 +160,7 @@
   "globalClasses": [
     {
       "id": "c749aa",
-      "name": "trust-item-title",
+      "name": "trust-item__title",
       "settings": {
         "_typography": {
           "text-align": "center",
@@ -172,7 +172,7 @@
     },
     {
       "id": "c3d80d",
-      "name": "trust-item-desc",
+      "name": "trust-item__desc",
       "settings": {
         "_typography": {
           "text-align": "center",
@@ -229,7 +229,7 @@
     },
     {
       "id": "ca26c2",
-      "name": "trust-item-divider",
+      "name": "trust-item__divider",
       "settings": {
         "_rowGap": "var(--space-2xs)",
         "_alignItems": "center",

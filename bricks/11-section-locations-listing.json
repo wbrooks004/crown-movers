@@ -1,7 +1,4 @@
 {
-  "name": "archive-location",
-  "title": "Crown Movers — Location Archive",
-  "type": "archive",
   "content": [
     {
       "id": "las1",
@@ -17,7 +14,7 @@
           "c457c7"
         ]
       },
-      "label": "Archive header"
+      "label": "Areas-we-serve header — paste onto a designed Page. location CPT has has_archive:false (Crown_Movers_Content_Architecture_Spec_v2 §3.1: \"the hub is a designed Page, not a CPT archive\") so there is no WP archive route to bind a template to."
     },
     {
       "id": "lac1",
@@ -62,10 +59,10 @@
       "parent": "lac1",
       "children": [],
       "settings": {
-        "text": "{archive_title}",
+        "text": "{post_title}",
         "tag": "h1"
       },
-      "label": "Dynamic — real archive title (post type label)"
+      "label": "Dynamic — real Page title (this section is pasted onto a normal Page, not a CPT archive route)"
     },
     {
       "id": "lax1",
@@ -73,13 +70,13 @@
       "parent": "lac1",
       "children": [],
       "settings": {
-        "text": "{archive_description @fallback:''}",
+        "text": "[VERIFY] short intro for the areas-we-serve index — state the regions covered (Montreal, Rive-Sud, Rive-Nord, Laval).",
         "tag": "p",
         "_cssGlobalClasses": [
           "c1b54d"
         ]
       },
-      "label": "[VERIFY] set the post type's archive description in WP admin, or this renders empty"
+      "label": "[VERIFY] hand-typed intro — {archive_description} does not resolve outside a real archive route"
     },
     {
       "id": "lag1",
@@ -137,17 +134,16 @@
           ],
           "posts_per_page": "12",
           "orderby": "title",
-          "order": "ASC",
-          "is_archive_main_query": true
+          "order": "ASC"
         },
         "_cssGlobalClasses": [
-          "c614b5",
+          "y6j9lp",
           "cc161e",
           "cb8f51",
           "c27e53"
         ]
       },
-      "label": "Query loop — repeats once per result"
+      "label": "Query loop over the location CPT — own location-card__* class family (was a verbatim copy of service-card__* in the prior build; locations and services are different content per Crown_Movers_Content_Architecture_Spec_v2.md rule #3 — \"Physical branches and service areas are different things and never share a content type, a template, or a schema block\" — the card system shouldn't share one either). Not yet grouped by region (design brief: \"organize location links into clear regions, searchable groups, or expandable directories\") — each card shows its region as a label below, but the listing itself is still one flat loop; grouping into per-region sections is a reasonable next pass, deliberately not attempted here to avoid an unverified nested-query-loop pattern (region as outer loop, location filtered by the outer loop's current term) shipping untested."
     },
     {
       "id": "laL2",
@@ -162,7 +158,7 @@
         "altText": "{post_title}",
         "loading": "lazy",
         "_cssGlobalClasses": [
-          "c1d3fa"
+          "eeibcw"
         ]
       }
     },
@@ -178,20 +174,21 @@
       ],
       "settings": {
         "_cssGlobalClasses": [
-          "c891a8"
+          "e2vmzf"
         ]
       }
     },
     {
       "id": "laL4",
-      "name": "text-basic",
+      "name": "block",
       "parent": "laL3",
-      "children": [],
+      "children": [
+        "laL4i",
+        "laL4t"
+      ],
       "settings": {
-        "text": "Local moving",
-        "tag": "span",
         "_cssGlobalClasses": [
-          "c59a75"
+          "3r8kif"
         ]
       }
     },
@@ -214,7 +211,7 @@
         "text": "{post_excerpt:20}",
         "tag": "p",
         "_cssGlobalClasses": [
-          "c28fb5"
+          "w8d76v"
         ]
       }
     },
@@ -230,7 +227,7 @@
           "useDynamicData": "{post_url}"
         },
         "_cssGlobalClasses": [
-          "c15017"
+          "e7mneq"
         ]
       }
     },
@@ -317,25 +314,42 @@
         ]
       },
       "label": "Dark ink text on coral (accessibility rule)"
-    }
-  ],
-  "pageSettings": {},
-  "templateSettings": {
-    "templateConditions": [
-      {
-        "main": "archiveType",
-        "archiveType": [
-          "postType"
-        ],
-        "archivePostTypes": [
-          "location"
+    },
+    {
+      "id": "laL4i",
+      "name": "icon",
+      "parent": "laL4",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-pin"
+        },
+        "iconSize": "1em",
+        "_cssGlobalClasses": [
+          "4hiyfu"
         ]
       }
-    ],
-    "templatePreviewType": "archive-cpt",
-    "templatePreviewPostType": "location"
-  },
-  "global_classes": [
+    },
+    {
+      "id": "laL4t",
+      "name": "text-basic",
+      "parent": "laL4",
+      "children": [],
+      "settings": {
+        "text": "{post_terms_region:plain @fallback:'Service area'}",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "1gmihk"
+        ]
+      },
+      "label": "Dynamic — real region taxonomy term (wp-integration/01-post-types-and-taxonomies.php), falls back to a generic label until tagged"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
     {
       "id": "cae3bc",
       "name": "u-gap-2xs",
@@ -454,7 +468,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -657,7 +672,110 @@
           }
         }
       }
+    },
+    {
+      "id": "y6j9lp",
+      "name": "location-card",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_overflow": "hidden"
+      }
+    },
+    {
+      "id": "eeibcw",
+      "name": "location-card__image",
+      "settings": {
+        "_aspectRatio": "16/10",
+        "_objectFit": "cover",
+        "_width": "100%"
+      }
+    },
+    {
+      "id": "e2vmzf",
+      "name": "location-card__body",
+      "settings": {
+        "_display": "flex",
+        "_flexDirection": "column",
+        "_flexGrow": "1",
+        "_rowGap": "var(--space-s)",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "3r8kif",
+      "name": "location-card__region-row",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "4px"
+      }
+    },
+    {
+      "id": "1gmihk",
+      "name": "location-card__region",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "font-weight": "800",
+          "letter-spacing": "0.09em",
+          "text-transform": "uppercase",
+          "color": {
+            "raw": "var(--accent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "4hiyfu",
+      "name": "location-card__pin-icon",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--accent)"
+          }
+        }
+      }
+    },
+    {
+      "id": "w8d76v",
+      "name": "location-card__text",
+      "settings": {
+        "_typography": {
+          "color": {
+            "raw": "var(--neutral-dark)"
+          }
+        },
+        "_flexGrow": "1"
+      }
+    },
+    {
+      "id": "e7mneq",
+      "name": "location-card__link",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_margin": {
+          "top": "auto"
+        },
+        "_cssTransition": "color 0.16s ease",
+        "_typography:hover": {
+          "color": {
+            "raw": "var(--primary)"
+          }
+        }
+      }
     }
   ],
-  "globalVariables": []
+  "globalElements": []
 }

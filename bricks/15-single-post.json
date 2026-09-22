@@ -371,12 +371,13 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
       "id": "c798d0",
-      "name": "hero-media",
+      "name": "hero__media",
       "settings": {
         "_heightMin": "280px",
         "_overflow": "hidden",

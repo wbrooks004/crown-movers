@@ -1,0 +1,214 @@
+{
+  "content": [
+    {
+      "id": "phsec1",
+      "name": "block",
+      "parent": 0,
+      "children": [
+        "phic1",
+        "phtx1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "4iwl6u",
+          "6p8lxg"
+        ]
+      },
+      "label": "Phone-call panel — a content module (icon + number + reassurance/hours), distinct from the header's/mobile bar's phone BUTTON (design brief lists these as separate items: “Phone-call button” in the button system vs. “Phone-call panel” as its own component). Meant to be pasted standalone — e.g. into 12-single-service.json's or 13-single-location.json's aside quote panel, or onto the contact page alongside its existing ad hoc phone/email/hours rows. Root node is a plain block, not a section, so it drops into an existing layout without forcing a new full-width row."
+    },
+    {
+      "id": "phic1",
+      "name": "block",
+      "parent": "phsec1",
+      "children": [
+        "phic1i"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "23zuqi"
+        ]
+      }
+    },
+    {
+      "id": "phic1i",
+      "name": "icon",
+      "parent": "phic1",
+      "children": [],
+      "settings": {
+        "icon": {
+          "library": "ionicons",
+          "icon": "ion-ios-call"
+        },
+        "iconSize": "1em"
+      }
+    },
+    {
+      "id": "phtx1",
+      "name": "block",
+      "parent": "phsec1",
+      "children": [
+        "phtx1a",
+        "phtx1b"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "2n6f8l"
+        ]
+      }
+    },
+    {
+      "id": "phtx1a",
+      "name": "text-link",
+      "parent": "phtx1",
+      "children": [],
+      "settings": {
+        "text": "514-606-4030",
+        "link": {
+          "type": "external",
+          "url": "tel:+15146064030"
+        },
+        "_cssGlobalClasses": [
+          "pbyza2"
+        ]
+      },
+      "label": "Real number (Crown Movers Info.xlsx)"
+    },
+    {
+      "id": "phtx1b",
+      "name": "text-basic",
+      "parent": "phtx1",
+      "children": [],
+      "settings": {
+        "text": "Mon–Fri 9am–7pm · Sat–Sun 9am–5pm",
+        "tag": "span",
+        "_cssGlobalClasses": [
+          "v1sngq"
+        ]
+      },
+      "label": "Real hours (Crown Movers Info.xlsx). [VERIFY] confirm still current before launch."
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "4iwl6u",
+      "name": "phone-panel",
+      "settings": {
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-m)",
+        "_padding": {
+          "top": "var(--space-m)",
+          "right": "var(--space-m)",
+          "bottom": "var(--space-m)",
+          "left": "var(--space-m)"
+        }
+      }
+    },
+    {
+      "id": "23zuqi",
+      "name": "phone-panel__icon",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_width": "48px",
+        "_height": "48px",
+        "_widthMin": "48px",
+        "_background": {
+          "raw": "var(--primary)"
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_typography": {
+          "color": {
+            "raw": "var(--base)"
+          },
+          "font-size": "2rem"
+        }
+      }
+    },
+    {
+      "id": "2n6f8l",
+      "name": "phone-panel__text",
+      "settings": {
+        "_rowGap": "2px"
+      }
+    },
+    {
+      "id": "pbyza2",
+      "name": "phone-panel__number",
+      "settings": {
+        "_typography": {
+          "font-weight": "800",
+          "font-size": "1.8rem",
+          "color": {
+            "raw": "var(--base)"
+          }
+        }
+      }
+    },
+    {
+      "id": "v1sngq",
+      "name": "phone-panel__reassurance",
+      "settings": {
+        "_typography": {
+          "font-size": "1.25rem",
+          "color": {
+            "raw": "var(--neutral)"
+          }
+        }
+      }
+    },
+    {
+      "id": "6p8lxg",
+      "name": "card-surface",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_border": {
+          "width": {
+            "top": "1px",
+            "right": "1px",
+            "bottom": "1px",
+            "left": "1px"
+          },
+          "style": "solid",
+          "color": {
+            "raw": "var(--neutral-light)"
+          },
+          "radius": {
+            "top": "12px",
+            "right": "12px",
+            "bottom": "12px",
+            "left": "12px"
+          }
+        },
+        "_boxShadow": {
+          "values": {
+            "offsetX": "0",
+            "offsetY": "8",
+            "blur": "24",
+            "spread": "-8"
+          },
+          "color": {
+            "rgb": "rgba(21,21,21,0.07)"
+          }
+        }
+      }
+    }
+  ],
+  "globalElements": []
+}

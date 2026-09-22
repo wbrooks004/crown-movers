@@ -1,14 +1,11 @@
 {
-  "name": "archive-service",
-  "title": "Crown Movers — Service Archive",
-  "type": "archive",
   "content": [
     {
-      "id": "sas1",
+      "id": "bas1",
       "name": "section",
       "parent": 0,
       "children": [
-        "sac1"
+        "bac1"
       ],
       "settings": {
         "tag": "section",
@@ -17,17 +14,15 @@
           "c457c7"
         ]
       },
-      "label": "Archive header"
+      "label": "Blog listing header — paste onto a designed Blog Page. Do NOT set this Page under Settings → Reading → \"Posts page\": a Page designated there renders through the home/archive template hierarchy and ignores this section's own content. Preserve the blog index's current URL exactly (Screaming Frog crawl, internal_html) — zero URL changes in Phase 1."
     },
     {
-      "id": "sac1",
+      "id": "bac1",
       "name": "container",
-      "parent": "sas1",
+      "parent": "bas1",
       "children": [
-        "sab1",
-        "sae1",
-        "sah1",
-        "sax1"
+        "bae1",
+        "bah1"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -37,19 +32,12 @@
       }
     },
     {
-      "id": "sab1",
-      "name": "breadcrumbs",
-      "parent": "sac1",
-      "children": [],
-      "settings": {}
-    },
-    {
-      "id": "sae1",
+      "id": "bae1",
       "name": "text-basic",
-      "parent": "sac1",
+      "parent": "bac1",
       "children": [],
       "settings": {
-        "text": "Moving services",
+        "text": "From Crown Movers",
         "tag": "span",
         "_cssGlobalClasses": [
           "c72e04"
@@ -57,36 +45,22 @@
       }
     },
     {
-      "id": "sah1",
+      "id": "bah1",
       "name": "heading",
-      "parent": "sac1",
+      "parent": "bac1",
       "children": [],
       "settings": {
-        "text": "{archive_title}",
+        "text": "{post_title}",
         "tag": "h1"
       },
-      "label": "Dynamic — real archive title (post type label)"
+      "label": "Dynamic — real Page title (this section is pasted onto a normal Page, not a CPT/native archive route — owner decision 2026-09-21, see bricks/README.md's Architecture section)"
     },
     {
-      "id": "sax1",
-      "name": "text-basic",
-      "parent": "sac1",
-      "children": [],
-      "settings": {
-        "text": "{archive_description @fallback:''}",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "c1b54d"
-        ]
-      },
-      "label": "[VERIFY] set the post type's archive description in WP admin, or this renders empty"
-    },
-    {
-      "id": "sag1",
+      "id": "bag1",
       "name": "section",
       "parent": 0,
       "children": [
-        "sag2"
+        "bag2"
       ],
       "settings": {
         "tag": "section",
@@ -95,50 +69,49 @@
           "c457c7"
         ]
       },
-      "label": "Results grid"
+      "label": "Post grid"
     },
     {
-      "id": "sag2",
+      "id": "bag2",
       "name": "container",
-      "parent": "sag1",
+      "parent": "bag1",
       "children": [
-        "sag3"
+        "bag3",
+        "bapag1"
       ],
       "settings": {}
     },
     {
-      "id": "sag3",
+      "id": "bag3",
       "name": "div",
-      "parent": "sag2",
+      "parent": "bag2",
       "children": [
-        "saL1"
+        "baL1"
       ],
       "settings": {
         "_cssGlobalClasses": [
           "c5f7d2"
         ]
-      },
-      "label": "Loop grid — CSS grid on the parent, hasLoop card repeats as each grid cell"
+      }
     },
     {
-      "id": "saL1",
+      "id": "baL1",
       "name": "block",
-      "parent": "sag3",
+      "parent": "bag3",
       "children": [
-        "saL2",
-        "saL3"
+        "baL2",
+        "baL3"
       ],
       "settings": {
         "hasLoop": true,
         "query": {
           "objectType": "post",
           "post_type": [
-            "service"
+            "post"
           ],
-          "posts_per_page": "12",
-          "orderby": "title",
-          "order": "ASC",
-          "is_archive_main_query": true
+          "posts_per_page": "9",
+          "orderby": "date",
+          "order": "DESC"
         },
         "_cssGlobalClasses": [
           "c614b5",
@@ -147,12 +120,12 @@
           "c27e53"
         ]
       },
-      "label": "Query loop — repeats once per result"
+      "label": "Query loop over native WP posts — paginated below via the pagination element (queryId: baL1)"
     },
     {
-      "id": "saL2",
+      "id": "baL2",
       "name": "image",
-      "parent": "saL1",
+      "parent": "baL1",
       "children": [],
       "settings": {
         "image": {
@@ -167,14 +140,14 @@
       }
     },
     {
-      "id": "saL3",
+      "id": "baL3",
       "name": "block",
-      "parent": "saL1",
+      "parent": "baL1",
       "children": [
-        "saL4",
-        "saL5",
-        "saL6",
-        "saL7"
+        "baL4",
+        "baL5",
+        "baL6",
+        "baL7"
       ],
       "settings": {
         "_cssGlobalClasses": [
@@ -183,12 +156,12 @@
       }
     },
     {
-      "id": "saL4",
+      "id": "baL4",
       "name": "text-basic",
-      "parent": "saL3",
+      "parent": "baL3",
       "children": [],
       "settings": {
-        "text": "Moving service",
+        "text": "{post_date:M j, Y}",
         "tag": "span",
         "_cssGlobalClasses": [
           "c59a75"
@@ -196,9 +169,9 @@
       }
     },
     {
-      "id": "saL5",
+      "id": "baL5",
       "name": "heading",
-      "parent": "saL3",
+      "parent": "baL3",
       "children": [],
       "settings": {
         "text": "{post_title}",
@@ -206,9 +179,9 @@
       }
     },
     {
-      "id": "saL6",
+      "id": "baL6",
       "name": "text-basic",
-      "parent": "saL3",
+      "parent": "baL3",
       "children": [],
       "settings": {
         "text": "{post_excerpt:20}",
@@ -219,9 +192,9 @@
       }
     },
     {
-      "id": "saL7",
+      "id": "baL7",
       "name": "text-link",
-      "parent": "saL3",
+      "parent": "baL3",
       "children": [],
       "settings": {
         "text": "Learn more →",
@@ -235,122 +208,28 @@
       }
     },
     {
-      "id": "sacta1",
-      "name": "section",
-      "parent": 0,
-      "children": [
-        "sacta2"
-      ],
-      "settings": {
-        "tag": "section",
-        "_cssGlobalClasses": [
-          "c457c7",
-          "c256f3"
-        ]
-      },
-      "label": "Dark CTA band"
-    },
-    {
-      "id": "sacta2",
-      "name": "container",
-      "parent": "sacta1",
-      "children": [
-        "sacta3"
-      ],
-      "settings": {}
-    },
-    {
-      "id": "sacta3",
-      "name": "block",
-      "parent": "sacta2",
-      "children": [
-        "sacta4",
-        "sacta5",
-        "sacta6"
-      ],
-      "settings": {
-        "_cssGlobalClasses": [
-          "c50218"
-        ]
-      }
-    },
-    {
-      "id": "sacta4",
-      "name": "heading",
-      "parent": "sacta3",
+      "id": "bapag1",
+      "name": "pagination",
+      "parent": "bag2",
       "children": [],
       "settings": {
-        "text": "Don't see the exact service you need?",
-        "tag": "h2",
-        "_cssGlobalClasses": [
-          "cbab02"
-        ]
+        "queryId": "baL1",
+        "ajax": true,
+        "midSize": 2,
+        "endSize": 1
       }
-    },
-    {
-      "id": "sacta5",
-      "name": "text-basic",
-      "parent": "sacta3",
-      "children": [],
-      "settings": {
-        "text": "Every move is different. Tell us the details and we'll confirm what's possible.",
-        "tag": "p",
-        "_cssGlobalClasses": [
-          "c41bc0"
-        ]
-      }
-    },
-    {
-      "id": "sacta6",
-      "name": "button",
-      "parent": "sacta3",
-      "children": [],
-      "settings": {
-        "text": "Get a free quote",
-        "tag": "a",
-        "link": {
-          "type": "external",
-          "url": "/quote/"
-        },
-        "_cssGlobalClasses": [
-          "c1436a"
-        ]
-      },
-      "label": "Dark ink text on coral (accessibility rule)"
     }
   ],
-  "pageSettings": {},
-  "templateSettings": {
-    "templateConditions": [
-      {
-        "main": "archiveType",
-        "archiveType": [
-          "postType"
-        ],
-        "archivePostTypes": [
-          "service"
-        ]
-      }
-    ],
-    "templatePreviewType": "archive-cpt",
-    "templatePreviewPostType": "service"
-  },
-  "global_classes": [
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://www.crownmovers.ca/",
+  "version": "2.3.6",
+  "globalClasses": [
     {
       "id": "cae3bc",
       "name": "u-gap-2xs",
       "settings": {
         "_columnGap": "var(--space-2xs)",
         "_rowGap": "var(--space-2xs)"
-      }
-    },
-    {
-      "id": "cbab02",
-      "name": "u-text-center",
-      "settings": {
-        "_typography": {
-          "text-align": "center"
-        }
       }
     },
     {
@@ -386,17 +265,6 @@
       }
     },
     {
-      "id": "c1b54d",
-      "name": "body-text",
-      "settings": {
-        "_typography": {
-          "color": {
-            "raw": "var(--neutral-dark)"
-          }
-        }
-      }
-    },
-    {
       "id": "c285a4",
       "name": "u-bg-white",
       "settings": {
@@ -415,45 +283,6 @@
           "color": {
             "hex": "#F7F5F1"
           }
-        }
-      }
-    },
-    {
-      "id": "c1436a",
-      "name": "btn-primary",
-      "settings": {
-        "_background": {
-          "raw": "var(--primary)"
-        },
-        "_typography": {
-          "color": {
-            "raw": "var(--base)"
-          },
-          "font-weight": "750"
-        },
-        "_border": {
-          "radius": {
-            "top": "8px",
-            "right": "8px",
-            "bottom": "8px",
-            "left": "8px"
-          }
-        },
-        "_padding": {
-          "top": "14px",
-          "right": "22px",
-          "bottom": "14px",
-          "left": "22px"
-        },
-        "_heightMin": "44px",
-        "_cssTransition": "background-color 0.16s ease, transform 0.16s ease",
-        "_background:hover": {
-          "color": {
-            "hex": "#D93E2E"
-          }
-        },
-        "_transform:hover": {
-          "translateY": "-1"
         }
       }
     },
@@ -618,46 +447,7 @@
         "_display": "flex",
         "_flexDirection": "column"
       }
-    },
-    {
-      "id": "c256f3",
-      "name": "cta-dark-section",
-      "settings": {
-        "_background": {
-          "raw": "var(--base)"
-        },
-        "_typography": {
-          "color": {
-            "hex": "#FFFFFF"
-          }
-        }
-      }
-    },
-    {
-      "id": "c50218",
-      "name": "cta-dark-inner",
-      "settings": {
-        "_rowGap": "var(--space-m)",
-        "_alignItems": "center",
-        "_widthMax": "560px",
-        "_margin": {
-          "left": "auto",
-          "right": "auto"
-        }
-      }
-    },
-    {
-      "id": "c41bc0",
-      "name": "cta-dark-text",
-      "settings": {
-        "_typography": {
-          "text-align": "center",
-          "color": {
-            "rgb": "rgba(255,255,255,0.75)"
-          }
-        }
-      }
     }
   ],
-  "globalVariables": []
+  "globalElements": []
 }

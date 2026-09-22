@@ -242,7 +242,7 @@
         ],
         "altText": "[VERIFY] describe once photo selected"
       },
-      "label": "[VERIFY] select real photo. Do not hotlink."
+      "label": "[VERIFY] select real photo — no dedicated commercial/office shot exists in 07-existing-site-photo-manifest.csv; closest candidate is \"Experienced movers\" (crown-experienced-movers.webp). Flagging as a possible real photography gap, not just a selection task. Do not hotlink."
     },
     {
       "id": "scbd02",
@@ -348,7 +348,7 @@
         ],
         "altText": "[VERIFY] describe once photo selected"
       },
-      "label": "[VERIFY] select real photo. Do not hotlink."
+      "label": "[VERIFY] select real photo — see 07-existing-site-photo-manifest.csv, \"Free quote trucks wide\" or \"Free quote trucks portrait\" rows (recent branded-truck photos, good fit for long-distance/routes). Do not hotlink."
     },
     {
       "id": "scbd03",

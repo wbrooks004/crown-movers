@@ -48,13 +48,13 @@
       "parent": "ihcon1",
       "children": [],
       "settings": {
-        "text": "Moving service",
+        "text": "Free quote",
         "tag": "span",
         "_cssGlobalClasses": [
           "c72e04"
         ]
       },
-      "label": "[VERIFY] category label — hand-typed until ACF service/location category field exists"
+      "label": "Static eyebrow — this page isn't a service/location post, so no ACF category field applies here (unlike the shared 02b-hero-inner default)"
     },
     {
       "id": "ihh1",
@@ -127,14 +127,14 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "outline": true,
         "_cssGlobalClasses": [
           "c6b60c"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "qfsec1",
@@ -472,7 +472,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -520,7 +521,8 @@
           "color": {
             "hex": "#FFFFFF"
           }
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {

@@ -51,13 +51,13 @@
       "parent": "svhc1",
       "children": [],
       "settings": {
-        "text": "Moving service",
+        "text": "{post_terms_service_category:plain @fallback:'Moving service'}",
         "tag": "span",
         "_cssGlobalClasses": [
           "c72e04"
         ]
       },
-      "label": "[VERIFY] category label — hand-typed until ACF service-category field exists"
+      "label": "Dynamic — real service_category term; falls back to static label until the page is tagged"
     },
     {
       "id": "svhh1",
@@ -130,14 +130,14 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "outline": true,
         "_cssGlobalClasses": [
           "c6b60c"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "svbs1",
@@ -612,13 +612,14 @@
   "templateSettings": {
     "templateConditions": [
       {
-        "main": "postType",
-        "postType": [
-          "service"
+        "main": "terms",
+        "terms": [
+          "service_category::all"
         ]
       }
     ],
-    "templatePreviewType": "single"
+    "templatePreviewType": "single",
+    "templatePreviewPostType": "page"
   },
   "global_classes": [
     {
@@ -793,7 +794,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -841,7 +843,8 @@
           "color": {
             "hex": "#FFFFFF"
           }
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {

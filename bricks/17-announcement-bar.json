@@ -1,0 +1,218 @@
+{
+  "name": "announcement-bar",
+  "title": "Crown Movers — Announcement Bar",
+  "type": "content",
+  "content": [
+    {
+      "id": "absec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "abcon1"
+      ],
+      "settings": {
+        "tag": "div",
+        "_cssGlobalClasses": [
+          "g19z7d"
+        ]
+      },
+      "label": "Utility announcement bar — optional, desktop only per the design brief (\"Optional narrow utility bar\"; the mobile header spec explicitly says \"No crowded icon row\", so this is suppressed under tablet_portrait). Rendered above the header via the bricks_before_header hook rather than folded into 01-header.json, so it can be toggled off independently. All-caps is NOT used here on purpose — the brief licenses all-caps for \"short eyebrow labels, utility navigation, small badges\" but this bar carries a full phone number and hours string, which reads badly all-caps."
+    },
+    {
+      "id": "abcon1",
+      "name": "block",
+      "parent": "absec1",
+      "children": [
+        "abr1"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "ijw8dd"
+        ]
+      }
+    },
+    {
+      "id": "abr1",
+      "name": "block",
+      "parent": "abcon1",
+      "children": [
+        "abi1",
+        "abi2",
+        "abi3"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "bc1pk4"
+        ]
+      }
+    },
+    {
+      "id": "abi1",
+      "name": "block",
+      "parent": "abr1",
+      "children": [
+        "abi1t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "fl27x5"
+        ]
+      }
+    },
+    {
+      "id": "abi1t",
+      "name": "text-link",
+      "parent": "abi1",
+      "children": [],
+      "settings": {
+        "text": "514-606-4030",
+        "link": {
+          "type": "external",
+          "url": "tel:+15146064030"
+        },
+        "_cssGlobalClasses": [
+          "mq3dmx"
+        ]
+      },
+      "label": "Real number (Crown Movers Info.xlsx)"
+    },
+    {
+      "id": "abi2",
+      "name": "block",
+      "parent": "abr1",
+      "children": [
+        "abi2t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "fl27x5"
+        ]
+      }
+    },
+    {
+      "id": "abi2t",
+      "name": "text-basic",
+      "parent": "abi2",
+      "children": [],
+      "settings": {
+        "text": "Mon–Fri 9am–7pm · Sat–Sun 9am–5pm",
+        "tag": "span"
+      },
+      "label": "Real hours (Crown Movers Info.xlsx). [VERIFY] confirm still current before launch."
+    },
+    {
+      "id": "abi3",
+      "name": "block",
+      "parent": "abr1",
+      "children": [
+        "abi3t"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "fl27x5"
+        ]
+      }
+    },
+    {
+      "id": "abi3t",
+      "name": "text-link",
+      "parent": "abi3",
+      "children": [],
+      "settings": {
+        "text": "★ 5.0 on Google (593 reviews)",
+        "link": {
+          "type": "external",
+          "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4cc917ce662c0989:0x8cacc13e74271aa7?source=g.page.default"
+        },
+        "_cssGlobalClasses": [
+          "mq3dmx"
+        ]
+      },
+      "label": "Real, verified (Crown_Movers_Content_Architecture_Spec_v2.md §3.2) — same figure as 18-stats-strip.json; keep both in sync if either changes."
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "hook",
+        "hookName": "bricks_before_header",
+        "hookPriority": 10
+      }
+    ]
+  },
+  "global_classes": [
+    {
+      "id": "g19z7d",
+      "name": "announcement-bar",
+      "settings": {
+        "_background": {
+          "raw": "var(--base)"
+        },
+        "_padding": {
+          "top": "8px",
+          "bottom": "8px"
+        },
+        "_typography": {
+          "color": {
+            "rgb": "rgba(255,255,255,0.85)"
+          },
+          "font-size": "1.25rem"
+        },
+        "_display": "block",
+        "_display:tablet_portrait": "none"
+      }
+    },
+    {
+      "id": "bc1pk4",
+      "name": "announcement-row",
+      "settings": {
+        "_direction": "row",
+        "_justifyContent": "center",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-m)",
+        "_flexWrap": "wrap"
+      }
+    },
+    {
+      "id": "fl27x5",
+      "name": "announcement-item",
+      "settings": {
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "6px",
+        "_typography": {
+          "font-weight": "600",
+          "letter-spacing": "0.02em"
+        }
+      }
+    },
+    {
+      "id": "mq3dmx",
+      "name": "announcement-link",
+      "settings": {
+        "_typography": {
+          "color": {
+            "hex": "#FFFFFF"
+          },
+          "font-weight": "700"
+        },
+        "_cssTransition": "opacity 0.16s ease",
+        "_typography:hover": {
+          "color": {
+            "hex": "#FFFFFF"
+          }
+        },
+        "_opacity:hover": "0.8"
+      }
+    },
+    {
+      "id": "ijw8dd",
+      "name": "u-max-l",
+      "settings": {
+        "_widthMax": "820px"
+      }
+    }
+  ],
+  "globalVariables": []
+}

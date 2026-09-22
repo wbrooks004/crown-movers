@@ -51,13 +51,13 @@
       "parent": "lohc1",
       "children": [],
       "settings": {
-        "text": "Local moving service",
+        "text": "{acf_area_type @fallback:'Local moving service'}",
         "tag": "span",
         "_cssGlobalClasses": [
           "c72e04"
         ]
       },
-      "label": "[VERIFY] category label"
+      "label": "Dynamic — ACF area_type select field (City/Borough/Region), see wp-integration/02-acf-field-groups.php. Falls back to a static label until the field is filled in."
     },
     {
       "id": "lohh1",
@@ -130,14 +130,14 @@
         "tag": "a",
         "link": {
           "type": "external",
-          "url": "tel:+10000000000"
+          "url": "tel:+15146064030"
         },
         "outline": true,
         "_cssGlobalClasses": [
           "c6b60c"
         ]
       },
-      "label": "[VERIFY] placeholder phone number"
+      "label": "Real number (Crown Movers Info.xlsx): 514-606-4030"
     },
     {
       "id": "lobs1",
@@ -968,7 +968,8 @@
         },
         "_transform:hover": {
           "translateY": "-1"
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {
@@ -1016,7 +1017,8 @@
           "color": {
             "hex": "#FFFFFF"
           }
-        }
+        },
+        "_cssCustom": "%root%[disabled], %root%.is-loading { opacity: 0.55; cursor: not-allowed; pointer-events: none; }"
       }
     },
     {

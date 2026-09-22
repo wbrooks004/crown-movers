@@ -382,7 +382,7 @@
     },
     {
       "id": "caf16c",
-      "name": "faq-item-border",
+      "name": "faq__item-border",
       "settings": {
         "_border": {
           "width": {
@@ -397,7 +397,7 @@
     },
     {
       "id": "cc492b",
-      "name": "faq-title-row",
+      "name": "faq__title-row",
       "settings": {
         "_alignItems": "center",
         "_direction": "row",
