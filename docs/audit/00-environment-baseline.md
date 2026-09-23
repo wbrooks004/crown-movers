@@ -279,6 +279,19 @@ different cache key on purpose.
     which file is canonical in WU2; note that *neither* file's hex values match what's actually
     configured on staging (see #5).
 
+## CLIENT/OWNER DECISIONS (answered 2026-09-23)
+
+1. **Existing staging Bricks build (home, `/montreal-movers/`, `/junk-removal/`, custom
+   Components) — disposable. WU2 proceeds**, but must export every existing
+   `bricks_template` post, page-level `_bricks_page_content_2`, `bricks_global_classes`, and
+   `bricks_global_variables` to `docs/audit/exports/pre-wu2-backup/` *before* any overwrite —
+   this is the rollback net for a decision made without the original builder's input.
+2. **"3,000+ moves handled every year" / "5.0 Google rating" — unconfirmed, owner will ask the
+   client.** Per default: treat both as **UNVERIFIED**, tag `[VERIFY]` wherever they'd carry
+   forward, and do not ship them as final copy until confirmed. (5.0 Google rating is at least
+   spot-checkable against the live Google Business Profile before WU2 if needed — moves/year is
+   not independently verifiable without the client.)
+
 ## WHAT STILL NEEDS SSH (nothing here changed the underlying constraint)
 
 Exact plugin versions and Polylang/WS Form editions, Bricks theme styles JSON, global classes
