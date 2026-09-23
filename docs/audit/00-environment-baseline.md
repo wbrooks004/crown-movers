@@ -16,6 +16,11 @@ This report has two layers, run in the same cloud session on the same date:
    staging host from this session before being included below, and each fact below cites its
    own export file, not the pasted claim.
 
+PROMPT VERSION: WU1-rev3 was executed for the HTTPS half below (echoed retroactively per the
+rev-4 reviewing pass's request). WU1-rev4 (the SSH half) has **not** been executed — this
+cloud container still cannot open TCP/22; see CAPABILITY MATRIX. That work needs to run from a
+session with SSH reach.
+
 ## STATUS — PARTIAL
 
 HTTPS-reachable items: COMPLETE. SSH/WP-CLI-only items: BLOCKED (TCP/22 egress is closed from
@@ -147,6 +152,10 @@ per row without per-page fetches (avoided here to stay within a reasonable numbe
   noindex) — flag this to whoever owns staging.
 - hreflang tags are present and correct on the homepage (`en` → `staging.crownmovers.ca/`,
   `fr` → `staging.crownmovers.ca/fr/`); no `x-default` tag, minor.
+- **Correction:** a reviewing pass flagged "no `<h1>` in the exported HTML" as a defect. Checked
+  directly — there is exactly one: `<h1 class="brxe-heading crown-display crown-hero__title">`
+  in `staging-home.html`, plus a correct H2/H3 hierarchy below it (6×H2, 3×H3, no skipped
+  levels). Heading structure on the home page is not a defect.
 - Rank Math is confirmed generating staging's own `sitemap_index.xml` independently of
   production's.
 
@@ -222,8 +231,12 @@ docs/audit/screens/staging-home-390.png
 
 ## SCREENSHOTS
 
-`docs/audit/screens/staging-home-1440.png`, `staging-home-390.png` — live, cache-bypassed
-(`x-cache: MISS`) Playwright captures of the staging homepage.
+`docs/audit/screens/staging-home-1440.png`, `staging-home-390.png` — live Playwright captures
+of `/?nocache=1`, confirmed `x-cache: MISS` on that specific request. **Clarification:**
+`staging-home-headers.txt` is a separate, earlier `curl -I` against the plain `/` URL (no
+cache-buster) and correctly shows `x-cache: HIT` — that's Breeze serving its normal cached
+response to a normal request, not a contradiction of the screenshot capture, which used a
+different cache key on purpose.
 
 ## ASSUMPTIONS
 
