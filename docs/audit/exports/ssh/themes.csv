@@ -1,0 +1,4 @@
+name,status,update,version,update_version,auto_update
+bricks-child,active,none,1.1,,off
+bricks,parent,none,2.4.1,,off
+intentionally-blank,inactive,none,3.2,,off

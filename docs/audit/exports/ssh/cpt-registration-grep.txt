@@ -1,0 +1,54 @@
+wp-content/plugins/wpcodebox/register_post_type.php:27:    register_post_type( \Wpcb\Config::FOLDER_POST_TYPE, $args );
+wp-content/plugins/wpcodebox/register_post_type.php:46:    register_post_type(\Wpcb\Config::SNIPPET_POST_TYPE , $args );
+wp-content/plugins/seo-by-rank-math/includes/modules/content-ai/class-content-ai-page.php:57:		$this->register_post_type();
+wp-content/plugins/seo-by-rank-math/includes/modules/content-ai/class-content-ai-page.php:221:	private function register_post_type() {
+wp-content/plugins/seo-by-rank-math/includes/modules/content-ai/class-content-ai-page.php:222:		register_post_type(
+wp-content/plugins/seo-by-rank-math/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php:14:		register_taxonomy( ActionScheduler_wpPostStore::GROUP_TAXONOMY, ActionScheduler_wpPostStore::POST_TYPE, $this->taxonomy_args() );
+wp-content/plugins/seo-by-rank-math/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:13:		register_post_type( ActionScheduler_wpPostStore::POST_TYPE, $this->post_type_args() );
+wp-content/plugins/seo-by-rank-math-pro/includes/modules/local-seo/class-local-seo.php:208:		register_post_type( $this->post_type, $args );
+wp-content/plugins/seo-by-rank-math-pro/includes/modules/local-seo/class-local-seo.php:248:		register_taxonomy( 'rank_math_location_category', [ $this->post_type ], $args );
+wp-content/plugins/seo-by-rank-math-pro/includes/modules/redirections/class-categories.php:105:		register_taxonomy( 'rank_math_redirection_category', 'rank_math_redirection', $tax_args );
+wp-content/plugins/seo-by-rank-math-pro/includes/modules/schema/class-post-type.php:108:		register_post_type( 'rank_math_schema', $args );
+wp-content/plugins/advanced-custom-fields-pro/pro/post-types/acf-ui-options-page.php:71:			$this->register_post_type();
+wp-content/plugins/advanced-custom-fields-pro/pro/post-types/acf-ui-options-page.php:94:		public function register_post_type() {
+wp-content/plugins/advanced-custom-fields-pro/pro/post-types/acf-ui-options-page.php:97:			register_post_type(
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:72:			$this->register_post_type();
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:92:		public function register_post_type() {
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:95:			register_post_type(
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:139:					register_taxonomy( $taxonomy['taxonomy'], (array) $taxonomy['object_type'], $args );
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:163:				'taxonomy'               => '', // Taxonomy key passed as first param to register_taxonomy().
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:168:				// Settings passed to register_taxonomy().
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:310:		 * args that can be easily handled by `register_taxonomy()`.
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:313:		 * of the array passed to `register_taxonomy()`, which might be exported.
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:451:			// Value of ACF select (not passed to `register_taxonomy()`).
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:606:			$return .= "register_taxonomy( '{$taxonomy_key}', {$objects}, {$args} );\r\n";
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:626:				unregister_taxonomy( $post['taxonomy'] );
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-taxonomy.php:632:				register_taxonomy( $post['taxonomy'], $post['object_type'], $this->get_taxonomy_args( $post ) );
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:72:			$this->register_post_type();
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:93:		public function register_post_type() {
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:96:			register_post_type(
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:141:					register_post_type( $post_type_key, $post_type_args );
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:186:				'post_type'                => '', // First $post_type param passed to register_post_type().
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:192:				// Settings passed to register_post_type().
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:295:					// register_post_type() needs proper booleans.
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:389:		 * args that can be easily handled by `register_post_type()`.
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:392:		 * of the array passed to `register_post_type()`, which might be exported.
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:732:			$return .= "register_post_type( '{$post_type_key}', {$code} );\r\n";
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:752:				unregister_post_type( $post['post_type'] );
+wp-content/plugins/advanced-custom-fields-pro/includes/post-types/class-acf-post-type.php:757:				register_post_type( $post['post_type'], $this->get_post_type_args( $post ) );
+wp-content/plugins/advanced-custom-fields-pro/acf.php:502:			register_post_type(
+wp-content/plugins/advanced-custom-fields-pro/acf.php:536:			register_post_type(
+wp-content/plugins/polylang/src/translatable-object.php:118:		register_taxonomy(
+wp-content/plugins/polylang/src/translated-post.php:75:	 * @since 3.7 Protected and renamed from `register_taxonomy()`.
+wp-content/plugins/polylang/src/translated-post.php:80:		register_taxonomy(
+wp-content/plugins/polylang/src/translated-object.php:52:		register_taxonomy(
+wp-content/plugins/polylang/uninstall.php:62:			register_taxonomy(
+wp-content/plugins/polylang/uninstall.php:107:		register_post_type(
+wp-content/plugins/breeze/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_TaxonomyRegistrar.php:14:		register_taxonomy( ActionScheduler_wpPostStore::GROUP_TAXONOMY, ActionScheduler_wpPostStore::POST_TYPE, $this->taxonomy_args() );
+wp-content/plugins/breeze/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_wpPostStore_PostTypeRegistrar.php:13:		register_post_type( ActionScheduler_wpPostStore::POST_TYPE, $this->post_type_args() );
+wp-content/themes/bricks/includes/custom-fonts.php:1171:	public function register_post_type() {
+wp-content/themes/bricks/includes/custom-fonts.php:1218:		register_post_type( BRICKS_DB_CUSTOM_FONTS, $args );
+wp-content/themes/bricks/includes/templates.php:56:	public function register_post_type() {
+wp-content/themes/bricks/includes/templates.php:58:		register_post_type(
+wp-content/themes/bricks/includes/templates.php:99:		register_taxonomy(
+wp-content/themes/bricks/includes/templates.php:120:		register_taxonomy(

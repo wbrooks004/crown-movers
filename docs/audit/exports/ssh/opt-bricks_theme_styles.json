@@ -1,0 +1,34 @@
+{
+ "standard": {
+  "label": "ACSS\n\n",
+  "settings": {
+   "_custom": true,
+   "conditions": {
+    "conditions": [
+     {
+      "id": "xacssx",
+      "main": "any"
+     }
+    ]
+   },
+   "container": {
+    "width": "var(--content-width)"
+   },
+   "typography": {
+    "typographyHtml": "var(--root-font-size)"
+   },
+   "image": {
+    "caption": "none"
+   },
+   "code": {
+    "prettify": "tomorrow-night"
+   },
+   "heading": {
+    "tag": "h2"
+   },
+   "text-basic": {
+    "tag": "p"
+   }
+  }
+ }
+}
