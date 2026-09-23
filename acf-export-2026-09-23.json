@@ -1,0 +1,1889 @@
+[
+    {
+        "key": "group_crown_business_info",
+        "title": "Business Info",
+        "fields": [
+            {
+                "key": "field_crown_tab_company",
+                "label": "Company & Contact",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_business_name",
+                "label": "Business Name",
+                "name": "business_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Use the public-facing company name.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 120,
+                "placeholder": "Crown Movers",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_legal_business_name",
+                "label": "Legal Business Name",
+                "name": "legal_business_name",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Only fill this in when the legal name differs from the public business name.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 160,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_primary_phone",
+                "label": "Primary Phone",
+                "name": "primary_phone",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "Main customer-facing phone number used throughout the site.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 30,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_primary_email",
+                "label": "Primary Email",
+                "name": "primary_email",
+                "aria-label": "",
+                "type": "email",
+                "instructions": "Main customer-facing email address.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_office_address",
+                "label": "Office Address",
+                "name": "office_address",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Canonical public office address. Use this as the single source for sitewide address displays.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 300,
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_business_hours",
+                "label": "Business Hours",
+                "name": "business_hours",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "Human-readable hours for display. This can be translated through ACF Options for Polylang.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": 500,
+                "rows": 3,
+                "placeholder": "Monday–Friday: 8:00 AM–6:00 PM",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_tab_social",
+                "label": "Social & Profiles",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_facebook_url",
+                "label": "Facebook URL",
+                "name": "facebook_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_crown_instagram_url",
+                "label": "Instagram URL",
+                "name": "instagram_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_crown_linkedin_url",
+                "label": "LinkedIn URL",
+                "name": "linkedin_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_crown_youtube_url",
+                "label": "YouTube URL",
+                "name": "youtube_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_crown_google_business_url",
+                "label": "Google Business Profile URL",
+                "name": "google_business_profile_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "Link to Crown Movers' primary Google Business Profile.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_crown_tab_ctas",
+                "label": "Calls to Action",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_primary_cta",
+                "label": "Primary CTA",
+                "name": "primary_cta",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "The one global primary CTA used throughout the site, normally Get a Free Quote.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_crown_secondary_cta",
+                "label": "Secondary CTA",
+                "name": "secondary_cta",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "The one global secondary CTA used throughout the site, normally Call Crown Movers.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_crown_tab_branding",
+                "label": "Branding",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_logo_dark",
+                "label": "Dark Logo",
+                "name": "logo_dark",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Logo for white and light backgrounds.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_crown_logo_light",
+                "label": "Light Logo",
+                "name": "logo_light",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Logo for black and dark backgrounds.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "business-info"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "Global business information used by Bricks templates throughout Crown Movers.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_crown_homepage",
+        "title": "Crown Homepage",
+        "fields": [
+            {
+                "key": "field_crown_home_tab_hero",
+                "label": "Hero",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_hero_eyebrow",
+                "label": "Eyebrow",
+                "name": "home_hero_eyebrow",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "MONTREAL'S CAREFUL MOVING TEAM",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_hero_heading",
+                "label": "Heading",
+                "name": "home_hero_heading",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Your move, handled with care.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_hero_copy",
+                "label": "Supporting Copy",
+                "name": "home_hero_copy",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Local, long-distance and commercial moving across Montreal and beyond.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_hero_image",
+                "label": "Hero Image",
+                "name": "home_hero_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Use the wide Crown crew-and-truck photo composed for the right half of the hero.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_crown_home_hero_stat_value",
+                "label": "Hero Stat",
+                "name": "home_hero_stat_value",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "3,000+",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_hero_stat_label",
+                "label": "Hero Stat Label",
+                "name": "home_hero_stat_label",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "moves handled every year",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_google_rating",
+                "label": "Google Rating",
+                "name": "home_google_rating",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "5.0",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_moves_year",
+                "label": "Moves \/ Year",
+                "name": "home_moves_year",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "3,000+",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_tab_services",
+                "label": "Services",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_services_eyebrow",
+                "label": "Eyebrow",
+                "name": "home_services_eyebrow",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "MOVING SERVICES",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_services_heading",
+                "label": "Heading",
+                "name": "home_services_heading",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "The right team for every kind of move.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_services_copy",
+                "label": "Supporting Copy",
+                "name": "home_services_copy",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "From apartments to offices and everything in between, we make moving simpler.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_featured_services",
+                "label": "Featured Services",
+                "name": "home_featured_services",
+                "aria-label": "",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "services"
+                ],
+                "post_status": [
+                    "publish"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "return_format": "object",
+                "min": "",
+                "max": 4,
+                "elements": [
+                    "featured_image"
+                ],
+                "bidirectional": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_crown_home_tab_why",
+                "label": "Why Crown",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_why_image",
+                "label": "Why Crown Image",
+                "name": "home_why_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Use the crew carefully wrapping the sofa.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_crown_home_why_eyebrow",
+                "label": "Eyebrow",
+                "name": "home_why_eyebrow",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "WHY CROWN",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_why_heading",
+                "label": "Heading",
+                "name": "home_why_heading",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Clear plan. Careful hands. A smoother move.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_why_copy",
+                "label": "Supporting Copy",
+                "name": "home_why_copy",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "We plan every detail so your move is efficient, protected and stress-free from start to finish.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_why_benefits",
+                "label": "Benefits",
+                "name": "home_why_benefits",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 4,
+                "max": 6,
+                "collapsed": "",
+                "button_label": "Add Benefit",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_crown_home_why_benefit_text",
+                        "label": "Benefit",
+                        "name": "benefit_text",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_why_benefits"
+                    }
+                ]
+            },
+            {
+                "key": "field_crown_home_why_link",
+                "label": "Why Crown Link",
+                "name": "home_why_link",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_crown_home_tab_quote",
+                "label": "Quote Section",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_quote_heading",
+                "label": "Heading",
+                "name": "home_quote_heading",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Get a clear starting estimate.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_quote_copy",
+                "label": "Supporting Copy",
+                "name": "home_quote_copy",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Tell us a few details and we'll provide a personalized estimate for your move.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_quote_form_shortcode",
+                "label": "WS Form Shortcode",
+                "name": "home_quote_form_shortcode",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_quote_features",
+                "label": "Quote Features",
+                "name": "home_quote_features",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 3,
+                "max": 3,
+                "collapsed": "",
+                "button_label": "Add Quote Feature",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_crown_home_quote_feature_icon",
+                        "label": "Lucide Icon Name",
+                        "name": "icon_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "tag",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_quote_features"
+                    },
+                    {
+                        "key": "field_crown_home_quote_feature_text",
+                        "label": "Feature",
+                        "name": "feature_text",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "70",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Free, no obligation",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_quote_features"
+                    }
+                ]
+            },
+            {
+                "key": "field_crown_home_tab_process",
+                "label": "Process",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_process_heading",
+                "label": "Heading",
+                "name": "home_process_heading",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "From quote to move day.",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_process_steps",
+                "label": "Process Steps",
+                "name": "home_process_steps",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 3,
+                "max": 3,
+                "collapsed": "",
+                "button_label": "Add Process Step",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_crown_home_process_step_number",
+                        "label": "Number",
+                        "name": "step_number",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "01",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_process_steps"
+                    },
+                    {
+                        "key": "field_crown_home_process_step_heading",
+                        "label": "Heading",
+                        "name": "step_heading",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Tell us about your move",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_process_steps"
+                    },
+                    {
+                        "key": "field_crown_home_process_step_copy",
+                        "label": "Copy",
+                        "name": "step_copy",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Share the details so we can understand your needs.",
+                        "maxlength": "",
+                        "rows": 4,
+                        "placeholder": "",
+                        "new_lines": "br",
+                        "parent_repeater": "field_crown_home_process_steps"
+                    }
+                ]
+            },
+            {
+                "key": "field_crown_home_tab_proof",
+                "label": "Testimonial & Map",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_testimonial_quote",
+                "label": "Testimonial Quote",
+                "name": "home_testimonial_quote",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "The quote was spot on. The team took the stress away.",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_testimonial_author",
+                "label": "Customer Name",
+                "name": "home_testimonial_author",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Karen L.",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_testimonial_route",
+                "label": "Move Route",
+                "name": "home_testimonial_route",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Westmount to Vaudreuil",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_testimonial_rating",
+                "label": "Rating",
+                "name": "home_testimonial_rating",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 5,
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_crown_home_map_image",
+                "label": "Map Background",
+                "name": "home_map_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Upload the pale regional map artwork without labels; labels are positioned by the marker repeater.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_crown_home_map_markers",
+                "label": "Map Markers",
+                "name": "home_map_markers",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "row",
+                "pagination": 0,
+                "min": 1,
+                "max": 8,
+                "collapsed": "",
+                "button_label": "Add Map Marker",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_crown_home_map_marker_label",
+                        "label": "Label",
+                        "name": "marker_label",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Montreal",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_map_markers"
+                    },
+                    {
+                        "key": "field_crown_home_map_marker_x",
+                        "label": "Horizontal Position (%)",
+                        "name": "marker_x",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 50,
+                        "min": "",
+                        "max": "",
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_map_markers"
+                    },
+                    {
+                        "key": "field_crown_home_map_marker_y",
+                        "label": "Vertical Position (%)",
+                        "name": "marker_y",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 50,
+                        "min": "",
+                        "max": "",
+                        "step": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_crown_home_map_markers"
+                    }
+                ]
+            },
+            {
+                "key": "field_crown_home_tab_final_cta",
+                "label": "Final CTA",
+                "name": "",
+                "aria-label": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0,
+                "selected": 0
+            },
+            {
+                "key": "field_crown_home_final_cta_heading",
+                "label": "Heading",
+                "name": "home_final_cta_heading",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ready for a move that feels organized?",
+                "maxlength": "",
+                "rows": 4,
+                "placeholder": "",
+                "new_lines": "br"
+            },
+            {
+                "key": "field_crown_home_final_cta_image",
+                "label": "Team Image",
+                "name": "home_final_cta_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Use the wide crew photo with the moving truck.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "jpg,jpeg,png,webp",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_crown_home_final_cta_link",
+                "label": "CTA Link",
+                "name": "home_final_cta_link",
+                "aria-label": "",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": true,
+        "description": "Content model for the exact Crown Movers homepage mockup.",
+        "show_in_rest": 1,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_crown_service_area_details",
+        "title": "Service Area Details",
+        "fields": [
+            {
+                "key": "field_crown_area_province",
+                "label": "Province",
+                "name": "province",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Select the province for this service area.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "QC": "Quebec",
+                    "ON": "Ontario"
+                },
+                "default_value": false,
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "create_options": 0,
+                "save_options": 0
+            },
+            {
+                "key": "field_crown_area_region",
+                "label": "Service Region",
+                "name": "service_region",
+                "aria-label": "",
+                "type": "taxonomy",
+                "instructions": "Assign the geographic region used for directories and related-location queries.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "service-region",
+                "add_term": 0,
+                "save_terms": 1,
+                "load_terms": 1,
+                "return_format": "id",
+                "field_type": "select",
+                "allow_null": 0,
+                "multiple": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_crown_services_available",
+                "label": "Service Availability Override",
+                "name": "services_available",
+                "aria-label": "",
+                "type": "relationship",
+                "instructions": "Leave empty when all normal Crown Movers services are available here. Select services only when this location needs a restricted service list.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "services"
+                ],
+                "post_status": [
+                    "publish"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "return_format": "id",
+                "min": 0,
+                "max": 0,
+                "elements": [],
+                "bidirectional": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_crown_area_faqs",
+                "label": "Local FAQs",
+                "name": "area_faqs",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Use only genuinely local questions or answers. Do not repeat generic moving FAQs across every city.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 8,
+                "collapsed": "field_crown_area_faq_question",
+                "button_label": "Add Local FAQ",
+                "rows_per_page": 8,
+                "sub_fields": []
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "service-areas"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "Structured fields used by the Crown Movers service-area template.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_crown_service_details",
+        "title": "Service Details",
+        "fields": [
+            {
+                "key": "field_crown_related_services",
+                "label": "Related Services",
+                "name": "related_services",
+                "aria-label": "",
+                "type": "relationship",
+                "instructions": "Choose up to four genuinely related services. Leave empty if no manual recommendations are needed.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "services"
+                ],
+                "post_status": [
+                    "publish"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "return_format": "id",
+                "min": 0,
+                "max": 4,
+                "elements": [],
+                "bidirectional": 0,
+                "bidirectional_target": []
+            },
+            {
+                "key": "field_crown_service_faqs",
+                "label": "Service FAQs",
+                "name": "service_faqs",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add only FAQs specific to this service. Avoid generic questions that do not add useful information.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 8,
+                "collapsed": "field_crown_service_faq_question",
+                "button_label": "Add FAQ",
+                "rows_per_page": 8,
+                "sub_fields": []
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "services"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "Structured fields used by the Crown Movers service template.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "taxonomy_crown_service_region",
+        "title": "Service Regions",
+        "menu_order": 0,
+        "active": true,
+        "taxonomy": "service-region",
+        "object_type": [
+            "service-areas"
+        ],
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "labels": {
+            "singular_name": "Service Region",
+            "name": "Service Regions",
+            "menu_name": "Service Regions",
+            "search_items": "Search Service Regions",
+            "all_items": "All Service Regions",
+            "parent_item": "Parent Service Region",
+            "parent_item_colon": "Parent Service Region:",
+            "edit_item": "Edit Service Region",
+            "view_item": "View Service Region",
+            "update_item": "Update Service Region",
+            "add_new_item": "Add New Service Region",
+            "new_item_name": "New Service Region Name",
+            "not_found": "No service regions found",
+            "no_terms": "No service regions"
+        },
+        "description": "Internal geographic grouping for Crown Movers service areas.",
+        "capabilities": {
+            "manage_terms": "manage_categories",
+            "edit_terms": "manage_categories",
+            "delete_terms": "manage_categories",
+            "assign_terms": "edit_posts"
+        },
+        "public": false,
+        "publicly_queryable": false,
+        "hierarchical": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "show_in_nav_menus": false,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp\/v2",
+        "rest_controller_class": "WP_REST_Terms_Controller",
+        "show_tagcloud": false,
+        "show_in_quick_edit": true,
+        "show_admin_column": true,
+        "rewrite": {
+            "permalink_rewrite": "no_permalink",
+            "slug": "",
+            "with_front": false,
+            "rewrite_hierarchical": false
+        },
+        "query_var": "none",
+        "query_var_name": "",
+        "default_term": {
+            "default_term_enabled": false,
+            "default_term_name": "",
+            "default_term_slug": "",
+            "default_term_description": ""
+        },
+        "sort": null,
+        "meta_box": "disabled",
+        "meta_box_cb": "",
+        "meta_box_sanitize_cb": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "post_type_crown_service_areas",
+        "title": "Service Areas",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "service-areas",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Service Areas",
+            "singular_name": "Service Area",
+            "menu_name": "Service Areas",
+            "all_items": "All Service Areas",
+            "add_new": "Add New",
+            "add_new_item": "Add New Service Area",
+            "edit_item": "Edit Service Area",
+            "new_item": "New Service Area",
+            "view_item": "View Service Area",
+            "view_items": "View Service Areas",
+            "search_items": "Search Service Areas",
+            "not_found": "No service areas found",
+            "not_found_in_trash": "No service areas found in Trash",
+            "archives": "Service Area Archives"
+        },
+        "description": "Cities, boroughs and geographic service areas served by Crown Movers.",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": false,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp\/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": null,
+        "menu_icon": "",
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "excerpt",
+            "thumbnail",
+            "revisions",
+            "custom-fields"
+        ],
+        "taxonomies": [
+            "service-region"
+        ],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "custom_permalink",
+            "slug": "locations",
+            "feeds": false,
+            "pages": true,
+            "with_front": false
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": "Service area name"
+    },
+    {
+        "key": "post_type_crown_services",
+        "title": "Services",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "services",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "allow_ai_access": false,
+        "ai_description": "",
+        "labels": {
+            "name": "Services",
+            "singular_name": "Service",
+            "menu_name": "Services",
+            "all_items": "All Services",
+            "add_new": "Add New",
+            "add_new_item": "Add New Service",
+            "edit_item": "Edit Service",
+            "new_item": "New Service",
+            "view_item": "View Service",
+            "view_items": "View Services",
+            "search_items": "Search Services",
+            "not_found": "No services found",
+            "not_found_in_trash": "No services found in Trash",
+            "archives": "Service Archives"
+        },
+        "description": "Crown Movers service offerings.",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": false,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp\/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": null,
+        "menu_icon": "",
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "editor",
+            "excerpt",
+            "thumbnail",
+            "revisions",
+            "custom-fields"
+        ],
+        "taxonomies": [],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "custom_permalink",
+            "slug": "services",
+            "feeds": false,
+            "pages": true,
+            "with_front": false
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": "Service name"
+    },
+    {
+        "key": "ui_options_page_crown_business_info",
+        "title": "Business Info",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Business Info",
+        "menu_slug": "business-info",
+        "parent_slug": "",
+        "advanced_configuration": true,
+        "icon_url": "",
+        "menu_title": "Business Info",
+        "position": null,
+        "redirect": false,
+        "description": "Global Crown Movers business information and sitewide calls to action.",
+        "menu_icon": [],
+        "update_button": "Update Business Info",
+        "updated_message": "Business Info Updated",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "options",
+        "autoload": false
+    }
+]
