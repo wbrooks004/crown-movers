@@ -1,0 +1,508 @@
+{
+ "content": [
+  {
+   "id": "c4388c",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "de1262"
+   ],
+   "settings": {
+    "tag": "section",
+    "_cssClasses": "section--m"
+   },
+   "label": "Services"
+  },
+  {
+   "id": "de1262",
+   "name": "container",
+   "parent": "c4388c",
+   "children": [
+    "c10947",
+    "fe9e02"
+   ],
+   "settings": {},
+   "label": "Services container"
+  },
+  {
+   "id": "c10947",
+   "name": "block",
+   "parent": "de1262",
+   "children": [
+    "cb9ea4",
+    "eea5e9",
+    "a365db"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c2f53d"
+    ]
+   },
+   "label": "Section header"
+  },
+  {
+   "id": "cb9ea4",
+   "name": "text-basic",
+   "parent": "c10947",
+   "children": [],
+   "settings": {
+    "text": "Moving services",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "be8b21"
+    ]
+   }
+  },
+  {
+   "id": "eea5e9",
+   "name": "heading",
+   "parent": "c10947",
+   "children": [],
+   "settings": {
+    "text": "Everything the move needs, one crew",
+    "tag": "h2"
+   }
+  },
+  {
+   "id": "a365db",
+   "name": "text-basic",
+   "parent": "c10947",
+   "children": [],
+   "settings": {
+    "text": "Residential, commercial, long-distance, storage and specialty moving from one accountable team. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "ace57d"
+    ]
+   }
+  },
+  {
+   "id": "fe9e02",
+   "name": "div",
+   "parent": "de1262",
+   "children": [
+    "e61a90",
+    "ce9c04",
+    "cb4242"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "a6b0dc"
+    ]
+   },
+   "label": "Card grid"
+  },
+  {
+   "id": "e61a90",
+   "name": "block",
+   "parent": "fe9e02",
+   "children": [
+    "cd12e5",
+    "c83a57",
+    "c62920",
+    "c342a3"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssGlobalClasses": [
+     "c8b6fc",
+     "ce9d85"
+    ]
+   },
+   "label": "Service card 1"
+  },
+  {
+   "id": "cd12e5",
+   "name": "icon",
+   "parent": "e61a90",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-home"
+    },
+    "_cssGlobalClasses": [
+     "e17573"
+    ]
+   }
+  },
+  {
+   "id": "c83a57",
+   "name": "heading",
+   "parent": "e61a90",
+   "children": [],
+   "settings": {
+    "text": "Residential moving",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "d232c0"
+    ]
+   }
+  },
+  {
+   "id": "c62920",
+   "name": "text-basic",
+   "parent": "e61a90",
+   "children": [],
+   "settings": {
+    "text": "Apartments, condos and houses across Greater Montreal. Packing, protection and setup included. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "e8c23c"
+    ]
+   }
+  },
+  {
+   "id": "c342a3",
+   "name": "button",
+   "parent": "e61a90",
+   "children": [],
+   "settings": {
+    "text": "Learn more",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#",
+     "ariaLabel": "Learn more about residential moving"
+    },
+    "_cssGlobalClasses": [
+     "e9d797"
+    ]
+   }
+  },
+  {
+   "id": "ce9c04",
+   "name": "block",
+   "parent": "fe9e02",
+   "children": [
+    "ce5560",
+    "ca5b1d",
+    "c8b005",
+    "c8b62e"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssGlobalClasses": [
+     "c8b6fc"
+    ]
+   },
+   "label": "Service card 2"
+  },
+  {
+   "id": "ce5560",
+   "name": "icon",
+   "parent": "ce9c04",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-building"
+    },
+    "_cssGlobalClasses": [
+     "e17573"
+    ]
+   }
+  },
+  {
+   "id": "ca5b1d",
+   "name": "heading",
+   "parent": "ce9c04",
+   "children": [],
+   "settings": {
+    "text": "Commercial & office moving",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "d232c0"
+    ]
+   }
+  },
+  {
+   "id": "c8b005",
+   "name": "text-basic",
+   "parent": "ce9c04",
+   "children": [],
+   "settings": {
+    "text": "After-hours and weekend moves that keep your team working. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "e8c23c"
+    ]
+   }
+  },
+  {
+   "id": "c8b62e",
+   "name": "button",
+   "parent": "ce9c04",
+   "children": [],
+   "settings": {
+    "text": "Learn more",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#",
+     "ariaLabel": "Learn more about commercial & office moving"
+    },
+    "_cssGlobalClasses": [
+     "e9d797"
+    ]
+   }
+  },
+  {
+   "id": "cb4242",
+   "name": "block",
+   "parent": "fe9e02",
+   "children": [
+    "aa20ba",
+    "cf3064",
+    "cdb4b7",
+    "cbc86b"
+   ],
+   "settings": {
+    "tag": "article",
+    "_cssGlobalClasses": [
+     "c8b6fc"
+    ]
+   },
+   "label": "Service card 3"
+  },
+  {
+   "id": "aa20ba",
+   "name": "icon",
+   "parent": "cb4242",
+   "children": [],
+   "settings": {
+    "icon": {
+     "library": "fontawesomeSolid",
+     "icon": "fas fa-route"
+    },
+    "_cssGlobalClasses": [
+     "e17573"
+    ]
+   }
+  },
+  {
+   "id": "cf3064",
+   "name": "heading",
+   "parent": "cb4242",
+   "children": [],
+   "settings": {
+    "text": "Long-distance moving",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "d232c0"
+    ]
+   }
+  },
+  {
+   "id": "cdb4b7",
+   "name": "text-basic",
+   "parent": "cb4242",
+   "children": [],
+   "settings": {
+    "text": "Montreal to Toronto, Ottawa and beyond with one crew door to door. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "e8c23c"
+    ]
+   }
+  },
+  {
+   "id": "cbc86b",
+   "name": "button",
+   "parent": "cb4242",
+   "children": [],
+   "settings": {
+    "text": "Learn more",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "#",
+     "ariaLabel": "Learn more about long-distance moving"
+    },
+    "_cssGlobalClasses": [
+     "e9d797"
+    ]
+   }
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "https://staging.crownmovers.ca",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "be8b21",
+   "name": "eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "font-weight": "700",
+     "letter-spacing": "0.08em",
+     "text-transform": "uppercase",
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "c2f53d",
+   "name": "section-header",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_widthMax": "62ch",
+    "_margin": {
+     "bottom": "var(--space-l)"
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "ace57d",
+   "name": "section-header__intro",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-l)",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "c8b6fc",
+   "name": "service-card",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)",
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_border": {
+     "width": {
+      "top": "1px",
+      "right": "1px",
+      "bottom": "1px",
+      "left": "1px"
+     },
+     "style": "solid",
+     "color": {
+      "raw": "var(--neutral-light)"
+     },
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_position": "relative",
+    "_cssTransition": "border-color var(--transition), box-shadow var(--transition), translate var(--transition)",
+    "_cssCustom": ".service-card:hover, .service-card:focus-within { box-shadow: var(--box-shadow-1); translate: 0 -2px; border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .service-card { transition: none; translate: none; } }"
+   },
+   "category": null
+  },
+  {
+   "id": "ce9d85",
+   "name": "service-card--featured",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--neutral-ultra-light)"
+     }
+    },
+    "_border": {
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "e17573",
+   "name": "service-card__icon",
+   "settings": {
+    "_cssCustom": ".service-card__icon { font-size: var(--icon-size-m); color: var(--primary); line-height: 1; }"
+   },
+   "category": null
+  },
+  {
+   "id": "d232c0",
+   "name": "service-card__title",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h4)",
+     "font-weight": "700",
+     "line-height": "1.2"
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "e8c23c",
+   "name": "service-card__body",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    },
+    "_flexGrow": "1"
+   },
+   "category": null
+  },
+  {
+   "id": "e9d797",
+   "name": "service-card__link",
+   "settings": {
+    "_typography": {
+     "font-weight": "600",
+     "color": {
+      "raw": "var(--primary)"
+     },
+     "text-decoration": "none"
+    },
+    "_background": {
+     "color": {
+      "raw": "transparent"
+     }
+    },
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_typography:hover": {
+     "text-decoration": "underline"
+    },
+    "_cssCustom": ".service-card__link::after { content: \" \\2192\"; }\n.service-card__link:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"
+   },
+   "category": null
+  },
+  {
+   "id": "a6b0dc",
+   "name": "card-grid",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "var(--grid-auto-3)",
+    "_gridGap": "var(--grid-gap)"
+   },
+   "category": null
+  }
+ ],
+ "globalElements": []
+}
