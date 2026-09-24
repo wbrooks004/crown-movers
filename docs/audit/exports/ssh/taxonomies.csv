@@ -1,0 +1,13 @@
+name,label,object_type,hierarchical,rewrite
+category,Categories,post,1,"{""with_front"":false,""hierarchical"":true,""ep_mask"":512,""slug"":""moving-resources""}"
+post_tag,Tags,post,,"{""with_front"":false,""hierarchical"":false,""ep_mask"":1024,""slug"":""tag""}"
+nav_menu,"Navigation Menus",nav_menu_item,,
+post_format,Formats,post,,"{""with_front"":true,""hierarchical"":false,""ep_mask"":0,""slug"":""type""}"
+wp_theme,Themes,"wp_template, wp_template_part, wp_global_styles",,
+wp_template_part_area,"Template Part Areas",wp_template_part,,
+wp_pattern_category,"Pattern Categories",wp_block,,
+language,Tags,"post, page, wp_block, attachment, bricks_template",,
+post_translations,,"post, page, attachment, wp_block, bricks_template",,
+service-region,"Service Regions",service-areas,1,
+template_tag,"Template tag",bricks_template,,"{""with_front"":true,""hierarchical"":false,""ep_mask"":0,""0"":"""",""slug"":""template_tag""}"
+template_bundle,"Template bundle",bricks_template,,"{""with_front"":true,""hierarchical"":false,""ep_mask"":0,""0"":"""",""slug"":""template_bundle""}"

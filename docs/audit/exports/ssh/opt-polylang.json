@@ -1,0 +1,26 @@
+{
+ "browser": true,
+ "rewrite": true,
+ "hide_default": true,
+ "force_lang": 1,
+ "redirect_lang": true,
+ "media_support": true,
+ "uninstall": 0,
+ "sync": [],
+ "post_types": [
+  "ct_template",
+  "oxy_user_library"
+ ],
+ "taxonomies": [],
+ "domains": [],
+ "version": "3.8.9",
+ "first_activation": 1640626608,
+ "default_lang": "en",
+ "nav_menus": {
+  "twentytwentyone": [],
+  "twentytwentytwo": [],
+  "intentionally-blank": []
+ },
+ "previous_version": "3.8.7",
+ "language_taxonomies": []
+}

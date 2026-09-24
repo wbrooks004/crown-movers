@@ -1,0 +1,29 @@
+name,label,public,hierarchical,has_archive,rewrite,show_in_rest
+post,Posts,1,,,,1
+page,Pages,1,1,,,1
+attachment,Media,1,,,,1
+revision,Revisions,,,,,
+nav_menu_item,"Navigation Menu Items",,,,,1
+custom_css,"Custom CSS",,,,,
+customize_changeset,Changesets,,,,,
+oembed_cache,"oEmbed Responses",,,,,
+user_request,"User Requests",,,,,
+wp_block,Patterns,,,,,1
+wp_template,Templates,,,,,1
+wp_template_part,"Template Parts",,,,,1
+wp_global_styles,"Global Styles",,,,,1
+wp_navigation,"Navigation Menus",,,,,1
+wp_font_family,"Font Families",,,,,1
+wp_font_face,"Font Faces",,,,,1
+wpcb_snippet_folder,Posts,,,,"{""slug"":""wpcb_snippet_folder"",""with_front"":true,""pages"":true,""feeds"":false,""ep_mask"":1}",
+wpcb_snippet_post,Posts,,,,"{""slug"":""wpcb_snippet_post"",""with_front"":true,""pages"":true,""feeds"":false,""ep_mask"":1}",
+acf-taxonomy,Taxonomies,,1,,,
+acf-post-type,"Post Types",,1,,,
+acf-ui-options-page,"Options Pages",,1,,,
+service-areas,"Service Areas",1,,,"{""slug"":""locations"",""with_front"":false,""pages"":true,""feeds"":false,""ep_mask"":1}",1
+services,Services,1,,,"{""with_front"":false,""slug"":""services"",""pages"":true,""feeds"":false,""ep_mask"":1}",1
+acf-field-group,"Field Groups",,1,,,
+acf-field,Fields,,1,,,
+bricks_fonts,"Custom fonts",,,,,
+bricks_template,"My templates",1,,,"{""slug"":""template"",""with_front"":true,""pages"":true,""feeds"":false,""ep_mask"":1}",
+rank_math_schema,Schemas,,,,,1

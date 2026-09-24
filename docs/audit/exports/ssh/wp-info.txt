@@ -1,0 +1,16 @@
+OS:	Linux 6.1.0-52-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.180-1 (2026-08-03) x86_64
+Shell:	/usr/bin/mysecureshell
+PHP binary:	/usr/bin/php8.4
+PHP version:	8.4.25
+php.ini used:	/etc/php/8.4/cli/php.ini
+MySQL binary:	/usr/bin/mariadb
+MySQL version:	mariadb  Ver 15.1 Distrib 10.11.18-MariaDB, for debian-linux-gnu (x86_64) using  EditLine wrapper
+SQL modes:	
+WP-CLI root dir:	phar://wp-cli.phar/vendor/wp-cli/wp-cli
+WP-CLI vendor dir:	phar://wp-cli.phar/vendor
+WP_CLI phar path:	phar:///usr/local/bin/wp
+WP-CLI packages dir:	
+WP-CLI cache dir:	/home/1663748.cloudwaysapps.com/qtwfqmttva/.wp-cli/cache
+WP-CLI global config:	
+WP-CLI project config:	
+WP-CLI version:	2.12.0

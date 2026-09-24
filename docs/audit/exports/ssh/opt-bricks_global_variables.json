@@ -1,0 +1,956 @@
+[
+ {
+  "id": "acss_import_grid-auto-2",
+  "name": "grid-auto-2",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-3",
+  "name": "grid-auto-3",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-4",
+  "name": "grid-auto-4",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-5",
+  "name": "grid-auto-5",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-6",
+  "name": "grid-auto-6",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-7",
+  "name": "grid-auto-7",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-8",
+  "name": "grid-auto-8",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-9",
+  "name": "grid-auto-9",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-10",
+  "name": "grid-auto-10",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-11",
+  "name": "grid-auto-11",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-auto-12",
+  "name": "grid-auto-12",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_auto-grid-aggressiveness",
+  "name": "auto-grid-aggressiveness",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-1",
+  "name": "grid-1",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-2",
+  "name": "grid-2",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-3",
+  "name": "grid-3",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-4",
+  "name": "grid-4",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-5",
+  "name": "grid-5",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-6",
+  "name": "grid-6",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-7",
+  "name": "grid-7",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-8",
+  "name": "grid-8",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-9",
+  "name": "grid-9",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-10",
+  "name": "grid-10",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-11",
+  "name": "grid-11",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-12",
+  "name": "grid-12",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-1-2",
+  "name": "grid-1-2",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-1-3",
+  "name": "grid-1-3",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-2-1",
+  "name": "grid-2-1",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-2-3",
+  "name": "grid-2-3",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-3-1",
+  "name": "grid-3-1",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_grid-3-2",
+  "name": "grid-3-2",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-10",
+  "name": "width-10",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-20",
+  "name": "width-20",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-30",
+  "name": "width-30",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-40",
+  "name": "width-40",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-50",
+  "name": "width-50",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-60",
+  "name": "width-60",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-70",
+  "name": "width-70",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-80",
+  "name": "width-80",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-90",
+  "name": "width-90",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_width-full",
+  "name": "width-full",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_content-width",
+  "name": "content-width",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_content-width-safe",
+  "name": "content-width-safe",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider",
+  "name": "divider",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-size",
+  "name": "divider-size",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-style",
+  "name": "divider-style",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-inline-size",
+  "name": "divider-inline-size",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-gap",
+  "name": "divider-gap",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-light",
+  "name": "divider-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-color-light",
+  "name": "divider-color-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-dark",
+  "name": "divider-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_divider-color-dark",
+  "name": "divider-color-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-xs",
+  "name": "space-xs",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-s",
+  "name": "space-s",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-m",
+  "name": "space-m",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-l",
+  "name": "space-l",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-xl",
+  "name": "space-xl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_space-xxl",
+  "name": "space-xxl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-xs",
+  "name": "section-space-xs",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-s",
+  "name": "section-space-s",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-m",
+  "name": "section-space-m",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-l",
+  "name": "section-space-l",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-xl",
+  "name": "section-space-xl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_section-space-xxl",
+  "name": "section-space-xxl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_gutter",
+  "name": "gutter",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_paragraph-spacing",
+  "name": "paragraph-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_heading-spacing",
+  "name": "heading-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_list-spacing",
+  "name": "list-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_list-indent-spacing",
+  "name": "list-indent-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_list-item-spacing",
+  "name": "list-item-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_flow-spacing",
+  "name": "flow-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_figure-spacing",
+  "name": "figure-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_figcaption-spacing",
+  "name": "figcaption-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-spacing",
+  "name": "blockquote-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-dark",
+  "name": "text-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-dark-muted",
+  "name": "text-dark-muted",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-light",
+  "name": "text-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-light-muted",
+  "name": "text-light-muted",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-xs",
+  "name": "text-xs",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-s",
+  "name": "text-s",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-m",
+  "name": "text-m",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-l",
+  "name": "text-l",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-xl",
+  "name": "text-xl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_text-xxl",
+  "name": "text-xxl",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_bg-ultra-dark",
+  "name": "bg-ultra-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_bg-dark",
+  "name": "bg-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_bg-light",
+  "name": "bg-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_bg-ultra-light",
+  "name": "bg-ultra-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_body-bg-color",
+  "name": "body-bg-color",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-padding-block",
+  "name": "btn-padding-block",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-padding-inline",
+  "name": "btn-padding-inline",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-min-width",
+  "name": "btn-min-width",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-line-height",
+  "name": "btn-line-height",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-font-weight",
+  "name": "btn-font-weight",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-font-style",
+  "name": "btn-font-style",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-text-decoration",
+  "name": "btn-text-decoration",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-text-decoration-hover",
+  "name": "btn-text-decoration-hover",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-letter-spacing",
+  "name": "btn-letter-spacing",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-text-transform",
+  "name": "btn-text-transform",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-border-width",
+  "name": "btn-border-width",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-border-style",
+  "name": "btn-border-style",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_btn-border-radius",
+  "name": "btn-border-radius",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_box-shadow-1",
+  "name": "box-shadow-1",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_box-shadow-2",
+  "name": "box-shadow-2",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_box-shadow-3",
+  "name": "box-shadow-3",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-padding",
+  "name": "blockquote-padding",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-gap",
+  "name": "blockquote-gap",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-border-width",
+  "name": "blockquote-border-width",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-border-style",
+  "name": "blockquote-border-style",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-border-color",
+  "name": "blockquote-border-color",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-border-radius",
+  "name": "blockquote-border-radius",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-background",
+  "name": "blockquote-background",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_blockquote-box-shadow",
+  "name": "blockquote-box-shadow",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_ease-smooth",
+  "name": "ease-smooth",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_ease-snappy",
+  "name": "ease-snappy",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_ease-gentle",
+  "name": "ease-gentle",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_ease-bouncy",
+  "name": "ease-bouncy",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_ease-elastic",
+  "name": "ease-elastic",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_radius-m",
+  "name": "radius-m",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_radius-50",
+  "name": "radius-50",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_radius-circle",
+  "name": "radius-circle",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_radius-none",
+  "name": "radius-none",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_border",
+  "name": "border",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_border-dark",
+  "name": "border-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_border-size",
+  "name": "border-size",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_border-color-dark",
+  "name": "border-color-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_border-color-light",
+  "name": "border-color-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_focus-color",
+  "name": "focus-color",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_focus-width",
+  "name": "focus-width",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_focus-offset",
+  "name": "focus-offset",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_scroll-margin",
+  "name": "scroll-margin",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_offset",
+  "name": "offset",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_header-height",
+  "name": "header-height",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_admin-bar-height",
+  "name": "admin-bar-height",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary",
+  "name": "primary",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-ultra-dark",
+  "name": "primary-ultra-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-dark",
+  "name": "primary-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-semi-dark",
+  "name": "primary-semi-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-semi-light",
+  "name": "primary-semi-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-light",
+  "name": "primary-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-ultra-light",
+  "name": "primary-ultra-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_primary-hover",
+  "name": "primary-hover",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base",
+  "name": "base",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-ultra-dark",
+  "name": "base-ultra-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-dark",
+  "name": "base-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-semi-dark",
+  "name": "base-semi-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-semi-light",
+  "name": "base-semi-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-light",
+  "name": "base-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-ultra-light",
+  "name": "base-ultra-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_base-hover",
+  "name": "base-hover",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral",
+  "name": "neutral",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-ultra-dark",
+  "name": "neutral-ultra-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-dark",
+  "name": "neutral-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-semi-dark",
+  "name": "neutral-semi-dark",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-semi-light",
+  "name": "neutral-semi-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-light",
+  "name": "neutral-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-ultra-light",
+  "name": "neutral-ultra-light",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_neutral-hover",
+  "name": "neutral-hover",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_black",
+  "name": "black",
+  "value": "",
+  "category": "acss"
+ },
+ {
+  "id": "acss_import_white",
+  "name": "white",
+  "value": "",
+  "category": "acss"
+ }
+]

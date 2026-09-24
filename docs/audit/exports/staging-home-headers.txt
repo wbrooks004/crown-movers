@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx
+date: Tue, 22 Sep 2026 23:37:49 GMT
+content-type: text/html; charset=UTF-8
+content-length: 60261
+vary: Accept-Encoding
+link: <https://staging.crownmovers.ca/wp-json/>; rel="https://api.w.org/", <https://staging.crownmovers.ca/wp-json/wp/v2/pages/28>; rel="alternate"; title="JSON"; type="application/json", <https://staging.crownmovers.ca/>; rel=shortlink
+x-acss-context: frontend
+cache-control: max-age=0, s-maxage=2592000
+expires: Tue, 22 Sep 2026 22:43:59 GMT
+vary: Accept-Encoding
+age: 3228
+x-cache: HIT
+accept-ranges: bytes
+

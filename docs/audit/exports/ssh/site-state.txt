@@ -1,0 +1,2 @@
+siteurl=https://staging.crownmovers.ca
+blog_public=0
