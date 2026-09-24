@@ -1,0 +1,1053 @@
+{
+  "key": "group_crown_homepage",
+  "title": "Crown Homepage",
+  "fields": [
+    {
+      "key": "field_crown_home_tab_hero",
+      "label": "Hero",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_hero_eyebrow",
+      "label": "Eyebrow",
+      "name": "home_hero_eyebrow",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "MONTREAL'S CAREFUL MOVING TEAM",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_hero_heading",
+      "label": "Heading",
+      "name": "home_hero_heading",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Your move, handled with care.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_hero_copy",
+      "label": "Supporting Copy",
+      "name": "home_hero_copy",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Local, long-distance and commercial moving across Montreal and beyond.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_hero_image",
+      "label": "Hero Image",
+      "name": "home_hero_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "Use the wide Crown crew-and-truck photo composed for the right half of the hero.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_crown_home_hero_stat_value",
+      "label": "Hero Stat",
+      "name": "home_hero_stat_value",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "3,000+",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_hero_stat_label",
+      "label": "Hero Stat Label",
+      "name": "home_hero_stat_label",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "moves handled every year",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_google_rating",
+      "label": "Google Rating",
+      "name": "home_google_rating",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "5.0",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_moves_year",
+      "label": "Moves / Year",
+      "name": "home_moves_year",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "3,000+",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_tab_services",
+      "label": "Services",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_services_eyebrow",
+      "label": "Eyebrow",
+      "name": "home_services_eyebrow",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "MOVING SERVICES",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_services_heading",
+      "label": "Heading",
+      "name": "home_services_heading",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "The right team for every kind of move.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_services_copy",
+      "label": "Supporting Copy",
+      "name": "home_services_copy",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "From apartments to offices and everything in between, we make moving simpler.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_featured_services",
+      "label": "Featured Services",
+      "name": "home_featured_services",
+      "aria-label": "",
+      "type": "relationship",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "post_type": [
+        "services"
+      ],
+      "post_status": [
+        "publish"
+      ],
+      "taxonomy": "",
+      "filters": [
+        "search",
+        "post_type",
+        "taxonomy"
+      ],
+      "return_format": "object",
+      "min": "",
+      "max": 4,
+      "elements": [
+        "featured_image"
+      ],
+      "bidirectional": 0,
+      "bidirectional_target": []
+    },
+    {
+      "key": "field_crown_home_tab_why",
+      "label": "Why Crown",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_why_image",
+      "label": "Why Crown Image",
+      "name": "home_why_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "Use the crew carefully wrapping the sofa.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_crown_home_why_eyebrow",
+      "label": "Eyebrow",
+      "name": "home_why_eyebrow",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "WHY CROWN",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_why_heading",
+      "label": "Heading",
+      "name": "home_why_heading",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Clear plan. Careful hands. A smoother move.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_why_copy",
+      "label": "Supporting Copy",
+      "name": "home_why_copy",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "We plan every detail so your move is efficient, protected and stress-free from start to finish.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_why_benefits",
+      "label": "Benefits",
+      "name": "home_why_benefits",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "row",
+      "pagination": 0,
+      "min": 4,
+      "max": 6,
+      "collapsed": "",
+      "button_label": "Add Benefit",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_crown_home_why_benefit_text",
+          "label": "Benefit",
+          "name": "benefit_text",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_why_benefits"
+        }
+      ]
+    },
+    {
+      "key": "field_crown_home_why_link",
+      "label": "Why Crown Link",
+      "name": "home_why_link",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_crown_home_tab_quote",
+      "label": "Quote Section",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_quote_heading",
+      "label": "Heading",
+      "name": "home_quote_heading",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Get a clear starting estimate.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_quote_copy",
+      "label": "Supporting Copy",
+      "name": "home_quote_copy",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Tell us a few details and we'll provide a personalized estimate for your move.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_quote_form_shortcode",
+      "label": "WS Form Shortcode",
+      "name": "home_quote_form_shortcode",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_quote_features",
+      "label": "Quote Features",
+      "name": "home_quote_features",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "row",
+      "pagination": 0,
+      "min": 3,
+      "max": 3,
+      "collapsed": "",
+      "button_label": "Add Quote Feature",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_crown_home_quote_feature_icon",
+          "label": "Lucide Icon Name",
+          "name": "icon_name",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "30",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "tag",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_quote_features"
+        },
+        {
+          "key": "field_crown_home_quote_feature_text",
+          "label": "Feature",
+          "name": "feature_text",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "70",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Free, no obligation",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_quote_features"
+        }
+      ]
+    },
+    {
+      "key": "field_crown_home_tab_process",
+      "label": "Process",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_process_heading",
+      "label": "Heading",
+      "name": "home_process_heading",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "From quote to move day.",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_process_steps",
+      "label": "Process Steps",
+      "name": "home_process_steps",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "row",
+      "pagination": 0,
+      "min": 3,
+      "max": 3,
+      "collapsed": "",
+      "button_label": "Add Process Step",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_crown_home_process_step_number",
+          "label": "Number",
+          "name": "step_number",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "20",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "01",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_process_steps"
+        },
+        {
+          "key": "field_crown_home_process_step_heading",
+          "label": "Heading",
+          "name": "step_heading",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "40",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Tell us about your move",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_process_steps"
+        },
+        {
+          "key": "field_crown_home_process_step_copy",
+          "label": "Copy",
+          "name": "step_copy",
+          "aria-label": "",
+          "type": "textarea",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "40",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Share the details so we can understand your needs.",
+          "maxlength": "",
+          "rows": 4,
+          "placeholder": "",
+          "new_lines": "br",
+          "parent_repeater": "field_crown_home_process_steps"
+        }
+      ]
+    },
+    {
+      "key": "field_crown_home_tab_proof",
+      "label": "Testimonial & Map",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_testimonial_quote",
+      "label": "Testimonial Quote",
+      "name": "home_testimonial_quote",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "The quote was spot on. The team took the stress away.",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_testimonial_author",
+      "label": "Customer Name",
+      "name": "home_testimonial_author",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Karen L.",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_testimonial_route",
+      "label": "Move Route",
+      "name": "home_testimonial_route",
+      "aria-label": "",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Westmount to Vaudreuil",
+      "maxlength": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_testimonial_rating",
+      "label": "Rating",
+      "name": "home_testimonial_rating",
+      "aria-label": "",
+      "type": "number",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "25",
+        "class": "",
+        "id": ""
+      },
+      "default_value": 5,
+      "min": "",
+      "max": "",
+      "step": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_crown_home_map_image",
+      "label": "Map Background",
+      "name": "home_map_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "Upload the pale regional map artwork without labels; labels are positioned by the marker repeater.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_crown_home_map_markers",
+      "label": "Map Markers",
+      "name": "home_map_markers",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "row",
+      "pagination": 0,
+      "min": 1,
+      "max": 8,
+      "collapsed": "",
+      "button_label": "Add Map Marker",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_crown_home_map_marker_label",
+          "label": "Label",
+          "name": "marker_label",
+          "aria-label": "",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "40",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "Montreal",
+          "maxlength": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_map_markers"
+        },
+        {
+          "key": "field_crown_home_map_marker_x",
+          "label": "Horizontal Position (%)",
+          "name": "marker_x",
+          "aria-label": "",
+          "type": "number",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "30",
+            "class": "",
+            "id": ""
+          },
+          "default_value": 50,
+          "min": "",
+          "max": "",
+          "step": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_map_markers"
+        },
+        {
+          "key": "field_crown_home_map_marker_y",
+          "label": "Vertical Position (%)",
+          "name": "marker_y",
+          "aria-label": "",
+          "type": "number",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "30",
+            "class": "",
+            "id": ""
+          },
+          "default_value": 50,
+          "min": "",
+          "max": "",
+          "step": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "parent_repeater": "field_crown_home_map_markers"
+        }
+      ]
+    },
+    {
+      "key": "field_crown_home_tab_final_cta",
+      "label": "Final CTA",
+      "name": "",
+      "aria-label": "",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0,
+      "selected": 0
+    },
+    {
+      "key": "field_crown_home_final_cta_heading",
+      "label": "Heading",
+      "name": "home_final_cta_heading",
+      "aria-label": "",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Ready for a move that feels organized?",
+      "maxlength": "",
+      "rows": 4,
+      "placeholder": "",
+      "new_lines": "br"
+    },
+    {
+      "key": "field_crown_home_final_cta_image",
+      "label": "Team Image",
+      "name": "home_final_cta_image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "Use the wide crew photo with the moving truck.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "jpg,jpeg,png,webp",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_crown_home_final_cta_link",
+      "label": "CTA Link",
+      "name": "home_final_cta_link",
+      "aria-label": "",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_type",
+        "operator": "==",
+        "value": "front_page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content"
+  ],
+  "active": true,
+  "description": "Content model for the exact Crown Movers homepage mockup.",
+  "show_in_rest": 1,
+  "display_title": "",
+  "allow_ai_access": false,
+  "ai_description": ""
+}

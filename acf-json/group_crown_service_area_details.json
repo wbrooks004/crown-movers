@@ -1,0 +1,133 @@
+{
+  "key": "group_crown_service_area_details",
+  "title": "Service Area Details",
+  "fields": [
+    {
+      "key": "field_crown_area_province",
+      "label": "Province",
+      "name": "province",
+      "aria-label": "",
+      "type": "select",
+      "instructions": "Select the province for this service area.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "QC": "Quebec",
+        "ON": "Ontario"
+      },
+      "default_value": false,
+      "return_format": "value",
+      "multiple": 0,
+      "allow_null": 0,
+      "ui": 0,
+      "ajax": 0,
+      "placeholder": "",
+      "create_options": 0,
+      "save_options": 0
+    },
+    {
+      "key": "field_crown_area_region",
+      "label": "Service Region",
+      "name": "service_region",
+      "aria-label": "",
+      "type": "taxonomy",
+      "instructions": "Assign the geographic region used for directories and related-location queries.",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "taxonomy": "service-region",
+      "add_term": 0,
+      "save_terms": 1,
+      "load_terms": 1,
+      "return_format": "id",
+      "field_type": "select",
+      "allow_null": 0,
+      "multiple": 0,
+      "bidirectional_target": []
+    },
+    {
+      "key": "field_crown_services_available",
+      "label": "Service Availability Override",
+      "name": "services_available",
+      "aria-label": "",
+      "type": "relationship",
+      "instructions": "Leave empty when all normal Crown Movers services are available here. Select services only when this location needs a restricted service list.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "post_type": [
+        "services"
+      ],
+      "post_status": [
+        "publish"
+      ],
+      "taxonomy": [],
+      "filters": [
+        "search"
+      ],
+      "return_format": "id",
+      "min": 0,
+      "max": 0,
+      "elements": [],
+      "bidirectional": 0,
+      "bidirectional_target": []
+    },
+    {
+      "key": "field_crown_area_faqs",
+      "label": "Local FAQs",
+      "name": "area_faqs",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "Use only genuinely local questions or answers. Do not repeat generic moving FAQs across every city.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 0,
+      "max": 8,
+      "collapsed": "field_crown_area_faq_question",
+      "button_label": "Add Local FAQ",
+      "rows_per_page": 8,
+      "sub_fields": []
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "service-areas"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [],
+  "active": true,
+  "description": "Structured fields used by the Crown Movers service-area template.",
+  "show_in_rest": 0,
+  "display_title": "",
+  "allow_ai_access": false,
+  "ai_description": ""
+}

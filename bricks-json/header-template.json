@@ -1,0 +1,324 @@
+{
+  "name": "crown-movers-header",
+  "title": "Crown Movers — Header",
+  "type": "header",
+  "header": [
+    {
+      "id": "hts1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "hti2"
+      ],
+      "settings": {
+        "tag": "header",
+        "_cssGlobalClasses": [
+          "gc0001"
+        ]
+      },
+      "label": "Topbar"
+    },
+    {
+      "id": "hti2",
+      "name": "container",
+      "parent": "hts1",
+      "children": [
+        "htp3",
+        "hta4"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "gc0002"
+        ]
+      },
+      "label": "Topbar Inner"
+    },
+    {
+      "id": "htp3",
+      "name": "text-link",
+      "parent": "hti2",
+      "children": [],
+      "settings": {
+        "text": "{acf_primary_phone}",
+        "link": {
+          "type": "external",
+          "url": "tel:{acf_primary_phone}"
+        },
+        "_cssGlobalClasses": [
+          "gc0003"
+        ]
+      },
+      "label": "Topbar Phone"
+    },
+    {
+      "id": "hta4",
+      "name": "text-link",
+      "parent": "hti2",
+      "children": [],
+      "settings": {
+        "text": "{acf_office_address}",
+        "link": {
+          "type": "external",
+          "url": "https://maps.google.com/?q={acf_office_address}",
+          "newTab": true
+        },
+        "_cssGlobalClasses": [
+          "gc0003"
+        ]
+      },
+      "label": "Topbar Address"
+    },
+    {
+      "id": "hhs5",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "hhi6"
+      ],
+      "settings": {
+        "tag": "div",
+        "_cssGlobalClasses": [
+          "gc0004"
+        ]
+      },
+      "label": "Header"
+    },
+    {
+      "id": "hhi6",
+      "name": "container",
+      "parent": "hhs5",
+      "children": [
+        "hlo7",
+        "hnv8",
+        "hcb13"
+      ],
+      "settings": {
+        "_cssGlobalClasses": [
+          "gc0005"
+        ]
+      },
+      "label": "Header Inner"
+    },
+    {
+      "id": "hlo7",
+      "name": "image",
+      "parent": "hhi6",
+      "children": [],
+      "settings": {
+        "image": {
+          "useDynamicData": "{acf_logo_dark}"
+        },
+        "link": {
+          "type": "meta",
+          "useDynamicData": "{home_url}"
+        },
+        "_cssGlobalClasses": [
+          "gc0006"
+        ]
+      },
+      "label": "Logo"
+    },
+    {
+      "id": "hnv8",
+      "name": "nav-nested",
+      "parent": "hhi6",
+      "children": [
+        "hnl9",
+        "hnl10",
+        "hnl11",
+        "hnl12"
+      ],
+      "settings": {
+        "ariaLabel": "Primary navigation",
+        "mobileMenu": "tablet_portrait",
+        "_cssGlobalClasses": [
+          "gc0007"
+        ]
+      },
+      "label": "Primary Nav"
+    },
+    {
+      "id": "hnl9",
+      "name": "text-link",
+      "parent": "hnv8",
+      "children": [],
+      "settings": {
+        "text": "Services",
+        "link": {
+          "type": "external",
+          "url": "/services/"
+        }
+      },
+      "label": "Nav: Services"
+    },
+    {
+      "id": "hnl10",
+      "name": "text-link",
+      "parent": "hnv8",
+      "children": [],
+      "settings": {
+        "text": "Montreal Movers",
+        "link": {
+          "type": "external",
+          "url": "/montreal-movers/"
+        }
+      },
+      "label": "Nav: Montreal Movers"
+    },
+    {
+      "id": "hnl11",
+      "name": "text-link",
+      "parent": "hnv8",
+      "children": [],
+      "settings": {
+        "text": "Long Distance",
+        "link": {
+          "type": "external",
+          "url": "/moving-long-distance/"
+        }
+      },
+      "label": "Nav: Long Distance"
+    },
+    {
+      "id": "hnl12",
+      "name": "text-link",
+      "parent": "hnv8",
+      "children": [],
+      "settings": {
+        "text": "Resources",
+        "link": {
+          "type": "external",
+          "url": "/moving-resources/"
+        }
+      },
+      "label": "Nav: Resources"
+    },
+    {
+      "id": "hcb13",
+      "name": "button",
+      "parent": "hhi6",
+      "children": [],
+      "settings": {
+        "text": "Get a Free Quote",
+        "tag": "a",
+        "link": {
+          "useDynamicData": "{acf_primary_cta}"
+        },
+        "_cssGlobalClasses": [
+          "gc0008",
+          "gc0009"
+        ]
+      },
+      "label": "Header CTA"
+    }
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [
+      {
+        "main": "any"
+      }
+    ]
+  },
+  "global_classes": [
+    {
+      "id": "gc0001",
+      "name": "crown-topbar",
+      "settings": {
+        "_background": {
+          "color": {
+            "raw": "var(--base)"
+          }
+        },
+        "_padding": {
+          "top": ".5rem",
+          "bottom": ".5rem"
+        },
+        "_display": "flex",
+        "_justifyContent": "center",
+        "_display:mobile_landscape": "none"
+      }
+    },
+    {
+      "id": "gc0002",
+      "name": "crown-topbar__inner",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_columnGap": "var(--space-m)",
+        "_width": "var(--content-width-safe)"
+      }
+    },
+    {
+      "id": "gc0003",
+      "name": "crown-topbar__link",
+      "settings": {
+        "_typography": {
+          "font-size": "var(--text-xs)",
+          "color": {
+            "raw": "var(--white)"
+          }
+        },
+        "_display": "flex",
+        "_alignItems": "center",
+        "_columnGap": ".4rem"
+      }
+    },
+    {
+      "id": "gc0004",
+      "name": "crown-header",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_padding": {
+          "top": "var(--space-xs)",
+          "bottom": "var(--space-xs)"
+        },
+        "_background": {
+          "color": {
+            "raw": "var(--white)"
+          }
+        }
+      }
+    },
+    {
+      "id": "gc0005",
+      "name": "crown-header__inner",
+      "settings": {
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_width": "var(--content-width-safe)",
+        "_columnGap": "var(--space-m)"
+      }
+    },
+    {
+      "id": "gc0006",
+      "name": "crown-header__logo",
+      "settings": {
+        "_height": "2.25rem",
+        "_width": "auto"
+      }
+    },
+    {
+      "id": "gc0007",
+      "name": "crown-header__nav",
+      "settings": {
+        "_columnGap": "var(--space-m)",
+        "_alignItems": "center"
+      }
+    },
+    {
+      "id": "gc0008",
+      "name": "btn--primary",
+      "settings": {}
+    },
+    {
+      "id": "gc0009",
+      "name": "btn--m",
+      "settings": {}
+    }
+  ],
+  "globalVariables": []
+}

@@ -1,8 +1,13 @@
 # Frontend Development Doctrine
 
 This file is the constitution: what I believe, what has authority, how I expect you to work.
-The checks and decision procedures are in `.claude/rules/`. Bricks and ACSS execution is in
-the `bricks-acss-frontend` skill.
+Bricks JSON authoring uses the installed `anthropic-skills:bricks` skill (verified against
+Bricks 2.3.6 source; the installed site runs 2.4.1 — treat any schema difference you find as a
+real one to verify against a fresh export, not the skill's word alone). There is no
+`.claude/rules/` directory and no `bricks-acss-frontend`, `modern-web-guidance`,
+`css-researcher`, or `frontend-auditor` skill/agent in this environment — confirmed absent,
+not just unused (`docs/audit/00-environment-baseline.md`, CLAUDE.md DEPENDENCY CHECK). Don't
+assume they exist in a future session either; verify before relying on any of them again.
 
 ## What I believe
 
@@ -54,10 +59,19 @@ it can be verified.
 
 ## How I expect you to work
 
-- Current web-platform knowledge comes from the `modern-web-guidance` skill. Consult it before
-  frontend work, however small the task looks.
-- Build in the main context. Research with the `css-researcher` agent. Audit with the
-  `frontend-auditor` agent. Keep browsing and checklists out of the build context.
-- Follow the checks in `.claude/rules/frontend-doctrine.md` before writing frontend code.
+- Verify current web-platform behaviour against official sources when it matters; no dedicated
+  skill for this is installed here.
+- Build directly against the real project exports, not memory or a skill's built-in assumptions:
+  `2026-09-23--acss-export.json` / `docs/audit/exports/ssh/opt-automatic_css_settings.json` for
+  ACSS, `acf-json/` for CPT/taxonomy/field-group registration, `docs/audit/exports/ssh/` for
+  every other measured fact about the staging install (plugin versions, global classes, Polylang
+  edition, etc.). `docs/audit/00-environment-baseline.md` and
+  `docs/audit/01-staging-build-provenance.md` are the canonical record of what's actually
+  installed and what's actually live — read them before assuming anything about the environment.
 - Report contradictions between requirements, exports, and docs. Do not merge them silently.
 - New information updates the one canonical rule it affects. Never append dated update logs.
+- `bricks-json/` holds paste/import-ready Bricks JSON built against verified ACSS variables and
+  real global classes (`docs/audit/exports/ssh/opt-bricks_global_classes.json`) — never against
+  guessed hex/px values. `bricks/` (root) is the original 27-file pack; it was rejected as a
+  styling source (hardcoded values, a parallel `u-*` utility layer, native Bricks forms instead
+  of WS Form) and kept only as structural/content reference.

@@ -1,0 +1,81 @@
+{
+  "key": "group_crown_service_details",
+  "title": "Service Details",
+  "fields": [
+    {
+      "key": "field_crown_related_services",
+      "label": "Related Services",
+      "name": "related_services",
+      "aria-label": "",
+      "type": "relationship",
+      "instructions": "Choose up to four genuinely related services. Leave empty if no manual recommendations are needed.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "post_type": [
+        "services"
+      ],
+      "post_status": [
+        "publish"
+      ],
+      "taxonomy": [],
+      "filters": [
+        "search"
+      ],
+      "return_format": "id",
+      "min": 0,
+      "max": 4,
+      "elements": [],
+      "bidirectional": 0,
+      "bidirectional_target": []
+    },
+    {
+      "key": "field_crown_service_faqs",
+      "label": "Service FAQs",
+      "name": "service_faqs",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "Add only FAQs specific to this service. Avoid generic questions that do not add useful information.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "pagination": 0,
+      "min": 0,
+      "max": 8,
+      "collapsed": "field_crown_service_faq_question",
+      "button_label": "Add FAQ",
+      "rows_per_page": 8,
+      "sub_fields": []
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "services"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [],
+  "active": true,
+  "description": "Structured fields used by the Crown Movers service template.",
+  "show_in_rest": 0,
+  "display_title": "",
+  "allow_ai_access": false,
+  "ai_description": ""
+}
