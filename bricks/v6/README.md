@@ -16,7 +16,7 @@ Import: Bricks builder → right-click canvas → *Paste* (Ctrl/Cmd+V after copy
 ## Documented exceptions
 - `section-header` / `faq` max-width `62ch` / `72ch` — typographic measure; ACSS has no measure token.
 - `testimonial-card` 4px accent rule — no ACSS token for a thick rule; single occurrence in `_cssCustom`.
-- `mobile-actions` sets `body { padding-bottom }` under 767px so the fixed bar never covers content.
+- `mobile-actions` sets `body { padding-bottom }` under 767px so the fixed bar never covers content; `767px` is the Bricks `mobile_landscape` breakpoint literal (Bricks cannot use a variable inside a media query).
 
 ## Content placeholders
 Every `[VERIFY]` string is unsupported by project evidence and must not ship. Form id 4 = *Quick Quote Form EN*, 5 = FR (from `wsform-forms.tsv`). Phone 514-606-4030 is the number on the live site header.

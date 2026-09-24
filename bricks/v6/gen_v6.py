@@ -6,7 +6,7 @@ tags, links, attributes and ACSS utility classes (plain _cssClasses) — never s
 """
 import json, hashlib, os, re
 
-OUT = "bricks/v6"
+OUT = "/mnt/user-data/outputs/bricks-v6"
 os.makedirs(OUT, exist_ok=True)
 SRC = "https://staging.crownmovers.ca"
 VER = "2.4.1"
@@ -26,8 +26,8 @@ def cls(name, settings):
 def raw(v): return {"raw": v}
 def sides(v): return {"top": v, "right": v, "bottom": v, "left": v}
 CARD_BORDER = {"width": sides("1px"), "style": "solid", "color": raw("var(--neutral-light)"), "radius": sides("var(--radius)")}
-CARD_HOVER_CSS = ("%s:hover, %s:focus-within { box-shadow: var(--box-shadow-1); translate: 0 -2px; border-color: var(--primary); }\n"
-                  "@media (prefers-reduced-motion: reduce) { %s { transition: none; translate: none; } }")
+CARD_HOVER_CSS = ("%s:hover, %s:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n"
+                  "@media (prefers-reduced-motion: reduce) { %s { transition: none; } }")
 
 # shared
 cls("eyebrow", {"_typography": {"font-size": "var(--text-xs)", "font-weight": "700", "letter-spacing": "0.08em",
@@ -41,7 +41,7 @@ cls("section-header__intro", {"_typography": {"font-size": "var(--text-l)", "col
 # service-card
 cls("service-card", {"_display": "flex", "_direction": "column", "_rowGap": "var(--space-s)", "_padding": sides("var(--space-m)"),
                      "_background": {"color": raw("var(--white)")}, "_border": CARD_BORDER, "_position": "relative",
-                     "_cssTransition": "border-color var(--transition), box-shadow var(--transition), translate var(--transition)",
+                     "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
                      "_cssCustom": CARD_HOVER_CSS % (".service-card", ".service-card", ".service-card")})
 cls("service-card--featured", {"_background": {"color": raw("var(--neutral-ultra-light)")},
                                "_border": {"color": raw("var(--primary)")}})
@@ -56,7 +56,7 @@ cls("service-card__link", {"_typography": {"font-weight": "600", "color": raw("v
 # location-card
 cls("location-card", {"_display": "flex", "_direction": "column", "_rowGap": "var(--space-xs)", "_padding": sides("var(--space-s)"),
                       "_background": {"color": raw("var(--neutral-ultra-light)")}, "_border": CARD_BORDER, "_position": "relative",
-                      "_cssTransition": "border-color var(--transition), box-shadow var(--transition), translate var(--transition)",
+                      "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
                       "_cssCustom": CARD_HOVER_CSS % (".location-card", ".location-card", ".location-card") +
                                     "\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }"
                                     "\n.location-card:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"})
@@ -284,7 +284,7 @@ open(os.path.join(OUT, "README.md"), "w").write("\n".join([
     "## Documented exceptions",
     "- `section-header` / `faq` max-width `62ch` / `72ch` — typographic measure; ACSS has no measure token.",
     "- `testimonial-card` 4px accent rule — no ACSS token for a thick rule; single occurrence in `_cssCustom`.",
-    "- `mobile-actions` sets `body { padding-bottom }` under 767px so the fixed bar never covers content.", "",
+    "- `mobile-actions` sets `body { padding-bottom }` under 767px so the fixed bar never covers content; `767px` is the Bricks `mobile_landscape` breakpoint literal (Bricks cannot use a variable inside a media query).", "",
     "## Content placeholders", "Every `[VERIFY]` string is unsupported by project evidence and must not ship. Form id 4 = *Quick Quote Form EN*, 5 = FR (from `wsform-forms.tsv`). Phone 514-606-4030 is the number on the live site header.", "",
     "## Class ledger", "| Class | id | ACSS tokens used |", "|---|---|---|", *rows, ""]))
 print("classes:", len(CLASSES))

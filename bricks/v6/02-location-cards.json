@@ -392,8 +392,8 @@
      }
     },
     "_position": "relative",
-    "_cssTransition": "border-color var(--transition), box-shadow var(--transition), translate var(--transition)",
-    "_cssCustom": ".location-card:hover, .location-card:focus-within { box-shadow: var(--box-shadow-1); translate: 0 -2px; border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .location-card { transition: none; translate: none; } }\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }\n.location-card:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"
+    "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
+    "_cssCustom": ".location-card:hover, .location-card:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .location-card { transition: none; } }\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }\n.location-card:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"
    },
    "category": null
   },

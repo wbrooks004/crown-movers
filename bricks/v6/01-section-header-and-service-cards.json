@@ -409,8 +409,8 @@
      }
     },
     "_position": "relative",
-    "_cssTransition": "border-color var(--transition), box-shadow var(--transition), translate var(--transition)",
-    "_cssCustom": ".service-card:hover, .service-card:focus-within { box-shadow: var(--box-shadow-1); translate: 0 -2px; border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .service-card { transition: none; translate: none; } }"
+    "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
+    "_cssCustom": ".service-card:hover, .service-card:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .service-card { transition: none; } }"
    },
    "category": null
   },
