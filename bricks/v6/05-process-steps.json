@@ -1,0 +1,362 @@
+{
+ "content": [
+  {
+   "id": "cf7896",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "d1051d"
+   ],
+   "settings": {
+    "tag": "section",
+    "_cssClasses": "section--m bg--ultra-light"
+   },
+   "label": "Process"
+  },
+  {
+   "id": "d1051d",
+   "name": "container",
+   "parent": "cf7896",
+   "children": [
+    "c538cb",
+    "c17975"
+   ],
+   "settings": {},
+   "label": "Process container"
+  },
+  {
+   "id": "c538cb",
+   "name": "block",
+   "parent": "d1051d",
+   "children": [
+    "cff68f",
+    "c95911"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c2f53d"
+    ]
+   },
+   "label": "Section header"
+  },
+  {
+   "id": "cff68f",
+   "name": "text-basic",
+   "parent": "c538cb",
+   "children": [],
+   "settings": {
+    "text": "How it works",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "be8b21"
+    ]
+   }
+  },
+  {
+   "id": "c95911",
+   "name": "heading",
+   "parent": "c538cb",
+   "children": [],
+   "settings": {
+    "text": "Three steps to moving day",
+    "tag": "h2"
+   }
+  },
+  {
+   "id": "c17975",
+   "name": "div",
+   "parent": "d1051d",
+   "children": [
+    "c10ef5",
+    "c1408d",
+    "d4ee0a"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c009f2"
+    ]
+   },
+   "label": "Steps"
+  },
+  {
+   "id": "c10ef5",
+   "name": "block",
+   "parent": "c17975",
+   "children": [
+    "c930da",
+    "a39bb3",
+    "b981bb"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "d261df"
+    ]
+   },
+   "label": "Step 1"
+  },
+  {
+   "id": "c930da",
+   "name": "text-basic",
+   "parent": "c10ef5",
+   "children": [],
+   "settings": {
+    "text": "01",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cdde6b"
+    ],
+    "_attributes": [
+     {
+      "id": "c005b2",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ]
+   }
+  },
+  {
+   "id": "a39bb3",
+   "name": "heading",
+   "parent": "c10ef5",
+   "children": [],
+   "settings": {
+    "text": "Get a quote",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "c1d152"
+    ]
+   }
+  },
+  {
+   "id": "b981bb",
+   "name": "text-basic",
+   "parent": "c10ef5",
+   "children": [],
+   "settings": {
+    "text": "Tell us what you're moving and when. Written quote, no surprises. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "df8074"
+    ]
+   }
+  },
+  {
+   "id": "c1408d",
+   "name": "block",
+   "parent": "c17975",
+   "children": [
+    "cb04f5",
+    "c2724e",
+    "cb5f13"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "d261df"
+    ]
+   },
+   "label": "Step 2"
+  },
+  {
+   "id": "cb04f5",
+   "name": "text-basic",
+   "parent": "c1408d",
+   "children": [],
+   "settings": {
+    "text": "02",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cdde6b"
+    ],
+    "_attributes": [
+     {
+      "id": "d4425a",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ]
+   }
+  },
+  {
+   "id": "c2724e",
+   "name": "heading",
+   "parent": "c1408d",
+   "children": [],
+   "settings": {
+    "text": "We plan the move",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "c1d152"
+    ]
+   }
+  },
+  {
+   "id": "cb5f13",
+   "name": "text-basic",
+   "parent": "c1408d",
+   "children": [],
+   "settings": {
+    "text": "Crew, truck and materials matched to your home and building rules. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "df8074"
+    ]
+   }
+  },
+  {
+   "id": "d4ee0a",
+   "name": "block",
+   "parent": "c17975",
+   "children": [
+    "a69edb",
+    "e67e41",
+    "bdae1f"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "d261df"
+    ]
+   },
+   "label": "Step 3"
+  },
+  {
+   "id": "a69edb",
+   "name": "text-basic",
+   "parent": "d4ee0a",
+   "children": [],
+   "settings": {
+    "text": "03",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cdde6b"
+    ],
+    "_attributes": [
+     {
+      "id": "cf8223",
+      "name": "aria-hidden",
+      "value": "true"
+     }
+    ]
+   }
+  },
+  {
+   "id": "e67e41",
+   "name": "heading",
+   "parent": "d4ee0a",
+   "children": [],
+   "settings": {
+    "text": "Moving day",
+    "tag": "h3",
+    "_cssGlobalClasses": [
+     "c1d152"
+    ]
+   }
+  },
+  {
+   "id": "bdae1f",
+   "name": "text-basic",
+   "parent": "d4ee0a",
+   "children": [],
+   "settings": {
+    "text": "Wrapped, loaded, delivered and set up. [VERIFY copy]",
+    "tag": "p",
+    "_cssGlobalClasses": [
+     "df8074"
+    ]
+   }
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "https://staging.crownmovers.ca",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "be8b21",
+   "name": "eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "font-weight": "700",
+     "letter-spacing": "0.08em",
+     "text-transform": "uppercase",
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "c2f53d",
+   "name": "section-header",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_widthMax": "62ch",
+    "_margin": {
+     "bottom": "var(--space-l)"
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "c009f2",
+   "name": "process",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "var(--grid-auto-3)",
+    "_gridGap": "var(--grid-gap)"
+   },
+   "category": null
+  },
+  {
+   "id": "d261df",
+   "name": "process-step",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)"
+   },
+   "category": null
+  },
+  {
+   "id": "cdde6b",
+   "name": "process-step__number",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h2)",
+     "font-weight": "800",
+     "line-height": "1",
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "c1d152",
+   "name": "process-step__title",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h5)",
+     "font-weight": "700"
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "df8074",
+   "name": "process-step__text",
+   "settings": {
+    "_typography": {
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   },
+   "category": null
+  }
+ ],
+ "globalElements": []
+}

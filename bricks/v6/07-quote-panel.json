@@ -1,0 +1,275 @@
+{
+ "content": [
+  {
+   "id": "c32d7b",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "c54966"
+   ],
+   "settings": {
+    "tag": "section",
+    "_cssClasses": "section--m bg--ultra-dark"
+   },
+   "label": "Quote panel"
+  },
+  {
+   "id": "c54966",
+   "name": "container",
+   "parent": "c32d7b",
+   "children": [
+    "f904f4"
+   ],
+   "settings": {},
+   "label": "Quote panel container"
+  },
+  {
+   "id": "f904f4",
+   "name": "block",
+   "parent": "c54966",
+   "children": [
+    "d7d7eb",
+    "fee3d0"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "b4c3c6"
+    ]
+   },
+   "label": "Quote panel"
+  },
+  {
+   "id": "d7d7eb",
+   "name": "block",
+   "parent": "f904f4",
+   "children": [
+    "c2d70c",
+    "cfbd04",
+    "cb3bc8",
+    "c42249"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c0057d"
+    ]
+   },
+   "label": "Content"
+  },
+  {
+   "id": "c2d70c",
+   "name": "text-basic",
+   "parent": "d7d7eb",
+   "children": [],
+   "settings": {
+    "text": "Free quote",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "be8b21"
+    ]
+   }
+  },
+  {
+   "id": "cfbd04",
+   "name": "heading",
+   "parent": "d7d7eb",
+   "children": [],
+   "settings": {
+    "text": "Get your moving quote in 24 hours",
+    "tag": "h2"
+   }
+  },
+  {
+   "id": "cb3bc8",
+   "name": "text-basic",
+   "parent": "d7d7eb",
+   "children": [],
+   "settings": {
+    "text": "Tell us where and when. A coordinator calls you back with a written price. [VERIFY copy]",
+    "tag": "p"
+   }
+  },
+  {
+   "id": "c42249",
+   "name": "block",
+   "parent": "d7d7eb",
+   "children": [
+    "cbbd0e",
+    "c07b4e",
+    "b36aa6"
+   ],
+   "settings": {
+    "tag": "ul",
+    "_cssGlobalClasses": [
+     "c17658"
+    ]
+   },
+   "label": "Trust list"
+  },
+  {
+   "id": "cbbd0e",
+   "name": "text-basic",
+   "parent": "c42249",
+   "children": [],
+   "settings": {
+    "text": "Licensed and insured [VERIFY]",
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "cd1aad"
+    ]
+   }
+  },
+  {
+   "id": "c07b4e",
+   "name": "text-basic",
+   "parent": "c42249",
+   "children": [],
+   "settings": {
+    "text": "No hidden fees [VERIFY]",
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "cd1aad"
+    ]
+   }
+  },
+  {
+   "id": "b36aa6",
+   "name": "text-basic",
+   "parent": "c42249",
+   "children": [],
+   "settings": {
+    "text": "Local and long-distance",
+    "tag": "li",
+    "_cssGlobalClasses": [
+     "cd1aad"
+    ]
+   }
+  },
+  {
+   "id": "fee3d0",
+   "name": "block",
+   "parent": "f904f4",
+   "children": [
+    "c128a8"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c4153f"
+    ]
+   },
+   "label": "Form card"
+  },
+  {
+   "id": "c128a8",
+   "name": "shortcode",
+   "parent": "fee3d0",
+   "children": [],
+   "settings": {
+    "shortcode": "[ws_form id=\"4\"]"
+   }
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "https://staging.crownmovers.ca",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "be8b21",
+   "name": "eyebrow",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-xs)",
+     "font-weight": "700",
+     "letter-spacing": "0.08em",
+     "text-transform": "uppercase",
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "b4c3c6",
+   "name": "quote-panel",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "var(--grid-2)",
+    "_gridGap": "var(--space-l)",
+    "_alignItemsGrid": "center",
+    "_gridTemplateColumns:tablet_portrait": "var(--grid-1)"
+   },
+   "category": null
+  },
+  {
+   "id": "c0057d",
+   "name": "quote-panel__content",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-s)"
+   },
+   "category": null
+  },
+  {
+   "id": "c17658",
+   "name": "quote-panel__trust",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_padding": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    },
+    "_margin": {
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0"
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "cd1aad",
+   "name": "quote-panel__trust-item",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)"
+    },
+    "_cssCustom": ".quote-panel__trust-item::before { content: \"\\2713  \"; color: var(--accent); font-weight: 700; }"
+   },
+   "category": null
+  },
+  {
+   "id": "c4153f",
+   "name": "quote-panel__form",
+   "settings": {
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_padding": {
+     "top": "var(--space-m)",
+     "right": "var(--space-m)",
+     "bottom": "var(--space-m)",
+     "left": "var(--space-m)"
+    },
+    "_border": {
+     "radius": {
+      "top": "var(--radius)",
+      "right": "var(--radius)",
+      "bottom": "var(--radius)",
+      "left": "var(--radius)"
+     }
+    },
+    "_cssCustom": ".quote-panel__form { box-shadow: var(--box-shadow-2); }"
+   },
+   "category": null
+  }
+ ],
+ "globalElements": []
+}

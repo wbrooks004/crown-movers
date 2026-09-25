@@ -1,0 +1,107 @@
+{
+ "content": [
+  {
+   "id": "af3965",
+   "name": "block",
+   "parent": 0,
+   "children": [
+    "c00a67",
+    "c950e4"
+   ],
+   "settings": {
+    "tag": "nav",
+    "_cssGlobalClasses": [
+     "da3d25"
+    ],
+    "_attributes": [
+     {
+      "id": "ca63a4",
+      "name": "aria-label",
+      "value": "Quick actions"
+     }
+    ]
+   },
+   "label": "Mobile actions"
+  },
+  {
+   "id": "c00a67",
+   "name": "button",
+   "parent": "af3965",
+   "children": [],
+   "settings": {
+    "text": "Call 514-606-4030",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "tel:+15146064030"
+    },
+    "_cssClasses": "btn--neutral btn--m",
+    "_cssGlobalClasses": [
+     "d7618c"
+    ]
+   }
+  },
+  {
+   "id": "c950e4",
+   "name": "button",
+   "parent": "af3965",
+   "children": [],
+   "settings": {
+    "text": "Free quote",
+    "tag": "a",
+    "link": {
+     "type": "external",
+     "url": "/free-quote/"
+    },
+    "_cssClasses": "btn--primary btn--m",
+    "_cssGlobalClasses": [
+     "d7618c"
+    ]
+   }
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "https://staging.crownmovers.ca",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "da3d25",
+   "name": "mobile-actions",
+   "settings": {
+    "_display": "none",
+    "_display:mobile_landscape": "flex",
+    "_columnGap": "var(--space-xs)",
+    "_position": "fixed",
+    "_bottom": "0",
+    "_left": "0",
+    "_right": "0",
+    "_zIndex": "100",
+    "_padding": {
+     "top": "var(--space-xs)",
+     "right": "var(--space-xs)",
+     "bottom": "var(--space-xs)",
+     "left": "var(--space-xs)"
+    },
+    "_background": {
+     "color": {
+      "raw": "var(--white)"
+     }
+    },
+    "_cssCustom": ".mobile-actions { border-top: var(--border); padding-bottom: calc(var(--space-xs) + env(safe-area-inset-bottom)); }\n@media (max-width: 767px) { body { padding-bottom: calc(var(--space-xxl)); } }"
+   },
+   "category": null
+  },
+  {
+   "id": "d7618c",
+   "name": "mobile-actions__btn",
+   "settings": {
+    "_flexGrow": "1",
+    "_typography": {
+     "text-align": "center"
+    }
+   },
+   "category": null
+  }
+ ],
+ "globalElements": []
+}

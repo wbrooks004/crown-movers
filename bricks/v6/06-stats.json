@@ -1,0 +1,266 @@
+{
+ "content": [
+  {
+   "id": "cc422a",
+   "name": "section",
+   "parent": 0,
+   "children": [
+    "fc581b"
+   ],
+   "settings": {
+    "tag": "section",
+    "_cssClasses": "section--m"
+   },
+   "label": "Stats"
+  },
+  {
+   "id": "fc581b",
+   "name": "container",
+   "parent": "cc422a",
+   "children": [
+    "c391bf"
+   ],
+   "settings": {},
+   "label": "Stats container"
+  },
+  {
+   "id": "c391bf",
+   "name": "div",
+   "parent": "fc581b",
+   "children": [
+    "c80450",
+    "c87e2e",
+    "dd3827",
+    "c5f238"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "cbae62"
+    ]
+   },
+   "label": "Stats"
+  },
+  {
+   "id": "c80450",
+   "name": "block",
+   "parent": "c391bf",
+   "children": [
+    "cfaf7d",
+    "cd4ff8"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c68c21"
+    ]
+   },
+   "label": "Stat 1"
+  },
+  {
+   "id": "cfaf7d",
+   "name": "text-basic",
+   "parent": "c80450",
+   "children": [],
+   "settings": {
+    "text": "[VERIFY]",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cc8aae"
+    ]
+   }
+  },
+  {
+   "id": "cd4ff8",
+   "name": "text-basic",
+   "parent": "c80450",
+   "children": [],
+   "settings": {
+    "text": "Google rating",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "a441d2"
+    ]
+   }
+  },
+  {
+   "id": "c87e2e",
+   "name": "block",
+   "parent": "c391bf",
+   "children": [
+    "c80291",
+    "b3394c"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c68c21"
+    ]
+   },
+   "label": "Stat 2"
+  },
+  {
+   "id": "c80291",
+   "name": "text-basic",
+   "parent": "c87e2e",
+   "children": [],
+   "settings": {
+    "text": "[VERIFY]",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cc8aae"
+    ]
+   }
+  },
+  {
+   "id": "b3394c",
+   "name": "text-basic",
+   "parent": "c87e2e",
+   "children": [],
+   "settings": {
+    "text": "Moves per year",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "a441d2"
+    ]
+   }
+  },
+  {
+   "id": "dd3827",
+   "name": "block",
+   "parent": "c391bf",
+   "children": [
+    "c70e05",
+    "c84680"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c68c21"
+    ]
+   },
+   "label": "Stat 3"
+  },
+  {
+   "id": "c70e05",
+   "name": "text-basic",
+   "parent": "dd3827",
+   "children": [],
+   "settings": {
+    "text": "[VERIFY]",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cc8aae"
+    ]
+   }
+  },
+  {
+   "id": "c84680",
+   "name": "text-basic",
+   "parent": "dd3827",
+   "children": [],
+   "settings": {
+    "text": "Years in business",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "a441d2"
+    ]
+   }
+  },
+  {
+   "id": "c5f238",
+   "name": "block",
+   "parent": "c391bf",
+   "children": [
+    "c3d375",
+    "c915ba"
+   ],
+   "settings": {
+    "_cssGlobalClasses": [
+     "c68c21"
+    ]
+   },
+   "label": "Stat 4"
+  },
+  {
+   "id": "c3d375",
+   "name": "text-basic",
+   "parent": "c5f238",
+   "children": [],
+   "settings": {
+    "text": "2",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "cc8aae"
+    ]
+   }
+  },
+  {
+   "id": "c915ba",
+   "name": "text-basic",
+   "parent": "c5f238",
+   "children": [],
+   "settings": {
+    "text": "Branches",
+    "tag": "span",
+    "_cssGlobalClasses": [
+     "a441d2"
+    ]
+   }
+  }
+ ],
+ "source": "bricksCopiedElements",
+ "sourceUrl": "https://staging.crownmovers.ca",
+ "version": "2.4.1",
+ "globalClasses": [
+  {
+   "id": "cbae62",
+   "name": "stats",
+   "settings": {
+    "_display": "grid",
+    "_gridTemplateColumns": "var(--grid-auto-4)",
+    "_gridGap": "var(--grid-gap)"
+   },
+   "category": null
+  },
+  {
+   "id": "c68c21",
+   "name": "stat-item",
+   "settings": {
+    "_display": "flex",
+    "_direction": "column",
+    "_rowGap": "var(--space-xs)",
+    "_alignItems": "flex-start"
+   },
+   "category": null
+  },
+  {
+   "id": "cc8aae",
+   "name": "stat-item__value",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--h1)",
+     "font-weight": "800",
+     "line-height": "1",
+     "color": {
+      "raw": "var(--primary)"
+     }
+    }
+   },
+   "category": null
+  },
+  {
+   "id": "a441d2",
+   "name": "stat-item__label",
+   "settings": {
+    "_typography": {
+     "font-size": "var(--text-s)",
+     "font-weight": "600",
+     "letter-spacing": "0.06em",
+     "text-transform": "uppercase",
+     "color": {
+      "raw": "var(--text-dark-muted)"
+     }
+    }
+   },
+   "category": null
+  }
+ ],
+ "globalElements": []
+}
