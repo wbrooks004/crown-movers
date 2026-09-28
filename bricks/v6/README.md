@@ -1,6 +1,6 @@
-# Crown Movers v6.0 — component library (draft)
+# Crown Movers v6.1 — component library (draft)
 
-Format: Bricks clipboard JSON, `version` 2.4.1, generated 2026-09-24 from `gen_v6.py`.
+Format: Bricks clipboard JSON, `version` 2.4.1, generated 2026-09-28 from `gen_v6.py`.
 Import: Bricks builder → right-click canvas → *Paste* (Ctrl/Cmd+V after copying the file contents). Global classes ride with each file and merge by name.
 
 ## Gates before import
@@ -12,6 +12,7 @@ Import: Bricks builder → right-click canvas → *Paste* (Ctrl/Cmd+V after copy
 - Every colour, size, gap, radius, shadow, transition is an ACSS variable verified in `docs/audit/acss-variables.txt`.
 - ACSS utilities attached as plain classes: `section--m`, `bg--ultra-light`, `bg--ultra-dark`, `btn--primary`, `btn--neutral`, `btn--m`.
 - Layout grids use ACSS grid variables (`--grid-auto-3`, `--grid-auto-4`, `--grid-2`) — ACSS 4 registers no grid utility classes on this install.
+- Related states and queries on the same selector (hover/focus-within, `prefers-reduced-motion`) are grouped with native CSS nesting inside `_cssCustom`, kept shallow — one level, per the project `CLAUDE.md` doctrine. A lone selector with no related state is left flat.
 
 ## Documented exceptions
 - `section-header` / `faq` max-width `62ch` / `72ch` — typographic measure; ACSS has no measure token.

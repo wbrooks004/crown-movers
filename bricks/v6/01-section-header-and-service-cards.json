@@ -410,7 +410,7 @@
     },
     "_position": "relative",
     "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
-    "_cssCustom": ".service-card:hover, .service-card:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .service-card { transition: none; } }"
+    "_cssCustom": ".service-card {\n  &:hover, &:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n  @media (prefers-reduced-motion: reduce) { transition: none; }\n}"
    },
    "category": null
   },
@@ -489,7 +489,7 @@
     "_typography:hover": {
      "text-decoration": "underline"
     },
-    "_cssCustom": ".service-card__link::after { content: \" \\2192\"; }\n.service-card__link:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"
+    "_cssCustom": ".service-card__link {\n  &::after { content: \" \\2192\"; }\n  &:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }\n}"
    },
    "category": null
   },
