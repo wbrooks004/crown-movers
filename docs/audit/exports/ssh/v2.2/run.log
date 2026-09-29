@@ -1,0 +1,49 @@
+Success: Settings exported to /home/1663748.cloudwaysapps.com/qtwfqmttva/private_html/cm-v2.2/acss-pre.json (2565 settings)
+PRE EXPORT OK
+SET font-1-type: 'variable' -> 'static'
+SET font-1-family-name: 'Archivo' -> 'Archivo'
+SET font-1-src: '"/wp-content/uploads/2026/09/Archivo-VariableFont_wdthwght.ttf"' -> '/wp-content/uploads/crown-fonts/archivo-latin-wght-normal.woff2'
+SET font-1-format: 'truetype' -> 'woff2'
+SET font-1-weight: '400,600,700,800,900' -> '100 900'
+SET font-1-style: 'normal' -> 'normal'
+SET font-1-display: 'swap' -> 'swap'
+SET font-1-src-fallback: '"/wp-content/uploads/2026/09/Archivo-VariableFont_wdthwght.ttf"' -> ''
+SET font-1-format-fallback: 'truetype' -> ''
+SET font-1-variation-settings: '' -> ''
+SET font-2-type: 'variable' -> 'static'
+SET font-2-family-name: 'Inter' -> 'Inter'
+SET font-2-src: '"/wp-content/uploads/2026/09/Inter-VariableFont_opszwght.ttf"' -> '/wp-content/uploads/crown-fonts/inter-latin-wght-normal.woff2'
+SET font-2-format: 'truetype' -> 'woff2'
+SET font-2-weight: '400,500,600,700,800' -> '100 900'
+SET font-2-style: 'normal' -> 'normal'
+SET font-2-display: 'swap' -> 'swap'
+SET font-2-src-fallback: '"/wp-content/uploads/2026/09/Inter-VariableFont_opszwght.ttf"' -> ''
+SET font-2-format-fallback: 'truetype' -> ''
+SET font-2-variation-settings: '' -> ''
+SET root-font-size: '100' -> '100'
+SET text-dark: 'var(--base)' -> 'var(--base)'
+SET bg-ultra-light: 'var(--base-ultra-light)' -> 'var(--base-ultra-light)'
+SET bg-light: 'var(--base-light)' -> 'var(--base-light)'
+SET bg-dark: 'var(--base-dark)' -> 'var(--base-dark)'
+SET bg-ultra-dark: 'var(--base)' -> 'var(--base)'
+SET btn-base-text: 'var(--white)' -> 'var(--white)'
+SET btn-base-hover-text: 'var(--white)' -> 'var(--white)'
+SET option-base-btn-shades: 'off' -> 'off'
+SET option-primary-btn-shades: 'off' -> 'off'
+Regenerating CSS files...
+Generated files:
+  - automaticcss-core
+  - automaticcss-variables
+  - automaticcss-custom
+  - automaticcss-tokens
+  - automaticcss-bricks
+  - automaticcss-bricks-in-builder
+  - automaticcss-gutenberg
+  - automaticcss-core-for-block-editor
+  - automaticcss-core-for-iframe-editor
+  - automaticcss-gutenberg-color-palette
+Success: 10 CSS file(s) regenerated in 3.28 seconds.
+Success: Settings exported to /home/1663748.cloudwaysapps.com/qtwfqmttva/private_html/cm-v2.2/acss-post.json (2565 settings)
+Success: Breeze all cache has been purged.
+BREEZE PURGED
+DONE

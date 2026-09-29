@@ -1,0 +1,103 @@
+{
+    "plugin": {
+        "version": "4.0.1",
+        "db_version": "4.0.1",
+        "css_directory": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css",
+        "css_url": "http:\/\/staging.crownmovers.ca\/wp-content\/uploads\/automatic-css"
+    },
+    "integrations": {
+        "builders": {
+            "bricks": true,
+            "gutenberg": true
+        }
+    },
+    "css": [
+        {
+            "handle": "automaticcss-core",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:21",
+            "size": 77417
+        },
+        {
+            "handle": "automaticcss-variables",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-variables.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:21",
+            "size": 23815
+        },
+        {
+            "handle": "automaticcss-custom",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-custom-css.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:22",
+            "size": 0
+        },
+        {
+            "handle": "automaticcss-tokens",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-tokens.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:22",
+            "size": 0
+        },
+        {
+            "handle": "automaticcss-gutenberg",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-gutenberg.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:23",
+            "size": 0
+        },
+        {
+            "handle": "automaticcss-core-for-block-editor",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-core-for-block-editor.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:23",
+            "size": 90721
+        },
+        {
+            "handle": "automaticcss-core-for-iframe-editor",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-core-for-iframe-editor.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:24",
+            "size": 85227
+        },
+        {
+            "handle": "automaticcss-gutenberg-color-palette",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-gutenberg-color-palette.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:24",
+            "size": 14500
+        },
+        {
+            "handle": "automaticcss-bricks",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-bricks.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:22",
+            "size": 0
+        },
+        {
+            "handle": "automaticcss-bricks-in-builder",
+            "path": "\/home\/1663748.cloudwaysapps.com\/qtwfqmttva\/public_html\/wp-content\/uploads\/automatic-css\/automatic-bricks-in-builder.css",
+            "exists": true,
+            "modified": "2026-09-29 14:43:22",
+            "size": 690
+        }
+    ],
+    "settings": {
+        "total": 2565,
+        "option_name": "automatic_css_settings"
+    },
+    "flags": {
+        "initialized": true,
+        "active": [
+            "enable_debug_level_error",
+            "enable_debug_level_warning",
+            "load_dashboard_scripts_as_module",
+            "defer_dashboard_scripts",
+            "add_defaults_to_save_process",
+            "enable_activity_log",
+            "use_classic_expansion_character"
+        ],
+        "ignored": []
+    }
+}
