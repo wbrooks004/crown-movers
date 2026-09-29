@@ -1,0 +1,24 @@
+Crown Movers v2.2 — ACSS settings-diff (acss-pre.json -> acss-post.json)
+12 keys differ out of 2565 total. All 12 are script-driven font keys. No derived keys, no UNEXPECTED keys.
+
+font-1-format: "truetype" -> "woff2"
+font-1-format-fallback: "truetype" -> ""
+font-1-src: "/wp-content/uploads/2026/09/Archivo-VariableFont_wdthwght.ttf" -> "/wp-content/uploads/crown-fonts/archivo-latin-wght-normal.woff2"
+font-1-src-fallback: "/wp-content/uploads/2026/09/Archivo-VariableFont_wdthwght.ttf" -> ""
+font-1-type: "variable" -> "static"
+font-1-weight: "400,600,700,800,900" -> "100 900"
+font-2-format: "truetype" -> "woff2"
+font-2-format-fallback: "truetype" -> ""
+font-2-src: "/wp-content/uploads/2026/09/Inter-VariableFont_opszwght.ttf" -> "/wp-content/uploads/crown-fonts/inter-latin-wght-normal.woff2"
+font-2-src-fallback: "/wp-content/uploads/2026/09/Inter-VariableFont_opszwght.ttf" -> ""
+font-2-type: "variable" -> "static"
+font-2-weight: "400,500,600,700,800" -> "100 900"
+
+NOTE: font-1-style, font-1-display, font-2-style, font-2-display, root-font-size, text-dark,
+bg-ultra-light, bg-light, bg-dark, bg-ultra-dark, btn-base-text, btn-base-hover-text,
+option-base-btn-shades, and option-primary-btn-shades were all already at their target values
+before this run (run.log shows old==new for each). They are not diff entries above because
+acss-pre.json and acss-post.json are identical for those keys — the owner had already applied
+them manually since the 2026-09-29 CSS verification that motivated this unit. No script action
+was needed for them; the script's SET lines for these keys were harmless no-ops confirming the
+already-correct state.
