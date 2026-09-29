@@ -393,7 +393,7 @@
     },
     "_position": "relative",
     "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
-    "_cssCustom": ".location-card:hover, .location-card:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n@media (prefers-reduced-motion: reduce) { .location-card { transition: none; } }\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }\n.location-card:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"
+    "_cssCustom": ".location-card {\n  &:hover, &:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n  &:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }\n  @media (prefers-reduced-motion: reduce) { transition: none; }\n}\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }"
    },
    "category": null
   },

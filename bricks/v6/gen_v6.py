@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Crown Movers v6.0 — component library generator.
+"""Crown Movers v6.1 — component library generator.
 Emits Bricks 2.4.1 clipboard JSON (paste into the builder). Every style lives on a
 global BEM class and references ACSS variables only. Element nodes carry content,
 tags, links, attributes and ACSS utility classes (plain _cssClasses) — never style keys.
 """
 import json, hashlib, os, re
 
-OUT = "/mnt/user-data/outputs/bricks-v6"
+OUT = "bricks/v6"
 os.makedirs(OUT, exist_ok=True)
 SRC = "https://staging.crownmovers.ca"
 VER = "2.4.1"
@@ -26,8 +26,10 @@ def cls(name, settings):
 def raw(v): return {"raw": v}
 def sides(v): return {"top": v, "right": v, "bottom": v, "left": v}
 CARD_BORDER = {"width": sides("1px"), "style": "solid", "color": raw("var(--neutral-light)"), "radius": sides("var(--radius)")}
-CARD_HOVER_CSS = ("%s:hover, %s:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n"
-                  "@media (prefers-reduced-motion: reduce) { %s { transition: none; } }")
+CARD_HOVER_CSS = ("%s {\n"
+                  "  &:hover, &:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n"
+                  "  @media (prefers-reduced-motion: reduce) { transition: none; }\n"
+                  "}")
 
 # shared
 cls("eyebrow", {"_typography": {"font-size": "var(--text-xs)", "font-weight": "700", "letter-spacing": "0.08em",
@@ -42,7 +44,7 @@ cls("section-header__intro", {"_typography": {"font-size": "var(--text-l)", "col
 cls("service-card", {"_display": "flex", "_direction": "column", "_rowGap": "var(--space-s)", "_padding": sides("var(--space-m)"),
                      "_background": {"color": raw("var(--white)")}, "_border": CARD_BORDER, "_position": "relative",
                      "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
-                     "_cssCustom": CARD_HOVER_CSS % (".service-card", ".service-card", ".service-card")})
+                     "_cssCustom": CARD_HOVER_CSS % ".service-card"})
 cls("service-card--featured", {"_background": {"color": raw("var(--neutral-ultra-light)")},
                                "_border": {"color": raw("var(--primary)")}})
 cls("service-card__icon", {"_cssCustom": ".service-card__icon { font-size: var(--icon-size-m); color: var(--primary); line-height: 1; }"})
@@ -51,15 +53,20 @@ cls("service-card__body", {"_typography": {"color": raw("var(--text-dark-muted)"
 cls("service-card__link", {"_typography": {"font-weight": "600", "color": raw("var(--primary)"), "text-decoration": "none"},
                            "_background": {"color": raw("transparent")}, "_padding": sides("0"),
                            "_typography:hover": {"text-decoration": "underline"},
-                           "_cssCustom": ".service-card__link::after { content: \" \\2192\"; }\n"
-                                         ".service-card__link:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"})
+                           "_cssCustom": ".service-card__link {\n"
+                                         "  &::after { content: \" \\2192\"; }\n"
+                                         "  &:focus-visible { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }\n"
+                                         "}"})
 # location-card
 cls("location-card", {"_display": "flex", "_direction": "column", "_rowGap": "var(--space-xs)", "_padding": sides("var(--space-s)"),
                       "_background": {"color": raw("var(--neutral-ultra-light)")}, "_border": CARD_BORDER, "_position": "relative",
                       "_cssTransition": "border-color var(--transition), box-shadow var(--transition)",
-                      "_cssCustom": CARD_HOVER_CSS % (".location-card", ".location-card", ".location-card") +
-                                    "\n.location-card__title a::after { content: \"\"; position: absolute; inset: 0; }"
-                                    "\n.location-card:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }"})
+                      "_cssCustom": ".location-card {\n"
+                                    "  &:hover, &:focus-within { box-shadow: var(--box-shadow-1); border-color: var(--primary); }\n"
+                                    "  &:focus-within { outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }\n"
+                                    "  @media (prefers-reduced-motion: reduce) { transition: none; }\n"
+                                    "}\n"
+                                    ".location-card__title a::after { content: \"\"; position: absolute; inset: 0; }"})
 cls("location-card__title", {"_typography": {"font-size": "var(--h5)", "font-weight": "700", "line-height": "1.2"},
                              "_cssCustom": ".location-card__title a { color: inherit; text-decoration: none; }"})
 cls("location-card__meta", {"_typography": {"font-size": "var(--text-s)", "color": raw("var(--text-dark-muted)")}})
@@ -270,7 +277,7 @@ for c in CLASSES.values():
     toks = sorted(set(re.findall(r"var\((--[a-z0-9-]+)\)", json.dumps(c["settings"]))))
     rows.append(f"| `{c['name']}` | `{c['id']}` | {', '.join(f'`{x}`' for x in toks) or '—'} |")
 open(os.path.join(OUT, "README.md"), "w").write("\n".join([
-    "# Crown Movers v6.0 — component library (draft)", "",
+    "# Crown Movers v6.1 — component library (draft)", "",
     f"Format: Bricks clipboard JSON, `version` {VER}, generated {os.popen('date -u +%Y-%m-%d').read().strip()} from `gen_v6.py`.",
     "Import: Bricks builder → right-click canvas → *Paste* (Ctrl/Cmd+V after copying the file contents). Global classes ride with each file and merge by name.", "",
     "## Gates before import",
@@ -280,7 +287,8 @@ open(os.path.join(OUT, "README.md"), "w").write("\n".join([
     "- Zero element-level style keys (generator asserts it). Zero hex/rgb. Zero px except the 1px ACSS `--border-size` equivalent on cards and one documented 4px exception.",
     "- Every colour, size, gap, radius, shadow, transition is an ACSS variable verified in `docs/audit/acss-variables.txt`.",
     "- ACSS utilities attached as plain classes: `section--m`, `bg--ultra-light`, `bg--ultra-dark`, `btn--primary`, `btn--neutral`, `btn--m`.",
-    "- Layout grids use ACSS grid variables (`--grid-auto-3`, `--grid-auto-4`, `--grid-2`) — ACSS 4 registers no grid utility classes on this install.", "",
+    "- Layout grids use ACSS grid variables (`--grid-auto-3`, `--grid-auto-4`, `--grid-2`) — ACSS 4 registers no grid utility classes on this install.",
+    "- Related states and queries on the same selector (hover/focus-within, `prefers-reduced-motion`) are grouped with native CSS nesting inside `_cssCustom`, kept shallow — one level, per the project `CLAUDE.md` doctrine. A lone selector with no related state is left flat.", "",
     "## Documented exceptions",
     "- `section-header` / `faq` max-width `62ch` / `72ch` — typographic measure; ACSS has no measure token.",
     "- `testimonial-card` 4px accent rule — no ACSS token for a thick rule; single occurrence in `_cssCustom`.",
