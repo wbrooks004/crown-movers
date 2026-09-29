@@ -1,0 +1,25 @@
+Crown Movers v3.2 -- verification table (actual values)
+
+Check                                     | Expected                        | Actual
+-------------------------------------------|---------------------------------|---------------------------------
+Global classes                              | 121 (107 acss + 14 live custom) | 121 (107 acss + 14 live custom)
+0 of the 77 deleted names present            | yes                             | yes (0 of 77 found)
+ACSS classes byte-identical to pre           | yes                             | yes (107/107)
+Live content 28, 18545, 18529 byte-identical | yes                             | yes (diff -rq: identical)
+disableGoogleFonts                          | true                            | true (was NULL/absent pre)
+Home HTML HTTP status                       | 200                             | 200
+bricks-google-fonts-css marker              | absent                          | absent (was present pre)
+family=Anton marker                         | absent                          | absent (was present pre)
+/crown-fonts/*.woff2 (ACSS-referenced)       | still 200                       | 200 / 200
+Italic TTF URLs (18552, 18554)               | 404                             | 404 / 404
+Fatal/parse errors on home page              | none                            | none
+
+Live-consumer scan matched the unit's expectation exactly: 3 posts (28 page, 18529
+and 18545 bricks_template), no others found. 14 non-ACSS classes referenced by them:
+crown-style-scope, crown-footer, u-gap-xs, u-gap-s, u-gap-m, u-row-center,
+u-row-between, btn-primary, btn-phone-header, site-header, logo-chip, nav-link,
+nav-link-strong, nav-dropdown-link.
+
+Delete-list breakdown: all 77 deleted classes were unreferenced by live content
+(none required a stop-and-ask -- the delete set had zero overlap with the 14 live
+classes by construction).

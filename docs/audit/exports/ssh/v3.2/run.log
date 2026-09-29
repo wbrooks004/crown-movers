@@ -1,0 +1,27 @@
+Crown Movers v3.2 -- staging cleanup write log (all commands run from public_html)
+
+--- pre-step: merge PR #9 ---
+$ gh pr merge 9 --merge
+Merged. mergeCommit=6be2fcca4e52283c63658f4e6b03976ed24e83a1, mergedAt=2026-09-29T16:22:14Z
+
+--- step 3a: global classes ---
+$ wp option update bricks_global_classes --format=json < bricks_global_classes.filtered.json
+Success: Updated 'bricks_global_classes' option.
+
+--- step 3b: disable Google Fonts ---
+$ wp eval '$s = get_option("bricks_global_settings", []); $s["disableGoogleFonts"] = true; update_option("bricks_global_settings", $s);'
+OK
+(pre value: NULL -- key absent -- post value: true)
+
+--- step 3c: italic TTF attachments ---
+$ wp post delete 18552 --force   # Archivo-Italic-VariableFont_wdthwght.ttf, 0 genuine references
+Success: Deleted post 18552.
+
+$ wp post delete 18554 --force   # Inter-Italic-VariableFont_opszwght.ttf, 0 genuine references
+Success: Deleted post 18554.
+
+--- step 3d: cache purge ---
+$ wp breeze purge --cache=all
+Success: Breeze all cache has been purged.
+
+DONE
