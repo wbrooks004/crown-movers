@@ -1,0 +1,18 @@
+In-scope TTF attachments (exact filename match per unit scope):
+  18553 -> /wp-content/uploads/2026/09/Archivo-VariableFont_wdthwght.ttf
+  18555 -> /wp-content/uploads/2026/09/Inter-VariableFont_opszwght.ttf
+
+Out of scope (filenames do not match the two named in the unit; left untouched):
+  18552 -> Archivo-Italic-VariableFont_wdthwght.ttf
+  18554 -> Inter-Italic-VariableFont_opszwght.ttf
+
+Reference check (postmeta, excluding the attachments' own meta rows; and options):
+  postmeta LIKE '%18553%' OR LIKE '%18555%', post_id NOT IN (18553,18555):
+    post_id 4480, meta_key _ct_builder_shortcodes -> "18553" is a substring inside an
+      unrelated hex hash (...416f18553fc168...), not an attachment-ID reference. FALSE POSITIVE.
+    post_id 108, meta_key _shortpixel_was_converted -> value "1691185551" is a Unix
+      timestamp; "18555" is a coincidental substring, not an attachment-ID reference. FALSE POSITIVE.
+  options (yvh_options) WHERE option_value LIKE '%VariableFont_%': 0 rows.
+
+Genuine reference count for 18553 and 18555: 0. Safe to delete per unit condition
+(step 3c: "only if step 1e found 0 references").

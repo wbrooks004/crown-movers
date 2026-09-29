@@ -1,0 +1,40 @@
+Crown Movers v3.1 -- verification table (actual values)
+
+Check                                              | Expected               | Actual
+----------------------------------------------------|------------------------|------------------------------------------
+Global classes count                                 | 106 (105 acss + footer)| 198 (107 acss + 91 non-acss, per Option C)
+Any deleted name still present                       | none                   | none (0 of 119 deleted names found in post)
+All ACSS classes present, unchanged settings         | yes                    | yes (107/107 byte-identical pre vs post)
+wpcb_enabled for 4447                                | empty                  | "" (was "0" pre -- already disabled, now empty)
+wpcb_enabled for 8185                                | empty                  | N/A -- post no longer exists (deleted pre-unit)
+wpcb_enabled for 4446                                | empty                  | "" (was "1" pre -- now disabled)
+wpcb_enabled for 4684                                | empty                  | N/A -- post no longer exists (deleted pre-unit)
+wpcb_enabled for 8642                                | empty                  | N/A -- post no longer exists (deleted pre-unit)
+Every other snippet unchanged vs pre                 | yes                    | yes (10/10 other snippets unchanged at "1")
+Home /?nocache= HTTP status                          | 200                    | 200
+googletagmanager marker                              | absent                 | absent (was present pre, from snippet 4446)
+GTM- marker                                           | absent                 | absent (was present pre, from snippet 4446)
+hotjar marker                                         | absent                 | absent (already absent pre -- snippet gone before unit ran)
+ahrefs marker                                         | absent                 | absent (already absent pre -- snippet gone before unit ran)
+family=Anton marker                                   | absent                 | PERSISTS -- see note below
+/wp-content/uploads/2026/09/*VariableFont_*.ttf (2 in-scope) | 404              | 404 / 404
+/wp-content/uploads/crown-fonts/*.woff2               | still 200              | 200 / 200
+
+NOTE on family=Anton: this marker persists. Root cause identified: it is loaded via
+Bricks' own native Google Fonts enqueue (<link id='bricks-google-fonts-css'
+href='https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap'>), a
+Bricks typography setting, not any WPCodeBox snippet. No snippet in this unit's
+scope controls it, and changing Bricks font settings is out of scope for this unit.
+Per the unit's own instruction ("If a tracking or Anton marker persists, report
+which... Do not try other methods"), this is reported and left untouched.
+
+DEVIATION -- class-deletion scope (resolved by explicit user decision before any write):
+The unit assumed only "crown-footer" was a live-referenced non-ACSS class (implying
+209 deletions, 106 kept). Actual pre-state showed 95 of 210 non-ACSS classes were
+referenced in live page/header content, including 4 of the 9 named "v6-collision"
+classes (eyebrow, process, section-header, section-header--center). User selected
+"Option C" (targeted): force-delete the 9 named collision classes regardless of
+reference, keep the other 91 referenced-but-unnamed classes, delete the 115 truly
+unreferenced classes. Net: 119 deleted, 198 kept (107 acss + 91 non-acss), all 9
+named collisions confirmed deleted. See class-delete-list.csv for the full list and
+per-class reason.

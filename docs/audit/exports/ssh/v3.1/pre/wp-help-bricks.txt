@@ -1,0 +1,15 @@
+NAME
+
+  wp bricks
+
+DESCRIPTION
+
+  WP CLI commands for Bricks
+
+SYNOPSIS
+
+  wp bricks <command>
+
+SUBCOMMANDS
+
+  regenerate_assets

@@ -1,0 +1,43 @@
+Crown Movers v3.1 -- staging cleanup write log (all commands run from public_html unless noted)
+
+--- step 3a: WPCodeBox snippets off ---
+$ wp post meta update 4447 wpcb_enabled ''
+Success: Updated custom field 'wpcb_enabled'.
+
+$ wp post meta update 8185 wpcb_enabled ''
+Error: Could not find the post with ID 8185.
+(snippet "Fonts" no longer exists on staging -- deleted before this unit ran)
+
+$ wp post meta update 4446 wpcb_enabled ''
+Success: Updated custom field 'wpcb_enabled'.
+
+$ wp post meta update 4684 wpcb_enabled ''
+Error: Could not find the post with ID 4684.
+(snippet "Hotjar Tracking" no longer exists on staging -- deleted before this unit ran)
+
+$ wp post meta update 8642 wpcb_enabled ''
+Error: Could not find the post with ID 8642.
+(snippet "Ahrefs Web Analytics" no longer exists on staging -- deleted before this unit ran)
+
+--- step 3b: global classes ---
+$ wp option update bricks_global_classes --format=json < bricks_global_classes.filtered.json
+Success: Updated 'bricks_global_classes' option.
+
+$ wp bricks regenerate_assets
+Warning: EXIT: CSS loading method set to "Inline styles"
+(Bricks is configured for inline CSS -- no static asset file to regenerate; class
+changes take effect immediately per-request. Command exists per `wp help bricks`
+but is a no-op in this CSS-loading mode.)
+
+--- step 3c: TTF attachments ---
+$ wp post delete 18553 --force   # Archivo-VariableFont_wdthwght.ttf, 0 genuine references
+Success: Deleted post 18553.
+
+$ wp post delete 18555 --force   # Inter-VariableFont_opszwght.ttf, 0 genuine references
+Success: Deleted post 18555.
+
+--- step 3d: cache purge ---
+$ wp breeze purge --cache=all
+Success: Breeze all cache has been purged.
+
+DONE

@@ -1,0 +1,6 @@
+Post-deletion verification (curl -sI equivalent via -o /dev/null -w '%{http_code}'):
+  Archivo-VariableFont_wdthwght.ttf (was 18553) -> 404
+  Inter-VariableFont_opszwght.ttf (was 18555) -> 404
+  archivo-latin-wght-normal.woff2 (crown-fonts, from v2.2) -> 200 (unaffected)
+  inter-latin-wght-normal.woff2 (crown-fonts, from v2.2) -> 200 (unaffected)
+Italic variants (18552, 18554) untouched, out of scope, left as-is.
