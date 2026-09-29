@@ -1,0 +1,23 @@
+Crown Movers v2.3 -- verification table (actual values, from served automatic.css)
+
+Check                              | Expected                                    | Actual
+--------------------------------------|----------------------------------------------|------------------------------------------
+link colour / hover                    | var(--base) / var(--base)                     | var(--link-color: var(--base)); var(--link-color-hover: var(--base)); a{color:var(--link-color,var(--base))}; a:hover{color:var(--link-color-hover,var(--base))} -- PASS
+link decoration                        | underline, primary, 2px, offset 0.25em        | --link-decoration: underline; --link-decoration-color: var(--primary); --link-decoration-thickness: 2px; --link-underline-offset: 0.25em -- PASS
+form field border / hover              | neutral / base                                | STORED correctly (f-field-border-color=--neutral, f-field-border-color-hover=--base, confirmed via wp acss settings get) but NOT YET RENDERED -- see caveat below
+placeholder                            | var(--neutral)                                | STORED correctly (f-field-color-placeholder=var(--neutral)) but NOT YET RENDERED -- see caveat below
+var(--secondary) occurrences           | 0                                              | 0 -- PASS
+Everything else unchanged vs pre       | yes (settings-diff: 0 UNEXPECTED)             | yes -- 9/9 keys changed were the script's own keys, 0 derived, 0 UNEXPECTED (see settings-diff.txt)
+
+CAVEAT -- form field settings inert pending a separate ACSS option:
+`option-forms` (a distinct ACSS feature toggle, NOT one of the 9 keys this unit was
+scoped to touch) is currently "off" on staging. With it off, ACSS does not generate
+any .f-field-* / input-styling CSS at all -- the only input/textarea/select rule in
+the served stylesheet is a generic `font: inherit` reset (automatic.css:527-528),
+unrelated to border color or placeholder color. This means f-field-border-color,
+f-field-border-color-hover, and f-field-color-placeholder are correctly set in the
+database (verified via `wp acss settings get` and the pre/post diff) and WILL take
+visual effect the moment `option-forms` is turned on, but they produce zero visible
+change on staging right now. Enabling `option-forms` was outside this unit's 9-key
+scope, so it was not touched. Flagging this for the owner/next unit rather than
+silently reporting the check as a full pass.
