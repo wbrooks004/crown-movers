@@ -1,0 +1,5 @@
+wp-content/themes/bricks/includes/admin/admin-screen-settings.php:2231:						<label for="disableGoogleFonts"><?php esc_html_e( 'Disable Google Fonts', 'bricks' ); ?></label>
+wp-content/themes/bricks/includes/admin/admin-screen-settings.php:2234:						<input type="checkbox" name="disableGoogleFonts" id="disableGoogleFonts" <?php checked( isset( $settings['disableGoogleFonts'] ) ); ?>>
+wp-content/themes/bricks/includes/admin/admin-screen-settings.php:2235:						<label for="disableGoogleFonts"><?php esc_html_e( 'Disable Google Fonts', 'bricks' ); ?></label>
+wp-content/themes/bricks/includes/unified-global-transfer.php:158:					'disableGoogleFonts',
+wp-content/themes/bricks/includes/helpers.php:3752:		return ! apply_filters( 'bricks/assets/load_webfonts', true ) || isset( Database::$global_settings['disableGoogleFonts'] );

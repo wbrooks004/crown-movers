@@ -1,0 +1,13 @@
+Italic TTF attachments in scope for this unit:
+  18552 -> /wp-content/uploads/2026/09/Archivo-Italic-VariableFont_wdthwght.ttf
+  18554 -> /wp-content/uploads/2026/09/Inter-Italic-VariableFont_opszwght.ttf
+Filenames confirmed to contain both "VariableFont" and "Italic".
+
+Reference check (exact filename match, not ID substring):
+  postmeta (yvh_postmeta), post_id NOT IN (18552,18554),
+    meta_value LIKE '%Archivo-Italic-VariableFont_wdthwght.ttf%'
+             OR LIKE '%Inter-Italic-VariableFont_opszwght.ttf%': 0 rows.
+  options (yvh_options), option_value LIKE same two exact filenames: 0 rows.
+
+Genuine reference count for 18552 and 18554: 0. Safe to delete per unit condition
+(step 3c: "only if step 1e found 0 references").
