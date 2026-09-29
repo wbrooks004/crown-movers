@@ -61,3 +61,9 @@ it can be verified.
 - Follow the checks in `.claude/rules/frontend-doctrine.md` before writing frontend code.
 - Report contradictions between requirements, exports, and docs. Do not merge them silently.
 - New information updates the one canonical rule it affects. Never append dated update logs.
+
+## Design system
+`docs/design-system/` is the approved Crown Movers design system (2026-09-29). Read its
+README.md before any styling work. Token names are ACSS variable names; component CSS in
+`components/bundle.css` is the reference for Bricks global classes. Its contrast rules are
+binding: no white text on coral, no coral small text on white or paper, no amber on white.

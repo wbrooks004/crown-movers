@@ -1,0 +1,12 @@
+Crown Movers v2.3 -- current Surfaces/Overlays settings values (staging, read-only)
+
+surface-1-asset: (empty)
+surface-1-bg-color: var(--body-bg-color)
+surface-1-overlay: (empty)
+overlay-1-background-type: none
+
+None of the numbered surface/overlay presets are currently configured on this site --
+surface-1-asset and surface-1-overlay are both empty, and overlay-1-background-type is
+"none". This means no live example exists on staging to empirically confirm the exact
+string format the ACSS dashboard writes into surface-N-overlay when a real link is made
+(see findings.md, question 5, UNVERIFIED note).

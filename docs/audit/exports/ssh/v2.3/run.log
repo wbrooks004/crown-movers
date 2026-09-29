@@ -1,0 +1,28 @@
+Success: Settings exported to /home/1663748.cloudwaysapps.com/qtwfqmttva/private_html/cm-v2.3/acss-pre.json (2565 settings)
+PRE EXPORT OK
+SET link-color: 'var(--primary)' -> 'var(--base)'
+FORCE-SET link-color-hover: 'var(--primary-hover)' -> 'var(--base)' (--force: ACSS color-hover regex false-positive)
+SET link-decoration: 'inherit' -> 'underline'
+SET link-decoration-color: '' -> 'var(--primary)'
+SET link-decoration-thickness: '' -> '2px'
+SET link-underline-offset: 'auto' -> '0.25em'
+SET(eval) f-field-border-color: '--border-color-dark' -> '--neutral'
+FORCE-SET(eval) f-field-border-color-hover: '--border-color-dark' -> '--base' (--force equivalent + eval route: color-hover regex false-positive + leading-- value)
+FORCE-SET f-field-color-placeholder: 'var(--neutral-light)' -> 'var(--neutral)' (--force: ACSS color-hover regex false-positive)
+Regenerating CSS files...
+Generated files:
+  - automaticcss-core
+  - automaticcss-variables
+  - automaticcss-custom
+  - automaticcss-tokens
+  - automaticcss-bricks
+  - automaticcss-bricks-in-builder
+  - automaticcss-gutenberg
+  - automaticcss-core-for-block-editor
+  - automaticcss-core-for-iframe-editor
+  - automaticcss-gutenberg-color-palette
+Success: 10 CSS file(s) regenerated in 2.98 seconds.
+Success: Settings exported to /home/1663748.cloudwaysapps.com/qtwfqmttva/private_html/cm-v2.3/acss-post.json (2565 settings)
+Success: Breeze all cache has been purged.
+BREEZE PURGED
+DONE

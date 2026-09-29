@@ -1,0 +1,110 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-29T16:42:21Z"
+ },
+ "title": "Crown Movers",
+ "namespace": "CrownMovers",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logos",
+  "Textures",
+  "Photography"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "m",
+   "order": [
+    "crown-logo-dark.webp",
+    "crown-logo-white.png"
+   ],
+   "files": {
+    "crown-logo-dark.webp": {
+     "name": "crown-logo-dark.webp",
+     "blob": "76762fcc1580be161f88b81c9558ce3c",
+     "size": 11942,
+     "type": "image/webp"
+    },
+    "crown-logo-white.png": {
+     "name": "crown-logo-white.png",
+     "blob": "29bd67b7b5716d2cff85b691b5384fac",
+     "size": 12252,
+     "type": "image/png"
+    }
+   }
+  },
+  "Textures": {
+   "name": "Textures",
+   "tile": "m",
+   "order": [
+    "grain-on-light.svg",
+    "grain-on-dark.svg",
+    "route-lines.svg",
+    "island-contours.svg"
+   ],
+   "files": {
+    "grain-on-light.svg": {
+     "name": "grain-on-light.svg",
+     "blob": "0852af56ff4ccd2f4cd1ef72d24493d4",
+     "size": 426,
+     "type": "image/svg+xml"
+    },
+    "grain-on-dark.svg": {
+     "name": "grain-on-dark.svg",
+     "blob": "87860acc6ff2ce210bc2d809127fec78",
+     "size": 414,
+     "type": "image/svg+xml"
+    },
+    "route-lines.svg": {
+     "name": "route-lines.svg",
+     "blob": "d7efe9682d9ab71d86a04c9be004a9f9",
+     "size": 882,
+     "type": "image/svg+xml"
+    },
+    "island-contours.svg": {
+     "name": "island-contours.svg",
+     "blob": "f85028b90c970ca5a2685b736a526e52",
+     "size": 24268,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Photography": {
+   "name": "Photography",
+   "tile": "l",
+   "order": [
+    "crew-protected-furniture.jpg",
+    "packing-white-glove.webp"
+   ],
+   "files": {
+    "crew-protected-furniture.jpg": {
+     "name": "crew-protected-furniture.jpg",
+     "blob": "77c46d3542c89981dd8920cf48fb4d8c",
+     "size": 507065,
+     "type": "image/jpeg"
+    },
+    "packing-white-glove.webp": {
+     "name": "packing-white-glove.webp",
+     "blob": "cbc8f78f4595e576a385763a0179d654",
+     "size": 82630,
+     "type": "image/webp"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Saleem",
+  "at": "2026-09-29T16:42:21Z",
+  "via": "claude.ai chat",
+  "note": "First system, built from the staging ACSS 4.0.1 configuration"
+ }
+}

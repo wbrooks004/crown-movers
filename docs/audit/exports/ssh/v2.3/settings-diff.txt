@@ -1,0 +1,27 @@
+Crown Movers v2.3 -- ACSS settings-diff (acss-pre.json -> acss-post.json)
+9 keys differ out of 2565 total. All 9 are the script's target keys. No derived keys, no UNEXPECTED keys.
+
+f-field-border-color: "--border-color-dark" -> "--neutral"
+f-field-border-color-hover: "--border-color-dark" -> "--base"
+f-field-color-placeholder: "var(--neutral-light)" -> "var(--neutral)"
+link-color: "var(--primary)" -> "var(--base)"
+link-color-hover: "var(--primary-hover)" -> "var(--base)"
+link-decoration: "inherit" -> "underline"
+link-decoration-color: "" -> "var(--primary)"
+link-decoration-thickness: "" -> "2px"
+link-underline-offset: "auto" -> "0.25em"
+
+DEVIATION NOTE: 3 of these 9 keys could not be set via the plain `wp acss settings set`
+CLI path as literally scripted, and required user-approved workarounds -- see run.log
+and the execution report for full detail:
+  - link-color-hover: --force (ACSS's API::update_settings regex /color-(\w+)/ false-
+    -positives on "color-hover", forcing hex-color parsing on a var() value)
+  - f-field-border-color: wp eval routing (WP-CLI's arg parser swallows a positional
+    value starting with "--" as an unrecognized flag; same value, same validated
+    API::update_settings() path, different entry point)
+  - f-field-border-color-hover: both of the above combined (matches the color-<word>
+    regex AND starts with "--")
+  - f-field-color-placeholder: --force (matches "color-placeholder" against the same
+    regex false-positive)
+All 4 non-obvious keys ended at their exactly-intended values; verified against
+acss-post.json above.

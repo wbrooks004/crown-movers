@@ -1,0 +1,30 @@
+<!-- @dsCard height=320 -->
+<div class="cm-cover">
+<style>
+  .cm-cover { position: relative; inline-size: 960px; block-size: 320px; background: var(--white); overflow: hidden; font-family: var(--font-display); }
+  .cm-cover svg { position: absolute; inset: 0; }
+  .ink { fill: var(--base); } .coral { fill: var(--primary); } .paper { fill: var(--base-ultra-light); } .amber { fill: var(--accent); }
+  .crown { fill: none; stroke: var(--primary); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+  .r { rx: var(--radius); }
+  .cm-cover__text { position: absolute; left: 40px; bottom: 36px; max-inline-size: 440px; }
+  .cm-cover__name { margin: 0; font-size: 112px; line-height: 0.92; font-weight: 800; letter-spacing: -0.02em; color: var(--base); }
+  .cm-cover__tag { margin: 14px 0 0; font: 400 14px/1.4 var(--font-sans); color: var(--text-dark-muted); }
+</style>
+<svg viewBox="0 0 960 320" width="960" height="320" aria-hidden="true">
+  <!-- blocks: base slab 240x320 (bleeds top, right, bottom); primary 192x144 at --radius; base-ultra-light 144x104 (bleeds bottom); accent 48x48 at --radius -->
+  <!-- arrangement: one tall ink slab with satellites overlapping its edge, all right of x=480 -->
+  <!-- pattern: crown chevrons (the logo's three-point crown) in primary on the slab; chosen because the crown is the one literal motif this brand owns -->
+  <!-- scales: sizes are 48px multiples (~ --space-xl), corners --radius (8px), crown pitch 96px -->
+  <rect class="ink" x="720" y="0" width="240" height="320"/>
+  <rect class="paper" x="504" y="216" width="144" height="104"/>
+  <rect class="coral r" x="552" y="48" width="192" height="144"/>
+  <rect class="amber r" x="672" y="224" width="48" height="48"/>
+  <polyline class="crown" points="768,108 780,84 792,100 804,72 816,100 828,84 840,108"/>
+  <polyline class="crown" points="864,108 876,84 888,100 900,72 912,100 924,84 936,108"/>
+  <polyline class="crown" points="768,204 780,180 792,196 804,168 816,196 828,180 840,204"/>
+  <polyline class="crown" points="864,204 876,180 888,196 900,168 912,196 924,180 936,204"/>
+  <polyline class="crown" points="768,300 780,276 792,292 804,264 816,292 828,276 840,300"/>
+  <polyline class="crown" points="864,300 876,276 888,292 900,264 912,292 924,276 936,300"/>
+</svg>
+<div class="cm-cover__text"><p class="cm-cover__name">Crown<br>Movers</p><p class="cm-cover__tag">Warm ink, Crown Coral and real photography, on Automatic.css and Bricks.</p></div>
+</div>
